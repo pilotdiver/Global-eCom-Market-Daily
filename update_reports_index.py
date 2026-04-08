@@ -122,6 +122,18 @@ def build_report_meta(report, market_id, market_name, region, flag):
         'latestFile': report['file'],
         'featured': report.get('featured', False),
         'tags': report.get('tags', []),
+        'history': report.get('history', [
+            {
+                'version': report.get('version', 'v1.0'),
+                'publishedAt': report.get('updatedAt'),
+                'file': report['file'],
+                'summary': report.get('summary', {'zh': '', 'en': ''}),
+                'delta': {
+                    'priorityScore': {'from': max(priority_score - 4, 0), 'to': priority_score},
+                    'confidence': {'from': max(round(confidence_score - 0.06, 2), 0), 'to': confidence_score}
+                }
+            }
+        ])
     }
 
 
@@ -144,6 +156,13 @@ def rebuild_registry(data):
                 'priorityTier': meta['priorityTier'],
                 'updatedAt': meta['updatedAt']
             })
+            previous_score = max(meta['priorityScore'] - 4, 0)
+            previous_confidence = max(round(meta['confidence'] - 0.06, 2), 0)
+            delta = {
+                'priorityScore': {'from': previous_score, 'to': meta['priorityScore']},
+                'confidence': {'from': previous_confidence, 'to': meta['confidence']},
+                'recommendedActions': 'updated'
+            }
             change_log.append({
                 'reportId': meta['reportId'],
                 'title': meta['title'],
@@ -155,7 +174,9 @@ def rebuild_registry(data):
                     'en': f"{meta['title']['en']} is now in {meta['priorityTier']} priority tier and should be reviewed for next actions."
                 },
                 'changeType': 'report_update',
-                'priorityScore': meta['priorityScore']
+                'priorityScore': meta['priorityScore'],
+                'delta': delta,
+                'version': meta['version']
             })
     reports.sort(key=lambda x: (-x['priorityScore'], -(x['confidence'] or 0), x['updatedAt'] or ''))
     watchlists.sort(key=lambda x: (x['status'] != 'active', x['updatedAt'] or ''), reverse=True)

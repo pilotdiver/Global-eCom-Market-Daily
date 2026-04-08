@@ -6,9 +6,11 @@
   "status": "live",
   "report": {
     "id": "europe-press-on-nails-2026",
+    "reportType": "regional-opportunity-analysis",
     "title": { "zh": "欧洲穿戴甲市场机会分析", "en": "Europe Press-On Nails Opportunity Analysis" },
     "date": "2026-04",
     "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
     "file": "report-europe-press-on-nails.html",
     "tags": [
       { "zh": "穿戴甲", "en": "Press-on nails" },
@@ -22,6 +24,16 @@
     "coverLabel": { "zh": "区域机会分析", "en": "Regional Opportunity Analysis" },
     "highlight": { "zh": "先做 clean aesthetic，再做主题扩张", "en": "Build around clean aesthetics before themed expansion" },
     "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 81,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.71,
+    "platformFit": { "amazon": 0.77, "tiktok": 0.74, "shopify": 0.79 },
+    "recommendedActions": [
+      { "zh": "先用英国和德国做 clean aesthetic 基础款测试", "en": "Use the UK and Germany to test clean-aesthetic starter lines first" },
+      { "zh": "同步梳理合规、标签和责任主体准备", "en": "Map compliance, labeling, and responsible-person setup in parallel" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪", "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking" },
     "featured": true,
     "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" }
   }

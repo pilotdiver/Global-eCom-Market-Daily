@@ -6,9 +6,11 @@
   "status": "live",
   "report": {
     "id": "global-press-on-nails-2026",
+    "reportType": "opportunity-analysis",
     "title": { "zh": "全球穿戴甲机会分析", "en": "Global Press-On Nails Opportunity Analysis" },
     "date": "2026-04",
     "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
     "file": "report-global-press-on-nails.html",
     "tags": [
       { "zh": "穿戴甲", "en": "Press-on nails" },
@@ -22,6 +24,16 @@
     "coverLabel": { "zh": "品类机会分析", "en": "Category Opportunity Analysis" },
     "highlight": { "zh": "设计与便利性并重", "en": "Design and convenience both matter" },
     "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 84,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.74,
+    "platformFit": { "amazon": 0.82, "tiktok": 0.91, "shopify": 0.72 },
+    "recommendedActions": [
+      { "zh": "优先测试可重复佩戴套装与工具配套组合", "en": "Test reusable kits together with accessory bundles first" },
+      { "zh": "先跑设计主题验证，再决定是否扩品牌化表达", "en": "Validate design themes before expanding into stronger brand positioning" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "供给多、内容强，适合持续监控平台反应", "en": "Supply is deep and content fit is strong, so platform response should be monitored continuously" },
     "featured": true,
     "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" }
   }

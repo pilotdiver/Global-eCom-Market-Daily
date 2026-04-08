@@ -258,7 +258,34 @@
           "category": {
             "zh": "美妆个护",
             "en": "Beauty & Personal Care"
-          }
+          },
+          "reportType": "opportunity-analysis",
+          "lastReviewedAt": "2026-04-08",
+          "priorityScore": 84,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.74,
+          "platformFit": {
+            "amazon": 0.82,
+            "tiktok": 0.91,
+            "shopify": 0.72
+          },
+          "recommendedActions": [
+            {
+              "zh": "优先测试可重复佩戴套装与工具配套组合",
+              "en": "Test reusable kits together with accessory bundles first"
+            },
+            {
+              "zh": "先跑设计主题验证，再决定是否扩品牌化表达",
+              "en": "Validate design themes before expanding into stronger brand positioning"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "供给多、内容强，适合持续监控平台反应",
+            "en": "Supply is deep and content fit is strong, so platform response should be monitored continuously"
+          },
+          "previousVersion": "v1.0",
+          "version": "v1.1"
         },
         {
           "id": "global-diy-floral-kit-2026",
@@ -304,8 +331,33 @@
             "zh": "家居装饰",
             "en": "Home Decor"
           },
-          "previousVersion": "v1.0",
-          "version": "v1.1"
+          "previousVersion": "v1.1",
+          "version": "v1.2",
+          "reportType": "opportunity-analysis",
+          "lastReviewedAt": "2026-04-08",
+          "priorityScore": 78,
+          "priorityTier": "P2",
+          "evidenceStrength": 0.68,
+          "platformFit": {
+            "amazon": 0.76,
+            "tiktok": 0.66,
+            "shopify": 0.81
+          },
+          "recommendedActions": [
+            {
+              "zh": "先定义基础桌花包、节庆礼盒包和家居风格包 3 个起步 SKU",
+              "en": "Define three starter SKUs: table kit, seasonal gift kit, and home-style kit"
+            },
+            {
+              "zh": "优先压测教程清晰度和成品可复制性",
+              "en": "Stress-test guide clarity and reproducibility of the finished result first"
+            }
+          ],
+          "watchStatus": "monitor",
+          "watchReason": {
+            "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性",
+            "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation"
+          }
         }
       ]
     },
@@ -365,7 +417,34 @@
           "category": {
             "zh": "美妆个护",
             "en": "Beauty & Personal Care"
-          }
+          },
+          "reportType": "regional-opportunity-analysis",
+          "lastReviewedAt": "2026-04-08",
+          "priorityScore": 81,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.71,
+          "platformFit": {
+            "amazon": 0.77,
+            "tiktok": 0.74,
+            "shopify": 0.79
+          },
+          "recommendedActions": [
+            {
+              "zh": "先用英国和德国做 clean aesthetic 基础款测试",
+              "en": "Use the UK and Germany to test clean-aesthetic starter lines first"
+            },
+            {
+              "zh": "同步梳理合规、标签和责任主体准备",
+              "en": "Map compliance, labeling, and responsible-person setup in parallel"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
+            "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
+          },
+          "previousVersion": "v1.0",
+          "version": "v1.1"
         }
       ]
     }
@@ -408,7 +487,7 @@
           "en": "Medium-High"
         },
         "evidenceStrength": 0.74,
-        "priorityScore": 82,
+        "priorityScore": 84,
         "priorityTier": "P1",
         "platformFit": {
           "amazon": 0.82,
@@ -417,17 +496,21 @@
         },
         "recommendedActions": [
           {
-            "zh": "优先复核 全球穿戴甲机会分析 的切入方向与首批测试动作",
-            "en": "Review the entry path and first test actions for Global Press-On Nails Opportunity Analysis"
+            "zh": "优先测试可重复佩戴套装与工具配套组合",
+            "en": "Test reusable kits together with accessory bundles first"
+          },
+          {
+            "zh": "先跑设计主题验证，再决定是否扩品牌化表达",
+            "en": "Validate design themes before expanding into stronger brand positioning"
           }
         ],
         "watchStatus": "active",
         "watchReason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "供给多、内容强，适合持续监控平台反应",
+          "en": "Supply is deep and content fit is strong, so platform response should be monitored continuously"
         },
-        "version": "v1.0",
-        "previousVersion": null,
+        "version": "v1.1",
+        "previousVersion": "v1.0",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-global-press-on-nails.html",
@@ -444,6 +527,27 @@
           {
             "zh": "设计型商品",
             "en": "Design-led goods"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.1",
+            "publishedAt": "2026-04-08",
+            "file": "report-global-press-on-nails.html",
+            "summary": {
+              "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
+              "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 80,
+                "to": 84
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
           }
         ]
       },
@@ -464,7 +568,7 @@
           "zh": "美妆个护",
           "en": "Beauty & Personal Care"
         },
-        "reportType": "opportunity-analysis",
+        "reportType": "regional-opportunity-analysis",
         "title": {
           "zh": "欧洲穿戴甲市场机会分析",
           "en": "Europe Press-On Nails Opportunity Analysis"
@@ -482,27 +586,31 @@
           "zh": "中高",
           "en": "Medium-High"
         },
-        "evidenceStrength": 0.74,
-        "priorityScore": 82,
+        "evidenceStrength": 0.71,
+        "priorityScore": 81,
         "priorityTier": "P1",
         "platformFit": {
-          "amazon": 0.82,
-          "tiktok": 0.91,
-          "shopify": 0.72
+          "amazon": 0.77,
+          "tiktok": 0.74,
+          "shopify": 0.79
         },
         "recommendedActions": [
           {
-            "zh": "优先复核 欧洲穿戴甲市场机会分析 的切入方向与首批测试动作",
-            "en": "Review the entry path and first test actions for Europe Press-On Nails Opportunity Analysis"
+            "zh": "先用英国和德国做 clean aesthetic 基础款测试",
+            "en": "Use the UK and Germany to test clean-aesthetic starter lines first"
+          },
+          {
+            "zh": "同步梳理合规、标签和责任主体准备",
+            "en": "Map compliance, labeling, and responsible-person setup in parallel"
           }
         ],
         "watchStatus": "active",
         "watchReason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
+          "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
         },
-        "version": "v1.0",
-        "previousVersion": null,
+        "version": "v1.1",
+        "previousVersion": "v1.0",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-europe-press-on-nails.html",
@@ -519,6 +627,27 @@
           {
             "zh": "合规导向",
             "en": "Compliance-led"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.1",
+            "publishedAt": "2026-04-08",
+            "file": "report-europe-press-on-nails.html",
+            "summary": {
+              "zh": "欧洲穿戴甲机会成立，但更偏日常审美、可重复佩戴与规范化运营，不适合直接照搬美国式夸张爆款路径。",
+              "en": "Europe offers a real press-on nail opportunity, but it leans toward daily aesthetics, reusable wear, and compliance-led execution rather than direct copies of US-style dramatic trend plays."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 77,
+                "to": 81
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
           }
         ]
       },
@@ -567,17 +696,21 @@
         },
         "recommendedActions": [
           {
-            "zh": "优先复核 DIY 花艺包机会分析 的切入方向与首批测试动作",
-            "en": "Review the entry path and first test actions for DIY Floral Kit Opportunity Analysis"
+            "zh": "先定义基础桌花包、节庆礼盒包和家居风格包 3 个起步 SKU",
+            "en": "Define three starter SKUs: table kit, seasonal gift kit, and home-style kit"
+          },
+          {
+            "zh": "优先压测教程清晰度和成品可复制性",
+            "en": "Stress-test guide clarity and reproducibility of the finished result first"
           }
         ],
         "watchStatus": "monitor",
         "watchReason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性",
+          "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation"
         },
-        "version": "v1.1",
-        "previousVersion": "v1.0",
+        "version": "v1.2",
+        "previousVersion": "v1.1",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-diy-floral-kit.html",
@@ -594,6 +727,27 @@
           {
             "zh": "礼品手作",
             "en": "Giftable craft"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.2",
+            "publishedAt": "2026-04-08",
+            "file": "report-diy-floral-kit.html",
+            "summary": {
+              "zh": "DIY 花艺包值得做，但更适合走体验型、礼盒型和场景型商品路线，而不是普通散装材料包。",
+              "en": "DIY floral kits are worth pursuing, but the stronger route is experience-led, giftable, and scenario-based positioning rather than plain loose-material bundles."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 74,
+                "to": 78
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
           }
         ]
       },
@@ -674,6 +828,27 @@
             "zh": "补水",
             "en": "Hydration"
           }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-08",
+            "file": "report-us-april-breakout-products.html",
+            "summary": {
+              "zh": "4月美国机会更偏向春季刚需，重点在虫害控制、园艺维护、整理和补水类方向。",
+              "en": "US April opportunities lean toward spring necessity, led by pest control, garden maintenance, organization, and hydration."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 68,
+                "to": 72
+              },
+              "confidence": {
+                "from": 0.8,
+                "to": 0.86
+              }
+            }
+          }
         ]
       },
       {
@@ -753,6 +928,27 @@
             "zh": "户外",
             "en": "Outdoor"
           }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-08",
+            "file": "report-au-march-best-sellers.html",
+            "summary": {
+              "zh": "澳洲3月需求偏换季与日常整理，适合从收纳、厨房、宠物和户外轻升级小件切入。",
+              "en": "Australia March demand favored seasonal reset and daily organization, with opportunities in organization, kitchen, pet, and light outdoor goods."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 68,
+                "to": 72
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
         ]
       }
     ],
@@ -802,8 +998,8 @@
         },
         "status": "monitor",
         "reason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性",
+          "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation"
         },
         "priorityTier": "P2",
         "updatedAt": "2026-04-08"
@@ -819,8 +1015,8 @@
         },
         "status": "active",
         "reason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "供给多、内容强，适合持续监控平台反应",
+          "en": "Supply is deep and content fit is strong, so platform response should be monitored continuously"
         },
         "priorityTier": "P1",
         "updatedAt": "2026-04-08"
@@ -836,8 +1032,8 @@
         },
         "status": "active",
         "reason": {
-          "zh": "需要持续观察信号变化",
-          "en": "Signal changes require ongoing monitoring"
+          "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
+          "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
         },
         "priorityTier": "P1",
         "updatedAt": "2026-04-08"
@@ -861,7 +1057,19 @@
           "en": "Global Press-On Nails Opportunity Analysis is now in P1 priority tier and should be reviewed for next actions."
         },
         "changeType": "report_update",
-        "priorityScore": 82
+        "priorityScore": 84,
+        "delta": {
+          "priorityScore": {
+            "from": 80,
+            "to": 84
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.1"
       },
       {
         "reportId": "europe-press-on-nails-2026",
@@ -880,7 +1088,19 @@
           "en": "Europe Press-On Nails Opportunity Analysis is now in P1 priority tier and should be reviewed for next actions."
         },
         "changeType": "report_update",
-        "priorityScore": 82
+        "priorityScore": 81,
+        "delta": {
+          "priorityScore": {
+            "from": 77,
+            "to": 81
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.1"
       },
       {
         "reportId": "global-diy-floral-kit-2026",
@@ -899,7 +1119,19 @@
           "en": "DIY Floral Kit Opportunity Analysis is now in P2 priority tier and should be reviewed for next actions."
         },
         "changeType": "report_update",
-        "priorityScore": 78
+        "priorityScore": 78,
+        "delta": {
+          "priorityScore": {
+            "from": 74,
+            "to": 78
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.2"
       },
       {
         "reportId": "us-apr-2026",
@@ -918,7 +1150,19 @@
           "en": "April breakout product analysis is now in P2 priority tier and should be reviewed for next actions."
         },
         "changeType": "report_update",
-        "priorityScore": 72
+        "priorityScore": 72,
+        "delta": {
+          "priorityScore": {
+            "from": 68,
+            "to": 72
+          },
+          "confidence": {
+            "from": 0.8,
+            "to": 0.86
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
       },
       {
         "reportId": "au-mar-2026",
@@ -937,7 +1181,19 @@
           "en": "March best sellers is now in P2 priority tier and should be reviewed for next actions."
         },
         "changeType": "report_update",
-        "priorityScore": 72
+        "priorityScore": 72,
+        "delta": {
+          "priorityScore": {
+            "from": 68,
+            "to": 72
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
       }
     ]
   }

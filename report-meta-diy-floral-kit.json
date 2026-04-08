@@ -6,9 +6,11 @@
   "status": "live",
   "report": {
     "id": "global-diy-floral-kit-2026",
+    "reportType": "opportunity-analysis",
     "title": { "zh": "DIY 花艺包机会分析", "en": "DIY Floral Kit Opportunity Analysis" },
     "date": "2026-04",
     "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
     "file": "report-diy-floral-kit.html",
     "tags": [
       { "zh": "DIY 花艺包", "en": "DIY floral kit" },
@@ -22,6 +24,16 @@
     "coverLabel": { "zh": "品类机会分析", "en": "Category Opportunity Analysis" },
     "highlight": { "zh": "卖的是完成感，不只是材料", "en": "Sell completion, not just materials" },
     "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 78,
+    "priorityTier": "P2",
+    "evidenceStrength": 0.68,
+    "platformFit": { "amazon": 0.76, "tiktok": 0.66, "shopify": 0.81 },
+    "recommendedActions": [
+      { "zh": "先定义基础桌花包、节庆礼盒包和家居风格包 3 个起步 SKU", "en": "Define three starter SKUs: table kit, seasonal gift kit, and home-style kit" },
+      { "zh": "优先压测教程清晰度和成品可复制性", "en": "Stress-test guide clarity and reproducibility of the finished result first" }
+    ],
+    "watchStatus": "monitor",
+    "watchReason": { "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性", "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation" },
     "featured": true,
     "category": { "zh": "家居装饰", "en": "Home Decor" }
   }
