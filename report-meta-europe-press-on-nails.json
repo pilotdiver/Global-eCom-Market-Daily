@@ -1,0 +1,28 @@
+{
+  "marketId": "europe",
+  "marketName": { "zh": "欧洲", "en": "Europe" },
+  "region": { "zh": "英国 / 德国 / 法国 / 意大利", "en": "UK / Germany / France / Italy" },
+  "flag": "🇪🇺",
+  "status": "live",
+  "report": {
+    "id": "europe-press-on-nails-2026",
+    "title": { "zh": "欧洲穿戴甲市场机会分析", "en": "Europe Press-On Nails Opportunity Analysis" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-08",
+    "file": "report-europe-press-on-nails.html",
+    "tags": [
+      { "zh": "穿戴甲", "en": "Press-on nails" },
+      { "zh": "欧洲美妆", "en": "European beauty" },
+      { "zh": "合规导向", "en": "Compliance-led" }
+    ],
+    "summary": {
+      "zh": "欧洲穿戴甲机会成立，但更偏日常审美、可重复佩戴与规范化运营，不适合直接照搬美国式夸张爆款路径。",
+      "en": "Europe offers a real press-on nail opportunity, but it leans toward daily aesthetics, reusable wear, and compliance-led execution rather than direct copies of US-style dramatic trend plays."
+    },
+    "coverLabel": { "zh": "区域机会分析", "en": "Regional Opportunity Analysis" },
+    "highlight": { "zh": "先做 clean aesthetic，再做主题扩张", "en": "Build around clean aesthetics before themed expansion" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "featured": true,
+    "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" }
+  }
+}

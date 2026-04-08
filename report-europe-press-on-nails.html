@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:flex;align-items:end;justify-content:space-between;gap:16px;height:240px;padding-top:16px}.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:90px;height:210px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:12px;color:var(--muted);text-align:center;line-height:1.4}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": {
+    "documentTitle": {
+      "zh": "欧洲穿戴甲市场机会分析",
+      "en": "Europe Press-On Nails Opportunity Analysis"
+    }
+  },
+  "sidebar": {
+    "title": {
+      "zh": "全球电商情报系统",
+      "en": "Global E-Commerce Intelligence System"
+    },
+    "meta": [
+      {
+        "zh": "市场：欧洲",
+        "en": "Market: Europe"
+      },
+      {
+        "zh": "覆盖：英国 / 德国 / 法国 / 意大利",
+        "en": "Coverage: UK / Germany / France / Italy"
+      },
+      {
+        "zh": "品类：穿戴甲",
+        "en": "Category: Press-on nails"
+      },
+      {
+        "zh": "数据更新时间：2026-04-08",
+        "en": "Last updated: 2026-04-08"
+      }
+    ]
+  },
+  "navigation": {
+    "title": {
+      "zh": "内容导航",
+      "en": "Navigation"
+    },
+    "items": [
+      {
+        "id": "overview",
+        "title": {
+          "zh": "总览",
+          "en": "Overview"
+        },
+        "description": {
+          "zh": "区域判断与执行方向",
+          "en": "Regional judgment and execution direction"
+        }
+      },
+      {
+        "id": "signals",
+        "title": {
+          "zh": "关键信号",
+          "en": "Signals"
+        },
+        "description": {
+          "zh": "需求、零售与监管线索",
+          "en": "Demand, retail, and regulatory signals"
+        }
+      },
+      {
+        "id": "opportunities",
+        "title": {
+          "zh": "机会方向",
+          "en": "Opportunities"
+        },
+        "description": {
+          "zh": "优先切入方向",
+          "en": "Priority entry directions"
+        }
+      },
+      {
+        "id": "pricing",
+        "title": {
+          "zh": "价格带",
+          "en": "Pricing"
+        },
+        "description": {
+          "zh": "价格结构与入场价",
+          "en": "Price structure and entry points"
+        }
+      },
+      {
+        "id": "players",
+        "title": {
+          "zh": "头部玩家",
+          "en": "Top Players"
+        },
+        "description": {
+          "zh": "品牌、渠道与参考对象",
+          "en": "Brands, channels, and references"
+        }
+      },
+      {
+        "id": "nextmoves",
+        "title": {
+          "zh": "Next 7 Days",
+          "en": "Next 7 Days"
+        },
+        "description": {
+          "zh": "本周优先动作",
+          "en": "Priority moves"
+        }
+      },
+      {
+        "id": "risks",
+        "title": {
+          "zh": "风险与动作",
+          "en": "Risks & Actions"
+        },
+        "description": {
+          "zh": "合规与打法提醒",
+          "en": "Compliance and execution reminders"
+        }
+      }
+    ]
+  },
+  "hero": {
+    "title": {
+      "zh": "欧洲穿戴甲值得做，但更适合 clean aesthetic、可重复佩戴与规范化运营，而不是直接照搬美国爆款逻辑",
+      "en": "Europe is worth entering, but the better fit is clean aesthetics, reusable wear, and compliance-led execution rather than direct copies of US-style breakout tactics"
+    },
+    "summary": {
+      "zh": "当前更值得优先做的，不是超夸张设计或极低价一次性假甲，而是短中长度、自然色系、法式/裸粉、可重复佩戴成套款，以及胶贴与工具配套。欧洲市场消费基础成熟，但监管要求更清晰，产品安全、标签和责任主体会直接影响长期可做性。操作上应先验证英国与德国，再扩到法国和意大利。",
+      "en": "The more attractive path is not ultra-dramatic designs or ultra-cheap disposable sets, but short-to-medium lengths, natural palettes, French and nude looks, reusable kits, and accessory bundles. Europe has a mature beauty base, but regulation is clearer and stricter, so safety, labeling, and responsible-person setup matter directly. Execution should validate the UK and Germany first, then extend into France and Italy."
+    },
+    "tags": [
+      {
+        "zh": "优先方向：日常审美 / 可重复佩戴 / 工具配套",
+        "en": "Priority: Daily aesthetics / reusable wear / accessory bundles"
+      },
+      {
+        "zh": "区域打法：先英德，后法意",
+        "en": "Regional path: UK and Germany first, France and Italy next"
+      },
+      {
+        "zh": "关键前提：合规与包装信任感",
+        "en": "Key prerequisite: compliance and packaging trust"
+      }
+    ],
+    "cards": [
+      {
+        "label": {
+          "zh": "区域机会强度",
+          "en": "Regional opportunity strength"
+        },
+        "value": {
+          "zh": "中强",
+          "en": "Medium-High"
+        },
+        "note": {
+          "zh": "市场成熟、审美稳定，但对低质低价容忍度不高。",
+          "en": "The market is mature and aesthetics are stable, but tolerance for low-quality low-price execution is limited."
+        }
+      },
+      {
+        "label": {
+          "zh": "最优切法",
+          "en": "Best entry path"
+        },
+        "value": {
+          "zh": "先做日常 clean aesthetic 套装",
+          "en": "Start with everyday clean-aesthetic kits"
+        },
+        "note": {
+          "zh": "比夸张风格更容易在欧洲跑通。",
+          "en": "This is more likely to work in Europe than dramatic style-led positioning."
+        }
+      }
+    ]
+  },
+  "summaryMetrics": [
+    {
+      "label": {
+        "zh": "优先国家",
+        "en": "Priority countries"
+      },
+      "value": {
+        "zh": "英国 / 德国",
+        "en": "UK / Germany"
+      },
+      "note": {
+        "zh": "电商接受度与消费成熟度更适合作为先行市场。",
+        "en": "They are better starter markets because of stronger e-commerce maturity and consumer acceptance."
+      }
+    },
+    {
+      "label": {
+        "zh": "核心审美",
+        "en": "Core aesthetic"
+      },
+      "value": {
+        "zh": "自然、干净、可通勤",
+        "en": "Natural, clean, wearable"
+      },
+      "note": {
+        "zh": "更贴近日常美妆消费逻辑。",
+        "en": "Closer to the everyday beauty purchase logic in Europe."
+      }
+    },
+    {
+      "label": {
+        "zh": "最该警惕",
+        "en": "Main caution"
+      },
+      "value": {
+        "zh": "合规与廉价感",
+        "en": "Compliance and cheap-looking positioning"
+      },
+      "note": {
+        "zh": "欧洲不是不能低价，而是不能显得粗糙。",
+        "en": "Europe is not impossible on price, but rough low-trust presentation is a real issue."
+      }
+    },
+    {
+      "label": {
+        "zh": "优先验证",
+        "en": "Priority validation"
+      },
+      "value": {
+        "zh": "佩戴体验 + 包装信任感",
+        "en": "Wearability + packaging trust"
+      },
+      "note": {
+        "zh": "不只是款式，完整体验同样决定转化。",
+        "en": "Conversion depends not just on design, but on the total experience."
+      }
+    }
+  ],
+  "sections": {
+    "overview": {
+      "title": {
+        "zh": "总览",
+        "en": "Overview"
+      },
+      "subtitle": {
+        "zh": "欧洲是可以进入的市场，但必须用更成熟的美妆商品逻辑去做。",
+        "en": "Europe is an enterable market, but it requires a more mature beauty-product logic."
+      },
+      "badge": {
+        "zh": "区域结论",
+        "en": "Regional Summary"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：EU cosmetics regulation / Cosmetics Europe public info / retail observation attempts",
+          "en": "Source: EU cosmetics regulation / Cosmetics Europe public info / retail observation attempts"
+        }
+      ],
+      "barChart": {
+        "title": {
+          "zh": "欧洲优先方向强度图",
+          "en": "Europe priority direction strength"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "clean aesthetic 日常套装",
+              "en": "Clean-aesthetic everyday kits"
+            },
+            "score": 8.8
+          },
+          {
+            "label": {
+              "zh": "可重复佩戴成套款",
+              "en": "Reusable full sets"
+            },
+            "score": 8.5
+          },
+          {
+            "label": {
+              "zh": "胶贴与工具配套",
+              "en": "Glue-tab and tool bundles"
+            },
+            "score": 8.0
+          },
+          {
+            "label": {
+              "zh": "婚礼 / 度假轻主题款",
+              "en": "Bridal / vacation light-theme styles"
+            },
+            "score": 7.4
+          }
+        ]
+      },
+      "sideCard": {
+        "title": {
+          "zh": "Why Now / 当前进入理由",
+          "en": "Why Now"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "欧洲美妆消费基础成熟",
+              "en": "European beauty demand is structurally mature"
+            },
+            "note": {
+              "zh": "化妆品与个人护理是成熟大行业，穿戴甲更适合被当成美妆配件而不是纯饰品。",
+              "en": "Cosmetics and personal care are mature sectors, which makes press-on nails easier to position as beauty accessories rather than pure novelty items."
+            }
+          },
+          {
+            "title": {
+              "zh": "可通勤审美与快速精致感高度匹配",
+              "en": "Wearable aesthetics fit the category well"
+            },
+            "note": {
+              "zh": "欧洲消费者对“自然但精致”的接受度高，这与短中长度穿戴甲天然契合。",
+              "en": "European consumers respond well to natural but polished looks, which align naturally with shorter press-on styles."
+            }
+          },
+          {
+            "title": {
+              "zh": "可重复佩戴逻辑更能支撑价格",
+              "en": "Reusable logic supports value better"
+            },
+            "note": {
+              "zh": "相较一次性表达，可重复佩戴更容易解释价格和质量感。",
+              "en": "Compared with disposable positioning, reusable framing makes it easier to justify price and quality."
+            }
+          }
+        ]
+      },
+      "takeaway": {
+        "title": {
+          "zh": "市场摘要",
+          "en": "Market takeaway"
+        },
+        "body": {
+          "zh": "欧洲穿戴甲机会的核心不是“有没有需求”，而是“以什么审美和什么信任结构切入”。英国和德国更适合先做电商验证，法国与意大利更适合在品牌表达和审美调性稳定后延展。先用基础 clean aesthetic 套装验证，再考虑轻主题和更强设计型扩张。",
+          "en": "The core question in Europe is not whether demand exists, but which aesthetic and trust structure can enter successfully. The UK and Germany are better for initial e-commerce validation, while France and Italy are better follow-on markets once brand language and aesthetic direction are stable. Start with basic clean-aesthetic kits before extending into themed and stronger design-led expansions."
+        }
+      },
+      "scorecard": {
+        "title": {
+          "zh": "执行评分",
+          "en": "Execution scores"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "市场成熟度",
+              "en": "Market maturity"
+            },
+            "score": 8.5
+          },
+          {
+            "label": {
+              "zh": "内容适配度",
+              "en": "Content fit"
+            },
+            "score": 7.4
+          },
+          {
+            "label": {
+              "zh": "转化潜力",
+              "en": "Conversion potential"
+            },
+            "score": 7.8
+          },
+          {
+            "label": {
+              "zh": "合规复杂度",
+              "en": "Compliance complexity"
+            },
+            "score": 6.1
+          },
+          {
+            "label": {
+              "zh": "长期品牌潜力",
+              "en": "Long-term brand potential"
+            },
+            "score": 8.3
+          }
+        ]
+      }
+    },
+    "signals": {
+      "title": {
+        "zh": "关键信号",
+        "en": "Signals"
+      },
+      "subtitle": {
+        "zh": "欧洲的重点信号不只是需求，还包括监管、包装信任与区域差异。",
+        "en": "In Europe, the key signals are not only about demand but also regulation, trust, and regional variation."
+      },
+      "badge": {
+        "zh": "市场线索",
+        "en": "Market Signals"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：European Commission cosmetics page / Cosmetics Europe / public retail access attempts",
+          "en": "Source: European Commission cosmetics page / Cosmetics Europe / public retail access attempts"
+        }
+      ],
+      "columns": [
+        {
+          "title": {
+            "zh": "行业与监管信号",
+            "en": "Industry and regulatory signals"
+          },
+          "items": [
+            {
+              "title": {
+                "zh": "欧洲化妆品市场成熟且制度清晰",
+                "en": "The European cosmetics market is mature and highly structured"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "欧盟公开资料明确强调 cosmetics safety、CPNP 通知和市场监管责任，这意味着该品类适合做长期规范化生意。",
+                "en": "EU public materials clearly emphasize cosmetics safety, CPNP notification, and market-surveillance responsibilities, which implies the category fits longer-term structured business rather than opportunistic selling."
+              }
+            },
+            {
+              "title": {
+                "zh": "合规会直接影响可做性",
+                "en": "Compliance directly affects feasibility"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "warn",
+              "body": {
+                "zh": "如果产品涉及胶类、材料接触和包装宣称，欧洲要求会比多数卖家预期更严格。",
+                "en": "If the product includes adhesives, material-contact concerns, or strong claims, Europe will be stricter than many sellers expect."
+              }
+            },
+            {
+              "title": {
+                "zh": "公开零售页可访问性较差，说明应减少硬抓，多靠行业与品牌侧验证",
+                "en": "Retail page accessibility issues suggest using more industry and brand-side validation"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "多家欧洲零售页对自动访问敏感，后续研究更适合用行业报告、品牌站和可稳定访问来源。",
+                "en": "Several European retail pages are sensitive to automated access, so future research is better supported by industry reports, brand sites, and stable public sources."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "国家层面需求判断",
+            "en": "Country-level demand judgment"
+          },
+          "soft": true,
+          "items": [
+            {
+              "title": {
+                "zh": "英国：最适合作为先行验证市场",
+                "en": "UK: Best starter validation market"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "语言门槛低、电商成熟、对美容配件接受度高，适合先测试包装和价格带。",
+                "en": "Lower language friction, stronger e-commerce maturity, and higher acceptance of beauty accessories make the UK a logical first test market."
+              }
+            },
+            {
+              "title": {
+                "zh": "德国：更适合标准化、功能清晰、质量感强的路线",
+                "en": "Germany: Better fit for standardized and quality-led positioning"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "德国市场通常更重产品可信度与规范表达，不适合太花哨但中看不中用的路线。",
+                "en": "Germany typically rewards product credibility and disciplined presentation more than flashy but shallow execution."
+              }
+            },
+            {
+              "title": {
+                "zh": "法国 / 意大利：更看重审美语言和品牌表达",
+                "en": "France / Italy: More dependent on aesthetic language and brand expression"
+              },
+              "level": {
+                "zh": "中信号",
+                "en": "Medium"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "这两个市场更适合在基础款和品牌调性验证后扩展，而不是作为最先切入市场。",
+                "en": "These two markets are better for expansion after core styles and brand language are validated, rather than as the very first entry points."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": {
+        "zh": "机会方向",
+        "en": "Opportunity Directions"
+      },
+      "subtitle": {
+        "zh": "欧洲机会不是靠夸张风格冲出来，而是靠“审美适配 + 规范体验”慢慢放大。",
+        "en": "European opportunity is less about dramatic style spikes and more about scaling through aesthetic fit and trust-led execution."
+      },
+      "badge": {
+        "zh": "机会地图",
+        "en": "Opportunity Map"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：EU regulation / Cosmetics Europe / country-level commercial logic",
+          "en": "Source: EU regulation / Cosmetics Europe / country-level commercial logic"
+        }
+      ],
+      "labels": {
+        "topPlayers": {
+          "zh": "参考对象：",
+          "en": "References:"
+        },
+        "entryWhy": {
+          "zh": "当前进入理由：",
+          "en": "Why enter now:"
+        }
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "机会一：clean aesthetic 日常款",
+            "en": "Opportunity 1: Clean-aesthetic everyday styles"
+          },
+          "summary": {
+            "zh": "围绕短中长度、法式、裸粉、奶白与低饱和配色。",
+            "en": "Built around short-to-medium lengths, French looks, nude pinks, creamy whites, and low-saturation palettes."
+          },
+          "topPlayers": [
+            "UK starter market",
+            "Germany quality-led retail",
+            "European beauty positioning"
+          ],
+          "entryWhy": {
+            "zh": "这是最符合欧洲日常美妆逻辑的切口，既好理解，也更容易持续复购。",
+            "en": "This is the most natural fit for Europe’s everyday beauty logic, making it easier to understand, buy, and repeat."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：稳定",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：基础审美款",
+              "en": "Play: Foundational aesthetic styles"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会二：可重复佩戴成套款",
+            "en": "Opportunity 2: Reusable full kits"
+          },
+          "summary": {
+            "zh": "强调可多次使用、佩戴便利与完整配套，而不是一次性低价感。",
+            "en": "Emphasize reuse, convenience, and full-kit logic rather than disposable low-price framing."
+          },
+          "topPlayers": [
+            "Reusable-positioned brands",
+            "Quality-first nail kits",
+            "System-led beauty accessories"
+          ],
+          "entryWhy": {
+            "zh": "可重复佩戴最能同时满足欧洲对价值感、环保感和质量感的期待。",
+            "en": "Reusable framing is the strongest bridge between value, sustainability cues, and perceived quality in Europe."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：扩展",
+              "en": "Lifecycle: Expansion"
+            },
+            {
+              "zh": "打法：成套体验",
+              "en": "Play: Full-kit experience"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会三：胶贴与工具配套",
+            "en": "Opportunity 3: Glue-tab and tool bundles"
+          },
+          "summary": {
+            "zh": "围绕 prep、佩戴、摘除、护理和旅行使用场景。",
+            "en": "Built around prep, application, removal, care, and travel usage scenarios."
+          },
+          "topPlayers": [
+            "Accessory-focused brands",
+            "Manicure system brands",
+            "Retail-friendly refill logic"
+          ],
+          "entryWhy": {
+            "zh": "工具配套更容易形成系统化体验，也更适合提升客单和复购。",
+            "en": "Accessories make the experience feel more complete and support both AOV and repeat purchase more naturally."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中强",
+              "en": "Trend: Medium-Strong"
+            },
+            {
+              "zh": "生命周期：稳定",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：配套复购",
+              "en": "Play: Repeatable accessory logic"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会四：婚礼 / 假期轻主题款",
+            "en": "Opportunity 4: Bridal and vacation light-theme styles"
+          },
+          "summary": {
+            "zh": "不是重夸张派对风，而是珍珠、细闪、柔和 chrome 等场景化微主题。",
+            "en": "Not heavy party drama, but scene-based softer themes such as pearl, subtle shimmer, and soft chrome."
+          },
+          "topPlayers": [
+            "Bridal beauty niches",
+            "Travel beauty gifting",
+            "Occasion-driven manicure demand"
+          ],
+          "entryWhy": {
+            "zh": "欧洲并非没有主题需求，只是主题表达要更轻、更耐看、更接近日常延伸。",
+            "en": "Europe does support occasion demand, but themed execution should stay lighter, more wearable, and closer to everyday extension."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中",
+              "en": "Trend: Medium"
+            },
+            {
+              "zh": "生命周期：短中周期",
+              "en": "Lifecycle: Short-Mid cycle"
+            },
+            {
+              "zh": "打法：场景款",
+              "en": "Play: Occasion-led styles"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": {
+        "zh": "价格带",
+        "en": "Pricing"
+      },
+      "subtitle": {
+        "zh": "欧洲更适合“有理由的中档价”，而不是极低价试图硬跑量。",
+        "en": "Europe is better suited to justified mid-tier pricing than ultra-low pricing built purely for volume."
+      },
+      "badge": {
+        "zh": "价格结构",
+        "en": "Pricing Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：European beauty positioning logic / reusable-kit value framing / public market observation",
+          "en": "Source: European beauty positioning logic / reusable-kit value framing / public market observation"
+        }
+      ],
+      "table": {
+        "title": {
+          "zh": "欧洲价格带判断",
+          "en": "Europe pricing band view"
+        },
+        "columns": [
+          {
+            "zh": "方向",
+            "en": "Direction"
+          },
+          {
+            "zh": "低价带",
+            "en": "Low band"
+          },
+          {
+            "zh": "主销带",
+            "en": "Core band"
+          },
+          {
+            "zh": "推荐切入价",
+            "en": "Recommended entry price"
+          },
+          {
+            "zh": "价格支撑逻辑",
+            "en": "Value support"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "zh": "clean aesthetic 日常款",
+              "en": "Clean-aesthetic styles"
+            },
+            {
+              "zh": "€8 - €14",
+              "en": "€8 - €14"
+            },
+            {
+              "zh": "€14 - €22",
+              "en": "€14 - €22"
+            },
+            {
+              "zh": "€15.99 - €18.99",
+              "en": "€15.99 - €18.99"
+            },
+            {
+              "zh": "日常好搭配、包装质感、通勤适配",
+              "en": "Wearability, packaging quality, everyday fit"
+            }
+          ],
+          [
+            {
+              "zh": "可重复佩戴成套款",
+              "en": "Reusable full kits"
+            },
+            {
+              "zh": "€14 - €22",
+              "en": "€14 - €22"
+            },
+            {
+              "zh": "€22 - €35",
+              "en": "€22 - €35"
+            },
+            {
+              "zh": "€21.99 - €27.99",
+              "en": "€21.99 - €27.99"
+            },
+            {
+              "zh": "可重复佩戴、完整配套、价值感更强",
+              "en": "Reusability, full kit structure, stronger value framing"
+            }
+          ],
+          [
+            {
+              "zh": "胶贴与工具配套",
+              "en": "Glue-tab and tool bundles"
+            },
+            {
+              "zh": "€6 - €12",
+              "en": "€6 - €12"
+            },
+            {
+              "zh": "€12 - €20",
+              "en": "€12 - €20"
+            },
+            {
+              "zh": "€9.99 - €14.99",
+              "en": "€9.99 - €14.99"
+            },
+            {
+              "zh": "低门槛补充装与旅行友好",
+              "en": "Low-barrier refill logic and travel-friendly positioning"
+            }
+          ],
+          [
+            {
+              "zh": "婚礼 / 假期轻主题款",
+              "en": "Bridal / vacation light-theme styles"
+            },
+            {
+              "zh": "€12 - €18",
+              "en": "€12 - €18"
+            },
+            {
+              "zh": "€18 - €28",
+              "en": "€18 - €28"
+            },
+            {
+              "zh": "€17.99 - €23.99",
+              "en": "€17.99 - €23.99"
+            },
+            {
+              "zh": "场景购买理由与礼盒感",
+              "en": "Occasion-led demand and giftability"
+            }
+          ]
+        ]
+      },
+      "side": {
+        "title": {
+          "zh": "价格判断",
+          "en": "Pricing judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "不要用极低价去破局",
+              "en": "Do not try to break in on ultra-low pricing"
+            },
+            "note": {
+              "zh": "在欧洲，极低价容易让产品显得不够可信。",
+              "en": "In Europe, ultra-low pricing can quickly undermine trust and perceived quality."
+            }
+          },
+          {
+            "title": {
+              "zh": "中档价更适合表达质量感",
+              "en": "Mid-tier pricing is better for quality signaling"
+            },
+            "note": {
+              "zh": "尤其是成套款和可重复佩戴路线，更需要留出价值表达空间。",
+              "en": "Especially for reusable kit logic, pricing needs room to communicate quality and completeness."
+            }
+          },
+          {
+            "title": {
+              "zh": "国家定价可微调，但母带不宜过散",
+              "en": "Country pricing can flex, but the core band should stay tight"
+            },
+            "note": {
+              "zh": "先用统一价格结构验证，再考虑本地化差异。",
+              "en": "Validate a common pricing structure first, then localize based on market response."
+            }
+          }
+        ]
+      }
+    },
+    "players": {
+      "title": {
+        "zh": "Top Players & Links / 头部玩家与链接",
+        "en": "Top Players & Links"
+      },
+      "subtitle": {
+        "zh": "这部分以品牌站、监管资料和可访问公开页面为主，不走高风险平台抓取。",
+        "en": "This section prioritizes brand sites, regulatory pages, and accessible public sources rather than high-risk platform scraping."
+      },
+      "badge": {
+        "zh": "验证对象",
+        "en": "Validation Objects"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：European Commission / Cosmetics Europe / selected public brand and retail pages",
+          "en": "Source: European Commission / Cosmetics Europe / selected public brand and retail pages"
+        }
+      ],
+      "filterTitle": {
+        "zh": "平台筛选与价格参考",
+        "en": "Source filter & price reference"
+      },
+      "filters": [
+        {
+          "value": "all",
+          "label": {
+            "zh": "全部",
+            "en": "All"
+          }
+        },
+        {
+          "value": "regulation",
+          "label": {
+            "zh": "Regulation",
+            "en": "Regulation"
+          }
+        },
+        {
+          "value": "industry",
+          "label": {
+            "zh": "Industry",
+            "en": "Industry"
+          }
+        },
+        {
+          "value": "brand",
+          "label": {
+            "zh": "Brand / Retail",
+            "en": "Brand / Retail"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": {
+            "zh": "监管与市场进入",
+            "en": "Regulation and market entry"
+          },
+          "platforms": [
+            "regulation",
+            "industry"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "机构",
+              "en": "Institution"
+            },
+            {
+              "zh": "参考对象",
+              "en": "Reference"
+            },
+            {
+              "zh": "来源类型",
+              "en": "Source type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "合规与准入",
+                  "en": "Compliance and entry"
+                },
+                "tag": "EU"
+              },
+              {
+                "zh": "European Commission",
+                "en": "European Commission"
+              },
+              {
+                "zh": "EU Cosmetics Sector Overview",
+                "en": "EU Cosmetics Sector Overview"
+              },
+              {
+                "zh": "Regulation",
+                "en": "Regulation"
+              },
+              {
+                "type": "link",
+                "href": "https://single-market-economy.ec.europa.eu/sectors/cosmetics_en",
+                "label": {
+                  "zh": "查看法规页",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "明确进入欧洲必须把安全、通知和责任主体做好。",
+                "en": "Confirms that safety, notification, and responsible-person setup are foundational for EU entry."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ],
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "行业成熟度",
+                  "en": "Industry maturity"
+                },
+                "tag": "EU"
+              },
+              {
+                "zh": "Cosmetics Europe",
+                "en": "Cosmetics Europe"
+              },
+              {
+                "zh": "Industry Overview",
+                "en": "Industry Overview"
+              },
+              {
+                "zh": "Industry",
+                "en": "Industry"
+              },
+              {
+                "type": "link",
+                "href": "https://cosmeticseurope.eu/",
+                "label": {
+                  "zh": "查看行业页",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "说明欧洲化妆品行业成熟，适合做长期规范化类目。",
+                "en": "Indicates a mature European cosmetics industry suitable for long-term category building."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "欧洲品牌与零售参考",
+            "en": "European brand and retail references"
+          },
+          "platforms": [
+            "brand"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌/渠道",
+              "en": "Brand/Retailer"
+            },
+            {
+              "zh": "参考对象",
+              "en": "Reference"
+            },
+            {
+              "zh": "来源类型",
+              "en": "Source type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "英国先行市场",
+                  "en": "UK starter market"
+                },
+                "tag": "UK"
+              },
+              {
+                "zh": "Boots",
+                "en": "Boots"
+              },
+              {
+                "zh": "False Nails Category Access Attempt",
+                "en": "False Nails Category Access Attempt"
+              },
+              {
+                "zh": "Retail",
+                "en": "Retail"
+              },
+              {
+                "type": "link",
+                "href": "https://www.boots.com/beauty/skincare/nails/false-nails",
+                "label": {
+                  "zh": "查看页面",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "英国主流零售渠道值得持续跟踪，但自动访问敏感。",
+                "en": "A useful UK retail benchmark, though access sensitivity suggests lower-risk monitoring methods."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ],
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "德国质量导向",
+                  "en": "Germany quality-led"
+                },
+                "tag": "DE"
+              },
+              {
+                "zh": "dm",
+                "en": "dm"
+              },
+              {
+                "zh": "Artificial Nails Category Access Attempt",
+                "en": "Artificial Nails Category Access Attempt"
+              },
+              {
+                "zh": "Retail",
+                "en": "Retail"
+              },
+              {
+                "type": "link",
+                "href": "https://www.dm.de/make-up-naegel-kuenstliche-naegel-c471592",
+                "label": {
+                  "zh": "查看页面",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "德国零售体系适合验证标准化产品表达。",
+                "en": "Germany’s retail ecosystem is useful for validating structured, trust-led product presentation."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ],
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "法意后续扩张",
+                  "en": "France/Italy follow-on"
+                },
+                "tag": "FR/IT"
+              },
+              {
+                "zh": "Niche Beauty",
+                "en": "Niche Beauty"
+              },
+              {
+                "zh": "European Premium Beauty Context",
+                "en": "European Premium Beauty Context"
+              },
+              {
+                "zh": "Retail",
+                "en": "Retail"
+              },
+              {
+                "type": "link",
+                "href": "https://www.niche-beauty.com/en-gb/",
+                "label": {
+                  "zh": "查看页面",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "高端美妆语境提醒：欧洲更吃品牌调性与质感表达。",
+                "en": "Premium beauty context reinforces how strongly Europe responds to refined brand language and presentation."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": {
+        "zh": "Next 7 Days",
+        "en": "Next 7 Days"
+      },
+      "subtitle": {
+        "zh": "本周最值得先跑的是国家优先级、款式优先级和合规路径。",
+        "en": "This week’s key focus is country priority, style priority, and compliance path."
+      },
+      "badge": {
+        "zh": "优先动作",
+        "en": "Priority Moves"
+      },
+      "items": [
+        {
+          "title": {
+            "zh": "先做英国 / 德国基础款测试包",
+            "en": "Build starter kits for the UK and Germany first"
+          },
+          "body": {
+            "zh": "每个国家先跑 3 组 clean aesthetic 款式，不要一开始铺太多复杂主题。",
+            "en": "Launch three clean-aesthetic style groups per country first rather than over-expanding into complex themes."
+          }
+        },
+        {
+          "title": {
+            "zh": "并行梳理欧盟责任主体与标签要求",
+            "en": "Map EU responsible-person and labeling requirements in parallel"
+          },
+          "body": {
+            "zh": "如果涉及胶贴、胶水或材料接触，合规必须提前进入产品方案。",
+            "en": "If glue tabs, adhesives, or material-contact elements are involved, compliance must be integrated early into product planning."
+          }
+        },
+        {
+          "title": {
+            "zh": "把“可重复佩戴 + 配套工具”做成版本 A/B",
+            "en": "Create A/B versions for reusable kits and accessory bundles"
+          },
+          "body": {
+            "zh": "一版强调基础款，一版强调完整体验，直接比较转化与接受度。",
+            "en": "One version should emphasize foundational styles and another should emphasize complete experience, so conversion and acceptance can be compared directly."
+          }
+        }
+      ]
+    },
+    "risks": {
+      "title": {
+        "zh": "风险与动作",
+        "en": "Risks & Actions"
+      },
+      "subtitle": {
+        "zh": "欧洲穿戴甲不是不能做，而是要避免用“短视频爆款心态”去做长期市场。",
+        "en": "Europe is not the wrong market for press-on nails, but it is the wrong place for a shallow short-video-only mindset."
+      },
+      "badge": {
+        "zh": "风险判断",
+        "en": "Risk Judgment"
+      },
+      "risks": [
+        {
+          "title": {
+            "zh": "合规与责任主体风险",
+            "en": "Compliance and responsible-person risk"
+          },
+          "body": {
+            "zh": "如果按普通饰品思路处理，后续会在欧盟准入层面遇到系统性问题。",
+            "en": "Treating the category too casually can create structural EU market-entry problems later."
+          }
+        },
+        {
+          "title": {
+            "zh": "审美错配风险",
+            "en": "Aesthetic mismatch risk"
+          },
+          "body": {
+            "zh": "美国式夸张长甲和强戏剧感，不一定是欧洲最优解。",
+            "en": "US-style extra-long and highly dramatic designs are not necessarily the best fit for Europe."
+          }
+        },
+        {
+          "title": {
+            "zh": "廉价感风险",
+            "en": "Cheap-looking positioning risk"
+          },
+          "body": {
+            "zh": "包装、文案和材质一旦显得粗糙，会直接影响转化和复购。",
+            "en": "If packaging, copy, or material feel look rough, conversion and repeat purchase can deteriorate quickly."
+          }
+        }
+      ],
+      "actions": {
+        "title": {
+          "zh": "建议动作",
+          "en": "Recommended actions"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "先从英国与德国做验证",
+              "en": "Validate in the UK and Germany first"
+            },
+            "note": {
+              "zh": "这样可以先解决电商语言、标准化和可信度问题。",
+              "en": "This helps solve language, standardization, and trust issues first."
+            }
+          },
+          {
+            "title": {
+              "zh": "把产品当 beauty accessory system 来做",
+              "en": "Position the product as a beauty accessory system"
+            },
+            "note": {
+              "zh": "不要只卖甲片，要卖完整使用体验。",
+              "en": "Do not sell only the nail set, sell the full usage experience."
+            }
+          },
+          {
+            "title": {
+              "zh": "坚持 clean aesthetic 先行",
+              "en": "Keep clean aesthetics as the first layer"
+            },
+            "note": {
+              "zh": "先做最稳的基础盘，再做更强主题和设计扩展。",
+              "en": "Build the most stable base first, then expand into stronger themed and design-led plays."
+            }
+          }
+        ]
+      },
+      "finalJudgment": {
+        "title": {
+          "zh": "最终判断",
+          "en": "Final judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "欧洲值得做，但必须按长期规范化市场来做",
+              "en": "Europe is worth pursuing, but only as a long-term structured market"
+            },
+            "level": {
+              "zh": "建议执行",
+              "en": "Recommended"
+            },
+            "levelClass": "good",
+            "body": {
+              "zh": "如果能把审美适配、可重复佩戴逻辑和合规准备一起做好，欧洲穿戴甲是值得进入的。",
+              "en": "If aesthetic fit, reusable logic, and compliance preparation are handled together, Europe is a worthwhile press-on nail market to enter."
+            }
+          },
+          {
+            "title": {
+              "zh": "先英德验证，再法意扩张",
+              "en": "Validate in the UK and Germany first, then expand to France and Italy"
+            },
+            "level": {
+              "zh": "推荐路径",
+              "en": "Preferred path"
+            },
+            "levelClass": "info",
+            "body": {
+              "zh": "先解决基础转化与信任，再去做更重品牌表达的市场。",
+              "en": "Solve baseline conversion and trust first, then expand into markets requiring stronger brand expression."
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "title": {
+        "zh": "References / 数据来源",
+        "en": "References"
+      },
+      "subtitle": {
+        "zh": "本页判断基于公开可见法规、行业资料与方向性商业判断。",
+        "en": "This page is based on visible public regulation, industry information, and directional commercial judgment."
+      },
+      "badge": {
+        "zh": "证据链",
+        "en": "Reference Layer"
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "市场观察来源",
+            "en": "Market Observation"
+          },
+          "tags": [
+            {
+              "zh": "European Commission cosmetics",
+              "en": "European Commission cosmetics"
+            },
+            {
+              "zh": "Cosmetics Europe",
+              "en": "Cosmetics Europe"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持欧洲美妆市场成熟度、监管强度与行业环境判断。",
+            "en": "Used mainly to support judgments on market maturity, regulatory intensity, and industry context in Europe."
+          }
+        },
+        {
+          "title": {
+            "zh": "价格与产品参考来源",
+            "en": "Pricing & Product Benchmark"
+          },
+          "tags": [
+            {
+              "zh": "Boots public category path",
+              "en": "Boots public category path"
+            },
+            {
+              "zh": "dm public category path",
+              "en": "dm public category path"
+            },
+            {
+              "zh": "Niche Beauty public site",
+              "en": "Niche Beauty public site"
+            }
+          ],
+          "body": {
+            "zh": "主要用于辅助判断欧洲零售环境、品牌语境和价格表达逻辑。",
+            "en": "Used to inform judgments about retail environment, brand context, and price-expression logic in Europe."
+          }
+        },
+        {
+          "title": {
+            "zh": "更新时间信息",
+            "en": "Update Info"
+          },
+          "tags": [
+            {
+              "zh": "数据更新时间：2026-04-08",
+              "en": "Last updated: 2026-04-08"
+            },
+            {
+              "zh": "Last checked: 2026-04-08",
+              "en": "Last checked: 2026-04-08"
+            }
+          ],
+          "body": {
+            "zh": "本页基于公开可见市场观察与方向性商业判断，不代表平台完整成交数据。",
+            "en": "This dashboard is based on visible market observation and directional commercial judgment, not audited transaction data."
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "zh": "Raymond Ho @Copyright 2026",
+    "en": "Raymond Ho @Copyright 2026"
+  }
+};
+    const langState = { current: 'zh' };
+    const t = (v) => typeof v === 'string' ? v : ((v && v[langState.current]) || (v && v.zh) || (v && v.en) || '');
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title);
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary);
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; DATA.hero.tags.forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; DATA.hero.cards.forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label)}</div><div class="v">${t(c.value)}</div><div class="t">${t(c.note)}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; DATA.summaryMetrics.forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label)}</div><div class="value">${t(m.value)}</div><div class="note">${t(m.note)}</div>`))); }
+    function sectionHead(sec){ return `<div class="section-head"><div><h3>${t(sec.title)}</h3><p>${t(sec.subtitle||'')}</p></div><div class="section-badge">${t(sec.badge||'')}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>
