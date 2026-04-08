@@ -20,10 +20,10 @@ CONFIDENCE_MAP = {
 }
 
 CATEGORY_PRESET = {
-    '美妆个护': {'priority': 82, 'evidence': 0.74, 'watch': 'active', 'platformFit': {'amazon': 0.82, 'tiktok': 0.91, 'shopify': 0.72}},
-    'Beauty & Personal Care': {'priority': 82, 'evidence': 0.74, 'watch': 'active', 'platformFit': {'amazon': 0.82, 'tiktok': 0.91, 'shopify': 0.72}},
-    '家居装饰': {'priority': 78, 'evidence': 0.68, 'watch': 'monitor', 'platformFit': {'amazon': 0.76, 'tiktok': 0.66, 'shopify': 0.81}},
-    'Home Decor': {'priority': 78, 'evidence': 0.68, 'watch': 'monitor', 'platformFit': {'amazon': 0.76, 'tiktok': 0.66, 'shopify': 0.81}},
+    '美妆个护': {'priority': 82, 'evidence': 0.74, 'watch': 'active', 'platformFit': {'amazon': 0.82, 'tiktok': 0.91, 'shopify': 0.72}, 'breakdown': {'demand': 18, 'competition': 11, 'margin': 14, 'execution': 11, 'trend': 14, 'platform': 8, 'confidence': 8}},
+    'Beauty & Personal Care': {'priority': 82, 'evidence': 0.74, 'watch': 'active', 'platformFit': {'amazon': 0.82, 'tiktok': 0.91, 'shopify': 0.72}, 'breakdown': {'demand': 18, 'competition': 11, 'margin': 14, 'execution': 11, 'trend': 14, 'platform': 8, 'confidence': 8}},
+    '家居装饰': {'priority': 78, 'evidence': 0.68, 'watch': 'monitor', 'platformFit': {'amazon': 0.76, 'tiktok': 0.66, 'shopify': 0.81}, 'breakdown': {'demand': 16, 'competition': 10, 'margin': 13, 'execution': 10, 'trend': 11, 'platform': 9, 'confidence': 9}},
+    'Home Decor': {'priority': 78, 'evidence': 0.68, 'watch': 'monitor', 'platformFit': {'amazon': 0.76, 'tiktok': 0.66, 'shopify': 0.81}, 'breakdown': {'demand': 16, 'competition': 10, 'margin': 13, 'execution': 10, 'trend': 11, 'platform': 9, 'confidence': 9}},
 }
 
 SYSTEM_DEFAULTS = {
@@ -78,7 +78,8 @@ def get_category_preset(category):
         'priority': 72,
         'evidence': 0.62,
         'watch': 'monitor',
-        'platformFit': {'amazon': 0.7, 'tiktok': 0.7, 'shopify': 0.7}
+        'platformFit': {'amazon': 0.7, 'tiktok': 0.7, 'shopify': 0.7},
+        'breakdown': {'demand': 15, 'competition': 9, 'margin': 12, 'execution': 10, 'trend': 10, 'platform': 8, 'confidence': 8}
     }
 
 
@@ -94,6 +95,7 @@ def build_report_meta(report, market_id, market_name, region, flag):
             'en': f"Review the entry path and first test actions for {report['title']['en']}"
         }
     ]
+    score_breakdown = report.get('scoreBreakdown', preset['breakdown'])
     return {
         'reportId': report['id'],
         'slug': report.get('id'),
@@ -111,6 +113,7 @@ def build_report_meta(report, market_id, market_name, region, flag):
         'evidenceStrength': report.get('evidenceStrength', preset['evidence']),
         'priorityScore': priority_score,
         'priorityTier': report.get('priorityTier', tier),
+        'scoreBreakdown': score_breakdown,
         'platformFit': report.get('platformFit', preset['platformFit']),
         'recommendedActions': recommended_actions,
         'watchStatus': report.get('watchStatus', preset['watch']),
