@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:flex;align-items:end;justify-content:space-between;gap:16px;height:240px;padding-top:16px}.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:90px;height:210px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:12px;color:var(--muted);text-align:center;line-height:1.4}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": {
+    "documentTitle": {
+      "zh": "全球穿戴甲机会分析",
+      "en": "Global Press-On Nails Opportunity Analysis"
+    }
+  },
+  "sidebar": {
+    "title": {
+      "zh": "全球电商情报系统",
+      "en": "Global E-Commerce Intelligence System"
+    },
+    "meta": [
+      {
+        "zh": "市场：全球",
+        "en": "Market: Global"
+      },
+      {
+        "zh": "品类：穿戴甲",
+        "en": "Category: Press-on nails"
+      },
+      {
+        "zh": "数据更新时间：2026-04-08",
+        "en": "Last updated: 2026-04-08"
+      }
+    ]
+  },
+  "navigation": {
+    "title": {
+      "zh": "内容导航",
+      "en": "Navigation"
+    },
+    "items": [
+      {
+        "id": "overview",
+        "title": {
+          "zh": "总览",
+          "en": "Overview"
+        },
+        "description": {
+          "zh": "结论与优先方向",
+          "en": "Conclusions and priorities"
+        }
+      },
+      {
+        "id": "signals",
+        "title": {
+          "zh": "关键信号",
+          "en": "Signals"
+        },
+        "description": {
+          "zh": "需求、内容与供给变化",
+          "en": "Demand, content, and supply shifts"
+        }
+      },
+      {
+        "id": "opportunities",
+        "title": {
+          "zh": "机会方向",
+          "en": "Opportunities"
+        },
+        "description": {
+          "zh": "重点切入方向",
+          "en": "Priority entry directions"
+        }
+      },
+      {
+        "id": "pricing",
+        "title": {
+          "zh": "价格带",
+          "en": "Pricing"
+        },
+        "description": {
+          "zh": "价格结构与入场价",
+          "en": "Price structure and entry points"
+        }
+      },
+      {
+        "id": "players",
+        "title": {
+          "zh": "头部玩家",
+          "en": "Top Players"
+        },
+        "description": {
+          "zh": "验证对象与链接",
+          "en": "Validation objects and links"
+        }
+      },
+      {
+        "id": "nextmoves",
+        "title": {
+          "zh": "Next 7 Days",
+          "en": "Next 7 Days"
+        },
+        "description": {
+          "zh": "本周优先动作",
+          "en": "Priority moves"
+        }
+      },
+      {
+        "id": "risks",
+        "title": {
+          "zh": "风险与动作",
+          "en": "Risks & Actions"
+        },
+        "description": {
+          "zh": "风险提醒与判断",
+          "en": "Risk alerts and judgment"
+        }
+      }
+    ]
+  },
+  "hero": {
+    "title": {
+      "zh": "全球穿戴甲机会存在，但更偏中低客单快周转，而不是传统美甲替代全部需求",
+      "en": "Global press-on nail opportunity is real, but it is more about mid-low ticket fast turnover than replacing all traditional nail demand"
+    },
+    "summary": {
+      "zh": "当前更值得优先看的，不是把穿戴甲当作单一美妆潮流，而是把它看成“低门槛、可复购、设计驱动、内容友好”的轻型美甲商品。机会更集中在可重复佩戴、手工定制、短周期设计主题、胶贴/工具配套和礼盒化表达。执行上应优先验证设计风格、佩戴便利性和价格接受度，而不是一开始就重仓复杂供应链。",
+      "en": "The better way to view the category is not as a single beauty trend, but as a low-barrier, repeatable, design-led, content-friendly nail product. Opportunity is concentrated in reusable sets, handmade custom styles, short-cycle themed designs, glue-tab/tool bundles, and giftable packaging. Execution should validate design preference, wearability convenience, and price acceptance before committing to complex supply chains."
+    },
+    "tags": [
+      {
+        "zh": "优先方向：可重复佩戴 / 定制设计 / 工具配套",
+        "en": "Priority: Reusable sets / custom designs / accessory bundles"
+      },
+      {
+        "zh": "执行节奏：设计快测 + 风格迭代",
+        "en": "Cadence: Design testing + fast style iteration"
+      },
+      {
+        "zh": "核心打法：设计表达 + 佩戴便利",
+        "en": "Core play: Design expression + wearability convenience"
+      }
+    ],
+    "cards": [
+      {
+        "label": {
+          "zh": "总体机会强度",
+          "en": "Overall opportunity strength"
+        },
+        "value": {
+          "zh": "中强",
+          "en": "Medium-High"
+        },
+        "note": {
+          "zh": "需求明确，但竞争点不在“有没有市场”，而在风格和复购逻辑。",
+          "en": "Demand is real, but competition hinges more on style and repeat-purchase logic than category existence."
+        }
+      },
+      {
+        "label": {
+          "zh": "当前优先级",
+          "en": "Current priority"
+        },
+        "value": {
+          "zh": "先设计验证，后品牌扩张",
+          "en": "Design validation first, brand expansion second"
+        },
+        "note": {
+          "zh": "先跑设计主题和便利性，再考虑更完整品牌路径。",
+          "en": "Test design themes and wearability first, then consider fuller brand expansion."
+        }
+      }
+    ]
+  },
+  "summaryMetrics": [
+    {
+      "label": {
+        "zh": "最佳切入口",
+        "en": "Best entry point"
+      },
+      "value": {
+        "zh": "可重复佩戴成套款",
+        "en": "Reusable full sets"
+      },
+      "note": {
+        "zh": "既有设计表达空间，也更容易讲“值不值”。",
+        "en": "They allow design expression while making value easier to justify."
+      }
+    },
+    {
+      "label": {
+        "zh": "更稳的带",
+        "en": "More stable band"
+      },
+      "value": {
+        "zh": "工具/胶贴配套",
+        "en": "Accessory and glue-tab bundles"
+      },
+      "note": {
+        "zh": "进入门槛低，也容易形成补充购买。",
+        "en": "Lower entry barrier and easier replenishment logic."
+      }
+    },
+    {
+      "label": {
+        "zh": "最该警惕",
+        "en": "Main caution"
+      },
+      "value": {
+        "zh": "设计同质化",
+        "en": "Design commoditization"
+      },
+      "note": {
+        "zh": "穿戴甲不怕有货，怕风格没有差异。",
+        "en": "The category does not fail because supply exists, but because design fails to stand out."
+      }
+    },
+    {
+      "label": {
+        "zh": "优先验证",
+        "en": "Priority validation"
+      },
+      "value": {
+        "zh": "风格偏好与佩戴便利",
+        "en": "Style preference and wearability"
+      },
+      "note": {
+        "zh": "是否好看是一层，是否好贴、好摘、耐用是另一层。",
+        "en": "Looks matter, but ease of application, removal, and durability matter just as much."
+      }
+    }
+  ],
+  "sections": {
+    "overview": {
+      "title": {
+        "zh": "总览",
+        "en": "Overview"
+      },
+      "subtitle": {
+        "zh": "先看设计逻辑和复购逻辑，再决定切入方式。",
+        "en": "Review design and repeat-purchase logic first, then decide the entry path."
+      },
+      "badge": {
+        "zh": "结论摘要",
+        "en": "Executive Summary"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Amazon listing observation / Ulta category scan / Etsy handmade demand logic",
+          "en": "Source: Amazon listing observation / Ulta category scan / Etsy handmade demand logic"
+        }
+      ],
+      "barChart": {
+        "title": {
+          "zh": "重点方向强度图",
+          "en": "Priority Direction Strength"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "可重复佩戴套装",
+              "en": "Reusable sets"
+            },
+            "score": 8.7
+          },
+          {
+            "label": {
+              "zh": "手工定制设计",
+              "en": "Handmade custom designs"
+            },
+            "score": 8.3
+          },
+          {
+            "label": {
+              "zh": "胶贴与工具配套",
+              "en": "Glue-tab and tool bundles"
+            },
+            "score": 7.9
+          },
+          {
+            "label": {
+              "zh": "节日/主题短周期款",
+              "en": "Seasonal / themed drops"
+            },
+            "score": 7.6
+          }
+        ]
+      },
+      "sideCard": {
+        "title": {
+          "zh": "Why Now / 当前进入理由",
+          "en": "Why Now"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "低门槛美甲需求持续存在",
+              "en": "Low-barrier nail demand remains active"
+            },
+            "note": {
+              "zh": "用户想要好看效果，但未必愿意频繁去线下做专业美甲。",
+              "en": "Users want attractive nail looks without always committing to salon visits."
+            }
+          },
+          {
+            "title": {
+              "zh": "设计型内容更容易传播",
+              "en": "Design-led content spreads more easily"
+            },
+            "note": {
+              "zh": "穿戴甲天然适合“风格展示”“前后对比”和主题搭配内容。",
+              "en": "Press-on nails naturally fit style showcases, before/after content, and themed styling content."
+            }
+          },
+          {
+            "title": {
+              "zh": "配套品和复购链条可以拉长生命周期",
+              "en": "Accessories and replenishment can extend lifecycle"
+            },
+            "note": {
+              "zh": "工具、胶贴和礼盒包装有机会把单次购买做成系列消费。",
+              "en": "Tools, glue tabs, and gift packaging can turn one-off purchases into a broader purchase chain."
+            }
+          }
+        ]
+      },
+      "takeaway": {
+        "title": {
+          "zh": "市场摘要",
+          "en": "Market takeaway"
+        },
+        "body": {
+          "zh": "全球穿戴甲的机会，不是“所有人都要做品牌化美甲”，而是找到设计偏好、客单带和复购链条之间的平衡。对平台卖家来说，快测风格与套装逻辑更重要；对品牌卖家来说，审美统一性和佩戴体验才是长期关键。",
+          "en": "The opportunity is not that every seller should build a full nail brand, but that they should find the right balance between design preference, price band, and repeat-purchase logic. For marketplace sellers, rapid style testing and bundle logic matter more. For brand-led sellers, design consistency and wearability are the longer-term keys."
+        }
+      },
+      "scorecard": {
+        "title": {
+          "zh": "执行评分",
+          "en": "Execution scores"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "趋势强度",
+              "en": "Trend strength"
+            },
+            "score": 8.1
+          },
+          {
+            "label": {
+              "zh": "内容适配度",
+              "en": "Content fit"
+            },
+            "score": 8.8
+          },
+          {
+            "label": {
+              "zh": "转化潜力",
+              "en": "Conversion potential"
+            },
+            "score": 7.8
+          },
+          {
+            "label": {
+              "zh": "利润安全度",
+              "en": "Margin safety"
+            },
+            "score": 6.9
+          },
+          {
+            "label": {
+              "zh": "执行友好度",
+              "en": "Execution friendliness"
+            },
+            "score": 7.7
+          }
+        ]
+      }
+    },
+    "signals": {
+      "title": {
+        "zh": "关键信号",
+        "en": "Signals"
+      },
+      "subtitle": {
+        "zh": "观察重点是设计供给、内容传播和复购条件。",
+        "en": "Focus on design supply, content spread, and repeat-purchase conditions."
+      },
+      "badge": {
+        "zh": "需求与供给",
+        "en": "Demand & Supply"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Amazon search results / Ulta category page / Etsy demand logic",
+          "en": "Source: Amazon search results / Ulta category page / Etsy demand logic"
+        }
+      ],
+      "columns": [
+        {
+          "title": {
+            "zh": "市场与内容信号",
+            "en": "Market and content signals"
+          },
+          "items": [
+            {
+              "title": {
+                "zh": "平台供给丰富，说明需求已成熟",
+                "en": "Supply depth across platforms shows category maturity"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "Amazon 与 Ulta 都有大量穿戴甲供给，说明这不是边缘需求。",
+                "en": "Both Amazon and Ulta carry broad press-on nail assortments, which suggests the category is not niche anymore."
+              }
+            },
+            {
+              "title": {
+                "zh": "手工定制方向依然有差异化空间",
+                "en": "Handmade custom direction still has room for differentiation"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "Etsy 型手工逻辑说明用户愿意为设计感和独特性支付溢价。",
+                "en": "Etsy-style handmade demand suggests users still pay a premium for uniqueness and design expression."
+              }
+            },
+            {
+              "title": {
+                "zh": "同质化风险来自“款式复制”而不是“品类没人买”",
+                "en": "Commoditization risk comes from style copying, not lack of category demand"
+              },
+              "level": {
+                "zh": "注意",
+                "en": "Watch"
+              },
+              "levelClass": "warn",
+              "body": {
+                "zh": "基础款很多，但真正的竞争点在风格、质感和佩戴体验。",
+                "en": "There are many baseline styles, but the true competition is in aesthetic differentiation, finish quality, and wearability."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "消费者需求信号",
+            "en": "Consumer demand signals"
+          },
+          "soft": true,
+          "items": [
+            {
+              "title": {
+                "zh": "用户要的是“快速变好看”",
+                "en": "Users want a fast route to a polished look"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "穿戴甲本质上在满足省时间、省门槛的美甲需求。",
+                "en": "Press-on nails fundamentally serve a time-saving, lower-commitment beauty need."
+              }
+            },
+            {
+              "title": {
+                "zh": "佩戴便利性会直接影响复购",
+                "en": "Wearability directly affects repeat purchase"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "好看只是第一步，胶贴、贴合度和摘除体验同样重要。",
+                "en": "Looks are only the first layer; glue tabs, fit, and removal experience matter too."
+              }
+            },
+            {
+              "title": {
+                "zh": "礼盒化和主题化有助于提高客单",
+                "en": "Giftability and themed styling help raise AOV"
+              },
+              "level": {
+                "zh": "中信号",
+                "en": "Medium"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "节日款、婚礼款、旅行款都比普通裸品更容易形成购买理由。",
+                "en": "Holiday, bridal, and travel-themed sets create stronger buying logic than plain standalone styles."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": {
+        "zh": "机会方向",
+        "en": "Opportunity Directions"
+      },
+      "subtitle": {
+        "zh": "判断重点是哪个方向既好卖，又具备差异化空间。",
+        "en": "The key is identifying which directions combine demand with real differentiation room."
+      },
+      "badge": {
+        "zh": "机会地图",
+        "en": "Opportunity Map"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Amazon assortment scan / Ulta category depth / Etsy customization logic",
+          "en": "Source: Amazon assortment scan / Ulta category depth / Etsy customization logic"
+        }
+      ],
+      "labels": {
+        "topPlayers": {
+          "zh": "头部玩家：",
+          "en": "Top players:"
+        },
+        "entryWhy": {
+          "zh": "当前进入理由：",
+          "en": "Why enter now:"
+        }
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "机会一：可重复佩戴成套款",
+            "en": "Opportunity 1: Reusable full sets"
+          },
+          "summary": {
+            "zh": "重点在中短长度、日常佩戴和“可多次使用”表达。",
+            "en": "Focus on short-to-medium everyday styles with clear reusable positioning."
+          },
+          "topPlayers": [
+            "Glamnetic",
+            "KISS",
+            "Olive & June"
+          ],
+          "entryWhy": {
+            "zh": "“可重复佩戴”同时解决了价格敏感和价值感表达，是当前最容易切入的商业平衡点。",
+            "en": "Reusable positioning helps solve both price sensitivity and value perception, making it one of the best-balanced entry points."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：稳定期",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：日常套装",
+              "en": "Play: Everyday full sets"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会二：手工定制与审美差异化",
+            "en": "Opportunity 2: Handmade custom and aesthetic differentiation"
+          },
+          "summary": {
+            "zh": "重点在高设计感、婚礼/节日/个性主题和定制尺寸。",
+            "en": "Focus on stronger design identity, bridal/holiday/personalized themes, and size customization."
+          },
+          "topPlayers": [
+            "Etsy sellers",
+            "Handmade studios",
+            "Boutique nail brands"
+          ],
+          "entryWhy": {
+            "zh": "当基础款变多之后，真正能拉开价差的，往往是设计和定制服务。",
+            "en": "As standard styles become crowded, design and customization are often what create pricing separation."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中强",
+              "en": "Trend: Medium-Strong"
+            },
+            {
+              "zh": "生命周期：扩展期",
+              "en": "Lifecycle: Expansion"
+            },
+            {
+              "zh": "打法：设计溢价",
+              "en": "Play: Design premium"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会三：胶贴与工具配套",
+            "en": "Opportunity 3: Glue-tab and tool bundles"
+          },
+          "summary": {
+            "zh": "包括胶贴、护理工具、卸除配件和基础美甲配套。",
+            "en": "Includes glue tabs, care tools, removal accessories, and supporting manicure items."
+          },
+          "topPlayers": [
+            "KISS",
+            "Olive & June",
+            "Generic accessory brands"
+          ],
+          "entryWhy": {
+            "zh": "这是更低门槛的切法，也更容易形成补充装和复购逻辑。",
+            "en": "This is a lower-barrier entry route and more naturally supports refill and repeat-purchase logic."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中",
+              "en": "Trend: Medium"
+            },
+            {
+              "zh": "生命周期：稳定期",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：补充装",
+              "en": "Play: Refill accessories"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会四：节日与主题短周期款",
+            "en": "Opportunity 4: Seasonal and themed short-cycle drops"
+          },
+          "summary": {
+            "zh": "重点在情人节、婚礼季、度假季、派对季等主题化设计。",
+            "en": "Focus on holiday, bridal, vacation, and party-themed style drops."
+          },
+          "topPlayers": [
+            "Seasonal drop brands",
+            "TikTok trend sellers",
+            "Etsy designers"
+          ],
+          "entryWhy": {
+            "zh": "主题款更适合内容传播，也更容易制造“现在就买”的时效感。",
+            "en": "Themed drops fit content circulation better and create stronger timing pressure to buy now."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中",
+              "en": "Trend: Medium"
+            },
+            {
+              "zh": "生命周期：短周期",
+              "en": "Lifecycle: Short-cycle"
+            },
+            {
+              "zh": "打法：主题上新",
+              "en": "Play: Themed drops"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": {
+        "zh": "价格带",
+        "en": "Pricing"
+      },
+      "subtitle": {
+        "zh": "重点不是“最低价”，而是怎样的价格更适合跑设计验证和复购验证。",
+        "en": "The focus is not the lowest price, but which bands best support design and repeat-purchase validation."
+      },
+      "badge": {
+        "zh": "价格结构",
+        "en": "Pricing Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Amazon visible pricing / Ulta category assortment / handmade premium logic",
+          "en": "Source: Amazon visible pricing / Ulta category assortment / handmade premium logic"
+        }
+      ],
+      "table": {
+        "title": {
+          "zh": "价格带观察",
+          "en": "Pricing band view"
+        },
+        "columns": [
+          {
+            "zh": "方向",
+            "en": "Direction"
+          },
+          {
+            "zh": "低价带",
+            "en": "Low band"
+          },
+          {
+            "zh": "主销带",
+            "en": "Core band"
+          },
+          {
+            "zh": "推荐切入价",
+            "en": "Recommended entry price"
+          },
+          {
+            "zh": "溢价逻辑",
+            "en": "Premium logic"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "zh": "可重复佩戴套装",
+              "en": "Reusable sets"
+            },
+            {
+              "zh": "$8 - $15",
+              "en": "$8 - $15"
+            },
+            {
+              "zh": "$15 - $25",
+              "en": "$15 - $25"
+            },
+            {
+              "zh": "$14.99 - $19.99",
+              "en": "$14.99 - $19.99"
+            },
+            {
+              "zh": "可重复佩戴、完整套装、便利性",
+              "en": "Reusability, full set value, convenience"
+            }
+          ],
+          [
+            {
+              "zh": "手工定制设计",
+              "en": "Handmade custom designs"
+            },
+            {
+              "zh": "$18 - $30",
+              "en": "$18 - $30"
+            },
+            {
+              "zh": "$30 - $60",
+              "en": "$30 - $60"
+            },
+            {
+              "zh": "$26.99 - $39.99",
+              "en": "$26.99 - $39.99"
+            },
+            {
+              "zh": "设计独特性、定制感、礼物属性",
+              "en": "Design uniqueness, customization, giftability"
+            }
+          ],
+          [
+            {
+              "zh": "胶贴与工具配套",
+              "en": "Glue-tab and tool bundles"
+            },
+            {
+              "zh": "$5 - $10",
+              "en": "$5 - $10"
+            },
+            {
+              "zh": "$10 - $18",
+              "en": "$10 - $18"
+            },
+            {
+              "zh": "$8.99 - $12.99",
+              "en": "$8.99 - $12.99"
+            },
+            {
+              "zh": "补充装、多件装、低门槛复购",
+              "en": "Refills, multipacks, low-barrier repeat purchase"
+            }
+          ],
+          [
+            {
+              "zh": "主题短周期款",
+              "en": "Themed short-cycle drops"
+            },
+            {
+              "zh": "$10 - $18",
+              "en": "$10 - $18"
+            },
+            {
+              "zh": "$18 - $28",
+              "en": "$18 - $28"
+            },
+            {
+              "zh": "$16.99 - $22.99",
+              "en": "$16.99 - $22.99"
+            },
+            {
+              "zh": "主题感、礼盒感、限时购买理由",
+              "en": "Theme value, gift feel, urgency"
+            }
+          ]
+        ]
+      },
+      "side": {
+        "title": {
+          "zh": "价格判断",
+          "en": "Pricing judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "不要一开始就打最低价",
+              "en": "Do not start with the absolute lowest price"
+            },
+            "note": {
+              "zh": "穿戴甲本质上是设计型商品，过低价格会削弱价值感。",
+              "en": "Press-on nails are fundamentally design-led goods, and overly low pricing can weaken perceived value."
+            }
+          },
+          {
+            "title": {
+              "zh": "价格要和设计层级匹配",
+              "en": "Pricing should match design tier"
+            },
+            "note": {
+              "zh": "基础日常款和定制设计款不应使用同一套定价逻辑。",
+              "en": "Everyday sets and custom design products should not share the same pricing logic."
+            }
+          },
+          {
+            "title": {
+              "zh": "先验证佩戴体验，再验证高溢价",
+              "en": "Validate wearability before validating premium pricing"
+            },
+            "note": {
+              "zh": "如果便利性没做好，再强设计也难支撑长期复购。",
+              "en": "If wearability is weak, even strong design will struggle to support long-term repeat purchase."
+            }
+          }
+        ]
+      }
+    },
+    "players": {
+      "title": {
+        "zh": "Top Players & Links / 头部玩家与链接",
+        "en": "Top Players & Links"
+      },
+      "subtitle": {
+        "zh": "用于快速查看市场验证对象，重点看风格、价格和包装路径。",
+        "en": "Used to review market validation objects with emphasis on style, price, and packaging routes."
+      },
+      "badge": {
+        "zh": "市场验证对象",
+        "en": "Market Validation"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Amazon search results / Ulta press-on category / official brand sites",
+          "en": "Source: Amazon search results / Ulta press-on category / official brand sites"
+        }
+      ],
+      "filterTitle": {
+        "zh": "平台筛选与价格参考",
+        "en": "Platform filter & price reference"
+      },
+      "filters": [
+        {
+          "value": "all",
+          "label": {
+            "zh": "全部",
+            "en": "All"
+          }
+        },
+        {
+          "value": "amazon",
+          "label": {
+            "zh": "Amazon",
+            "en": "Amazon"
+          }
+        },
+        {
+          "value": "official",
+          "label": {
+            "zh": "Official Site",
+            "en": "Official Site"
+          }
+        },
+        {
+          "value": "retail",
+          "label": {
+            "zh": "Retail",
+            "en": "Retail"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": {
+            "zh": "可重复佩戴成套款",
+            "en": "Reusable full sets"
+          },
+          "platforms": [
+            "amazon",
+            "official",
+            "retail"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌",
+              "en": "Brand"
+            },
+            {
+              "zh": "代表商品",
+              "en": "Product"
+            },
+            {
+              "zh": "平台",
+              "en": "Platform"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "可重复佩戴",
+                  "en": "Reusable sets"
+                },
+                "tag": "$15 - $25"
+              },
+              {
+                "zh": "Glamnetic",
+                "en": "Glamnetic"
+              },
+              {
+                "zh": "Press-On Nails Range",
+                "en": "Press-On Nails Range"
+              },
+              {
+                "zh": "Amazon",
+                "en": "Amazon"
+              },
+              {
+                "type": "link",
+                "href": "https://www.amazon.com/s?k=Glamnetic+press+on+nails",
+                "label": {
+                  "zh": "查看商品页",
+                  "en": "View product"
+                }
+              },
+              {
+                "zh": "可重复佩戴路径清晰，品牌化表达成熟。",
+                "en": "Clear reusable positioning with stronger brand-led presentation."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ],
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "可重复佩戴",
+                  "en": "Reusable sets"
+                },
+                "tag": "$10 - $20"
+              },
+              {
+                "zh": "KISS",
+                "en": "KISS"
+              },
+              {
+                "zh": "Press-On Manicure Range",
+                "en": "Press-On Manicure Range"
+              },
+              {
+                "zh": "Retail",
+                "en": "Retail"
+              },
+              {
+                "type": "link",
+                "href": "https://www.ulta.com/shop/makeup/nails/press-on-nails",
+                "label": {
+                  "zh": "查看产品页",
+                  "en": "View product"
+                }
+              },
+              {
+                "zh": "大众价位清晰，适合看量产逻辑。",
+                "en": "Clear mass-market pricing, useful for volume logic reference."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "手工定制与审美差异化",
+            "en": "Handmade custom and aesthetic differentiation"
+          },
+          "platforms": [
+            "official"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌/卖家",
+              "en": "Brand/Seller"
+            },
+            {
+              "zh": "代表商品",
+              "en": "Product"
+            },
+            {
+              "zh": "平台",
+              "en": "Platform"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "手工定制",
+                  "en": "Handmade custom"
+                },
+                "tag": "$30 - $60"
+              },
+              {
+                "zh": "Etsy Sellers",
+                "en": "Etsy Sellers"
+              },
+              {
+                "zh": "Custom Press-On Nails",
+                "en": "Custom Press-On Nails"
+              },
+              {
+                "zh": "Official Marketplace",
+                "en": "Official Marketplace"
+              },
+              {
+                "type": "link",
+                "href": "https://www.etsy.com/search?q=press%20on%20nails",
+                "label": {
+                  "zh": "查看店铺页",
+                  "en": "View listing"
+                }
+              },
+              {
+                "zh": "定制与设计溢价空间明显。",
+                "en": "Strong room for customization and design premium."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "胶贴与工具配套",
+            "en": "Glue-tab and tool bundles"
+          },
+          "platforms": [
+            "amazon",
+            "official"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌",
+              "en": "Brand"
+            },
+            {
+              "zh": "代表商品",
+              "en": "Product"
+            },
+            {
+              "zh": "平台",
+              "en": "Platform"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "胶贴与工具",
+                  "en": "Accessories and glue tabs"
+                },
+                "tag": "$8 - $15"
+              },
+              {
+                "zh": "Olive & June",
+                "en": "Olive & June"
+              },
+              {
+                "zh": "Press-On Nail & Tool Ecosystem",
+                "en": "Press-On Nail & Tool Ecosystem"
+              },
+              {
+                "zh": "Official Site",
+                "en": "Official Site"
+              },
+              {
+                "type": "link",
+                "href": "https://oliveandjune.com/",
+                "label": {
+                  "zh": "查看品牌站",
+                  "en": "View site"
+                }
+              },
+              {
+                "zh": "工具和成套表达完整，适合看系统化路径。",
+                "en": "Tools and set-based ecosystem are useful for systemized positioning reference."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "节日与主题短周期款",
+            "en": "Seasonal and themed short-cycle drops"
+          },
+          "platforms": [
+            "amazon",
+            "official"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌",
+              "en": "Brand"
+            },
+            {
+              "zh": "代表商品",
+              "en": "Product"
+            },
+            {
+              "zh": "平台",
+              "en": "Platform"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "主题短周期款",
+                  "en": "Themed drops"
+                },
+                "tag": "$12 - $25"
+              },
+              {
+                "zh": "Glamnetic",
+                "en": "Glamnetic"
+              },
+              {
+                "zh": "Seasonal / Design Press-On Range",
+                "en": "Seasonal / Design Press-On Range"
+              },
+              {
+                "zh": "Official Site",
+                "en": "Official Site"
+              },
+              {
+                "type": "link",
+                "href": "https://www.glamnetic.com/",
+                "label": {
+                  "zh": "查看品牌站",
+                  "en": "View site"
+                }
+              },
+              {
+                "zh": "主题化表达清晰，适合看上新节奏。",
+                "en": "Clear themed framing, useful for drop cadence reference."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": {
+        "zh": "Next 7 Days",
+        "en": "Next 7 Days"
+      },
+      "subtitle": {
+        "zh": "本周只保留最值得执行的三步。",
+        "en": "Keep only the three most important actions this week."
+      },
+      "badge": {
+        "zh": "优先动作",
+        "en": "Priority Moves"
+      },
+      "items": [
+        {
+          "title": {
+            "zh": "先测 3 套风格方向",
+            "en": "Test 3 style directions first"
+          },
+          "body": {
+            "zh": "建议先跑日常通勤款、节日主题款、简约高质感款各一套。",
+            "en": "Start with one everyday commuter style, one themed style, and one minimal premium style."
+          }
+        },
+        {
+          "title": {
+            "zh": "同步测试胶贴/工具配套",
+            "en": "Test accessory bundles in parallel"
+          },
+          "body": {
+            "zh": "至少准备一个配套版本，用来验证便利性是否能提升转化。",
+            "en": "Prepare at least one bundled version to test whether convenience improves conversion."
+          }
+        },
+        {
+          "title": {
+            "zh": "重点看评论区两类反馈",
+            "en": "Focus on two kinds of comment signals"
+          },
+          "body": {
+            "zh": "一类看“好不好看”，一类看“好不好贴、耐不耐用”。",
+            "en": "Track one set of comments on aesthetics and another on wearability and durability."
+          }
+        }
+      ]
+    },
+    "risks": {
+      "title": {
+        "zh": "风险与动作",
+        "en": "Risks & Actions"
+      },
+      "subtitle": {
+        "zh": "最终要回答的是值不值得做，以及怎么做得不被同质化吞掉。",
+        "en": "The final question is whether the opportunity is worth pursuing and how to avoid getting swallowed by commoditization."
+      },
+      "badge": {
+        "zh": "风险判断",
+        "en": "Risk Judgment"
+      },
+      "risks": [
+        {
+          "title": {
+            "zh": "设计同质化风险",
+            "en": "Design commoditization risk"
+          },
+          "body": {
+            "zh": "基础法式、裸粉、闪钻类款式太容易被复制。",
+            "en": "Basic French, nude, and gem-like styles are easy to copy."
+          }
+        },
+        {
+          "title": {
+            "zh": "低价竞争风险",
+            "en": "Low-price competition risk"
+          },
+          "body": {
+            "zh": "如果只卖裸品，很容易掉入低价比价。",
+            "en": "If sold as plain standalone goods, products can slide quickly into low-price comparison."
+          }
+        },
+        {
+          "title": {
+            "zh": "体验断层风险",
+            "en": "Experience gap risk"
+          },
+          "body": {
+            "zh": "设计再好，如果贴合度和摘除体验差，复购就会受损。",
+            "en": "Even strong design cannot save repeat purchase if fit and removal experience are poor."
+          }
+        }
+      ],
+      "actions": {
+        "title": {
+          "zh": "建议动作",
+          "en": "Recommended actions"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "先跑设计验证，不要急着做全品牌",
+              "en": "Validate design before building a full brand"
+            },
+            "note": {
+              "zh": "先搞清楚哪类风格最容易转化。",
+              "en": "First identify which aesthetic directions actually convert."
+            }
+          },
+          {
+            "title": {
+              "zh": "把便利性做成卖点",
+              "en": "Turn convenience into a selling point"
+            },
+            "note": {
+              "zh": "胶贴、摘除、贴合度都应进入文案和内容。",
+              "en": "Glue tabs, removal ease, and fit should all become part of the message."
+            }
+          },
+          {
+            "title": {
+              "zh": "优先做可重复佩戴和礼盒化表达",
+              "en": "Prioritize reusable and giftable positioning"
+            },
+            "note": {
+              "zh": "这样更容易支撑价格，也更容易形成礼品和套装逻辑。",
+              "en": "This supports pricing better and creates stronger gift and bundle logic."
+            }
+          }
+        ]
+      },
+      "finalJudgment": {
+        "title": {
+          "zh": "最终判断",
+          "en": "Final judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "值得做，但不是“随便上款就能跑”",
+              "en": "Worth doing, but not a category where any random style will work"
+            },
+            "level": {
+              "zh": "建议执行",
+              "en": "Recommended"
+            },
+            "levelClass": "good",
+            "body": {
+              "zh": "全球穿戴甲有现实机会，但真正的商业差异来自设计选择、便利性和价格表达。",
+              "en": "Global press-on nails offer real opportunity, but commercial separation depends on design choices, convenience, and value framing."
+            }
+          },
+          {
+            "title": {
+              "zh": "先设计路径，后品牌路径",
+              "en": "Design path first, brand path second"
+            },
+            "level": {
+              "zh": "推荐路径",
+              "en": "Preferred path"
+            },
+            "levelClass": "info",
+            "body": {
+              "zh": "先验证哪类审美和配套最有反应，再决定是否投入更完整品牌建设。",
+              "en": "Validate which aesthetics and accessory logic resonate first, then decide whether full brand-building is justified."
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "title": {
+        "zh": "References / 数据来源",
+        "en": "References"
+      },
+      "subtitle": {
+        "zh": "本页判断基于公开可见来源与方向性商业判断。",
+        "en": "This page is based on visible public sources and directional commercial judgment."
+      },
+      "badge": {
+        "zh": "证据链",
+        "en": "Reference Layer"
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "市场观察来源",
+            "en": "Market Observation"
+          },
+          "tags": [
+            {
+              "zh": "Amazon search observation",
+              "en": "Amazon search observation"
+            },
+            {
+              "zh": "Ulta category scan",
+              "en": "Ulta category scan"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持品类成熟度、供给深度和大众价位观察。",
+            "en": "Used mainly to assess category maturity, supply depth, and mainstream pricing."
+          }
+        },
+        {
+          "title": {
+            "zh": "价格与产品参考来源",
+            "en": "Pricing & Product Benchmark"
+          },
+          "tags": [
+            {
+              "zh": "official brand websites",
+              "en": "official brand websites"
+            },
+            {
+              "zh": "Etsy handmade demand logic",
+              "en": "Etsy handmade demand logic"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持设计溢价、礼盒化和定制型机会判断。",
+            "en": "Used mainly to assess design premium, giftability, and custom-style opportunities."
+          }
+        },
+        {
+          "title": {
+            "zh": "更新时间信息",
+            "en": "Update Info"
+          },
+          "tags": [
+            {
+              "zh": "数据更新时间：2026-04-08",
+              "en": "Last updated: 2026-04-08"
+            },
+            {
+              "zh": "Last checked: 2026-04-08",
+              "en": "Last checked: 2026-04-08"
+            }
+          ],
+          "body": {
+            "zh": "本页基于公开可见市场观察与方向性商业判断，不代表完整成交数据库。",
+            "en": "This page is based on visible market observation and directional commercial judgment, not a complete transaction dataset."
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "zh": "Raymond Ho @Copyright 2026",
+    "en": "Raymond Ho @Copyright 2026"
+  }
+};
+    const langState = { current: 'zh' };
+    const t = (v) => typeof v === 'string' ? v : ((v && v[langState.current]) || (v && v.zh) || (v && v.en) || '');
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title);
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary);
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; DATA.hero.tags.forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; DATA.hero.cards.forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label)}</div><div class="v">${t(c.value)}</div><div class="t">${t(c.note)}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; DATA.summaryMetrics.forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label)}</div><div class="value">${t(m.value)}</div><div class="note">${t(m.note)}</div>`))); }
+    function sectionHead(sec){ return `<div class="section-head"><div><h3>${t(sec.title)}</h3><p>${t(sec.subtitle||'')}</p></div><div class="section-badge">${t(sec.badge||'')}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

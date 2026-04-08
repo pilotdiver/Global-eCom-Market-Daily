@@ -1,0 +1,28 @@
+{
+  "marketId": "global",
+  "marketName": { "zh": "全球", "en": "Global" },
+  "region": { "zh": "跨市场", "en": "Cross-market" },
+  "flag": "🌍",
+  "status": "live",
+  "report": {
+    "id": "global-press-on-nails-2026",
+    "title": { "zh": "全球穿戴甲机会分析", "en": "Global Press-On Nails Opportunity Analysis" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-08",
+    "file": "report-global-press-on-nails.html",
+    "tags": [
+      { "zh": "穿戴甲", "en": "Press-on nails" },
+      { "zh": "美妆配件", "en": "Beauty accessories" },
+      { "zh": "设计型商品", "en": "Design-led goods" }
+    ],
+    "summary": {
+      "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
+      "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
+    },
+    "coverLabel": { "zh": "品类机会分析", "en": "Category Opportunity Analysis" },
+    "highlight": { "zh": "设计与便利性并重", "en": "Design and convenience both matter" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "featured": true,
+    "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" }
+  }
+}
