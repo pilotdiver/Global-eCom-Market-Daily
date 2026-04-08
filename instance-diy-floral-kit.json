@@ -1,0 +1,298 @@
+{
+  "meta": { "documentTitle": { "zh": "DIY 花艺包机会分析", "en": "DIY Floral Kit Opportunity Analysis" } },
+  "sidebar": {
+    "title": { "zh": "全球电商情报系统", "en": "Global E-Commerce Intelligence System" },
+    "meta": [
+      { "zh": "市场：全球", "en": "Market: Global" },
+      { "zh": "品类：DIY 花艺包", "en": "Category: DIY floral kit" },
+      { "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }
+    ]
+  },
+  "navigation": {
+    "title": { "zh": "内容导航", "en": "Navigation" },
+    "items": [
+      { "id": "overview", "title": { "zh": "总览", "en": "Overview" }, "description": { "zh": "结论与切入方式", "en": "Conclusion and entry path" } },
+      { "id": "signals", "title": { "zh": "关键信号", "en": "Signals" }, "description": { "zh": "市场增长与消费逻辑", "en": "Growth and consumer logic" } },
+      { "id": "opportunities", "title": { "zh": "机会方向", "en": "Opportunities" }, "description": { "zh": "SKU 与场景优先级", "en": "SKU and scenario priorities" } },
+      { "id": "pricing", "title": { "zh": "价格带", "en": "Pricing" }, "description": { "zh": "价格结构与入门带", "en": "Price structure and entry bands" } },
+      { "id": "players", "title": { "zh": "头部玩家", "en": "Top Players" }, "description": { "zh": "参考对象与链接", "en": "References and links" } },
+      { "id": "nextmoves", "title": { "zh": "Next 7 Days", "en": "Next 7 Days" }, "description": { "zh": "本周优先动作", "en": "Priority moves" } },
+      { "id": "risks", "title": { "zh": "风险与动作", "en": "Risks & Actions" }, "description": { "zh": "执行风险与建议", "en": "Execution risks and actions" } }
+    ]
+  },
+  "hero": {
+    "title": { "zh": "DIY 花艺包值得做，但更适合卖“完成感、礼物感和场景体验”，而不是卖散装材料", "en": "DIY floral kits are worth doing, but the stronger play is to sell completion, giftability, and scenario-led experience rather than loose materials" },
+    "summary": { "zh": "当前更值得优先测试的，不是纯材料包，而是新手友好桌花包、节庆礼盒包和家居风格型 DIY 花艺包。这个品类的核心不在于给多少花材，而在于用户能否顺利完成、成品是否好看、过程是否适合送礼与分享。最优打法是低失败率、强成品预期、强包装表达和轻教程化。", "en": "The better products to test first are beginner-friendly table arrangement kits, seasonal gift-box kits, and home-style DIY floral kits rather than pure material bundles. The category does not win by offering more stems, but by helping users finish smoothly, enjoy a beautiful end result, and feel that the process is giftable and shareable. The strongest play is low failure risk, strong expected outcome, strong packaging, and lightweight guided instruction." },
+    "tags": [
+      { "zh": "优先方向：桌花包 / 节庆礼盒 / 家居风格包", "en": "Priority: Table kits / seasonal gift kits / home-style kits" },
+      { "zh": "核心卖点：新手可完成 + 做完能摆", "en": "Core promise: Beginner-friendly and display-ready" },
+      { "zh": "不建议：纯材料散装包", "en": "Avoid: Loose material-only bundles" }
+    ],
+    "cards": [
+      { "label": { "zh": "机会强度", "en": "Opportunity strength" }, "value": { "zh": "中强", "en": "Medium-High" }, "note": { "zh": "有礼品、内容、家居与手作需求叠加，不是纯材料逻辑。", "en": "Gift, content, home, and craft demand overlap here, so this is not a pure raw-material play." } },
+      { "label": { "zh": "最佳切法", "en": "Best entry path" }, "value": { "zh": "先做低失败率成品型 DIY 包", "en": "Start with low-failure completion-led kits" }, "note": { "zh": "先卖完成感，再扩 SKU 和难度。", "en": "Sell completion first, then expand into broader SKUs and difficulty tiers." } }
+    ]
+  },
+  "summaryMetrics": [
+    { "label": { "zh": "最优 SKU", "en": "Best SKU" }, "value": { "zh": "新手桌花 DIY 包", "en": "Beginner table arrangement kit" }, "note": { "zh": "最容易标准化，也最适合礼物和家居。", "en": "It is the easiest to standardize and fits both gift and home use." } },
+    { "label": { "zh": "最佳卖点", "en": "Best selling point" }, "value": { "zh": "做完就能摆", "en": "Finished result is display-ready" }, "note": { "zh": "用户买的是结果，不是材料数量。", "en": "Users are buying the result, not just the count of materials." } },
+    { "label": { "zh": "最该警惕", "en": "Main caution" }, "value": { "zh": "用户做不出来", "en": "Users fail to complete it" }, "note": { "zh": "DIY 类最怕步骤复杂和结果失真。", "en": "DIY products fail most often when steps are too complex or the outcome does not match expectations." } },
+    { "label": { "zh": "优先验证", "en": "Priority validation" }, "value": { "zh": "完成率 + 成品满意度", "en": "Completion rate + satisfaction with result" }, "note": { "zh": "这两个指标比单纯点击率更重要。", "en": "These metrics matter more than clicks alone." } }
+  ],
+  "sections": {
+    "overview": {
+      "title": { "zh": "总览", "en": "Overview" },
+      "subtitle": { "zh": "DIY 花艺包不该被当成材料包，而应被当成体验型家居礼品。", "en": "DIY floral kits should be treated as experience-led home gifts rather than raw material packs." },
+      "badge": { "zh": "结论摘要", "en": "Executive Summary" },
+      "sources": [ { "zh": "数据依据：artificial flowers market report / IKEA floral category observation / category logic synthesis", "en": "Source: artificial flowers market report / IKEA floral category observation / category logic synthesis" } ],
+      "barChart": {
+        "title": { "zh": "DIY 花艺包优先方向强度图", "en": "DIY floral kit priority strength" },
+        "items": [
+          { "label": { "zh": "新手桌花包", "en": "Beginner table kits" }, "score": 8.9 },
+          { "label": { "zh": "节庆礼盒包", "en": "Seasonal gift kits" }, "score": 8.4 },
+          { "label": { "zh": "家居风格型花艺包", "en": "Home-style floral kits" }, "score": 8.1 },
+          { "label": { "zh": "亲子 / 聚会手作包", "en": "Family / gathering craft kits" }, "score": 7.2 }
+        ]
+      },
+      "sideCard": {
+        "title": { "zh": "Why Now / 当前进入理由", "en": "Why Now" },
+        "items": [
+          { "title": { "zh": "假花市场本身在增长", "en": "The artificial flowers market is already growing" }, "note": { "zh": "公开报告显示该市场持续增长，基础需求并不弱。", "en": "Public market reporting shows ongoing growth, so the base demand is not weak." } },
+          { "title": { "zh": "DIY 体验能提高溢价", "en": "DIY experience supports better pricing" }, "note": { "zh": "相比单卖成品，DIY 包更容易同时吃到手作、礼物和社交分享需求。", "en": "Compared with selling only finished pieces, DIY kits tap into making, gifting, and sharing motivations together." } },
+          { "title": { "zh": "成品结果天然适合家居展示", "en": "The finished result naturally fits home display" }, "note": { "zh": "这让它比很多一次性手作更有留存价值。", "en": "That makes it more enduring than many one-off craft experiences." } }
+        ]
+      },
+      "takeaway": {
+        "title": { "zh": "市场摘要", "en": "Market takeaway" },
+        "body": { "zh": "DIY 花艺包的核心商业逻辑，不是花材零售，而是“低门槛完成一个好看的空间成果”。最值得先做的 SKU，不是复杂专业型，而是新手桌花、节庆礼盒和风格化家居包。先把完成率、包装和成品预期做稳，再考虑扩展更复杂的创作包与多人场景包。", "en": "The core commercial logic is not floral-material retail, but helping users complete an attractive spatial result with low friction. The best starter SKUs are not advanced professional kits, but beginner table kits, seasonal gift kits, and styled home kits. Stabilize completion rate, packaging, and expected outcome first, then expand into more complex and multi-person formats." }
+      },
+      "scorecard": {
+        "title": { "zh": "执行评分", "en": "Execution scores" },
+        "items": [
+          { "label": { "zh": "礼品属性", "en": "Giftability" }, "score": 8.7 },
+          { "label": { "zh": "内容适配度", "en": "Content fit" }, "score": 8.3 },
+          { "label": { "zh": "复购潜力", "en": "Repeat potential" }, "score": 7.1 },
+          { "label": { "zh": "执行复杂度", "en": "Execution complexity" }, "score": 6.6 },
+          { "label": { "zh": "溢价空间", "en": "Premium room" }, "score": 8.0 }
+        ]
+      }
+    },
+    "signals": {
+      "title": { "zh": "关键信号", "en": "Signals" },
+      "subtitle": { "zh": "这个类目的关键信号在于，用户买的是轻手作体验和可展示结果，而不是原材料本身。", "en": "The crucial signal is that users buy a guided creative experience and a displayable result, not only the raw materials." },
+      "badge": { "zh": "市场线索", "en": "Market Signals" },
+      "sources": [ { "zh": "数据依据：Grand View Research / IKEA floral arrangement content / category commercialization logic", "en": "Source: Grand View Research / IKEA floral arrangement content / category commercialization logic" } ],
+      "columns": [
+        {
+          "title": { "zh": "市场与产品信号", "en": "Market and product signals" },
+          "items": [
+            { "title": { "zh": "假花赛道本身已不是小众", "en": "Artificial florals are no longer niche" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "公开市场报告显示人工花艺市场持续增长，说明底层需求稳定存在。", "en": "Public market reporting shows continuing growth, indicating a stable underlying demand base." } },
+            { "title": { "zh": "用户对“低维护 + 长期装饰”的接受度在提高", "en": "Acceptance of low-maintenance and long-lasting decor is rising" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "假花的优势已经从“便宜替代”转向“方便又长期可用”。", "en": "Artificial florals are moving from cheap substitution toward convenient, long-lasting decor." } },
+            { "title": { "zh": "DIY 化能进一步提高产品故事性", "en": "DIY framing increases storytelling value" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "用户不只买成品，还买“自己做出来”的参与感和分享价值。", "en": "Users are not just buying a finished object, but the participation and sharing value of making it themselves." } }
+          ]
+        },
+        {
+          "title": { "zh": "消费行为信号", "en": "Consumer behavior signals" },
+          "soft": true,
+          "items": [
+            { "title": { "zh": "新手友好度决定转化", "en": "Beginner-friendliness drives conversion" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "warn", "body": { "zh": "如果看起来太难，用户会直接放弃购买。", "en": "If a kit looks too difficult, many users will drop out before purchase." } },
+            { "title": { "zh": "成品预期图比材料说明更重要", "en": "Outcome visuals matter more than material descriptions" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "用户最关心的是“我做完能不能有这个效果”。", "en": "Users care most about whether they can achieve the promised end result." } },
+            { "title": { "zh": "礼盒化与场景化更容易提高客单", "en": "Giftable and scenario-based framing lifts AOV" }, "level": { "zh": "中信号", "en": "Medium" }, "levelClass": "info", "body": { "zh": "节庆、送礼和家居摆设场景，会比普通材料包更容易形成购买理由。", "en": "Holiday, gifting, and home-display framing creates stronger reasons to buy than plain materials alone." } }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": { "zh": "机会方向", "en": "Opportunity Directions" },
+      "subtitle": { "zh": "最值得做的不是专业花艺课，而是能让普通人轻松完成的“结果型 DIY 商品”。", "en": "The best opportunity is not professional floristry training in a box, but result-led DIY products ordinary users can complete with ease." },
+      "badge": { "zh": "机会地图", "en": "Opportunity Map" },
+      "sources": [ { "zh": "数据依据：DIY product logic / artificial floral market growth / retail display behavior", "en": "Source: DIY product logic / artificial floral market growth / retail display behavior" } ],
+      "labels": {
+        "topPlayers": { "zh": "参考对象：", "en": "References:" },
+        "entryWhy": { "zh": "当前进入理由：", "en": "Why enter now:" }
+      },
+      "cards": [
+        {
+          "title": { "zh": "机会一：新手桌花 DIY 包", "en": "Opportunity 1: Beginner table arrangement kits" },
+          "summary": { "zh": "配齐花材、容器、花泥和步骤卡，30 分钟左右可完成。", "en": "A complete kit with stems, vessel, foam, and step guide, finishable in roughly 30 minutes." },
+          "topPlayers": ["Beginner craft kits", "Display-ready home decor kits", "Giftable arrangement products"],
+          "entryWhy": { "zh": "这是最容易标准化、最容易出片、最适合礼物与家居展示的 SKU。", "en": "This is the easiest SKU to standardize, photograph, gift, and display at home." },
+          "tags": [
+            { "zh": "趋势级别：强", "en": "Trend: Strong" },
+            { "zh": "生命周期：稳定", "en": "Lifecycle: Stable" },
+            { "zh": "打法：低失败率成品包", "en": "Play: Low-failure completion kit" }
+          ]
+        },
+        {
+          "title": { "zh": "机会二：节庆礼盒型 DIY 包", "en": "Opportunity 2: Seasonal gift-box kits" },
+          "summary": { "zh": "围绕母亲节、生日、婚礼、圣诞等节点做礼盒化表达。", "en": "Built around gifting moments such as Mother’s Day, birthdays, weddings, and Christmas." },
+          "topPlayers": ["Holiday gifting crafts", "Seasonal decor kits", "Giftable hobby kits"],
+          "entryWhy": { "zh": "礼盒化能显著提高购买理由，也更利于溢价。", "en": "Gift-box framing creates a stronger purchase reason and improves premium potential." },
+          "tags": [
+            { "zh": "趋势级别：中强", "en": "Trend: Medium-Strong" },
+            { "zh": "生命周期：节点型", "en": "Lifecycle: Seasonal" },
+            { "zh": "打法：礼品体验", "en": "Play: Giftable experience" }
+          ]
+        },
+        {
+          "title": { "zh": "机会三：家居风格型 DIY 包", "en": "Opportunity 3: Home-style floral kits" },
+          "summary": { "zh": "按奶油风、北欧风、法式风、秋日暖色等风格做系列。", "en": "Series-based kits built around cream, Nordic, French, autumn-warm, and similar home styles." },
+          "topPlayers": ["Style-led home decor", "Aesthetic curation brands", "Series-based arrangement kits"],
+          "entryWhy": { "zh": "风格化路线更容易做成系列，也比通货材料包更有品牌空间。", "en": "A style-led route is easier to scale into a series and gives more brand room than generic material packs." },
+          "tags": [
+            { "zh": "趋势级别：中强", "en": "Trend: Medium-Strong" },
+            { "zh": "生命周期：扩展型", "en": "Lifecycle: Expansion" },
+            { "zh": "打法：家居审美", "en": "Play: Home aesthetics" }
+          ]
+        },
+        {
+          "title": { "zh": "机会四：亲子 / 聚会多人 DIY 包", "en": "Opportunity 4: Family and group DIY kits" },
+          "summary": { "zh": "适合闺蜜局、亲子活动、小型工作坊和生日会。", "en": "Suited for friend gatherings, family crafting, mini workshops, and birthday events." },
+          "topPlayers": ["Event-led DIY kits", "Group craft packs", "Workshop material bundles"],
+          "entryWhy": { "zh": "它适合做组合装和活动合作，但不建议作为第一批主力 SKU。", "en": "It supports multi-pack and event-led sales, but it should not be the very first hero SKU." },
+          "tags": [
+            { "zh": "趋势级别：中", "en": "Trend: Medium" },
+            { "zh": "生命周期：场景型", "en": "Lifecycle: Scenario-led" },
+            { "zh": "打法：多人手作", "en": "Play: Group crafting" }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": { "zh": "价格带", "en": "Pricing" },
+      "subtitle": { "zh": "DIY 花艺包的价格不该围绕材料成本，而应该围绕结果、教程和礼盒体验去设计。", "en": "DIY floral kit pricing should be designed around outcome, guidance, and giftable experience rather than raw material cost alone." },
+      "badge": { "zh": "价格结构", "en": "Pricing Structure" },
+      "sources": [ { "zh": "数据依据：DIY category logic / artificial flowers value framing / giftable product structure", "en": "Source: DIY category logic / artificial flowers value framing / giftable product structure" } ],
+      "table": {
+        "title": { "zh": "价格带判断", "en": "Pricing band view" },
+        "columns": [
+          { "zh": "方向", "en": "Direction" },
+          { "zh": "低价带", "en": "Low band" },
+          { "zh": "主销带", "en": "Core band" },
+          { "zh": "推荐切入价", "en": "Recommended entry price" },
+          { "zh": "价格支撑逻辑", "en": "Value support" }
+        ],
+        "rows": [
+          [{ "zh": "新手桌花 DIY 包", "en": "Beginner table kits" }, { "zh": "$15 - $25", "en": "$15 - $25" }, { "zh": "$25 - $39", "en": "$25 - $39" }, { "zh": "$24.99 - $29.99", "en": "$24.99 - $29.99" }, { "zh": "低门槛完成感、容器齐全、适合展示", "en": "Low-friction completion, full vessel setup, display-ready result" }],
+          [{ "zh": "节庆礼盒型 DIY 包", "en": "Seasonal gift kits" }, { "zh": "$22 - $35", "en": "$22 - $35" }, { "zh": "$35 - $55", "en": "$35 - $55" }, { "zh": "$32.99 - $39.99", "en": "$32.99 - $39.99" }, { "zh": "礼盒感、送礼理由、节庆节点", "en": "Gift-box quality, gifting reason, seasonal occasion" }],
+          [{ "zh": "家居风格型 DIY 包", "en": "Home-style floral kits" }, { "zh": "$20 - $32", "en": "$20 - $32" }, { "zh": "$32 - $48", "en": "$32 - $48" }, { "zh": "$29.99 - $36.99", "en": "$29.99 - $36.99" }, { "zh": "风格策展感与家居搭配价值", "en": "Style curation and home decor value" }],
+          [{ "zh": "亲子 / 聚会多人包", "en": "Family / group kits" }, { "zh": "$28 - $45", "en": "$28 - $45" }, { "zh": "$45 - $75", "en": "$45 - $75" }, { "zh": "$42.99 - $52.99", "en": "$42.99 - $52.99" }, { "zh": "多人场景、活动用途、组合价值", "en": "Group scenario, event use, bundled value" }]
+        ]
+      },
+      "side": {
+        "title": { "zh": "价格判断", "en": "Pricing judgment" },
+        "items": [
+          { "title": { "zh": "不要只按材料成本定价", "en": "Do not price only from material cost" }, "note": { "zh": "用户买的是体验、结果和包装，而不是花材重量。", "en": "Users buy experience, outcome, and packaging rather than stem weight alone." } },
+          { "title": { "zh": "主销款应压在“可送礼、可试水”的心理区间", "en": "Hero SKUs should sit in a giftable but accessible psychological band" }, "note": { "zh": "主销带过高会影响新手尝试，过低又会损伤质感。", "en": "If the hero band is too high, beginners hesitate, and if it is too low, perceived quality suffers." } },
+          { "title": { "zh": "高价款要靠礼盒和成品结果支撑", "en": "Higher-priced SKUs need gift-box and outcome support" }, "note": { "zh": "溢价必须让用户一眼看懂。", "en": "Premium pricing must be immediately legible to the user." } }
+        ]
+      }
+    },
+    "players": {
+      "title": { "zh": "Top Players & Links / 头部玩家与链接", "en": "Top Players & Links" },
+      "subtitle": { "zh": "这里优先保留能支持商业判断的公开来源与参考对象。", "en": "This section keeps public references that support commercial judgment rather than noisy link stacking." },
+      "badge": { "zh": "市场验证对象", "en": "Market Validation" },
+      "sources": [ { "zh": "数据依据：Grand View Research / IKEA artificial flowers category / public category logic", "en": "Source: Grand View Research / IKEA artificial flowers category / public category logic" } ],
+      "filterTitle": { "zh": "来源筛选与价格参考", "en": "Source filter & price reference" },
+      "filters": [
+        { "value": "all", "label": { "zh": "全部", "en": "All" } },
+        { "value": "industry", "label": { "zh": "Industry", "en": "Industry" } },
+        { "value": "retail", "label": { "zh": "Retail", "en": "Retail" } },
+        { "value": "concept", "label": { "zh": "Concept", "en": "Concept" } }
+      ],
+      "groups": [
+        {
+          "title": { "zh": "行业与底层需求", "en": "Industry and base demand" },
+          "platforms": ["industry"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "机构/品牌", "en": "Institution/Brand" }, { "zh": "参考对象", "en": "Reference" }, { "zh": "来源类型", "en": "Source type" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "市场规模", "en": "Market size" }, "tag": "Global" },
+              { "zh": "Grand View Research", "en": "Grand View Research" },
+              { "zh": "Artificial Flowers Market", "en": "Artificial Flowers Market" },
+              { "zh": "Industry", "en": "Industry" },
+              { "type": "link", "href": "https://www.grandviewresearch.com/industry-analysis/artificial-flowers-market-report", "label": { "zh": "查看报告页", "en": "View page" } },
+              { "zh": "验证赛道规模、增长率和欧洲占比。", "en": "Useful for validating market size, growth rate, and Europe’s share." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "零售与场景表达", "en": "Retail and scenario expression" },
+          "platforms": ["retail", "concept"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌/渠道", "en": "Brand/Retailer" }, { "zh": "参考对象", "en": "Reference" }, { "zh": "来源类型", "en": "Source type" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "成品花艺与家居展示", "en": "Finished florals and home display" }, "tag": "Retail" },
+              { "zh": "IKEA UK", "en": "IKEA UK" },
+              { "zh": "Artificial Plants & Flowers Category", "en": "Artificial Plants & Flowers Category" },
+              { "zh": "Retail", "en": "Retail" },
+              { "type": "link", "href": "https://www.ikea.com/gb/en/cat/artificial-plants-flowers-20492/", "label": { "zh": "查看页面", "en": "View page" } },
+              { "zh": "说明用户购买的是长期装饰与场景化花艺，不只是单支花。", "en": "Shows that the shopper is buying long-term decor and floral scenarios rather than only single stems." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "DIY 成品结果逻辑", "en": "DIY outcome logic" }, "tag": "Concept" },
+              { "zh": "IKEA US SMYCKA", "en": "IKEA US SMYCKA" },
+              { "zh": "Arrangement-led category storytelling", "en": "Arrangement-led category storytelling" },
+              { "zh": "Concept", "en": "Concept" },
+              { "type": "link", "href": "https://www.ikea.com/us/en/cat/artificial-plants-flowers-20492/", "label": { "zh": "查看页面", "en": "View page" } },
+              { "zh": "强化“做出一个好看成品”的商业逻辑。", "en": "Reinforces the commercial logic of helping users create a beautiful finished arrangement." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": { "zh": "Next 7 Days", "en": "Next 7 Days" },
+      "subtitle": { "zh": "这一周最重要的不是做很多款，而是先做出最容易成功的 3 个 SKU。", "en": "The most important task this week is not building many variants, but defining the three easiest-to-win starter SKUs." },
+      "badge": { "zh": "优先动作", "en": "Priority Moves" },
+      "items": [
+        { "title": { "zh": "先定义 3 个起步 SKU", "en": "Define 3 starter SKUs first" }, "body": { "zh": "建议直接做：基础桌花包、节庆礼盒包、奶油风家居包。", "en": "Start with a table arrangement kit, a seasonal gift-box kit, and a cream-style home decor kit." } },
+        { "title": { "zh": "先做傻瓜化教程结构", "en": "Build the beginner guide structure early" }, "body": { "zh": "每个 SKU 都要有步骤卡、材料标号和视频入口，不然失败率会太高。", "en": "Every SKU should include numbered materials, step cards, and a video entry point, otherwise failure rates will be too high." } },
+        { "title": { "zh": "先验证成品图与实物一致性", "en": "Validate consistency between hero visuals and real result" }, "body": { "zh": "DIY 类最怕“图很美，用户做不出来”，这一点必须优先压测。", "en": "DIY products fail fast when the hero image looks great but the user cannot reproduce it, so this must be tested first." } }
+      ]
+    },
+    "risks": {
+      "title": { "zh": "风险与动作", "en": "Risks & Actions" },
+      "subtitle": { "zh": "DIY 花艺包最大的风险不是没人买，而是用户失败、失望或觉得麻烦。", "en": "The biggest risk is not lack of demand, but user failure, disappointment, or perceived hassle." },
+      "badge": { "zh": "风险判断", "en": "Risk Judgment" },
+      "risks": [
+        { "title": { "zh": "完成失败风险", "en": "Completion failure risk" }, "body": { "zh": "如果步骤不清楚、配件不齐或结构太难，用户会直接挫败。", "en": "If steps are unclear, pieces are missing, or the build is too difficult, the user experience breaks immediately." } },
+        { "title": { "zh": "运输与材料状态风险", "en": "Shipping and material-condition risk" }, "body": { "zh": "花材和容器在运输中容易压损、变形或丢件。", "en": "Floral materials and vessels can deform, compress, or lose parts in transit." } },
+        { "title": { "zh": "低价材料包同质化风险", "en": "Commodity-material risk" }, "body": { "zh": "如果做成散装材料，用户会快速进入比价心态。", "en": "If the offer becomes just a loose material pack, users will compare it purely on price." } }
+      ],
+      "actions": {
+        "title": { "zh": "建议动作", "en": "Recommended actions" },
+        "items": [
+          { "title": { "zh": "先做低失败率 SKU", "en": "Start with low-failure SKUs" }, "note": { "zh": "先把用户成功率做高，再谈复杂度升级。", "en": "Get user success rates high before adding complexity." } },
+          { "title": { "zh": "把包装做成礼盒，而不是物流盒", "en": "Make packaging feel giftable, not just shippable" }, "note": { "zh": "DIY 花艺包很吃仪式感和送礼感。", "en": "DIY floral kits rely heavily on ritual, presentation, and gifting appeal." } },
+          { "title": { "zh": "让成品图可复制", "en": "Make the hero result reproducible" }, "note": { "zh": "用户要的是“我也能做成这样”。", "en": "Users need to believe and achieve the promised outcome." } }
+        ]
+      },
+      "finalJudgment": {
+        "title": { "zh": "最终判断", "en": "Final judgment" },
+        "items": [
+          { "title": { "zh": "DIY 花艺包值得做，但应定位为体验型礼品和家居商品", "en": "DIY floral kits are worth doing, but should be positioned as experience-led gift and home products" }, "level": { "zh": "建议执行", "en": "Recommended" }, "levelClass": "good", "body": { "zh": "这个赛道的关键不是花材采购，而是让用户低门槛完成一个好看、可摆、可送的成品。", "en": "The key is not floral sourcing alone, but enabling users to complete a beautiful, displayable, giftable result with low friction." } },
+          { "title": { "zh": "先用 3 个 SKU 验证结果逻辑", "en": "Validate the result logic with 3 starter SKUs first" }, "level": { "zh": "推荐路径", "en": "Preferred path" }, "levelClass": "info", "body": { "zh": "建议先上桌花包、节庆礼盒包、家居风格包，再扩亲子和多人场景。", "en": "Start with table kits, seasonal gift kits, and home-style kits before expanding into family and group formats." } }
+        ]
+      }
+    },
+    "references": {
+      "title": { "zh": "References / 数据来源", "en": "References" },
+      "subtitle": { "zh": "本页判断基于公开可见市场资料与方向性商业判断。", "en": "This page is based on visible public market information and directional commercial judgment." },
+      "badge": { "zh": "证据链", "en": "Reference Layer" },
+      "cards": [
+        { "title": { "zh": "市场观察来源", "en": "Market Observation" }, "tags": [ { "zh": "Grand View Research", "en": "Grand View Research" }, { "zh": "IKEA artificial flowers category", "en": "IKEA artificial flowers category" } ], "body": { "zh": "主要用于支持假花赛道增长、家居展示逻辑和场景化表达判断。", "en": "Used mainly to support judgments on artificial floral growth, home-display logic, and scenario-led merchandising." } },
+        { "title": { "zh": "价格与产品参考来源", "en": "Pricing & Product Benchmark" }, "tags": [ { "zh": "DIY category logic", "en": "DIY category logic" }, { "zh": "giftable product structure", "en": "giftable product structure" } ], "body": { "zh": "主要用于支持 DIY 花艺包的 SKU 结构、溢价逻辑与场景分类。", "en": "Used mainly to support SKU structure, premium logic, and scenario segmentation for DIY floral kits." } },
+        { "title": { "zh": "更新时间信息", "en": "Update Info" }, "tags": [ { "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }, { "zh": "Last checked: 2026-04-08", "en": "Last checked: 2026-04-08" } ], "body": { "zh": "本页基于公开可见市场观察与方向性商业判断，不代表平台完整成交数据。", "en": "This dashboard is based on visible market observation and directional commercial judgment, not audited transaction data." } }
+      ]
+    }
+  },
+  "footer": { "zh": "Raymond Ho @Copyright 2026", "en": "Raymond Ho @Copyright 2026" }
+}
