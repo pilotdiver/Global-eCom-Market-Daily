@@ -1,0 +1,93 @@
+{
+  "_note": "Global market registry for the E-Commerce Intelligence System. Add new markets and reports here.",
+  "system": {
+    "name": { "zh": "全球电商情报系统", "en": "Global E-Commerce Intelligence System" },
+    "version": "1.0.0",
+    "owner": "Raymond Ho"
+  },
+  "markets": [
+    {
+      "id": "au",
+      "flag": "🇦🇺",
+      "name": { "zh": "澳洲", "en": "Australia" },
+      "region": { "zh": "大洋洲", "en": "Oceania" },
+      "currency": "AUD",
+      "status": "live",
+      "platforms": ["Amazon AU", "eBay AU", "Kmart", "Big W"],
+      "reports": [
+        {
+          "id": "au-2026-03",
+          "title": { "zh": "3月畅销商品", "en": "March Best Sellers" },
+          "theme": { "zh": "换季轻升级", "en": "Seasonal Light Upgrade" },
+          "period": "2026-03",
+          "updated": "2026-04-08",
+          "file": "report-au-march-best-sellers.html",
+          "instance_json": "instance-au-march.json",
+          "tags": ["收纳", "厨房", "宠物", "户外"],
+          "strength": 8.6,
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "us",
+      "flag": "🇺🇸",
+      "name": { "zh": "美国", "en": "United States" },
+      "region": { "zh": "北美", "en": "North America" },
+      "currency": "USD",
+      "status": "soon",
+      "platforms": ["Amazon US", "Walmart", "TikTok Shop US", "Shopify"],
+      "reports": []
+    },
+    {
+      "id": "uk",
+      "flag": "🇬🇧",
+      "name": { "zh": "英国", "en": "United Kingdom" },
+      "region": { "zh": "欧洲", "en": "Europe" },
+      "currency": "GBP",
+      "status": "soon",
+      "platforms": ["Amazon UK", "ASOS", "eBay UK", "TikTok Shop UK"],
+      "reports": []
+    },
+    {
+      "id": "jp",
+      "flag": "🇯🇵",
+      "name": { "zh": "日本", "en": "Japan" },
+      "region": { "zh": "东亚", "en": "East Asia" },
+      "currency": "JPY",
+      "status": "planned",
+      "platforms": ["Amazon JP", "Rakuten", "Yahoo Shopping"],
+      "reports": []
+    },
+    {
+      "id": "sea",
+      "flag": "🌏",
+      "name": { "zh": "东南亚", "en": "Southeast Asia" },
+      "region": { "zh": "东南亚", "en": "Southeast Asia" },
+      "currency": "USD",
+      "status": "planned",
+      "platforms": ["Shopee", "Lazada", "TikTok Shop SEA"],
+      "reports": []
+    },
+    {
+      "id": "de",
+      "flag": "🇩🇪",
+      "name": { "zh": "德国", "en": "Germany" },
+      "region": { "zh": "欧洲", "en": "Europe" },
+      "currency": "EUR",
+      "status": "planned",
+      "platforms": ["Amazon DE", "Otto", "Zalando"],
+      "reports": []
+    }
+  ],
+  "report_template": {
+    "_note": "How to generate a new report",
+    "steps": [
+      "1. Copy instance-au-march.json as a new instance file, e.g. instance-us-april.json",
+      "2. Fill in all fields following schema.json",
+      "3. Add a 'history' block referencing all reports for that market",
+      "4. Run: node -e \"const fs=require('fs'); const t=fs.readFileSync('template.html','utf8'); const d=JSON.parse(fs.readFileSync('instance-us-april.json','utf8')); const s='<script>window.__DASHBOARD_DATA__='+JSON.stringify(d)+';</scri'+'pt>'; fs.writeFileSync('report-us-april.html', t.replace('</head>', s+'</head>')); console.log('Done')\"",
+      "5. Add the new report entry to this market-config.json under the correct market"
+    ]
+  }
+}

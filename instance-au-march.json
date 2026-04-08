@@ -1,0 +1,383 @@
+{
+  "meta": { "documentTitle": { "zh": "澳洲3月畅销商品", "en": "Australia March Best-Selling Products" } },
+  "sidebar": {
+    "title": { "zh": "澳洲3月畅销商品", "en": "Australia March Best-Selling Products" },
+    "meta": [
+      { "zh": "市场：澳洲", "en": "Market: Australia" },
+      { "zh": "主题：3月畅销商品", "en": "Theme: March best sellers" },
+      { "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }
+    ]
+  },
+  "navigation": {
+    "title": { "zh": "内容导航", "en": "Navigation" },
+    "items": [
+      { "id": "overview", "title": { "zh": "总览", "en": "Overview" }, "description": { "zh": "结论与优先方向", "en": "Conclusions and priorities" } },
+      { "id": "signals", "title": { "zh": "关键信号", "en": "Signals" }, "description": { "zh": "需求与场景变化", "en": "Demand and scenario shifts" } },
+      { "id": "opportunities", "title": { "zh": "机会方向", "en": "Opportunities" }, "description": { "zh": "重点品类方向", "en": "Priority category directions" } },
+      { "id": "pricing", "title": { "zh": "价格带", "en": "Pricing" }, "description": { "zh": "价格结构与入场价", "en": "Price structure and entry points" } },
+      { "id": "players", "title": { "zh": "头部玩家", "en": "Top Players" }, "description": { "zh": "验证对象与链接", "en": "Validation objects and links" } },
+      { "id": "nextmoves", "title": { "zh": "Next 7 Days", "en": "Next 7 Days" }, "description": { "zh": "本周优先动作", "en": "Priority moves" } },
+      { "id": "risks", "title": { "zh": "风险与动作", "en": "Risks & Actions" }, "description": { "zh": "风险提醒与判断", "en": "Risk alerts and judgment" } }
+    ]
+  },
+  "hero": {
+    "title": { "zh": "澳洲3月消费需求更偏向换季、居家与户外轻升级", "en": "Australia’s March demand leans toward seasonal transition, home refresh, and light outdoor upgrades" },
+    "summary": { "zh": "当前更值得优先看的，不是重决策大件，而是能够快速匹配换季、返校后家庭节奏和初秋户外场景的轻量商品。优先关注收纳整理、厨房消耗型小件、宠物用品和户外便携类方向，执行上应先测高频场景 SKU，再观察评论区对尺寸、材质和复购意愿的反馈。", "en": "The stronger opportunities right now are not heavy decision purchases, but lighter products aligned with seasonal transition, post-back-to-school household rhythms, and early-autumn outdoor use. Priority areas include home organization, kitchen consumable accessories, pet goods, and portable outdoor items. Execution should start with high-frequency scenario SKUs, then validate size, material, and repeat-purchase intent through comments." },
+    "tags": [
+      { "zh": "优先方向：收纳 / 厨房 / 宠物 / 户外", "en": "Priority: Organization / Kitchen / Pet / Outdoor" },
+      { "zh": "执行节奏：30天快测", "en": "Cadence: 30-day fast test" },
+      { "zh": "核心打法：高频场景商品", "en": "Core play: High-frequency scenario goods" }
+    ],
+    "cards": [
+      { "label": { "zh": "总体机会强度", "en": "Overall opportunity strength" }, "value": { "zh": "中强", "en": "Medium-High" }, "note": { "zh": "需求分散，但适合通过多 SKU 快速验证。", "en": "Demand is fragmented, but well suited to multi-SKU fast validation." } },
+      { "label": { "zh": "当前优先级", "en": "Current priority" }, "value": { "zh": "先高频后高客单", "en": "High-frequency before high-ticket" }, "note": { "zh": "先做高频小件，再判断是否升级到更高客单方向。", "en": "Start with high-frequency small goods before moving into higher-ticket directions." } }
+    ]
+  },
+  "summaryMetrics": [
+    { "label": { "zh": "最佳切入口", "en": "Best entry point" }, "value": { "zh": "收纳整理小件", "en": "Organization accessories" }, "note": { "zh": "换季和居家整理需求明确，成交门槛低。", "en": "Seasonal and household organization demand is clear and low-friction." } },
+    { "label": { "zh": "更稳的带", "en": "More stable band" }, "value": { "zh": "厨房消耗型配件", "en": "Kitchen consumable accessories" }, "note": { "zh": "高频使用场景更容易支撑持续动销。", "en": "High-frequency usage supports steadier sell-through." } },
+    { "label": { "zh": "最该警惕", "en": "Main caution" }, "value": { "zh": "平台低价同质化", "en": "Low-price commoditization" }, "note": { "zh": "普通白牌小件容易陷入纯价格竞争。", "en": "Generic white-label goods can slip quickly into pure price competition." } },
+    { "label": { "zh": "优先验证", "en": "Priority validation" }, "value": { "zh": "复购与尺寸反馈", "en": "Repeat purchase and size feedback" }, "note": { "zh": "能否复购、是否合尺寸，比播放更能说明问题。", "en": "Repeat intent and fit feedback are more revealing than views." } }
+  ],
+  "sections": {
+    "overview": {
+      "title": { "zh": "总览", "en": "Overview" },
+      "subtitle": { "zh": "先看进入理由，再决定资源分配。", "en": "Review the entry logic first, then allocate resources." },
+      "badge": { "zh": "结论摘要", "en": "Executive Summary" },
+      "sources": [
+        { "zh": "数据依据：visible retail observation / category demand patterns", "en": "Source: visible retail observation / category demand patterns" }
+      ],
+      "barChart": {
+        "title": { "zh": "重点方向强度图", "en": "Priority Direction Strength" },
+        "items": [
+          { "label": { "zh": "收纳整理", "en": "Organization" }, "score": 8.6 },
+          { "label": { "zh": "厨房小件", "en": "Kitchen accessories" }, "score": 8.2 },
+          { "label": { "zh": "宠物用品", "en": "Pet goods" }, "score": 7.8 },
+          { "label": { "zh": "户外便携", "en": "Portable outdoor" }, "score": 7.5 }
+        ]
+      },
+      "sideCard": {
+        "title": { "zh": "Why Now / 当前进入理由", "en": "Why Now" },
+        "items": [
+          { "title": { "zh": "换季与日常重置需求重叠", "en": "Seasonal change overlaps with daily reset demand" }, "note": { "zh": "3月更容易出现整理、补货和轻度焕新的购买行为。", "en": "March tends to trigger organizing, replenishment, and light-refresh buying behavior." } },
+          { "title": { "zh": "高频使用类更适合测试", "en": "High-frequency use categories are easier to test" }, "note": { "zh": "如果商品嵌入日常节奏，转化和复购更容易形成。", "en": "If products fit into daily routines, both conversion and repeat purchase improve." } },
+          { "title": { "zh": "先测小件更稳", "en": "Testing small goods first is safer" }, "note": { "zh": "更容易跑出评论反馈和真实需求信号。", "en": "It is easier to surface comments and real demand signals." } }
+        ]
+      },
+      "takeaway": {
+        "title": { "zh": "市场摘要", "en": "Market takeaway" },
+        "body": { "zh": "澳洲3月畅销机会更偏“轻升级”而不是“重更换”。更值得看的，是能解决日常收纳、厨房使用效率、宠物照料和短时户外需求的小件商品。与其赌单一爆款，不如用多个高频方向同步测试。", "en": "Australia’s March best-seller opportunity leans more toward light upgrades than heavy replacement. The better targets are small goods that improve home organization, kitchen efficiency, pet care, and short-duration outdoor use. Rather than betting on one breakout SKU, a multi-direction high-frequency test set is more practical." }
+      },
+      "scorecard": {
+        "title": { "zh": "执行评分", "en": "Execution scores" },
+        "items": [
+          { "label": { "zh": "趋势强度", "en": "Trend strength" }, "score": 8.1 },
+          { "label": { "zh": "内容适配度", "en": "Content fit" }, "score": 7.9 },
+          { "label": { "zh": "转化潜力", "en": "Conversion potential" }, "score": 8.0 },
+          { "label": { "zh": "利润安全度", "en": "Margin safety" }, "score": 6.9 },
+          { "label": { "zh": "执行友好度", "en": "Execution friendliness" }, "score": 8.3 }
+        ]
+      }
+    },
+    "signals": {
+      "title": { "zh": "关键信号", "en": "Signals" },
+      "subtitle": { "zh": "观察重点是换季需求、高频使用场景和轻量升级意愿。", "en": "Focus on seasonal transition demand, high-frequency use cases, and willingness for light upgrades." },
+      "badge": { "zh": "需求与场景", "en": "Demand & Scenarios" },
+      "sources": [
+        { "zh": "数据依据：seasonal demand observation / listing scan", "en": "Source: seasonal demand observation / listing scan" }
+      ],
+      "columns": [
+        {
+          "title": { "zh": "市场与内容信号", "en": "Market and content signals" },
+          "items": [
+            { "title": { "zh": "收纳整理仍是换季高频入口", "en": "Organization remains a strong seasonal entry point" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "换季时家庭空间重整和物品分类需求更容易触发购买。", "en": "Seasonal change often triggers household reorganization and categorization demand." } },
+            { "title": { "zh": "厨房效率类商品更适合稳定动销", "en": "Kitchen efficiency items support steadier sell-through" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "不是高爆发型，但更容易形成长期周转。", "en": "They may not be explosive, but they can generate steadier turnover." } },
+            { "title": { "zh": "低价白牌品类竞争仍然激烈", "en": "Competition remains intense in low-priced generic goods" }, "level": { "zh": "注意", "en": "Watch" }, "levelClass": "warn", "body": { "zh": "没有明显场景价值时，很容易沦为纯价格竞争。", "en": "Without clear scenario value, these goods quickly become price-only competitions." } }
+          ]
+        },
+        {
+          "title": { "zh": "消费者需求信号", "en": "Consumer demand signals" },
+          "soft": true,
+          "items": [
+            { "title": { "zh": "“更整齐、更方便”仍是高频诉求", "en": "“More organized, more convenient” remains a high-frequency demand" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "用户更愿意买能让生活小幅变轻松的商品。", "en": "Users are more willing to buy products that make daily life slightly easier." } },
+            { "title": { "zh": "复购逻辑比一次性新奇感更重要", "en": "Repeat-purchase logic matters more than novelty" }, "level": { "zh": "中信号", "en": "Medium" }, "levelClass": "info", "body": { "zh": "厨房和宠物小件更容易建立后续补货可能。", "en": "Kitchen and pet accessories are more likely to build replenishment potential." } },
+            { "title": { "zh": "尺寸、材质、耐用度是关键反馈点", "en": "Size, material, and durability are key feedback points" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "评论区更容易在这些维度上暴露真实需求与痛点。", "en": "These dimensions tend to reveal the most honest need and pain points in comments." } }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": { "zh": "机会方向", "en": "Opportunity Directions" },
+      "subtitle": { "zh": "判断重点是是否值得现在切入，以及是否适合低成本测试。", "en": "The key question is whether the direction is worth entering now and whether it can be tested cheaply." },
+      "badge": { "zh": "机会地图", "en": "Opportunity Map" },
+      "sources": [
+        { "zh": "数据依据：listing observation / visible category demand / retail assortment scan", "en": "Source: listing observation / visible category demand / retail assortment scan" }
+      ],
+      "labels": {
+        "topPlayers": { "zh": "头部玩家：", "en": "Top players:" },
+        "entryWhy": { "zh": "当前进入理由：", "en": "Why enter now:" }
+      },
+      "cards": [
+        {
+          "title": { "zh": "机会一：收纳整理小件", "en": "Opportunity 1: Organization Accessories" },
+          "summary": { "zh": "包括抽屉分隔、厨房收纳盒、浴室整理和衣柜分类用品。", "en": "Includes drawer dividers, kitchen organizers, bathroom storage, and wardrobe sorting goods." },
+          "topPlayers": ["Kmart", "IKEA", "Amazon Basics"],
+          "entryWhy": { "zh": "换季带动空间整理需求，低决策高频使用更适合快速成交。", "en": "Seasonal transitions drive household organization demand, making low-friction high-use goods easier to convert." },
+          "tags": [
+            { "zh": "趋势级别：强", "en": "Trend: Strong" },
+            { "zh": "生命周期：稳定期", "en": "Lifecycle: Stable" },
+            { "zh": "打法：套装 / 分区组合", "en": "Play: Bundle / sorting sets" }
+          ]
+        },
+        {
+          "title": { "zh": "机会二：厨房消耗型配件", "en": "Opportunity 2: Kitchen Consumable Accessories" },
+          "summary": { "zh": "包括保鲜、清洁、烘焙辅助和基础烹饪小配件。", "en": "Includes food storage, cleaning, baking aids, and basic cooking accessories." },
+          "topPlayers": ["Kmart", "OXO", "Joseph Joseph"],
+          "entryWhy": { "zh": "高频使用场景成熟，用户更容易接受低客单但提升效率的小商品。", "en": "Usage frequency is high and mature, making low-ticket efficiency-enhancing products easier to justify." },
+          "tags": [
+            { "zh": "趋势级别：中强", "en": "Trend: Medium-Strong" },
+            { "zh": "生命周期：稳定期", "en": "Lifecycle: Stable" },
+            { "zh": "打法：功能单点突破", "en": "Play: Single-function efficiency win" }
+          ]
+        },
+        {
+          "title": { "zh": "机会三：宠物日常用品", "en": "Opportunity 3: Everyday Pet Goods" },
+          "summary": { "zh": "包括便携喂食、清洁护理、小型玩具和日常出行用品。", "en": "Includes feeding accessories, care tools, toys, and daily carry products." },
+          "topPlayers": ["Pet Circle", "KONG", "Amazon"],
+          "entryWhy": { "zh": "宠物消费偏稳定，日常照料型小件更容易形成持续需求。", "en": "Pet spending is relatively stable, and care-oriented small goods are more likely to generate ongoing demand." },
+          "tags": [
+            { "zh": "趋势级别：中强", "en": "Trend: Medium-Strong" },
+            { "zh": "生命周期：稳定期", "en": "Lifecycle: Stable" },
+            { "zh": "打法：高频补给", "en": "Play: Repeat-use supplies" }
+          ]
+        },
+        {
+          "title": { "zh": "机会四：户外便携小件", "en": "Opportunity 4: Portable Outdoor Goods" },
+          "summary": { "zh": "包括便携杯具、野餐辅助、露营轻配件和短途出行用品。", "en": "Includes drinkware, picnic helpers, light camping accessories, and short-trip gear." },
+          "topPlayers": ["Anaconda", "Stanley", "YETI"],
+          "entryWhy": { "zh": "澳洲户外场景长期存在，但更适合从轻便和低决策配件切入。", "en": "Outdoor use remains structurally relevant in Australia, but lighter and lower-friction accessories are the safer entry point." },
+          "tags": [
+            { "zh": "趋势级别：中", "en": "Trend: Medium" },
+            { "zh": "生命周期：稳定扩展", "en": "Lifecycle: Stable expansion" },
+            { "zh": "打法：场景组合", "en": "Play: Scenario bundles" }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": { "zh": "价格带", "en": "Pricing" },
+      "subtitle": { "zh": "重点不是市场现价本身，而是哪些测试价更适合跑出真实需求。", "en": "The focus is not only on current prices, but which test prices are most effective for surfacing real demand." },
+      "badge": { "zh": "价格结构", "en": "Pricing Structure" },
+      "sources": [
+        { "zh": "数据依据：visible retail pricing from Amazon AU and selected retail sites", "en": "Source: visible retail pricing from Amazon AU and selected retail sites" }
+      ],
+      "table": {
+        "title": { "zh": "价格带观察", "en": "Pricing band view" },
+        "columns": [
+          { "zh": "方向", "en": "Direction" },
+          { "zh": "低价带", "en": "Low band" },
+          { "zh": "主销带", "en": "Core band" },
+          { "zh": "推荐切入价", "en": "Recommended entry price" },
+          { "zh": "溢价逻辑", "en": "Premium logic" }
+        ],
+        "rows": [
+          [{ "zh": "收纳整理", "en": "Organization" }, { "zh": "A$8 - A$15", "en": "A$8 - A$15" }, { "zh": "A$15 - A$28", "en": "A$15 - A$28" }, { "zh": "A$14.99 - A$19.99", "en": "A$14.99 - A$19.99" }, { "zh": "套装化、分区感、材质表达", "en": "Bundle logic, sorting value, material framing" }],
+          [{ "zh": "厨房小件", "en": "Kitchen accessories" }, { "zh": "A$6 - A$14", "en": "A$6 - A$14" }, { "zh": "A$14 - A$24", "en": "A$14 - A$24" }, { "zh": "A$12.99 - A$17.99", "en": "A$12.99 - A$17.99" }, { "zh": "效率提升、重复使用、清洁便利", "en": "Efficiency gain, repeat use, easy cleaning" }],
+          [{ "zh": "宠物用品", "en": "Pet goods" }, { "zh": "A$8 - A$18", "en": "A$8 - A$18" }, { "zh": "A$18 - A$35", "en": "A$18 - A$35" }, { "zh": "A$16.99 - A$24.99", "en": "A$16.99 - A$24.99" }, { "zh": "耐用度、护理便利、日常刚需", "en": "Durability, care convenience, daily necessity" }],
+          [{ "zh": "户外便携", "en": "Portable outdoor" }, { "zh": "A$10 - A$20", "en": "A$10 - A$20" }, { "zh": "A$20 - A$40", "en": "A$20 - A$40" }, { "zh": "A$18.99 - A$26.99", "en": "A$18.99 - A$26.99" }, { "zh": "便携性、耐用材质、场景组合", "en": "Portability, durable material, scenario bundling" }]
+        ]
+      },
+      "side": {
+        "title": { "zh": "价格判断", "en": "Pricing judgment" },
+        "items": [
+          { "title": { "zh": "先测“愿不愿意买”而不是先卷最低价", "en": "Test willingness to buy before pushing to the lowest price" }, "note": { "zh": "低价不一定更好卖，尤其在同质化严重时。", "en": "Lower pricing does not always sell better, especially in commoditized categories." } },
+          { "title": { "zh": "推荐切入价要留出套装空间", "en": "Entry price should leave room for bundles" }, "note": { "zh": "一开始就打穿价格，会压缩后续优化空间。", "en": "Over-discounting too early limits later optimization flexibility." } },
+          { "title": { "zh": "优先测试高频场景对应价位", "en": "Prioritize pricing tied to high-frequency scenarios" }, "note": { "zh": "高频使用场景更容易形成合理价格锚点。", "en": "High-frequency use cases make pricing anchors easier to establish." } }
+        ]
+      }
+    },
+    "players": {
+      "title": { "zh": "Top Players & Links / 头部玩家与链接", "en": "Top Players & Links" },
+      "subtitle": { "zh": "用于快速查看市场验证对象，重点看价格、卖点和包装方式。", "en": "Used to quickly review market validation objects, especially pricing, messaging, and packaging." },
+      "badge": { "zh": "市场验证对象", "en": "Market Validation" },
+      "sources": [
+        { "zh": "数据依据：Amazon AU listings / official retail sites / category assortment scan", "en": "Source: Amazon AU listings / official retail sites / category assortment scan" }
+      ],
+      "filterTitle": { "zh": "平台筛选与价格参考", "en": "Platform filter & price reference" },
+      "filters": [
+        { "value": "all", "label": { "zh": "全部", "en": "All" } },
+        { "value": "amazon", "label": { "zh": "Amazon", "en": "Amazon" } },
+        { "value": "official", "label": { "zh": "Official Site", "en": "Official Site" } },
+        { "value": "retail", "label": { "zh": "Retail Site", "en": "Retail Site" } },
+        { "value": "marketplace", "label": { "zh": "Marketplace", "en": "Marketplace" } }
+      ],
+      "groups": [
+        {
+          "title": { "zh": "收纳整理小件", "en": "Organization Accessories" },
+          "platforms": ["retail", "official", "amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "收纳整理", "en": "Organization" }, "tag": "A$15 - A$28" },
+              { "zh": "Kmart", "en": "Kmart" },
+              { "zh": "Storage Containers Range", "en": "Storage Containers Range" },
+              { "zh": "Retail Site", "en": "Retail Site" },
+              { "type": "link", "href": "https://www.kmart.com.au/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "价格锚点清晰，适合看基础款包装。", "en": "Clear value anchor, useful for basic-packaging reference." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "收纳整理", "en": "Organization" }, "tag": "A$18 - A$35" },
+              { "zh": "IKEA", "en": "IKEA" },
+              { "zh": "Drawer & Box Organizers", "en": "Drawer & Box Organizers" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.ikea.com/au/en/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "分区逻辑成熟，适合看组合式表达。", "en": "Strong sorting logic, useful for bundle-style positioning." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "厨房消耗型配件", "en": "Kitchen Consumable Accessories" },
+          "platforms": ["amazon", "official", "retail"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "厨房小件", "en": "Kitchen accessories" }, "tag": "A$14 - A$24" },
+              { "zh": "OXO", "en": "OXO" },
+              { "zh": "Kitchen Prep Accessories", "en": "Kitchen Prep Accessories" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.oxo.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "功能表达清晰，适合看效率型卖点。", "en": "Clear functional framing, useful for efficiency-driven messaging." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "厨房小件", "en": "Kitchen accessories" }, "tag": "A$12 - A$22" },
+              { "zh": "Joseph Joseph", "en": "Joseph Joseph" },
+              { "zh": "Kitchen Gadgets Range", "en": "Kitchen Gadgets Range" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.josephjoseph.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "设计感更强，适合看中价位包装路径。", "en": "Stronger design layer, useful for mid-price packaging reference." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "宠物日常用品", "en": "Everyday Pet Goods" },
+          "platforms": ["official", "marketplace", "amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "宠物用品", "en": "Pet goods" }, "tag": "A$18 - A$35" },
+              { "zh": "Pet Circle", "en": "Pet Circle" },
+              { "zh": "Pet Accessories Range", "en": "Pet Accessories Range" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.petcircle.com.au/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "宠物场景清晰，适合看照料型表达。", "en": "Clear pet-care scenarios, useful for care-led messaging." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "宠物用品", "en": "Pet goods" }, "tag": "A$12 - A$28" },
+              { "zh": "KONG", "en": "KONG" },
+              { "zh": "Dog Toy & Treat Accessories", "en": "Dog Toy & Treat Accessories" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.kongcompany.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "品牌路径成熟，适合看耐用度卖点。", "en": "Mature brand path, useful for durability-led positioning." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "户外便携小件", "en": "Portable Outdoor Goods" },
+          "platforms": ["official", "retail", "amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "户外便携", "en": "Portable outdoor" }, "tag": "A$20 - A$40" },
+              { "zh": "Stanley", "en": "Stanley" },
+              { "zh": "Drinkware & Outdoor Accessories", "en": "Drinkware & Outdoor Accessories" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.stanley1913.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "品牌感强，适合看便携与耐用卖点。", "en": "Strong brand framing, useful for portability and durability messaging." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "户外便携", "en": "Portable outdoor" }, "tag": "A$18 - A$35" },
+              { "zh": "Anaconda", "en": "Anaconda" },
+              { "zh": "Camping & Picnic Accessories", "en": "Camping & Picnic Accessories" },
+              { "zh": "Retail Site", "en": "Retail Site" },
+              { "type": "link", "href": "https://www.anacondastores.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "场景清单感强，适合看组合销售逻辑。", "en": "Strong checklist framing, useful for bundle strategy reference." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": { "zh": "Next 7 Days", "en": "Next 7 Days" },
+      "subtitle": { "zh": "本周只保留最重要的三步。", "en": "Keep only the three most important actions for this week." },
+      "badge": { "zh": "优先动作", "en": "Priority Moves" },
+      "items": [
+        { "title": { "zh": "先测 3 个高频 SKU", "en": "Test 3 high-frequency SKUs first" }, "body": { "zh": "优先从收纳分隔、厨房消耗配件和宠物护理小件中各选一个。", "en": "Pick one SKU each from organization, kitchen consumables, and pet care accessories." } },
+        { "title": { "zh": "每个 SKU 设计 2 个场景角度", "en": "Build 2 scenario angles per SKU" }, "body": { "zh": "一个强调效率提升，一个强调整理或照料场景。", "en": "Use one angle focused on efficiency gain and one on organization or care routine." } },
+        { "title": { "zh": "重点看评论区复购与尺寸反馈", "en": "Watch repeat-purchase and size feedback" }, "body": { "zh": "优先记录用户是否提到补货意愿、尺寸不合或材质问题。", "en": "Track comments mentioning replenishment intent, size mismatch, or material concerns." } }
+      ]
+    },
+    "risks": {
+      "title": { "zh": "风险与动作", "en": "Risks & Actions" },
+      "subtitle": { "zh": "最终要回答的是值不值得做，以及如何做得更稳。", "en": "The final question is whether the opportunity is worth doing and how to execute more safely." },
+      "badge": { "zh": "风险判断", "en": "Risk Judgment" },
+      "risks": [
+        { "title": { "zh": "低价同质化风险", "en": "Commoditization risk" }, "body": { "zh": "普通收纳和厨房小件很容易陷入比价竞争。", "en": "Generic organization and kitchen goods can quickly fall into price comparison battles." } },
+        { "title": { "zh": "复购假设风险", "en": "Repeat-purchase assumption risk" }, "body": { "zh": "不是所有高频商品都能自然带来复购，需要评论验证。", "en": "Not every frequent-use product automatically creates repeat purchase, so comment validation matters." } },
+        { "title": { "zh": "场景表达不足风险", "en": "Weak scenario framing risk" }, "body": { "zh": "如果只是卖规格，不卖场景，内容转化会明显偏弱。", "en": "If the product is sold through specs instead of scenarios, content conversion is likely to weaken." } }
+      ],
+      "actions": {
+        "title": { "zh": "建议动作", "en": "Recommended actions" },
+        "items": [
+          { "title": { "zh": "优先做高频小件测试", "en": "Prioritize high-frequency small goods" }, "note": { "zh": "先验证日常需求，再判断是否扩到更高客单方向。", "en": "Validate everyday demand first, then decide whether to expand into higher-ticket directions." } },
+          { "title": { "zh": "评论验证优先于播放", "en": "Comments matter more than views" }, "note": { "zh": "评论区更容易暴露尺寸、材质和复购意愿。", "en": "Comments surface fit, material, and repeat-purchase intent more clearly." } },
+          { "title": { "zh": "用组合表达提高价值感", "en": "Use bundles to raise value perception" }, "note": { "zh": "整理组、厨房补给组、宠物照料组都更容易形成购买理由。", "en": "Organization sets, kitchen replenishment sets, and pet-care sets create stronger buying logic." } }
+        ]
+      },
+      "finalJudgment": {
+        "title": { "zh": "最终判断", "en": "Final judgment" },
+        "items": [
+          { "title": { "zh": "值得做，但更适合多方向并行测试", "en": "Worth doing, but better tested across multiple directions" }, "level": { "zh": "建议执行", "en": "Recommended" }, "levelClass": "good", "body": { "zh": "澳洲3月畅销机会更像多点分散型需求，而不是单一爆点型机会。", "en": "Australia’s March best-seller opportunity looks more like distributed demand than a single breakout wave." } },
+          { "title": { "zh": "先做高频场景货，再决定是否放大", "en": "Start with high-frequency scenario goods before scaling" }, "level": { "zh": "推荐路径", "en": "Preferred path" }, "levelClass": "info", "body": { "zh": "这条路径更容易控制库存风险，也更适合通过反馈快速修正。", "en": "This path keeps inventory risk lower and is easier to iterate through user feedback." } }
+        ]
+      }
+    },
+    "references": {
+      "title": { "zh": "References / 数据来源", "en": "References" },
+      "subtitle": { "zh": "本页判断基于公开可见来源与方向性商业判断。", "en": "This page is based on visible public sources and directional commercial judgment." },
+      "badge": { "zh": "证据链", "en": "Reference Layer" },
+      "cards": [
+        { "title": { "zh": "市场观察来源", "en": "Market Observation" }, "tags": [{ "zh": "seasonal demand observation", "en": "seasonal demand observation" }, { "zh": "listing scan", "en": "listing scan" }], "body": { "zh": "主要用于支持换季需求、场景成熟度和日常消费节奏判断。", "en": "Used mainly to support seasonal demand, scenario maturity, and daily-consumption rhythm judgments." } },
+        { "title": { "zh": "价格与产品参考来源", "en": "Pricing & Product Benchmark" }, "tags": [{ "zh": "Amazon AU listings", "en": "Amazon AU listings" }, { "zh": "official retail sites", "en": "official retail sites" }], "body": { "zh": "主要用于支持价格带判断、包装表达和头部玩家参考。", "en": "Used mainly for pricing-band judgment, packaging review, and top-player benchmarking." } },
+        { "title": { "zh": "更新时间信息", "en": "Update Info" }, "tags": [{ "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }, { "zh": "Last checked: 2026-04-08", "en": "Last checked: 2026-04-08" }], "body": { "zh": "本页基于公开可见市场观察与方向性商业判断，不代表完整成交数据库。", "en": "This page is based on visible market observation and directional commercial judgment, not a complete transaction dataset." } }
+      ]
+    }
+  },
+  "footer": { "zh": "Raymond Ho @Copyright 2026", "en": "Raymond Ho @Copyright 2026" },
+  "history": {
+    "market": { "zh": "澳洲", "en": "Australia" },
+    "reports": [
+      {
+        "title": { "zh": "3月畅销商品", "en": "March Best Sellers" },
+        "date": "2026-04",
+        "file": "report-au-march-best-sellers.html",
+        "current": true
+      }
+    ]
+  }
+}

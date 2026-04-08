@@ -1,0 +1,182 @@
+{
+  "$schema_note": "Dynamic report data injected into template.html via window.__DASHBOARD_DATA__",
+  "dynamic_fields": {
+    "meta.documentTitle": "Dynamic",
+    "sidebar.title": "Dynamic",
+    "sidebar.meta[]": "Dynamic",
+    "navigation.title": "Dynamic",
+    "navigation.items[]": "Dynamic",
+    "hero.*": "Dynamic",
+    "summaryMetrics[]": "Dynamic",
+    "sections.overview.*": "Dynamic",
+    "sections.signals.*": "Dynamic",
+    "sections.opportunities.*": "Dynamic",
+    "sections.pricing.*": "Dynamic",
+    "sections.players.*": "Dynamic",
+    "sections.nextMoves.*": "Dynamic",
+    "sections.risks.*": "Dynamic",
+    "sections.references.*": "Dynamic",
+    "footer": "Dynamic"
+  },
+  "protected_master_files": [
+    "template.html",
+    "schema.json",
+    "README-template.md"
+  ],
+  "data": {
+    "meta": {
+      "documentTitle": { "zh": "string", "en": "string" }
+    },
+    "sidebar": {
+      "title": { "zh": "string", "en": "string" },
+      "meta": [{ "zh": "string", "en": "string" }]
+    },
+    "navigation": {
+      "title": { "zh": "string", "en": "string" },
+      "items": [
+        {
+          "id": "overview|signals|opportunities|pricing|players|nextmoves|risks",
+          "title": { "zh": "string", "en": "string" },
+          "description": { "zh": "string", "en": "string" }
+        }
+      ]
+    },
+    "hero": {
+      "title": { "zh": "string", "en": "string" },
+      "summary": { "zh": "string", "en": "string" },
+      "tags": [{ "zh": "string", "en": "string" }],
+      "cards": [
+        {
+          "label": { "zh": "string", "en": "string" },
+          "value": { "zh": "string", "en": "string" },
+          "note": { "zh": "string", "en": "string" }
+        }
+      ]
+    },
+    "summaryMetrics": [
+      {
+        "label": { "zh": "string", "en": "string" },
+        "value": { "zh": "string", "en": "string" },
+        "note": { "zh": "string", "en": "string" }
+      }
+    ],
+    "sections": {
+      "overview": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "sources": [{ "zh": "string", "en": "string" }],
+        "barChart": {
+          "title": { "zh": "string", "en": "string" },
+          "items": [{ "label": { "zh": "string", "en": "string" }, "score": 0 }]
+        },
+        "sideCard": {
+          "title": { "zh": "string", "en": "string" },
+          "items": [{ "title": { "zh": "string", "en": "string" }, "note": { "zh": "string", "en": "string" } }]
+        },
+        "takeaway": {
+          "title": { "zh": "string", "en": "string" },
+          "body": { "zh": "string", "en": "string" }
+        },
+        "scorecard": {
+          "title": { "zh": "string", "en": "string" },
+          "items": [{ "label": { "zh": "string", "en": "string" }, "score": 0 }]
+        }
+      },
+      "signals": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "sources": [{ "zh": "string", "en": "string" }],
+        "columns": [
+          {
+            "title": { "zh": "string", "en": "string" },
+            "soft": true,
+            "items": [{ "title": { "zh": "string", "en": "string" }, "level": { "zh": "string", "en": "string" }, "levelClass": "good|warn|info", "body": { "zh": "string", "en": "string" } }]
+          }
+        ]
+      },
+      "opportunities": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "sources": [{ "zh": "string", "en": "string" }],
+        "labels": {
+          "topPlayers": { "zh": "string", "en": "string" },
+          "entryWhy": { "zh": "string", "en": "string" }
+        },
+        "cards": [
+          {
+            "title": { "zh": "string", "en": "string" },
+            "summary": { "zh": "string", "en": "string" },
+            "topPlayers": ["string"],
+            "entryWhy": { "zh": "string", "en": "string" },
+            "tags": [{ "zh": "string", "en": "string" }]
+          }
+        ]
+      },
+      "pricing": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "sources": [{ "zh": "string", "en": "string" }],
+        "table": {
+          "title": { "zh": "string", "en": "string" },
+          "columns": [{ "zh": "string", "en": "string" }],
+          "rows": [[{ "zh": "string", "en": "string" }]]
+        },
+        "side": {
+          "title": { "zh": "string", "en": "string" },
+          "items": [{ "title": { "zh": "string", "en": "string" }, "note": { "zh": "string", "en": "string" } }]
+        }
+      },
+      "players": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "sources": [{ "zh": "string", "en": "string" }],
+        "filterTitle": { "zh": "string", "en": "string" },
+        "filters": [{ "value": "all|amazon|official|sephora|tiktok", "label": { "zh": "string", "en": "string" } }],
+        "groups": [
+          {
+            "title": { "zh": "string", "en": "string" },
+            "platforms": ["amazon", "official"],
+            "columns": [{ "zh": "string", "en": "string" }],
+            "rows": [
+              [
+                { "type": "price", "text": { "zh": "string", "en": "string" }, "tag": "string" },
+                { "zh": "string", "en": "string" },
+                { "zh": "string", "en": "string" },
+                { "zh": "string", "en": "string" },
+                { "type": "link", "href": "https://...", "label": { "zh": "string", "en": "string" } },
+                { "zh": "string", "en": "string" },
+                { "type": "checked", "value": "YYYY-MM-DD" }
+              ]
+            ]
+          }
+        ]
+      },
+      "nextMoves": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "items": [{ "title": { "zh": "string", "en": "string" }, "body": { "zh": "string", "en": "string" } }]
+      },
+      "risks": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "risks": [{ "title": { "zh": "string", "en": "string" }, "body": { "zh": "string", "en": "string" } }],
+        "actions": { "title": { "zh": "string", "en": "string" }, "items": [{ "title": { "zh": "string", "en": "string" }, "note": { "zh": "string", "en": "string" } }] },
+        "finalJudgment": { "title": { "zh": "string", "en": "string" }, "items": [{ "title": { "zh": "string", "en": "string" }, "level": { "zh": "string", "en": "string" }, "levelClass": "good|warn|info", "body": { "zh": "string", "en": "string" } }] }
+      },
+      "references": {
+        "title": { "zh": "string", "en": "string" },
+        "subtitle": { "zh": "string", "en": "string" },
+        "badge": { "zh": "string", "en": "string" },
+        "cards": [{ "title": { "zh": "string", "en": "string" }, "tags": [{ "zh": "string", "en": "string" }], "body": { "zh": "string", "en": "string" } }]
+      }
+    },
+    "footer": { "zh": "string", "en": "string" }
+  }
+}
