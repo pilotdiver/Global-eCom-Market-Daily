@@ -184,8 +184,37 @@ def rebuild_registry(data):
     reports.sort(key=lambda x: (-x['priorityScore'], -(x['confidence'] or 0), x['updatedAt'] or ''))
     watchlists.sort(key=lambda x: (x['status'] != 'active', x['updatedAt'] or ''), reverse=True)
     change_log.sort(key=lambda x: (x['updatedAt'] or '', x['priorityScore']), reverse=True)
+    entities = {}
+    for report in reports:
+        entity_id = category_key = (report['category'].get('en') or report['category'].get('zh') or 'uncategorized').lower().replace(' & ', '-').replace(' ', '-').replace('/', '-')
+        if entity_id not in entities:
+            entities[entity_id] = {
+                'entityId': entity_id,
+                'title': report['category'],
+                'priorityTier': report['priorityTier'],
+                'topPriorityScore': report['priorityScore'],
+                'topConfidence': report['confidence'],
+                'platformFit': report['platformFit'],
+                'reports': [],
+                'markets': [],
+                'leadReportId': report['reportId'],
+                'leadFile': report['latestFile'],
+                'summary': report['summary']
+            }
+        entity = entities[entity_id]
+        entity['reports'].append(report['reportId'])
+        entity['markets'].append(report['marketName'])
+        if report['priorityScore'] > entity['topPriorityScore']:
+            entity['topPriorityScore'] = report['priorityScore']
+            entity['priorityTier'] = report['priorityTier']
+            entity['topConfidence'] = report['confidence']
+            entity['platformFit'] = report['platformFit']
+            entity['leadReportId'] = report['reportId']
+            entity['leadFile'] = report['latestFile']
+            entity['summary'] = report['summary']
     data['registry'] = {
         'reports': reports,
+        'entities': list(entities.values()),
         'watchlists': watchlists,
         'changeLog': change_log[:12]
     }
