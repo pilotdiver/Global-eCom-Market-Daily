@@ -1031,7 +1031,8 @@
         "summary": {
           "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
           "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
-        }
+        },
+        "profileFile": "entities/beauty-personal-care.html"
       },
       {
         "entityId": "home-decor",
@@ -1061,7 +1062,8 @@
         "summary": {
           "zh": "DIY 花艺包值得做，但更适合走体验型、礼盒型和场景型商品路线，而不是普通散装材料包。",
           "en": "DIY floral kits are worth pursuing, but the stronger route is experience-led, giftable, and scenario-based positioning rather than plain loose-material bundles."
-        }
+        },
+        "profileFile": "entities/home-decor.html"
       },
       {
         "entityId": "uncategorized",
@@ -1096,7 +1098,8 @@
         "summary": {
           "zh": "4月美国机会更偏向春季刚需，重点在虫害控制、园艺维护、整理和补水类方向。",
           "en": "US April opportunities lean toward spring necessity, led by pest control, garden maintenance, organization, and hydration."
-        }
+        },
+        "profileFile": "entities/uncategorized.html"
       }
     ],
     "watchlists": [
