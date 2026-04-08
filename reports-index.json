@@ -303,7 +303,9 @@
           "category": {
             "zh": "家居装饰",
             "en": "Home Decor"
-          }
+          },
+          "previousVersion": "v1.0",
+          "version": "v1.1"
         }
       ]
     },
@@ -367,5 +369,576 @@
         }
       ]
     }
-  ]
+  ],
+  "registry": {
+    "reports": [
+      {
+        "reportId": "global-press-on-nails-2026",
+        "slug": "global-press-on-nails-2026",
+        "marketId": "global",
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "region": {
+          "zh": "跨市场",
+          "en": "Cross-market"
+        },
+        "flag": "🌍",
+        "category": {
+          "zh": "美妆个护",
+          "en": "Beauty & Personal Care"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "全球穿戴甲机会分析",
+          "en": "Global Press-On Nails Opportunity Analysis"
+        },
+        "summary": {
+          "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
+          "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
+        },
+        "highlight": {
+          "zh": "设计与便利性并重",
+          "en": "Design and convenience both matter"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.74,
+        "priorityScore": 82,
+        "priorityTier": "P1",
+        "platformFit": {
+          "amazon": 0.82,
+          "tiktok": 0.91,
+          "shopify": 0.72
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先复核 全球穿戴甲机会分析 的切入方向与首批测试动作",
+            "en": "Review the entry path and first test actions for Global Press-On Nails Opportunity Analysis"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-global-press-on-nails.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "穿戴甲",
+            "en": "Press-on nails"
+          },
+          {
+            "zh": "美妆配件",
+            "en": "Beauty accessories"
+          },
+          {
+            "zh": "设计型商品",
+            "en": "Design-led goods"
+          }
+        ]
+      },
+      {
+        "reportId": "europe-press-on-nails-2026",
+        "slug": "europe-press-on-nails-2026",
+        "marketId": "europe",
+        "marketName": {
+          "zh": "欧洲",
+          "en": "Europe"
+        },
+        "region": {
+          "zh": "英国 / 德国 / 法国 / 意大利",
+          "en": "UK / Germany / France / Italy"
+        },
+        "flag": "🇪🇺",
+        "category": {
+          "zh": "美妆个护",
+          "en": "Beauty & Personal Care"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "欧洲穿戴甲市场机会分析",
+          "en": "Europe Press-On Nails Opportunity Analysis"
+        },
+        "summary": {
+          "zh": "欧洲穿戴甲机会成立，但更偏日常审美、可重复佩戴与规范化运营，不适合直接照搬美国式夸张爆款路径。",
+          "en": "Europe offers a real press-on nail opportunity, but it leans toward daily aesthetics, reusable wear, and compliance-led execution rather than direct copies of US-style dramatic trend plays."
+        },
+        "highlight": {
+          "zh": "先做 clean aesthetic，再做主题扩张",
+          "en": "Build around clean aesthetics before themed expansion"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.74,
+        "priorityScore": 82,
+        "priorityTier": "P1",
+        "platformFit": {
+          "amazon": 0.82,
+          "tiktok": 0.91,
+          "shopify": 0.72
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先复核 欧洲穿戴甲市场机会分析 的切入方向与首批测试动作",
+            "en": "Review the entry path and first test actions for Europe Press-On Nails Opportunity Analysis"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-europe-press-on-nails.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "穿戴甲",
+            "en": "Press-on nails"
+          },
+          {
+            "zh": "欧洲美妆",
+            "en": "European beauty"
+          },
+          {
+            "zh": "合规导向",
+            "en": "Compliance-led"
+          }
+        ]
+      },
+      {
+        "reportId": "global-diy-floral-kit-2026",
+        "slug": "global-diy-floral-kit-2026",
+        "marketId": "global",
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "region": {
+          "zh": "跨市场",
+          "en": "Cross-market"
+        },
+        "flag": "🌍",
+        "category": {
+          "zh": "家居装饰",
+          "en": "Home Decor"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "DIY 花艺包机会分析",
+          "en": "DIY Floral Kit Opportunity Analysis"
+        },
+        "summary": {
+          "zh": "DIY 花艺包值得做，但更适合走体验型、礼盒型和场景型商品路线，而不是普通散装材料包。",
+          "en": "DIY floral kits are worth pursuing, but the stronger route is experience-led, giftable, and scenario-based positioning rather than plain loose-material bundles."
+        },
+        "highlight": {
+          "zh": "卖的是完成感，不只是材料",
+          "en": "Sell completion, not just materials"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.68,
+        "priorityScore": 78,
+        "priorityTier": "P2",
+        "platformFit": {
+          "amazon": 0.76,
+          "tiktok": 0.66,
+          "shopify": 0.81
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先复核 DIY 花艺包机会分析 的切入方向与首批测试动作",
+            "en": "Review the entry path and first test actions for DIY Floral Kit Opportunity Analysis"
+          }
+        ],
+        "watchStatus": "monitor",
+        "watchReason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "version": "v1.1",
+        "previousVersion": "v1.0",
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-diy-floral-kit.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "DIY 花艺包",
+            "en": "DIY floral kit"
+          },
+          {
+            "zh": "家居装饰",
+            "en": "Home decor"
+          },
+          {
+            "zh": "礼品手作",
+            "en": "Giftable craft"
+          }
+        ]
+      },
+      {
+        "reportId": "us-apr-2026",
+        "slug": "us-apr-2026",
+        "marketId": "us",
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "region": {
+          "zh": "北美",
+          "en": "North America"
+        },
+        "flag": "🇺🇸",
+        "category": {
+          "zh": "未分类",
+          "en": "Uncategorized"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "4月电商商品爆款分析",
+          "en": "April breakout product analysis"
+        },
+        "summary": {
+          "zh": "4月美国机会更偏向春季刚需，重点在虫害控制、园艺维护、整理和补水类方向。",
+          "en": "US April opportunities lean toward spring necessity, led by pest control, garden maintenance, organization, and hydration."
+        },
+        "highlight": {
+          "zh": "高确定性季节窗口",
+          "en": "High-certainty seasonal window"
+        },
+        "confidence": 0.86,
+        "confidenceLabel": {
+          "zh": "高",
+          "en": "High"
+        },
+        "evidenceStrength": 0.62,
+        "priorityScore": 72,
+        "priorityTier": "P2",
+        "platformFit": {
+          "amazon": 0.7,
+          "tiktok": 0.7,
+          "shopify": 0.7
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先复核 4月电商商品爆款分析 的切入方向与首批测试动作",
+            "en": "Review the entry path and first test actions for April breakout product analysis"
+          }
+        ],
+        "watchStatus": "monitor",
+        "watchReason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-us-april-breakout-products.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "虫害控制",
+            "en": "Pest control"
+          },
+          {
+            "zh": "园艺",
+            "en": "Garden"
+          },
+          {
+            "zh": "整理",
+            "en": "Organization"
+          },
+          {
+            "zh": "补水",
+            "en": "Hydration"
+          }
+        ]
+      },
+      {
+        "reportId": "au-mar-2026",
+        "slug": "au-mar-2026",
+        "marketId": "au",
+        "marketName": {
+          "zh": "澳洲",
+          "en": "Australia"
+        },
+        "region": {
+          "zh": "大洋洲",
+          "en": "Oceania"
+        },
+        "flag": "🇦🇺",
+        "category": {
+          "zh": "未分类",
+          "en": "Uncategorized"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "3月畅销商品",
+          "en": "March best sellers"
+        },
+        "summary": {
+          "zh": "澳洲3月需求偏换季与日常整理，适合从收纳、厨房、宠物和户外轻升级小件切入。",
+          "en": "Australia March demand favored seasonal reset and daily organization, with opportunities in organization, kitchen, pet, and light outdoor goods."
+        },
+        "highlight": {
+          "zh": "高频小件优先",
+          "en": "High-frequency small goods first"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.62,
+        "priorityScore": 72,
+        "priorityTier": "P2",
+        "platformFit": {
+          "amazon": 0.7,
+          "tiktok": 0.7,
+          "shopify": 0.7
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先复核 3月畅销商品 的切入方向与首批测试动作",
+            "en": "Review the entry path and first test actions for March best sellers"
+          }
+        ],
+        "watchStatus": "monitor",
+        "watchReason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-au-march-best-sellers.html",
+        "featured": false,
+        "tags": [
+          {
+            "zh": "收纳",
+            "en": "Organization"
+          },
+          {
+            "zh": "厨房",
+            "en": "Kitchen"
+          },
+          {
+            "zh": "宠物",
+            "en": "Pet"
+          },
+          {
+            "zh": "户外",
+            "en": "Outdoor"
+          }
+        ]
+      }
+    ],
+    "watchlists": [
+      {
+        "watchId": "watch-us-apr-2026",
+        "entityType": "report",
+        "entityId": "us-apr-2026",
+        "marketId": "us",
+        "title": {
+          "zh": "4月电商商品爆款分析",
+          "en": "April breakout product analysis"
+        },
+        "status": "monitor",
+        "reason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "priorityTier": "P2",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-au-mar-2026",
+        "entityType": "report",
+        "entityId": "au-mar-2026",
+        "marketId": "au",
+        "title": {
+          "zh": "3月畅销商品",
+          "en": "March best sellers"
+        },
+        "status": "monitor",
+        "reason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "priorityTier": "P2",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-global-diy-floral-kit-2026",
+        "entityType": "report",
+        "entityId": "global-diy-floral-kit-2026",
+        "marketId": "global",
+        "title": {
+          "zh": "DIY 花艺包机会分析",
+          "en": "DIY Floral Kit Opportunity Analysis"
+        },
+        "status": "monitor",
+        "reason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "priorityTier": "P2",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-global-press-on-nails-2026",
+        "entityType": "report",
+        "entityId": "global-press-on-nails-2026",
+        "marketId": "global",
+        "title": {
+          "zh": "全球穿戴甲机会分析",
+          "en": "Global Press-On Nails Opportunity Analysis"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-europe-press-on-nails-2026",
+        "entityType": "report",
+        "entityId": "europe-press-on-nails-2026",
+        "marketId": "europe",
+        "title": {
+          "zh": "欧洲穿戴甲市场机会分析",
+          "en": "Europe Press-On Nails Opportunity Analysis"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "需要持续观察信号变化",
+          "en": "Signal changes require ongoing monitoring"
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-08"
+      }
+    ],
+    "changeLog": [
+      {
+        "reportId": "global-press-on-nails-2026",
+        "title": {
+          "zh": "全球穿戴甲机会分析",
+          "en": "Global Press-On Nails Opportunity Analysis"
+        },
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "flag": "🌍",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "全球穿戴甲机会分析 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "Global Press-On Nails Opportunity Analysis is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 82
+      },
+      {
+        "reportId": "europe-press-on-nails-2026",
+        "title": {
+          "zh": "欧洲穿戴甲市场机会分析",
+          "en": "Europe Press-On Nails Opportunity Analysis"
+        },
+        "marketName": {
+          "zh": "欧洲",
+          "en": "Europe"
+        },
+        "flag": "🇪🇺",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "欧洲穿戴甲市场机会分析 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "Europe Press-On Nails Opportunity Analysis is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 82
+      },
+      {
+        "reportId": "global-diy-floral-kit-2026",
+        "title": {
+          "zh": "DIY 花艺包机会分析",
+          "en": "DIY Floral Kit Opportunity Analysis"
+        },
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "flag": "🌍",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "DIY 花艺包机会分析 已进入 P2 优先级，建议复核下一步动作。",
+          "en": "DIY Floral Kit Opportunity Analysis is now in P2 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 78
+      },
+      {
+        "reportId": "us-apr-2026",
+        "title": {
+          "zh": "4月电商商品爆款分析",
+          "en": "April breakout product analysis"
+        },
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "flag": "🇺🇸",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "4月电商商品爆款分析 已进入 P2 优先级，建议复核下一步动作。",
+          "en": "April breakout product analysis is now in P2 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 72
+      },
+      {
+        "reportId": "au-mar-2026",
+        "title": {
+          "zh": "3月畅销商品",
+          "en": "March best sellers"
+        },
+        "marketName": {
+          "zh": "澳洲",
+          "en": "Australia"
+        },
+        "flag": "🇦🇺",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "3月畅销商品 已进入 P2 优先级，建议复核下一步动作。",
+          "en": "March best sellers is now in P2 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 72
+      }
+    ]
+  }
 }
