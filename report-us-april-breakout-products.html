@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:flex;align-items:end;justify-content:space-between;gap:16px;height:240px;padding-top:16px}.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:90px;height:210px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:12px;color:var(--muted);text-align:center;line-height:1.4}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": { "documentTitle": { "zh": "美国4月电商商品爆款分析", "en": "US April E-commerce Breakout Product Analysis" } },
+  "sidebar": {
+    "title": { "zh": "全球电商情报系统", "en": "Global eCom Intelligence System" },
+    "meta": [
+      { "zh": "市场：美国", "en": "Market: US" },
+      { "zh": "主题：4月电商商品爆款分析", "en": "Theme: April breakout product analysis" },
+      { "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }
+    ]
+  },
+  "navigation": {
+    "title": { "zh": "内容导航", "en": "Navigation" },
+    "items": [
+      { "id": "overview", "title": { "zh": "总览", "en": "Overview" }, "description": { "zh": "结论与优先方向", "en": "Conclusions and priorities" } },
+      { "id": "signals", "title": { "zh": "关键信号", "en": "Signals" }, "description": { "zh": "需求与季节变化", "en": "Demand and seasonal shifts" } },
+      { "id": "opportunities", "title": { "zh": "机会方向", "en": "Opportunities" }, "description": { "zh": "重点爆款方向", "en": "Priority breakout directions" } },
+      { "id": "pricing", "title": { "zh": "价格带", "en": "Pricing" }, "description": { "zh": "价格结构与入场价", "en": "Price structure and entry points" } },
+      { "id": "players", "title": { "zh": "头部玩家", "en": "Top Players" }, "description": { "zh": "验证对象与链接", "en": "Validation objects and links" } },
+      { "id": "nextmoves", "title": { "zh": "Next 7 Days", "en": "Next 7 Days" }, "description": { "zh": "本周优先动作", "en": "Priority moves" } },
+      { "id": "risks", "title": { "zh": "风险与动作", "en": "Risks & Actions" }, "description": { "zh": "风险提醒与判断", "en": "Risk alerts and judgment" } }
+    ]
+  },
+  "hero": {
+    "title": { "zh": "美国4月电商爆款更偏向春季刚需，而不是高客单尝鲜型商品", "en": "US April breakout products lean toward spring necessity rather than high-ticket novelty" },
+    "summary": { "zh": "当前更值得优先关注的，不是复杂重决策品类，而是与春季整理、庭院维护、虫害防护、补水出行和宠物换季护理相关的高频商品。优先测试家居整理、园艺与庭院、虫害控制、补水随身用品这几条线，执行上应以明确场景、即时问题解决和低门槛转化为先。", "en": "The stronger April opportunities are not in complex high-consideration categories, but in high-frequency goods tied to spring cleaning, yard prep, pest control, hydration on the go, and seasonal pet care. Priority testing should focus on home organization, lawn and garden, pest-control products, and hydration carry goods, with execution centered on clear scenarios, immediate problem-solving, and low-friction conversion." },
+    "tags": [
+      { "zh": "优先方向：整理 / 园艺 / 虫害 / 补水", "en": "Priority: Organization / Garden / Pest / Hydration" },
+      { "zh": "执行节奏：30~45天快测", "en": "Cadence: 30 to 45 day fast tests" },
+      { "zh": "核心打法：季节刚需 + 场景表达", "en": "Core play: Seasonal necessity + scenario framing" }
+    ],
+    "cards": [
+      { "label": { "zh": "总体机会强度", "en": "Overall opportunity strength" }, "value": { "zh": "强", "en": "Strong" }, "note": { "zh": "4月春季需求信号明确，多个方向同时具备现实转化条件。", "en": "April spring demand is clear, and multiple directions show real conversion conditions at once." } },
+      { "label": { "zh": "当前优先级", "en": "Current priority" }, "value": { "zh": "先场景刚需，后内容扩张", "en": "Necessity first, content expansion second" }, "note": { "zh": "先做已有需求的春季商品，再考虑更偏内容驱动的扩张方向。", "en": "Start with demand-backed spring products before expanding into more content-led directions." } }
+    ]
+  },
+  "summaryMetrics": [
+    { "label": { "zh": "最佳切入口", "en": "Best entry point" }, "value": { "zh": "虫害控制与春季庭院小件", "en": "Pest control and spring yard accessories" }, "note": { "zh": "季节触发强、问题明确、购买理由最直接。", "en": "Seasonal trigger is strong, the problem is clear, and the buying reason is direct." } },
+    { "label": { "zh": "更稳的带", "en": "More stable band" }, "value": { "zh": "家居整理与补水用品", "en": "Home organization and hydration goods" }, "note": { "zh": "高频使用场景更容易支撑持续动销。", "en": "High-frequency use cases support steadier sell-through." } },
+    { "label": { "zh": "最该警惕", "en": "Main caution" }, "value": { "zh": "季节结束后的需求回落", "en": "Post-season demand fade" }, "note": { "zh": "4月机会强，但窗口比常规家居品更短。", "en": "The April window is strong, but shorter than standard evergreen home categories." } },
+    { "label": { "zh": "优先验证", "en": "Priority validation" }, "value": { "zh": "评论里的问题解决感", "en": "Problem-solving response in comments" }, "note": { "zh": "用户是否明确说“正需要”“解决了问题”，比单看热度更重要。", "en": "Whether users say “needed this” or “solved my problem” matters more than raw buzz." } }
+  ],
+  "sections": {
+    "overview": {
+      "title": { "zh": "总览", "en": "Overview" },
+      "subtitle": { "zh": "先看进入理由，再决定资源怎么切。", "en": "Review entry logic first, then decide resource allocation." },
+      "badge": { "zh": "结论摘要", "en": "Executive Summary" },
+      "sources": [
+        { "zh": "数据依据：Amazon best-seller observation / seasonal retail signals", "en": "Source: Amazon best-seller observation / seasonal retail signals" }
+      ],
+      "barChart": {
+        "title": { "zh": "重点方向强度图", "en": "Priority Direction Strength" },
+        "items": [
+          { "label": { "zh": "虫害控制", "en": "Pest control" }, "score": 8.9 },
+          { "label": { "zh": "园艺与庭院", "en": "Lawn & garden" }, "score": 8.5 },
+          { "label": { "zh": "家居整理", "en": "Home organization" }, "score": 8.0 },
+          { "label": { "zh": "补水与随身携带", "en": "Hydration & on-the-go" }, "score": 7.7 }
+        ]
+      },
+      "sideCard": {
+        "title": { "zh": "Why Now / 当前进入理由", "en": "Why Now" },
+        "items": [
+          { "title": { "zh": "春季问题正在集中出现", "en": "Spring problems are surfacing at once" }, "note": { "zh": "虫害、除草、播种、整理和出行补水都在 4 月进入高频场景。", "en": "Pests, weeds, planting, organizing, and hydration all enter high-frequency use in April." } },
+          { "title": { "zh": "购买理由更偏“解决问题”", "en": "Buying reasons are more problem-solving than exploratory" }, "note": { "zh": "4月强势商品通常不靠新奇感，而靠立即可理解的需求。", "en": "April winners are often driven by immediately understandable needs rather than novelty." } },
+          { "title": { "zh": "更适合低门槛快测", "en": "Well suited to low-friction fast testing" }, "note": { "zh": "多数方向可以从低客单小件切入，而不是先投入重库存。", "en": "Most directions can be entered through low-ticket accessories instead of heavy inventory commitments." } }
+        ]
+      },
+      "takeaway": {
+        "title": { "zh": "市场摘要", "en": "Market takeaway" },
+        "body": { "zh": "美国4月爆款方向的共同点，不是“内容先火”，而是“季节需求先到”。虫害控制和园艺用品最像确定性机会，家居整理和补水用品更像稳定承接型机会。策略上应先抓春季刚需，再看是否有内容延展空间。", "en": "The shared pattern in US April breakout products is not content-first virality, but demand arriving with the season first. Pest control and lawn/garden goods look like the highest-certainty opportunities, while home organization and hydration goods are steadier support categories. Strategically, seasonal necessity should come first, then content expansion." }
+      },
+      "scorecard": {
+        "title": { "zh": "执行评分", "en": "Execution scores" },
+        "items": [
+          { "label": { "zh": "趋势强度", "en": "Trend strength" }, "score": 8.8 },
+          { "label": { "zh": "内容适配度", "en": "Content fit" }, "score": 7.9 },
+          { "label": { "zh": "转化潜力", "en": "Conversion potential" }, "score": 8.6 },
+          { "label": { "zh": "利润安全度", "en": "Margin safety" }, "score": 7.1 },
+          { "label": { "zh": "执行友好度", "en": "Execution friendliness" }, "score": 8.2 }
+        ]
+      }
+    },
+    "signals": {
+      "title": { "zh": "关键信号", "en": "Signals" },
+      "subtitle": { "zh": "观察重点是春季需求成熟度、问题触发方式和内容转化逻辑。", "en": "Focus on spring-demand maturity, problem triggers, and content conversion logic." },
+      "badge": { "zh": "需求与场景", "en": "Demand & Scenarios" },
+      "sources": [
+        { "zh": "数据依据：Amazon best-seller scan / seasonal demand observation", "en": "Source: Amazon best-seller scan / seasonal demand observation" }
+      ],
+      "columns": [
+        {
+          "title": { "zh": "市场与内容信号", "en": "Market and content signals" },
+          "items": [
+            { "title": { "zh": "虫害控制和庭院维护已进入高需求窗口", "en": "Pest control and yard maintenance have entered a high-demand window" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "诱蚁站、驱虫补充装、除草和花园浇灌工具都具备明确季节理由。", "en": "Ant bait stations, insect trap refills, weed-control products, and watering tools all have clear seasonal logic." } },
+            { "title": { "zh": "“解决春季麻烦”比“新奇玩法”更好卖", "en": "“Solve spring hassle” sells better than novelty" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "4月高动销方向更偏功能解决型，而不是单纯社媒爆点型。", "en": "High-turnover April products are more often function-led solutions than pure social-media novelty items." } },
+            { "title": { "zh": "整理类需求稳定，但更需要差异化表达", "en": "Organization demand is stable but needs clearer differentiation" }, "level": { "zh": "注意", "en": "Watch" }, "levelClass": "warn", "body": { "zh": "收纳类是长期需求，但在 4 月需要和春季整理、车库、户外收纳绑定才更强。", "en": "Organization is evergreen, but in April it works better when tied to spring cleaning, garages, and outdoor storage." } }
+          ]
+        },
+        {
+          "title": { "zh": "消费者需求信号", "en": "Consumer demand signals" },
+          "soft": true,
+          "items": [
+            { "title": { "zh": "用户更愿意为“马上有用”买单", "en": "Users pay more easily for products that are immediately useful" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "驱虫、除草、整理和补水，本质上都在解决眼前的问题。", "en": "Pest control, weed management, organization, and hydration all solve present-tense problems." } },
+            { "title": { "zh": "多件装和补充装更容易跑量", "en": "Multipacks and refills scale more easily" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "春季维护类商品经常适合以多件装或补充装提高感知价值。", "en": "Spring maintenance products often benefit from multipack and refill logic to increase perceived value." } },
+            { "title": { "zh": "评论区更容易暴露“是否真解决问题”", "en": "Comments reveal whether a product actually solves the problem" }, "level": { "zh": "中信号", "en": "Medium" }, "levelClass": "info", "body": { "zh": "比起点赞量，用户是否反馈“有效”“耐用”“方便”更值得看。", "en": "Compared with raw engagement, comments about effectiveness, durability, and convenience are more useful signals." } }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": { "zh": "机会方向", "en": "Opportunity Directions" },
+      "subtitle": { "zh": "判断重点是“现在值不值得做”，而不是“看起来热不热”。", "en": "The key is whether the direction is worth entering now, not whether it merely looks hot." },
+      "badge": { "zh": "机会地图", "en": "Opportunity Map" },
+      "sources": [
+        { "zh": "数据依据：Amazon best-seller categories / visible retail demand", "en": "Source: Amazon best-seller categories / visible retail demand" }
+      ],
+      "labels": {
+        "topPlayers": { "zh": "头部玩家：", "en": "Top players:" },
+        "entryWhy": { "zh": "当前进入理由：", "en": "Why enter now:" }
+      },
+      "cards": [
+        {
+          "title": { "zh": "机会一：虫害控制小件", "en": "Opportunity 1: Pest-control accessories" },
+          "summary": { "zh": "包括诱蚁站、飞虫捕捉补充装、蚊虫控制小件和家居驱虫用品。", "en": "Includes ant bait stations, flying-insect trap refills, mosquito-control items, and home pest solutions." },
+          "topPlayers": ["TERRO", "Zevo", "Ortho"],
+          "entryWhy": { "zh": "春季虫害问题直接触发购买，用户购买理由清晰，适合低门槛快速成交。", "en": "Spring pest problems directly trigger purchases, creating a clear buying reason and low-friction conversion path." },
+          "tags": [
+            { "zh": "趋势级别：强", "en": "Trend: Strong" },
+            { "zh": "生命周期：上升期", "en": "Lifecycle: Rising" },
+            { "zh": "打法：问题解决型", "en": "Play: Problem-solving" }
+          ]
+        },
+        {
+          "title": { "zh": "机会二：园艺与庭院维护", "en": "Opportunity 2: Lawn and garden maintenance" },
+          "summary": { "zh": "包括花种、浇水软管、喷壶、土壤与除草相关用品。", "en": "Includes seeds, hoses, sprayers, soil products, and weed-management items." },
+          "topPlayers": ["Scotts", "Flexzilla", "Chapin"],
+          "entryWhy": { "zh": "4月是庭院维护和种植启动窗口，基础工具与耗材都更容易形成持续需求。", "en": "April is a key lawn-and-garden activation window, making both tools and consumables more commercially viable." },
+          "tags": [
+            { "zh": "趋势级别：强", "en": "Trend: Strong" },
+            { "zh": "生命周期：上升期", "en": "Lifecycle: Rising" },
+            { "zh": "打法：基础工具 + 耗材", "en": "Play: Tools + consumables" }
+          ]
+        },
+        {
+          "title": { "zh": "机会三：家居整理与春季清洁", "en": "Opportunity 3: Home organization and spring cleaning" },
+          "summary": { "zh": "包括收纳盒、抽屉分隔、清洁辅助与车库整理小件。", "en": "Includes storage boxes, drawer dividers, cleaning helpers, and garage organization accessories." },
+          "topPlayers": ["Sterilite", "IRIS", "Simple Houseware"],
+          "entryWhy": { "zh": "春季清洁仍是稳定需求，但需要和具体整理场景绑定，才更容易形成差异化成交。", "en": "Spring cleaning remains a stable demand area, but it converts better when tied to specific organization scenarios." },
+          "tags": [
+            { "zh": "趋势级别：中强", "en": "Trend: Medium-Strong" },
+            { "zh": "生命周期：稳定期", "en": "Lifecycle: Stable" },
+            { "zh": "打法：场景细分", "en": "Play: Scenario segmentation" }
+          ]
+        },
+        {
+          "title": { "zh": "机会四：补水与户外随身用品", "en": "Opportunity 4: Hydration and outdoor carry goods" },
+          "summary": { "zh": "包括大容量杯具、便携补水配件、短途出行和户外携带小件。", "en": "Includes tumblers, hydration accessories, and short-trip outdoor carry goods." },
+          "topPlayers": ["Stanley", "Simple Modern", "YETI"],
+          "entryWhy": { "zh": "气温回升和户外活动增加，使补水与便携需求在 4 月开始放大。", "en": "Rising temperatures and more outdoor activity begin amplifying hydration and portability needs in April." },
+          "tags": [
+            { "zh": "趋势级别：中", "en": "Trend: Medium" },
+            { "zh": "生命周期：扩展期", "en": "Lifecycle: Expansion" },
+            { "zh": "打法：主品带配件", "en": "Play: Hero product plus accessories" }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": { "zh": "价格带", "en": "Pricing" },
+      "subtitle": { "zh": "重点不是市场现价本身，而是现阶段更适合测试的入场价格。", "en": "The goal is not only to read market prices, but to identify the most testable entry price bands now." },
+      "badge": { "zh": "价格结构", "en": "Pricing Structure" },
+      "sources": [
+        { "zh": "数据依据：visible retail pricing from Amazon and selected brand sites", "en": "Source: visible retail pricing from Amazon and selected brand sites" }
+      ],
+      "table": {
+        "title": { "zh": "价格带观察", "en": "Pricing band view" },
+        "columns": [
+          { "zh": "方向", "en": "Direction" },
+          { "zh": "低价带", "en": "Low band" },
+          { "zh": "主销带", "en": "Core band" },
+          { "zh": "推荐切入价", "en": "Recommended entry price" },
+          { "zh": "溢价逻辑", "en": "Premium logic" }
+        ],
+        "rows": [
+          [{ "zh": "虫害控制", "en": "Pest control" }, { "zh": "$9 - $15", "en": "$9 - $15" }, { "zh": "$15 - $28", "en": "$15 - $28" }, { "zh": "$12.99 - $18.99", "en": "$12.99 - $18.99" }, { "zh": "多件装、补充装、问题解决感", "en": "Multipacks, refills, problem-solving framing" }],
+          [{ "zh": "园艺与庭院", "en": "Lawn & garden" }, { "zh": "$10 - $18", "en": "$10 - $18" }, { "zh": "$18 - $42", "en": "$18 - $42" }, { "zh": "$16.99 - $24.99", "en": "$16.99 - $24.99" }, { "zh": "基础工具、耐用度、季节用途", "en": "Core tool utility, durability, seasonal use" }],
+          [{ "zh": "家居整理", "en": "Home organization" }, { "zh": "$8 - $16", "en": "$8 - $16" }, { "zh": "$16 - $30", "en": "$16 - $30" }, { "zh": "$14.99 - $21.99", "en": "$14.99 - $21.99" }, { "zh": "套装感、分区感、整理效率", "en": "Bundle feel, sorting logic, organization efficiency" }],
+          [{ "zh": "补水与随身携带", "en": "Hydration & on-the-go" }, { "zh": "$10 - $20", "en": "$10 - $20" }, { "zh": "$20 - $40", "en": "$20 - $40" }, { "zh": "$18.99 - $26.99", "en": "$18.99 - $26.99" }, { "zh": "便携性、容量、外出场景", "en": "Portability, capacity, on-the-go scenarios" }]
+        ]
+      },
+      "side": {
+        "title": { "zh": "价格判断", "en": "Pricing judgment" },
+        "items": [
+          { "title": { "zh": "先测“需求是否紧迫”而不是先压最低价", "en": "Test urgency of demand before chasing lowest price" }, "note": { "zh": "春季刚需商品更适合用合理价格换更稳的转化。", "en": "Seasonal necessity goods often convert more reliably with reasonable pricing than with extreme discounting." } },
+          { "title": { "zh": "推荐切入价应保留补充装和套装空间", "en": "Entry price should preserve refill and bundle room" }, "note": { "zh": "4月方向很多适合做补充装、多件装或组合装。", "en": "Many April directions work well with refill, multipack, or bundle logic." } },
+          { "title": { "zh": "优先选“解释成本低”的价位", "en": "Prioritize price points with low explanation cost" }, "note": { "zh": "用户越容易理解用途，越不需要靠低价强刺激。", "en": "The easier the use case is to understand, the less aggressive discounting is needed." } }
+        ]
+      }
+    },
+    "players": {
+      "title": { "zh": "Top Players & Links / 头部玩家与链接", "en": "Top Players & Links" },
+      "subtitle": { "zh": "用于快速查看市场验证对象，重点看价格、卖点和包装方式。", "en": "Used to quickly review market validation objects, focusing on price, messaging, and packaging." },
+      "badge": { "zh": "市场验证对象", "en": "Market Validation" },
+      "sources": [
+        { "zh": "数据依据：Amazon best sellers / official brand sites", "en": "Source: Amazon best sellers / official brand sites" }
+      ],
+      "filterTitle": { "zh": "平台筛选与价格参考", "en": "Platform filter & price reference" },
+      "filters": [
+        { "value": "all", "label": { "zh": "全部", "en": "All" } },
+        { "value": "amazon", "label": { "zh": "Amazon", "en": "Amazon" } },
+        { "value": "official", "label": { "zh": "Official Site", "en": "Official Site" } }
+      ],
+      "groups": [
+        {
+          "title": { "zh": "虫害控制小件", "en": "Pest-control accessories" },
+          "platforms": ["amazon", "official"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "虫害控制", "en": "Pest control" }, "tag": "$14 左右" },
+              { "zh": "TERRO", "en": "TERRO" },
+              { "zh": "Ant Killer Bait Stations", "en": "Ant Killer Bait Stations" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=TERRO+Ant+Killer+Bait+Stations", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "问题导向强，价格带清晰。", "en": "Strong problem-led framing and clear price anchor." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "虫害控制", "en": "Pest control" }, "tag": "$16 - $27" },
+              { "zh": "Zevo", "en": "Zevo" },
+              { "zh": "Flying Insect Trap Refills", "en": "Flying Insect Trap Refills" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=Zevo+Flying+Insect+Trap+Refill", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "补充装逻辑明显，适合看复购型表达。", "en": "Clear refill logic, useful for repeat-purchase framing." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "园艺与庭院维护", "en": "Lawn and garden maintenance" },
+          "platforms": ["amazon", "official"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "园艺与庭院", "en": "Lawn & garden" }, "tag": "$31 左右" },
+              { "zh": "Scotts", "en": "Scotts" },
+              { "zh": "Turf Builder Weed & Feed", "en": "Turf Builder Weed & Feed" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=Scotts+Turf+Builder+Weed+and+Feed", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "季节需求清晰，问题解决型强。", "en": "Clear seasonal demand with strong problem-solving logic." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "园艺与庭院", "en": "Lawn & garden" }, "tag": "$42 左右" },
+              { "zh": "Flexzilla", "en": "Flexzilla" },
+              { "zh": "Garden Hose 50 ft", "en": "Garden Hose 50 ft" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=Flexzilla+Garden+Hose+50+ft", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "基础工具路线清晰，耐用度卖点明显。", "en": "Clear tool-based route with durability-led messaging." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "家居整理与春季清洁", "en": "Home organization and spring cleaning" },
+          "platforms": ["amazon", "official"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "家居整理", "en": "Home organization" }, "tag": "$15 - $25" },
+              { "zh": "IRIS", "en": "IRIS" },
+              { "zh": "Storage Bins Range", "en": "Storage Bins Range" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.irisusainc.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "整理效率表达清晰，套装感强。", "en": "Clear organization-efficiency positioning with good bundle feel." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "家居整理", "en": "Home organization" }, "tag": "$10 - $20" },
+              { "zh": "Simple Houseware", "en": "Simple Houseware" },
+              { "zh": "Closet & Storage Organizers", "en": "Closet & Storage Organizers" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=Simple+Houseware+storage+organizer", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "场景细分明确，适合看低价稳定动销。", "en": "Clear scenario segmentation, useful for low-price steady sell-through." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        },
+        {
+          "title": { "zh": "补水与户外随身用品", "en": "Hydration and outdoor carry goods" },
+          "platforms": ["amazon", "official"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [
+              { "type": "price", "text": { "zh": "补水与随身携带", "en": "Hydration & on-the-go" }, "tag": "$20 - $35" },
+              { "zh": "Stanley", "en": "Stanley" },
+              { "zh": "Quencher & Carry Accessories", "en": "Quencher & Carry Accessories" },
+              { "zh": "Official Site", "en": "Official Site" },
+              { "type": "link", "href": "https://www.stanley1913.com/", "label": { "zh": "查看品牌站", "en": "View site" } },
+              { "zh": "主品带动配件，品牌路径清晰。", "en": "Hero-product-led accessory path with strong brand logic." },
+              { "type": "checked", "value": "2026-04-08" }
+            ],
+            [
+              { "type": "price", "text": { "zh": "补水与随身携带", "en": "Hydration & on-the-go" }, "tag": "$18 - $30" },
+              { "zh": "Simple Modern", "en": "Simple Modern" },
+              { "zh": "Tumblers & Accessories", "en": "Tumblers & Accessories" },
+              { "zh": "Amazon", "en": "Amazon" },
+              { "type": "link", "href": "https://www.amazon.com/s?k=Simple+Modern+tumbler+accessories", "label": { "zh": "查看商品页", "en": "View product" } },
+              { "zh": "价位友好，适合看配件扩展逻辑。", "en": "Accessible price point, useful for accessory-expansion logic." },
+              { "type": "checked", "value": "2026-04-08" }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": { "zh": "Next 7 Days", "en": "Next 7 Days" },
+      "subtitle": { "zh": "本周只保留最值得执行的三步。", "en": "Only the three most important actions for this week." },
+      "badge": { "zh": "优先动作", "en": "Priority Moves" },
+      "items": [
+        { "title": { "zh": "优先测试 3 个春季问题型 SKU", "en": "Test 3 problem-led spring SKUs first" }, "body": { "zh": "建议从诱蚁站、花园喷壶/软管配件、整理收纳小件里各选一个版本。", "en": "Start with one SKU each from ant bait, lawn/garden tool accessories, and organization goods." } },
+        { "title": { "zh": "每个 SKU 配 2 个内容角度", "en": "Build 2 content angles per SKU" }, "body": { "zh": "一个讲“问题出现了”，一个讲“用了之后更省事/更干净/更轻松”。", "en": "Use one angle for “the problem appears” and one for “life is easier/cleaner after use.”" } },
+        { "title": { "zh": "重点看用户是否反馈“有效”", "en": "Watch whether users say the product actually works" }, "body": { "zh": "优先记录评论区里关于有效性、便利性、耐用度和是否会回购的反馈。", "en": "Track comments about effectiveness, convenience, durability, and repeat-purchase intent." } }
+      ]
+    },
+    "risks": {
+      "title": { "zh": "风险与动作", "en": "Risks & Actions" },
+      "subtitle": { "zh": "最终要回答的是值不值得做，以及如何做得更稳。", "en": "The final question is whether the opportunity is worth doing and how to execute more safely." },
+      "badge": { "zh": "风险判断", "en": "Risk Judgment" },
+      "risks": [
+        { "title": { "zh": "窗口期风险", "en": "Timing risk" }, "body": { "zh": "4月春季机会强，但其中部分方向进入夏季后会明显降温。", "en": "The April spring window is strong, but some directions fade noticeably as summer progresses." } },
+        { "title": { "zh": "低价竞争风险", "en": "Low-price competition risk" }, "body": { "zh": "基础整理和园艺小件容易出现大量同质化供给。", "en": "Basic organization and lawn/garden accessories can attract heavy commoditized supply." } },
+        { "title": { "zh": "内容误判风险", "en": "Content-misread risk" }, "body": { "zh": "不能把季节性需求和短期内容热度混为一谈。", "en": "Seasonal demand should not be confused with short-lived content heat." } }
+      ],
+      "actions": {
+        "title": { "zh": "建议动作", "en": "Recommended actions" },
+        "items": [
+          { "title": { "zh": "先做春季刚需，再扩内容型机会", "en": "Start with spring necessities before expanding into content-led plays" }, "note": { "zh": "优先处理“有明确问题要解决”的商品。", "en": "Prioritize products with a clear problem to solve." } },
+          { "title": { "zh": "评论验证优先于播放验证", "en": "Prioritize comment validation over view validation" }, "note": { "zh": "尤其要看“有效”“值不值”“会不会再买”。", "en": "Focus especially on comments about effectiveness, value, and repeat intent." } },
+          { "title": { "zh": "尽量做多件装或补充装设计", "en": "Use multipack or refill logic where possible" }, "note": { "zh": "4月很多方向都适合用补充装和组合装提高价值感。", "en": "Many April directions benefit from refills and bundles that raise perceived value." } }
+        ]
+      },
+      "finalJudgment": {
+        "title": { "zh": "最终判断", "en": "Final judgment" },
+        "items": [
+          { "title": { "zh": "值得做，而且是相对高确定性的季节窗口", "en": "Worth doing, and relatively high-certainty seasonal window" }, "level": { "zh": "建议执行", "en": "Recommended" }, "levelClass": "good", "body": { "zh": "美国4月爆款分析里，虫害控制和园艺维护最像现实可转化的方向。", "en": "In the US April breakout landscape, pest control and lawn/garden maintenance look like the most realistic conversion-ready directions." } },
+          { "title": { "zh": "先问题解决型，后生活方式型", "en": "Problem-solving first, lifestyle second" }, "level": { "zh": "推荐路径", "en": "Preferred path" }, "levelClass": "info", "body": { "zh": "先抓季节痛点商品，再延伸到补水、户外和配件生态。", "en": "Capture seasonal pain-point goods first, then expand into hydration, outdoor use, and accessory ecosystems." } }
+        ]
+      }
+    },
+    "references": {
+      "title": { "zh": "References / 数据来源", "en": "References" },
+      "subtitle": { "zh": "本页判断基于公开可见来源与方向性商业判断。", "en": "This page is based on visible public sources and directional commercial judgment." },
+      "badge": { "zh": "证据链", "en": "Reference Layer" },
+      "cards": [
+        { "title": { "zh": "市场观察来源", "en": "Market Observation" }, "tags": [{ "zh": "Amazon best-seller observation", "en": "Amazon best-seller observation" }, { "zh": "seasonal demand observation", "en": "seasonal demand observation" }], "body": { "zh": "主要用于支持春季需求、问题触发型商品和场景成熟度判断。", "en": "Used mainly to support spring-demand analysis, problem-triggered product logic, and scenario maturity judgment." } },
+        { "title": { "zh": "价格与产品参考来源", "en": "Pricing & Product Benchmark" }, "tags": [{ "zh": "Amazon listings", "en": "Amazon listings" }, { "zh": "official brand websites", "en": "official brand websites" }], "body": { "zh": "主要用于支持价格带判断、包装表达和头部玩家参考。", "en": "Used mainly for pricing-band judgment, packaging review, and top-player benchmarking." } },
+        { "title": { "zh": "更新时间信息", "en": "Update Info" }, "tags": [{ "zh": "数据更新时间：2026-04-08", "en": "Last updated: 2026-04-08" }, { "zh": "Last checked: 2026-04-08", "en": "Last checked: 2026-04-08" }], "body": { "zh": "本页基于公开可见市场观察与方向性商业判断，不代表完整成交数据库。", "en": "This page is based on visible market observation and directional commercial judgment, not a complete transaction dataset." } }
+      ]
+    }
+  },
+  "footer": { "zh": "Raymond Ho @Copyright 2026", "en": "Raymond Ho @Copyright 2026" }
+}
+;
+    const langState = { current: 'zh' };
+    const t = (v) => typeof v === 'string' ? v : ((v && v[langState.current]) || (v && v.zh) || (v && v.en) || '');
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title);
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary);
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; DATA.hero.tags.forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; DATA.hero.cards.forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label)}</div><div class="v">${t(c.value)}</div><div class="t">${t(c.note)}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; DATA.summaryMetrics.forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label)}</div><div class="value">${t(m.value)}</div><div class="note">${t(m.note)}</div>`))); }
+    function sectionHead(sec){ return `<div class="section-head"><div><h3>${t(sec.title)}</h3><p>${t(sec.subtitle||'')}</p></div><div class="section-badge">${t(sec.badge||'')}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>
