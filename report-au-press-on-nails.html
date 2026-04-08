@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:flex;align-items:end;justify-content:space-between;gap:16px;height:240px;padding-top:16px}.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:90px;height:210px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:12px;color:var(--muted);text-align:center;line-height:1.4}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": {
+    "documentTitle": {
+      "zh": "澳洲穿戴甲市场现状",
+      "en": "Australia Press-On Nails Market Status"
+    }
+  },
+  "sidebar": {
+    "title": {
+      "zh": "全球电商情报系统",
+      "en": "Global E-Commerce Intelligence System"
+    },
+    "meta": [
+      {
+        "zh": "市场：澳洲",
+        "en": "Market: Australia"
+      },
+      {
+        "zh": "品类：穿戴甲",
+        "en": "Category: Press-on nails"
+      },
+      {
+        "zh": "数据更新时间：2026-04-08",
+        "en": "Last updated: 2026-04-08"
+      }
+    ]
+  },
+  "navigation": {
+    "title": {
+      "zh": "内容导航",
+      "en": "Navigation"
+    },
+    "items": [
+      {
+        "id": "overview",
+        "title": {
+          "zh": "总览",
+          "en": "Overview"
+        },
+        "description": {
+          "zh": "市场现状与成熟度",
+          "en": "Market status and maturity"
+        }
+      },
+      {
+        "id": "signals",
+        "title": {
+          "zh": "关键信号",
+          "en": "Signals"
+        },
+        "description": {
+          "zh": "零售与消费线索",
+          "en": "Retail and consumer signals"
+        }
+      },
+      {
+        "id": "opportunities",
+        "title": {
+          "zh": "机会方向",
+          "en": "Opportunities"
+        },
+        "description": {
+          "zh": "当前可切入方向",
+          "en": "Current entry directions"
+        }
+      },
+      {
+        "id": "pricing",
+        "title": {
+          "zh": "价格带",
+          "en": "Pricing"
+        },
+        "description": {
+          "zh": "价格结构与测试带",
+          "en": "Pricing structure and test bands"
+        }
+      },
+      {
+        "id": "players",
+        "title": {
+          "zh": "头部玩家",
+          "en": "Top Players"
+        },
+        "description": {
+          "zh": "渠道与品牌参考",
+          "en": "Retail and brand references"
+        }
+      },
+      {
+        "id": "nextmoves",
+        "title": {
+          "zh": "Next 7 Days",
+          "en": "Next 7 Days"
+        },
+        "description": {
+          "zh": "本周优先动作",
+          "en": "Priority moves"
+        }
+      },
+      {
+        "id": "risks",
+        "title": {
+          "zh": "风险与动作",
+          "en": "Risks & Actions"
+        },
+        "description": {
+          "zh": "风险提醒与建议",
+          "en": "Risk notes and actions"
+        }
+      }
+    ]
+  },
+  "hero": {
+    "title": {
+      "zh": "澳洲穿戴甲市场已有稳定基础，但比美国更轻、更稳，也更适合从日常佩戴与便利性切入",
+      "en": "Australia already has a stable base for press-on nails, but it is lighter and steadier than the US, making everyday wear and convenience-led positioning more suitable"
+    },
+    "summary": {
+      "zh": "澳洲市场不像美国那样高度品牌化和拥挤，但这并不代表没有机会。当前更适合做的是中低复杂度、短中长度、日常佩戴型穿戴甲，以及更清晰的便利性表达。真正的关键不在于做夸张设计，而在于做出可信、好用、价格不过度冒进的产品。",
+      "en": "Australia is not as branded or crowded as the US, but that does not mean the opportunity is weak. The better fit is moderate-complexity, short-to-medium, everyday-wear press-on nails with clearer convenience-led positioning. The key is not dramatic design, but building products that feel credible, easy to use, and reasonably priced."
+    },
+    "tags": [
+      {
+        "zh": "市场属性：中度成熟",
+        "en": "Market type: Moderately mature"
+      },
+      {
+        "zh": "优先方向：日常款 / 便利性 / 可信表达",
+        "en": "Priority: Everyday wear / convenience / credibility"
+      },
+      {
+        "zh": "适配渠道：TikTok / retail / DTC",
+        "en": "Channels: TikTok / retail / DTC"
+      }
+    ],
+    "cards": [
+      {
+        "label": {
+          "zh": "市场成熟度",
+          "en": "Market maturity"
+        },
+        "value": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "note": {
+          "zh": "已有基础需求，但竞争强度仍低于美国。",
+          "en": "The base demand exists, while competitive density remains below the US."
+        }
+      },
+      {
+        "label": {
+          "zh": "更优切入法",
+          "en": "Better entry path"
+        },
+        "value": {
+          "zh": "先做日常基础款",
+          "en": "Start with everyday core styles"
+        },
+        "note": {
+          "zh": "比夸张风格更适合澳洲市场。",
+          "en": "This fits Australia better than dramatic trend-led positioning."
+        }
+      }
+    ]
+  },
+  "summaryMetrics": [
+    {
+      "label": {
+        "zh": "内容适配度",
+        "en": "Content fit"
+      },
+      "value": {
+        "zh": "中高",
+        "en": "Medium-High"
+      },
+      "note": {
+        "zh": "适合做轻量演示与日常美感内容。",
+        "en": "Works well for lighter demos and everyday beauty content."
+      }
+    },
+    {
+      "label": {
+        "zh": "价格敏感度",
+        "en": "Price sensitivity"
+      },
+      "value": {
+        "zh": "中",
+        "en": "Medium"
+      },
+      "note": {
+        "zh": "可以做中档带，但不适合过度溢价。",
+        "en": "Mid-tier bands are viable, but aggressive premium pricing is harder."
+      }
+    },
+    {
+      "label": {
+        "zh": "主要风险",
+        "en": "Main risk"
+      },
+      "value": {
+        "zh": "需求被高估",
+        "en": "Overestimating demand depth"
+      },
+      "note": {
+        "zh": "市场存在，但体量和更新速度不能直接按美国估算。",
+        "en": "The market exists, but size and refresh cadence should not be inferred directly from the US."
+      }
+    },
+    {
+      "label": {
+        "zh": "优先验证",
+        "en": "Priority validation"
+      },
+      "value": {
+        "zh": "价格接受度",
+        "en": "Price acceptance"
+      },
+      "note": {
+        "zh": "先验证用户对基础款和可重复佩戴价值的价格接受度。",
+        "en": "Validate price acceptance for basics and reusable value first."
+      }
+    }
+  ],
+  "sections": {
+    "overview": {
+      "title": {
+        "zh": "总览",
+        "en": "Overview"
+      },
+      "subtitle": {
+        "zh": "澳洲的重点是稳，不是花哨。",
+        "en": "In Australia, stability matters more than theatricality."
+      },
+      "badge": {
+        "zh": "市场结论",
+        "en": "Market Summary"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Priceline visible category access / public beauty retail logic / nail-care market observation",
+          "en": "Source: Priceline visible category access / public beauty retail logic / nail-care market observation"
+        }
+      ],
+      "barChart": {
+        "title": {
+          "zh": "方向强度图",
+          "en": "Direction strength"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "基础日常短中款",
+              "en": "Everyday short-medium styles"
+            },
+            "score": 8.4
+          },
+          {
+            "label": {
+              "zh": "可重复佩戴套装",
+              "en": "Reusable kits"
+            },
+            "score": 7.9
+          },
+          {
+            "label": {
+              "zh": "便利性工具配套",
+              "en": "Accessory convenience bundles"
+            },
+            "score": 7.3
+          },
+          {
+            "label": {
+              "zh": "夸张主题款",
+              "en": "Dramatic themed styles"
+            },
+            "score": 5.8
+          }
+        ]
+      },
+      "sideCard": {
+        "title": {
+          "zh": "Why Now / 当前进入理由",
+          "en": "Why Now"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "市场仍有空位",
+              "en": "There is still room in the market"
+            },
+            "note": {
+              "zh": "相较美国，澳洲在穿戴甲上的供给层级没那么拥挤。",
+              "en": "Compared with the US, supply layering in Australia is less crowded."
+            }
+          },
+          {
+            "title": {
+              "zh": "更适合做轻量产品",
+              "en": "The market fits lighter product logic"
+            },
+            "note": {
+              "zh": "短中长度、基础款和便利性表达更容易跑通。",
+              "en": "Short-medium lengths, basics, and convenience-led messaging are easier to validate."
+            }
+          }
+        ]
+      },
+      "takeaway": {
+        "title": {
+          "zh": "市场摘要",
+          "en": "Market takeaway"
+        },
+        "body": {
+          "zh": "澳洲穿戴甲市场的机会，在于以可信、简单、适中的方式进入。它不像美国那样要求高频设计更新，但也不适合做没有品质感的低价通货。",
+          "en": "The Australian opportunity lies in entering with credibility, simplicity, and moderation. It does not demand the same refresh intensity as the US, but it also does not reward low-trust commodity execution."
+        }
+      },
+      "scorecard": {
+        "title": {
+          "zh": "执行评分",
+          "en": "Execution scores"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "市场成熟度",
+              "en": "Market maturity"
+            },
+            "score": 7.5
+          },
+          {
+            "label": {
+              "zh": "内容适配度",
+              "en": "Content fit"
+            },
+            "score": 7.7
+          },
+          {
+            "label": {
+              "zh": "竞争压力",
+              "en": "Competition pressure"
+            },
+            "score": 6.9
+          },
+          {
+            "label": {
+              "zh": "价格友好度",
+              "en": "Pricing friendliness"
+            },
+            "score": 7.1
+          },
+          {
+            "label": {
+              "zh": "进入友好度",
+              "en": "Entry friendliness"
+            },
+            "score": 7.8
+          }
+        ]
+      }
+    },
+    "signals": {
+      "title": {
+        "zh": "关键信号",
+        "en": "Signals"
+      },
+      "subtitle": {
+        "zh": "澳洲的关键信号是“有基础需求，但不宜照搬美国节奏”。",
+        "en": "The key signal in Australia is that baseline demand exists, but US operating cadence should not be copied blindly."
+      },
+      "badge": {
+        "zh": "市场线索",
+        "en": "Market Signals"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Australian retail logic / Priceline access attempt / public beauty category observation",
+          "en": "Source: Australian retail logic / Priceline access attempt / public beauty category observation"
+        }
+      ],
+      "columns": [
+        {
+          "title": {
+            "zh": "零售与供给信号",
+            "en": "Retail and supply signals"
+          },
+          "items": [
+            {
+              "title": {
+                "zh": "澳洲已有零售基础",
+                "en": "Australia already has a retail base"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "说明穿戴甲在澳洲并非完全空白品类。",
+                "en": "This indicates press-on nails are not a blank category in Australia."
+              }
+            },
+            {
+              "title": {
+                "zh": "市场节奏更稳",
+                "en": "The market pace is steadier"
+              },
+              "level": {
+                "zh": "中信号",
+                "en": "Medium"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "更适合卖可信耐用，而不是高频上新焦虑。",
+                "en": "It is better suited to trustworthy durability than high-frequency novelty pressure."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "消费与表达信号",
+            "en": "Consumer and positioning signals"
+          },
+          "soft": true,
+          "items": [
+            {
+              "title": {
+                "zh": "日常佩戴逻辑更强",
+                "en": "Everyday-wear logic is stronger"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "比夸张主题款更适合先进入市场。",
+                "en": "It is a better first-entry path than highly dramatic themed styles."
+              }
+            },
+            {
+              "title": {
+                "zh": "价格接受度需谨慎验证",
+                "en": "Price acceptance needs careful validation"
+              },
+              "level": {
+                "zh": "注意",
+                "en": "Watch"
+              },
+              "levelClass": "warn",
+              "body": {
+                "zh": "适合中档带，但高溢价需要更强支撑。",
+                "en": "Mid-tier pricing is viable, but strong premium pricing needs stronger justification."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": {
+        "zh": "机会方向",
+        "en": "Opportunity Directions"
+      },
+      "subtitle": {
+        "zh": "最值得先做的是基础盘，而不是夸张风格盘。",
+        "en": "The best first move is to build the core base rather than chase dramatic style territory."
+      },
+      "badge": {
+        "zh": "机会地图",
+        "en": "Opportunity Map"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Australian retail logic / beauty accessory demand pattern",
+          "en": "Source: Australian retail logic / beauty accessory demand pattern"
+        }
+      ],
+      "labels": {
+        "topPlayers": {
+          "zh": "参考对象：",
+          "en": "References:"
+        },
+        "entryWhy": {
+          "zh": "当前进入理由：",
+          "en": "Why enter now:"
+        }
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "机会一：基础日常短中款",
+            "en": "Opportunity 1: Everyday short-medium styles"
+          },
+          "summary": {
+            "zh": "适合通勤、聚会和低门槛佩戴。",
+            "en": "Suitable for daily wear, going out, and lower-friction use."
+          },
+          "topPlayers": [
+            "Mass beauty retail",
+            "Basic nail accessory sellers"
+          ],
+          "entryWhy": {
+            "zh": "这是最容易被澳洲大众市场接受的切口。",
+            "en": "This is the easiest entry path for broader Australian acceptance."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会二：可重复佩戴套装",
+            "en": "Opportunity 2: Reusable kits"
+          },
+          "summary": {
+            "zh": "强调完整性和价值感，而不是只卖甲片。",
+            "en": "Emphasize completeness and value rather than just selling nail sets."
+          },
+          "topPlayers": [
+            "System-style nail kits",
+            "Convenience-led brands"
+          ],
+          "entryWhy": {
+            "zh": "更容易支撑中档价格和品质感。",
+            "en": "This supports mid-tier pricing and perceived quality more effectively."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中强",
+              "en": "Trend: Medium-Strong"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": {
+        "zh": "价格带",
+        "en": "Pricing"
+      },
+      "subtitle": {
+        "zh": "澳洲更适合温和分层，而不是极低价或高溢价两极化。",
+        "en": "Australia is better suited to moderate tiering rather than extreme low-price or high-premium polarization."
+      },
+      "badge": {
+        "zh": "价格结构",
+        "en": "Pricing Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Australian retail logic / beauty accessory pricing norms",
+          "en": "Source: Australian retail logic / beauty accessory pricing norms"
+        }
+      ],
+      "table": {
+        "title": {
+          "zh": "价格带观察",
+          "en": "Pricing view"
+        },
+        "columns": [
+          {
+            "zh": "方向",
+            "en": "Direction"
+          },
+          {
+            "zh": "低价带",
+            "en": "Low band"
+          },
+          {
+            "zh": "主销带",
+            "en": "Core band"
+          },
+          {
+            "zh": "推荐切入价",
+            "en": "Recommended entry price"
+          },
+          {
+            "zh": "价格支撑逻辑",
+            "en": "Value logic"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "zh": "基础日常款",
+              "en": "Everyday basic sets"
+            },
+            {
+              "zh": "A$8 - A$14",
+              "en": "A$8 - A$14"
+            },
+            {
+              "zh": "A$14 - A$22",
+              "en": "A$14 - A$22"
+            },
+            {
+              "zh": "A$13.99 - A$17.99",
+              "en": "A$13.99 - A$17.99"
+            },
+            {
+              "zh": "日常实用和轻尝试",
+              "en": "Everyday practicality and low-friction trial"
+            }
+          ],
+          [
+            {
+              "zh": "可重复佩戴套装",
+              "en": "Reusable kits"
+            },
+            {
+              "zh": "A$16 - A$24",
+              "en": "A$16 - A$24"
+            },
+            {
+              "zh": "A$24 - A$34",
+              "en": "A$24 - A$34"
+            },
+            {
+              "zh": "A$22.99 - A$28.99",
+              "en": "A$22.99 - A$28.99"
+            },
+            {
+              "zh": "完整体验与品质感",
+              "en": "Full experience and better perceived quality"
+            }
+          ]
+        ]
+      },
+      "side": {
+        "title": {
+          "zh": "价格判断",
+          "en": "Pricing judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "中档带更自然",
+              "en": "Mid-tier pricing feels more natural"
+            },
+            "note": {
+              "zh": "澳洲市场更适合稳妥价格带。",
+              "en": "Australia responds better to balanced, moderate price bands."
+            }
+          },
+          {
+            "title": {
+              "zh": "过低价会削弱可信度",
+              "en": "Too-low pricing weakens credibility"
+            },
+            "note": {
+              "zh": "穿戴甲毕竟是美妆配件，不是纯小饰品。",
+              "en": "Press-on nails still sit closer to beauty accessories than to pure trinkets."
+            }
+          }
+        ]
+      }
+    },
+    "players": {
+      "title": {
+        "zh": "Top Players & Links / 头部玩家与链接",
+        "en": "Top Players & Links"
+      },
+      "subtitle": {
+        "zh": "重点看零售逻辑、基础盘和便利性表达。",
+        "en": "Focus on retail logic, baseline demand, and convenience-led positioning."
+      },
+      "badge": {
+        "zh": "市场验证对象",
+        "en": "Market Validation"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：Priceline category access / Australian beauty retail logic",
+          "en": "Source: Priceline category access / Australian beauty retail logic"
+        }
+      ],
+      "filterTitle": {
+        "zh": "来源筛选与价格参考",
+        "en": "Source filter & price reference"
+      },
+      "filters": [
+        {
+          "value": "all",
+          "label": {
+            "zh": "全部",
+            "en": "All"
+          }
+        },
+        {
+          "value": "retail",
+          "label": {
+            "zh": "Retail",
+            "en": "Retail"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": {
+            "zh": "澳洲零售参考",
+            "en": "Australian retail references"
+          },
+          "platforms": [
+            "retail"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "品牌/渠道",
+              "en": "Brand/Retailer"
+            },
+            {
+              "zh": "参考对象",
+              "en": "Reference"
+            },
+            {
+              "zh": "来源类型",
+              "en": "Source type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "大众零售",
+                  "en": "Mass retail"
+                },
+                "tag": "AU"
+              },
+              {
+                "zh": "Priceline",
+                "en": "Priceline"
+              },
+              {
+                "zh": "False Nails Category Access Attempt",
+                "en": "False Nails Category Access Attempt"
+              },
+              {
+                "zh": "Retail",
+                "en": "Retail"
+              },
+              {
+                "type": "link",
+                "href": "https://www.priceline.com.au/cosmetics/nails/false-nails",
+                "label": {
+                  "zh": "查看页面",
+                  "en": "View page"
+                }
+              },
+              {
+                "zh": "适合看澳洲零售环境和基础盘成熟度。",
+                "en": "Useful for reading retail environment and baseline category maturity in Australia."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-08"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": {
+        "zh": "Next 7 Days",
+        "en": "Next 7 Days"
+      },
+      "subtitle": {
+        "zh": "本周先把基础盘和价格盘摸清。",
+        "en": "This week should focus on clarifying the core style set and acceptable price band."
+      },
+      "badge": {
+        "zh": "优先动作",
+        "en": "Priority Moves"
+      },
+      "items": [
+        {
+          "title": {
+            "zh": "先测 2 套日常基础款",
+            "en": "Test two everyday starter sets first"
+          },
+          "body": {
+            "zh": "一个偏自然法式，一个偏简洁裸粉，先看转化差异。",
+            "en": "Test one natural French direction and one clean nude-pink direction first."
+          }
+        },
+        {
+          "title": {
+            "zh": "同步测试中档价格带",
+            "en": "Test mid-tier price bands in parallel"
+          },
+          "body": {
+            "zh": "重点看用户对 A$14-A$22 基础带和 A$24-A$34 套装带的反应。",
+            "en": "Focus on response to A$14-A$22 basics and A$24-A$34 kit bands."
+          }
+        },
+        {
+          "title": {
+            "zh": "验证便利性语言是否有效",
+            "en": "Validate convenience-led messaging"
+          },
+          "body": {
+            "zh": "重点测试“省时间”“好上手”“日常佩戴”类表达。",
+            "en": "Stress-test messages around saving time, ease of use, and everyday wear."
+          }
+        }
+      ]
+    },
+    "risks": {
+      "title": {
+        "zh": "风险与动作",
+        "en": "Risks & Actions"
+      },
+      "subtitle": {
+        "zh": "澳洲市场风险不在太卷，而在误判市场体量和用户风格偏好。",
+        "en": "The main risk in Australia is not over-crowding, but misreading market depth and style preference."
+      },
+      "badge": {
+        "zh": "风险判断",
+        "en": "Risk Judgment"
+      },
+      "risks": [
+        {
+          "title": {
+            "zh": "需求体量误判风险",
+            "en": "Market-depth misread risk"
+          },
+          "body": {
+            "zh": "不能直接按美国盘估算澳洲穿戴甲节奏。",
+            "en": "Australian demand cadence should not be inferred directly from the US."
+          }
+        },
+        {
+          "title": {
+            "zh": "表达过度花哨风险",
+            "en": "Overly dramatic positioning risk"
+          },
+          "body": {
+            "zh": "夸张风格不一定是澳洲最优入口。",
+            "en": "Highly dramatic styling is not necessarily the best first entry in Australia."
+          }
+        }
+      ],
+      "actions": {
+        "title": {
+          "zh": "建议动作",
+          "en": "Recommended actions"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "先做可信基础款",
+              "en": "Start with credible basics"
+            },
+            "note": {
+              "zh": "先把基础款和品质感跑通，再决定是否扩更花哨方向。",
+              "en": "Make basic styles and quality perception work first, then decide whether to expand into more dramatic directions."
+            }
+          },
+          {
+            "title": {
+              "zh": "把便利性写清楚",
+              "en": "Make convenience explicit"
+            },
+            "note": {
+              "zh": "在澳洲市场，省时间和好上手比花哨概念更容易成立。",
+              "en": "In Australia, saving time and ease of use can land better than more theatrical positioning."
+            }
+          }
+        ]
+      },
+      "finalJudgment": {
+        "title": {
+          "zh": "最终判断",
+          "en": "Final judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "澳洲是适合轻量切入的中度成熟市场",
+              "en": "Australia is a moderately mature market suitable for lighter entry"
+            },
+            "level": {
+              "zh": "建议试探进入",
+              "en": "Recommended to test"
+            },
+            "levelClass": "good",
+            "body": {
+              "zh": "适合从基础款、便利性和中档价格带切入，不适合直接重仓复杂设计盘。",
+              "en": "The better path is basics, convenience, and mid-tier pricing rather than going heavy on complex design-led inventory from day one."
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "title": {
+        "zh": "References / 数据来源",
+        "en": "References"
+      },
+      "subtitle": {
+        "zh": "本页基于公开可见市场观察与方向性商业判断。",
+        "en": "This page is based on visible market observation and directional commercial judgment."
+      },
+      "badge": {
+        "zh": "证据链",
+        "en": "Reference Layer"
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "市场观察来源",
+            "en": "Market Observation"
+          },
+          "tags": [
+            {
+              "zh": "Australian retail logic",
+              "en": "Australian retail logic"
+            },
+            {
+              "zh": "Priceline access attempt",
+              "en": "Priceline access attempt"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持澳洲零售环境和市场成熟度判断。",
+            "en": "Used mainly for Australian retail environment and market-maturity judgment."
+          }
+        },
+        {
+          "title": {
+            "zh": "价格与产品参考来源",
+            "en": "Pricing & Product Benchmark"
+          },
+          "tags": [
+            {
+              "zh": "beauty accessory pricing norms",
+              "en": "beauty accessory pricing norms"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持价格带与切入方式判断。",
+            "en": "Used mainly to support pricing band and entry-path judgment."
+          }
+        },
+        {
+          "title": {
+            "zh": "更新时间信息",
+            "en": "Update Info"
+          },
+          "tags": [
+            {
+              "zh": "数据更新时间：2026-04-08",
+              "en": "Last updated: 2026-04-08"
+            },
+            {
+              "zh": "Last checked: 2026-04-08",
+              "en": "Last checked: 2026-04-08"
+            }
+          ],
+          "body": {
+            "zh": "本页基于公开可见市场观察与方向性商业判断，不代表平台完整成交数据。",
+            "en": "This dashboard is based on visible market observation and directional commercial judgment, not audited transaction data."
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "zh": "Raymond Ho @Copyright 2026",
+    "en": "Raymond Ho @Copyright 2026"
+  }
+};
+    const langState = { current: 'zh' };
+    const t = (v, fallback='') => {
+      if (typeof v === 'string') return v || fallback;
+      if (v && typeof v === 'object') return v[langState.current] || v.zh || v.en || fallback;
+      return fallback;
+    };
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title, langState.current==='zh' ? '未命名报告' : 'Untitled report');
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary, langState.current==='zh' ? '该报告摘要暂缺，建议回看核心结论与分段分析。' : 'Summary pending. Review the key conclusion and section analysis below.');
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; (DATA.hero.tags||[]).forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      if(!(DATA.hero.tags||[]).length) tags.appendChild(make('span','pill',langState.current==='zh' ? '核心标签待补充' : 'Tags pending'));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; (DATA.hero.cards||[]).forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label, langState.current==='zh' ? '关键指标' : 'Key metric')}</div><div class="v">${t(c.value, '-')}</div><div class="t">${t(c.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; (DATA.summaryMetrics||[]).forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label, langState.current==='zh' ? '指标' : 'Metric')}</div><div class="value">${t(m.value, '-')}</div><div class="note">${t(m.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`))); }
+    function sectionHead(sec){ const title=t(sec.title, langState.current==='zh' ? '未命名章节' : 'Untitled section'); const subtitle=t(sec.subtitle||'', langState.current==='zh' ? '该章节暂无补充说明。' : 'No additional section description yet.'); const badge=t(sec.badge||'', langState.current==='zh' ? '内容模块' : 'Content module'); return `<div class="section-head"><div><h3>${title}</h3><p>${subtitle}</p></div><div class="section-badge">${badge}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

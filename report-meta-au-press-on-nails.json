@@ -1,0 +1,40 @@
+{
+  "marketId": "au",
+  "marketName": { "zh": "澳洲", "en": "Australia" },
+  "region": { "zh": "大洋洲", "en": "Oceania" },
+  "flag": "🇦🇺",
+  "status": "live",
+  "report": {
+    "id": "au-press-on-nails-2026",
+    "reportType": "market-status-analysis",
+    "title": { "zh": "澳洲穿戴甲市场现状", "en": "Australia Press-On Nails Market Status" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
+    "file": "report-au-press-on-nails.html",
+    "tags": [
+      { "zh": "穿戴甲", "en": "Press-on nails" },
+      { "zh": "澳洲美妆", "en": "Australia beauty" },
+      { "zh": "轻量美妆配件", "en": "Light beauty accessories" }
+    ],
+    "summary": {
+      "zh": "澳洲穿戴甲市场不像美国那么拥挤，但已有稳定消费基础，更适合从中低复杂度、日常佩戴和便利性表达切入。",
+      "en": "Australia is less crowded than the US but already has stable consumer demand, making it more suitable for everyday wear and convenience-led positioning with lower execution complexity."
+    },
+    "coverLabel": { "zh": "市场现状分析", "en": "Market Status Analysis" },
+    "highlight": { "zh": "中度成熟，适合轻量切入", "en": "Moderately mature and suitable for lighter entry" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 76,
+    "priorityTier": "P2",
+    "evidenceStrength": 0.67,
+    "platformFit": { "amazon": 0.72, "tiktok": 0.78, "shopify": 0.74 },
+    "recommendedActions": [
+      { "zh": "先看日常短中款和基础便利性卖点", "en": "Start with short-medium everyday sets and convenience-led messaging" },
+      { "zh": "优先验证大众零售可接受价格带", "en": "Validate mainstream retail-acceptable price bands first" }
+    ],
+    "watchStatus": "monitor",
+    "watchReason": { "zh": "市场基础存在，但供给密度和品牌成熟度仍需持续观察", "en": "The market base exists, but supply depth and brand maturity still need monitoring" },
+    "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" },
+    "scoreBreakdown": { "demand": 15, "competition": 10, "margin": 13, "execution": 11, "trend": 10, "platform": 9, "confidence": 8 }
+  }
+}

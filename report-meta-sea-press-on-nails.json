@@ -1,0 +1,40 @@
+{
+  "marketId": "sea",
+  "marketName": { "zh": "东南亚", "en": "Southeast Asia" },
+  "region": { "zh": "东南亚", "en": "Southeast Asia" },
+  "flag": "🌏",
+  "status": "live",
+  "report": {
+    "id": "sea-press-on-nails-2026",
+    "reportType": "market-status-analysis",
+    "title": { "zh": "东南亚穿戴甲市场现状", "en": "Southeast Asia Press-On Nails Market Status" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
+    "file": "report-sea-press-on-nails.html",
+    "tags": [
+      { "zh": "穿戴甲", "en": "Press-on nails" },
+      { "zh": "东南亚美妆", "en": "SEA beauty" },
+      { "zh": "社媒驱动", "en": "Social-driven" }
+    ],
+    "summary": {
+      "zh": "东南亚穿戴甲市场更偏社媒驱动和价格敏感型机会，适合从高内容适配、低决策门槛和主题化上新切入。",
+      "en": "Southeast Asia leans more toward social-driven and price-sensitive opportunity, making it suitable for content-friendly, low-friction, and themed-refresh entry strategies."
+    },
+    "coverLabel": { "zh": "市场现状分析", "en": "Market Status Analysis" },
+    "highlight": { "zh": "社媒强，价格敏感更高", "en": "Strong social fit with higher price sensitivity" },
+    "confidence": { "zh": "中", "en": "Medium" },
+    "priorityScore": 79,
+    "priorityTier": "P2",
+    "evidenceStrength": 0.64,
+    "platformFit": { "amazon": 0.52, "tiktok": 0.89, "shopify": 0.68 },
+    "recommendedActions": [
+      { "zh": "优先关注 TikTok / 社媒内容友好的主题款和轻量套装", "en": "Prioritize themed sets and light kits that perform well in TikTok and social content" },
+      { "zh": "同步压测价格敏感度与基础品质接受度", "en": "Stress-test price sensitivity alongside minimum acceptable quality" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "内容势能强，但区域差异大，需持续分国观察", "en": "Content momentum is strong, but country-level variation remains large and should be tracked continuously" },
+    "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" },
+    "scoreBreakdown": { "demand": 16, "competition": 10, "margin": 11, "execution": 10, "trend": 14, "platform": 11, "confidence": 7 }
+  }
+}

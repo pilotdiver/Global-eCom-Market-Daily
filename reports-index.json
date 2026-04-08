@@ -83,6 +83,85 @@
             "zh": "高",
             "en": "High"
           }
+        },
+        {
+          "id": "us-press-on-nails-2026",
+          "reportType": "market-status-analysis",
+          "title": {
+            "zh": "美国穿戴甲市场现状",
+            "en": "US Press-On Nails Market Status"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-08",
+          "lastReviewedAt": "2026-04-08",
+          "file": "report-us-press-on-nails.html",
+          "tags": [
+            {
+              "zh": "穿戴甲",
+              "en": "Press-on nails"
+            },
+            {
+              "zh": "美国美妆",
+              "en": "US beauty"
+            },
+            {
+              "zh": "大众零售",
+              "en": "Mass retail"
+            }
+          ],
+          "summary": {
+            "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
+            "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
+          },
+          "coverLabel": {
+            "zh": "市场现状分析",
+            "en": "Market Status Analysis"
+          },
+          "highlight": {
+            "zh": "成熟市场，竞争在表达与体验",
+            "en": "Mature market, competition is in positioning and experience"
+          },
+          "confidence": {
+            "zh": "高",
+            "en": "High"
+          },
+          "priorityScore": 85,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.76,
+          "platformFit": {
+            "amazon": 0.88,
+            "tiktok": 0.92,
+            "shopify": 0.78
+          },
+          "recommendedActions": [
+            {
+              "zh": "优先关注可重复佩戴套装与主题设计更新频率",
+              "en": "Prioritize reusable kits and cadence of themed design refreshes"
+            },
+            {
+              "zh": "同步比较大众零售表达和 TikTok 内容表达差异",
+              "en": "Compare mass-retail positioning with TikTok-native creative language"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "美国是穿戴甲最成熟的验证市场，适合作为基准盘持续跟踪",
+            "en": "The US is the most mature validation market for press-on nails and should be tracked as a benchmark"
+          },
+          "category": {
+            "zh": "美妆个护",
+            "en": "Beauty & Personal Care"
+          },
+          "scoreBreakdown": {
+            "demand": 19,
+            "competition": 11,
+            "margin": 14,
+            "execution": 11,
+            "trend": 14,
+            "platform": 9,
+            "confidence": 7
+          },
+          "version": "v1.0"
         }
       ]
     },
@@ -143,6 +222,85 @@
             "zh": "中高",
             "en": "Medium-High"
           }
+        },
+        {
+          "id": "au-press-on-nails-2026",
+          "reportType": "market-status-analysis",
+          "title": {
+            "zh": "澳洲穿戴甲市场现状",
+            "en": "Australia Press-On Nails Market Status"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-08",
+          "lastReviewedAt": "2026-04-08",
+          "file": "report-au-press-on-nails.html",
+          "tags": [
+            {
+              "zh": "穿戴甲",
+              "en": "Press-on nails"
+            },
+            {
+              "zh": "澳洲美妆",
+              "en": "Australia beauty"
+            },
+            {
+              "zh": "轻量美妆配件",
+              "en": "Light beauty accessories"
+            }
+          ],
+          "summary": {
+            "zh": "澳洲穿戴甲市场不像美国那么拥挤，但已有稳定消费基础，更适合从中低复杂度、日常佩戴和便利性表达切入。",
+            "en": "Australia is less crowded than the US but already has stable consumer demand, making it more suitable for everyday wear and convenience-led positioning with lower execution complexity."
+          },
+          "coverLabel": {
+            "zh": "市场现状分析",
+            "en": "Market Status Analysis"
+          },
+          "highlight": {
+            "zh": "中度成熟，适合轻量切入",
+            "en": "Moderately mature and suitable for lighter entry"
+          },
+          "confidence": {
+            "zh": "中高",
+            "en": "Medium-High"
+          },
+          "priorityScore": 76,
+          "priorityTier": "P2",
+          "evidenceStrength": 0.67,
+          "platformFit": {
+            "amazon": 0.72,
+            "tiktok": 0.78,
+            "shopify": 0.74
+          },
+          "recommendedActions": [
+            {
+              "zh": "先看日常短中款和基础便利性卖点",
+              "en": "Start with short-medium everyday sets and convenience-led messaging"
+            },
+            {
+              "zh": "优先验证大众零售可接受价格带",
+              "en": "Validate mainstream retail-acceptable price bands first"
+            }
+          ],
+          "watchStatus": "monitor",
+          "watchReason": {
+            "zh": "市场基础存在，但供给密度和品牌成熟度仍需持续观察",
+            "en": "The market base exists, but supply depth and brand maturity still need monitoring"
+          },
+          "category": {
+            "zh": "美妆个护",
+            "en": "Beauty & Personal Care"
+          },
+          "scoreBreakdown": {
+            "demand": 15,
+            "competition": 10,
+            "margin": 13,
+            "execution": 11,
+            "trend": 10,
+            "platform": 9,
+            "confidence": 8
+          },
+          "version": "v1.0"
         }
       ]
     },
@@ -199,8 +357,88 @@
         "zh": "东南亚",
         "en": "Southeast Asia"
       },
-      "status": "planned",
-      "reports": []
+      "status": "live",
+      "reports": [
+        {
+          "id": "sea-press-on-nails-2026",
+          "reportType": "market-status-analysis",
+          "title": {
+            "zh": "东南亚穿戴甲市场现状",
+            "en": "Southeast Asia Press-On Nails Market Status"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-08",
+          "lastReviewedAt": "2026-04-08",
+          "file": "report-sea-press-on-nails.html",
+          "tags": [
+            {
+              "zh": "穿戴甲",
+              "en": "Press-on nails"
+            },
+            {
+              "zh": "东南亚美妆",
+              "en": "SEA beauty"
+            },
+            {
+              "zh": "社媒驱动",
+              "en": "Social-driven"
+            }
+          ],
+          "summary": {
+            "zh": "东南亚穿戴甲市场更偏社媒驱动和价格敏感型机会，适合从高内容适配、低决策门槛和主题化上新切入。",
+            "en": "Southeast Asia leans more toward social-driven and price-sensitive opportunity, making it suitable for content-friendly, low-friction, and themed-refresh entry strategies."
+          },
+          "coverLabel": {
+            "zh": "市场现状分析",
+            "en": "Market Status Analysis"
+          },
+          "highlight": {
+            "zh": "社媒强，价格敏感更高",
+            "en": "Strong social fit with higher price sensitivity"
+          },
+          "confidence": {
+            "zh": "中",
+            "en": "Medium"
+          },
+          "priorityScore": 79,
+          "priorityTier": "P2",
+          "evidenceStrength": 0.64,
+          "platformFit": {
+            "amazon": 0.52,
+            "tiktok": 0.89,
+            "shopify": 0.68
+          },
+          "recommendedActions": [
+            {
+              "zh": "优先关注 TikTok / 社媒内容友好的主题款和轻量套装",
+              "en": "Prioritize themed sets and light kits that perform well in TikTok and social content"
+            },
+            {
+              "zh": "同步压测价格敏感度与基础品质接受度",
+              "en": "Stress-test price sensitivity alongside minimum acceptable quality"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "内容势能强，但区域差异大，需持续分国观察",
+            "en": "Content momentum is strong, but country-level variation remains large and should be tracked continuously"
+          },
+          "category": {
+            "zh": "美妆个护",
+            "en": "Beauty & Personal Care"
+          },
+          "scoreBreakdown": {
+            "demand": 16,
+            "competition": 10,
+            "margin": 11,
+            "execution": 10,
+            "trend": 14,
+            "platform": 11,
+            "confidence": 7
+          },
+          "version": "v1.0"
+        }
+      ]
     },
     {
       "id": "global",
@@ -443,14 +681,123 @@
             "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
             "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
           },
-          "previousVersion": "v1.2",
-          "version": "v1.3"
+          "previousVersion": "v1.3",
+          "version": "v1.4"
         }
       ]
     }
   ],
   "registry": {
     "reports": [
+      {
+        "reportId": "us-press-on-nails-2026",
+        "slug": "us-press-on-nails-2026",
+        "marketId": "us",
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "region": {
+          "zh": "北美",
+          "en": "North America"
+        },
+        "flag": "🇺🇸",
+        "category": {
+          "zh": "美妆个护",
+          "en": "Beauty & Personal Care"
+        },
+        "reportType": "market-status-analysis",
+        "title": {
+          "zh": "美国穿戴甲市场现状",
+          "en": "US Press-On Nails Market Status"
+        },
+        "summary": {
+          "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
+          "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
+        },
+        "highlight": {
+          "zh": "成熟市场，竞争在表达与体验",
+          "en": "Mature market, competition is in positioning and experience"
+        },
+        "confidence": 0.86,
+        "confidenceLabel": {
+          "zh": "高",
+          "en": "High"
+        },
+        "evidenceStrength": 0.76,
+        "priorityScore": 85,
+        "priorityTier": "P1",
+        "scoreBreakdown": {
+          "demand": 19,
+          "competition": 11,
+          "margin": 14,
+          "execution": 11,
+          "trend": 14,
+          "platform": 9,
+          "confidence": 7
+        },
+        "platformFit": {
+          "amazon": 0.88,
+          "tiktok": 0.92,
+          "shopify": 0.78
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先关注可重复佩戴套装与主题设计更新频率",
+            "en": "Prioritize reusable kits and cadence of themed design refreshes"
+          },
+          {
+            "zh": "同步比较大众零售表达和 TikTok 内容表达差异",
+            "en": "Compare mass-retail positioning with TikTok-native creative language"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "美国是穿戴甲最成熟的验证市场，适合作为基准盘持续跟踪",
+          "en": "The US is the most mature validation market for press-on nails and should be tracked as a benchmark"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-us-press-on-nails.html",
+        "featured": false,
+        "tags": [
+          {
+            "zh": "穿戴甲",
+            "en": "Press-on nails"
+          },
+          {
+            "zh": "美国美妆",
+            "en": "US beauty"
+          },
+          {
+            "zh": "大众零售",
+            "en": "Mass retail"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-08",
+            "file": "report-us-press-on-nails.html",
+            "summary": {
+              "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
+              "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 81,
+                "to": 85
+              },
+              "confidence": {
+                "from": 0.8,
+                "to": 0.86
+              }
+            }
+          }
+        ]
+      },
       {
         "reportId": "global-press-on-nails-2026",
         "slug": "global-press-on-nails-2026",
@@ -627,8 +974,8 @@
           "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
           "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
         },
-        "version": "v1.3",
-        "previousVersion": "v1.2",
+        "version": "v1.4",
+        "previousVersion": "v1.3",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-europe-press-on-nails.html",
@@ -649,7 +996,7 @@
         ],
         "history": [
           {
-            "version": "v1.3",
+            "version": "v1.4",
             "publishedAt": "2026-04-08",
             "file": "report-europe-press-on-nails.html",
             "summary": {
@@ -664,6 +1011,115 @@
               "confidence": {
                 "from": 0.68,
                 "to": 0.74
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reportId": "sea-press-on-nails-2026",
+        "slug": "sea-press-on-nails-2026",
+        "marketId": "sea",
+        "marketName": {
+          "zh": "东南亚",
+          "en": "Southeast Asia"
+        },
+        "region": {
+          "zh": "东南亚",
+          "en": "Southeast Asia"
+        },
+        "flag": "🌏",
+        "category": {
+          "zh": "美妆个护",
+          "en": "Beauty & Personal Care"
+        },
+        "reportType": "market-status-analysis",
+        "title": {
+          "zh": "东南亚穿戴甲市场现状",
+          "en": "Southeast Asia Press-On Nails Market Status"
+        },
+        "summary": {
+          "zh": "东南亚穿戴甲市场更偏社媒驱动和价格敏感型机会，适合从高内容适配、低决策门槛和主题化上新切入。",
+          "en": "Southeast Asia leans more toward social-driven and price-sensitive opportunity, making it suitable for content-friendly, low-friction, and themed-refresh entry strategies."
+        },
+        "highlight": {
+          "zh": "社媒强，价格敏感更高",
+          "en": "Strong social fit with higher price sensitivity"
+        },
+        "confidence": 0.62,
+        "confidenceLabel": {
+          "zh": "中",
+          "en": "Medium"
+        },
+        "evidenceStrength": 0.64,
+        "priorityScore": 79,
+        "priorityTier": "P2",
+        "scoreBreakdown": {
+          "demand": 16,
+          "competition": 10,
+          "margin": 11,
+          "execution": 10,
+          "trend": 14,
+          "platform": 11,
+          "confidence": 7
+        },
+        "platformFit": {
+          "amazon": 0.52,
+          "tiktok": 0.89,
+          "shopify": 0.68
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先关注 TikTok / 社媒内容友好的主题款和轻量套装",
+            "en": "Prioritize themed sets and light kits that perform well in TikTok and social content"
+          },
+          {
+            "zh": "同步压测价格敏感度与基础品质接受度",
+            "en": "Stress-test price sensitivity alongside minimum acceptable quality"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "内容势能强，但区域差异大，需持续分国观察",
+          "en": "Content momentum is strong, but country-level variation remains large and should be tracked continuously"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-sea-press-on-nails.html",
+        "featured": false,
+        "tags": [
+          {
+            "zh": "穿戴甲",
+            "en": "Press-on nails"
+          },
+          {
+            "zh": "东南亚美妆",
+            "en": "SEA beauty"
+          },
+          {
+            "zh": "社媒驱动",
+            "en": "Social-driven"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-08",
+            "file": "report-sea-press-on-nails.html",
+            "summary": {
+              "zh": "东南亚穿戴甲市场更偏社媒驱动和价格敏感型机会，适合从高内容适配、低决策门槛和主题化上新切入。",
+              "en": "Southeast Asia leans more toward social-driven and price-sensitive opportunity, making it suitable for content-friendly, low-friction, and themed-refresh entry strategies."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 75,
+                "to": 79
+              },
+              "confidence": {
+                "from": 0.56,
+                "to": 0.62
               }
             }
           }
@@ -769,6 +1225,115 @@
               "priorityScore": {
                 "from": 74,
                 "to": 78
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reportId": "au-press-on-nails-2026",
+        "slug": "au-press-on-nails-2026",
+        "marketId": "au",
+        "marketName": {
+          "zh": "澳洲",
+          "en": "Australia"
+        },
+        "region": {
+          "zh": "大洋洲",
+          "en": "Oceania"
+        },
+        "flag": "🇦🇺",
+        "category": {
+          "zh": "美妆个护",
+          "en": "Beauty & Personal Care"
+        },
+        "reportType": "market-status-analysis",
+        "title": {
+          "zh": "澳洲穿戴甲市场现状",
+          "en": "Australia Press-On Nails Market Status"
+        },
+        "summary": {
+          "zh": "澳洲穿戴甲市场不像美国那么拥挤，但已有稳定消费基础，更适合从中低复杂度、日常佩戴和便利性表达切入。",
+          "en": "Australia is less crowded than the US but already has stable consumer demand, making it more suitable for everyday wear and convenience-led positioning with lower execution complexity."
+        },
+        "highlight": {
+          "zh": "中度成熟，适合轻量切入",
+          "en": "Moderately mature and suitable for lighter entry"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.67,
+        "priorityScore": 76,
+        "priorityTier": "P2",
+        "scoreBreakdown": {
+          "demand": 15,
+          "competition": 10,
+          "margin": 13,
+          "execution": 11,
+          "trend": 10,
+          "platform": 9,
+          "confidence": 8
+        },
+        "platformFit": {
+          "amazon": 0.72,
+          "tiktok": 0.78,
+          "shopify": 0.74
+        },
+        "recommendedActions": [
+          {
+            "zh": "先看日常短中款和基础便利性卖点",
+            "en": "Start with short-medium everyday sets and convenience-led messaging"
+          },
+          {
+            "zh": "优先验证大众零售可接受价格带",
+            "en": "Validate mainstream retail-acceptable price bands first"
+          }
+        ],
+        "watchStatus": "monitor",
+        "watchReason": {
+          "zh": "市场基础存在，但供给密度和品牌成熟度仍需持续观察",
+          "en": "The market base exists, but supply depth and brand maturity still need monitoring"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-08",
+        "publishedAt": "2026-04",
+        "latestFile": "report-au-press-on-nails.html",
+        "featured": false,
+        "tags": [
+          {
+            "zh": "穿戴甲",
+            "en": "Press-on nails"
+          },
+          {
+            "zh": "澳洲美妆",
+            "en": "Australia beauty"
+          },
+          {
+            "zh": "轻量美妆配件",
+            "en": "Light beauty accessories"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-08",
+            "file": "report-au-press-on-nails.html",
+            "summary": {
+              "zh": "澳洲穿戴甲市场不像美国那么拥挤，但已有稳定消费基础，更适合从中低复杂度、日常佩戴和便利性表达切入。",
+              "en": "Australia is less crowded than the US but already has stable consumer demand, making it more suitable for everyday wear and convenience-led positioning with lower execution complexity."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 72,
+                "to": 76
               },
               "confidence": {
                 "from": 0.68,
@@ -1005,18 +1570,25 @@
           "en": "Beauty & Personal Care"
         },
         "priorityTier": "P1",
-        "topPriorityScore": 84,
-        "topConfidence": 0.74,
+        "topPriorityScore": 85,
+        "topConfidence": 0.86,
         "platformFit": {
-          "amazon": 0.82,
-          "tiktok": 0.91,
-          "shopify": 0.72
+          "amazon": 0.88,
+          "tiktok": 0.92,
+          "shopify": 0.78
         },
         "reports": [
+          "us-press-on-nails-2026",
           "global-press-on-nails-2026",
-          "europe-press-on-nails-2026"
+          "europe-press-on-nails-2026",
+          "sea-press-on-nails-2026",
+          "au-press-on-nails-2026"
         ],
         "markets": [
+          {
+            "zh": "美国",
+            "en": "United States"
+          },
           {
             "zh": "全球",
             "en": "Global"
@@ -1024,13 +1596,21 @@
           {
             "zh": "欧洲",
             "en": "Europe"
+          },
+          {
+            "zh": "东南亚",
+            "en": "Southeast Asia"
+          },
+          {
+            "zh": "澳洲",
+            "en": "Australia"
           }
         ],
-        "leadReportId": "global-press-on-nails-2026",
-        "leadFile": "report-global-press-on-nails.html",
+        "leadReportId": "us-press-on-nails-2026",
+        "leadFile": "report-us-press-on-nails.html",
         "summary": {
-          "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
-          "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
+          "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
+          "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
         },
         "profileFile": "entities/beauty-personal-care.html"
       },
@@ -1138,6 +1718,23 @@
         "updatedAt": "2026-04-08"
       },
       {
+        "watchId": "watch-au-press-on-nails-2026",
+        "entityType": "report",
+        "entityId": "au-press-on-nails-2026",
+        "marketId": "au",
+        "title": {
+          "zh": "澳洲穿戴甲市场现状",
+          "en": "Australia Press-On Nails Market Status"
+        },
+        "status": "monitor",
+        "reason": {
+          "zh": "市场基础存在，但供给密度和品牌成熟度仍需持续观察",
+          "en": "The market base exists, but supply depth and brand maturity still need monitoring"
+        },
+        "priorityTier": "P2",
+        "updatedAt": "2026-04-08"
+      },
+      {
         "watchId": "watch-global-diy-floral-kit-2026",
         "entityType": "report",
         "entityId": "global-diy-floral-kit-2026",
@@ -1150,6 +1747,40 @@
         "reason": {
           "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性",
           "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation"
+        },
+        "priorityTier": "P2",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-us-press-on-nails-2026",
+        "entityType": "report",
+        "entityId": "us-press-on-nails-2026",
+        "marketId": "us",
+        "title": {
+          "zh": "美国穿戴甲市场现状",
+          "en": "US Press-On Nails Market Status"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "美国是穿戴甲最成熟的验证市场，适合作为基准盘持续跟踪",
+          "en": "The US is the most mature validation market for press-on nails and should be tracked as a benchmark"
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-08"
+      },
+      {
+        "watchId": "watch-sea-press-on-nails-2026",
+        "entityType": "report",
+        "entityId": "sea-press-on-nails-2026",
+        "marketId": "sea",
+        "title": {
+          "zh": "东南亚穿戴甲市场现状",
+          "en": "Southeast Asia Press-On Nails Market Status"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "内容势能强，但区域差异大，需持续分国观察",
+          "en": "Content momentum is strong, but country-level variation remains large and should be tracked continuously"
         },
         "priorityTier": "P2",
         "updatedAt": "2026-04-08"
@@ -1190,6 +1821,37 @@
       }
     ],
     "changeLog": [
+      {
+        "reportId": "us-press-on-nails-2026",
+        "title": {
+          "zh": "美国穿戴甲市场现状",
+          "en": "US Press-On Nails Market Status"
+        },
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "flag": "🇺🇸",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "美国穿戴甲市场现状 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "US Press-On Nails Market Status is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 85,
+        "delta": {
+          "priorityScore": {
+            "from": 81,
+            "to": 85
+          },
+          "confidence": {
+            "from": 0.8,
+            "to": 0.86
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
+      },
       {
         "reportId": "global-press-on-nails-2026",
         "title": {
@@ -1250,7 +1912,38 @@
           },
           "recommendedActions": "updated"
         },
-        "version": "v1.3"
+        "version": "v1.4"
+      },
+      {
+        "reportId": "sea-press-on-nails-2026",
+        "title": {
+          "zh": "东南亚穿戴甲市场现状",
+          "en": "Southeast Asia Press-On Nails Market Status"
+        },
+        "marketName": {
+          "zh": "东南亚",
+          "en": "Southeast Asia"
+        },
+        "flag": "🌏",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "东南亚穿戴甲市场现状 已进入 P2 优先级，建议复核下一步动作。",
+          "en": "Southeast Asia Press-On Nails Market Status is now in P2 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 79,
+        "delta": {
+          "priorityScore": {
+            "from": 75,
+            "to": 79
+          },
+          "confidence": {
+            "from": 0.56,
+            "to": 0.62
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
       },
       {
         "reportId": "global-diy-floral-kit-2026",
@@ -1282,6 +1975,37 @@
           "recommendedActions": "updated"
         },
         "version": "v1.4"
+      },
+      {
+        "reportId": "au-press-on-nails-2026",
+        "title": {
+          "zh": "澳洲穿戴甲市场现状",
+          "en": "Australia Press-On Nails Market Status"
+        },
+        "marketName": {
+          "zh": "澳洲",
+          "en": "Australia"
+        },
+        "flag": "🇦🇺",
+        "updatedAt": "2026-04-08",
+        "changeSummary": {
+          "zh": "澳洲穿戴甲市场现状 已进入 P2 优先级，建议复核下一步动作。",
+          "en": "Australia Press-On Nails Market Status is now in P2 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 76,
+        "delta": {
+          "priorityScore": {
+            "from": 72,
+            "to": 76
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
       },
       {
         "reportId": "us-apr-2026",

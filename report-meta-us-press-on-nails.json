@@ -1,0 +1,40 @@
+{
+  "marketId": "us",
+  "marketName": { "zh": "美国", "en": "United States" },
+  "region": { "zh": "北美", "en": "North America" },
+  "flag": "🇺🇸",
+  "status": "live",
+  "report": {
+    "id": "us-press-on-nails-2026",
+    "reportType": "market-status-analysis",
+    "title": { "zh": "美国穿戴甲市场现状", "en": "US Press-On Nails Market Status" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-08",
+    "lastReviewedAt": "2026-04-08",
+    "file": "report-us-press-on-nails.html",
+    "tags": [
+      { "zh": "穿戴甲", "en": "Press-on nails" },
+      { "zh": "美国美妆", "en": "US beauty" },
+      { "zh": "大众零售", "en": "Mass retail" }
+    ],
+    "summary": {
+      "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
+      "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
+    },
+    "coverLabel": { "zh": "市场现状分析", "en": "Market Status Analysis" },
+    "highlight": { "zh": "成熟市场，竞争在表达与体验", "en": "Mature market, competition is in positioning and experience" },
+    "confidence": { "zh": "高", "en": "High" },
+    "priorityScore": 85,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.76,
+    "platformFit": { "amazon": 0.88, "tiktok": 0.92, "shopify": 0.78 },
+    "recommendedActions": [
+      { "zh": "优先关注可重复佩戴套装与主题设计更新频率", "en": "Prioritize reusable kits and cadence of themed design refreshes" },
+      { "zh": "同步比较大众零售表达和 TikTok 内容表达差异", "en": "Compare mass-retail positioning with TikTok-native creative language" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "美国是穿戴甲最成熟的验证市场，适合作为基准盘持续跟踪", "en": "The US is the most mature validation market for press-on nails and should be tracked as a benchmark" },
+    "category": { "zh": "美妆个护", "en": "Beauty & Personal Care" },
+    "scoreBreakdown": { "demand": 19, "competition": 11, "margin": 14, "execution": 11, "trend": 14, "platform": 9, "confidence": 7 }
+  }
+}
