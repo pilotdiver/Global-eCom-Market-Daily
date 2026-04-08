@@ -1,0 +1,93 @@
+{
+  "system": {
+    "name": { "zh": "全球电商情报系统", "en": "Global E-Commerce Intelligence System" },
+    "subtitle": { "zh": "市场情报主入口 · 报告浏览与分发", "en": "Main portal · Report browsing and distribution" },
+    "version": "1.2.0",
+    "lastUpdated": "2026-04-08"
+  },
+  "hero": {
+    "eyebrow": { "zh": "系统主入口", "en": "System Portal" },
+    "title": { "zh": "集中查看各市场情报报告与最新机会判断", "en": "Centralized access to market intelligence reports and current opportunity reads" },
+    "summary": { "zh": "这里是整套系统的浏览入口。你可以在这里查看不同市场的历史报告、最新分析、重点方向与后续扩展中的市场。每份报告都基于统一模板生成，便于长期积累、横向比较与快速调用。", "en": "This is the browsing entry point for the full intelligence system. Use it to access historical reports, latest market reads, priority opportunity directions, and future market expansions. Each report is generated from the same reporting template for long-term accumulation, comparison, and reuse." }
+  },
+  "markets": [
+    {
+      "id": "us",
+      "flag": "🇺🇸",
+      "name": { "zh": "美国", "en": "United States" },
+      "region": { "zh": "北美", "en": "North America" },
+      "status": "live",
+      "reports": [
+        {
+          "id": "us-apr-2026",
+          "title": { "zh": "4月电商商品爆款分析", "en": "April breakout product analysis" },
+          "date": "2026-04",
+          "updatedAt": "2026-04-08",
+          "file": "report-us-april-breakout-products.html",
+          "tags": [
+            { "zh": "虫害控制", "en": "Pest control" },
+            { "zh": "园艺", "en": "Garden" },
+            { "zh": "整理", "en": "Organization" },
+            { "zh": "补水", "en": "Hydration" }
+          ],
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "au",
+      "flag": "🇦🇺",
+      "name": { "zh": "澳洲", "en": "Australia" },
+      "region": { "zh": "大洋洲", "en": "Oceania" },
+      "status": "live",
+      "reports": [
+        {
+          "id": "au-mar-2026",
+          "title": { "zh": "3月畅销商品", "en": "March best sellers" },
+          "date": "2026-04",
+          "updatedAt": "2026-04-08",
+          "file": "report-au-march-best-sellers.html",
+          "tags": [
+            { "zh": "收纳", "en": "Organization" },
+            { "zh": "厨房", "en": "Kitchen" },
+            { "zh": "宠物", "en": "Pet" },
+            { "zh": "户外", "en": "Outdoor" }
+          ],
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "uk",
+      "flag": "🇬🇧",
+      "name": { "zh": "英国", "en": "United Kingdom" },
+      "region": { "zh": "欧洲", "en": "Europe" },
+      "status": "soon",
+      "reports": []
+    },
+    {
+      "id": "de",
+      "flag": "🇩🇪",
+      "name": { "zh": "德国", "en": "Germany" },
+      "region": { "zh": "欧洲", "en": "Europe" },
+      "status": "soon",
+      "reports": []
+    },
+    {
+      "id": "jp",
+      "flag": "🇯🇵",
+      "name": { "zh": "日本", "en": "Japan" },
+      "region": { "zh": "东亚", "en": "East Asia" },
+      "status": "planned",
+      "reports": []
+    },
+    {
+      "id": "sea",
+      "flag": "🌏",
+      "name": { "zh": "东南亚", "en": "Southeast Asia" },
+      "region": { "zh": "东南亚", "en": "Southeast Asia" },
+      "status": "planned",
+      "reports": []
+    }
+  ]
+}
