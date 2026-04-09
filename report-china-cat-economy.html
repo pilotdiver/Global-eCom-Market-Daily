@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px;table-layout:fixed}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));align-items:end;gap:20px;padding-top:16px}.bar-col{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:120px;height:220px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:13px;color:var(--muted);text-align:center;line-height:1.45;max-width:140px;word-break:break-word}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": {
+    "documentTitle": {
+      "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购",
+      "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat"
+    }
+  },
+  "sidebar": {
+    "title": {
+      "zh": "全球电商情报系统",
+      "en": "Global E-Commerce Intelligence System"
+    },
+    "meta": [
+      {
+        "zh": "市场：中国",
+        "en": "Market: China"
+      },
+      {
+        "zh": "品类：猫经济",
+        "en": "Category: Cat economy"
+      },
+      {
+        "zh": "数据更新时间：2026-04-09",
+        "en": "Last updated: 2026-04-09"
+      }
+    ]
+  },
+  "navigation": {
+    "title": {
+      "zh": "内容导航",
+      "en": "Navigation"
+    },
+    "items": [
+      {
+        "id": "overview",
+        "title": {
+          "zh": "总览",
+          "en": "Overview"
+        },
+        "description": {
+          "zh": "结论与优先方向",
+          "en": "Conclusion and priorities"
+        }
+      },
+      {
+        "id": "signals",
+        "title": {
+          "zh": "关键信号",
+          "en": "Signals"
+        },
+        "description": {
+          "zh": "增长结构与消费逻辑",
+          "en": "Growth structure and consumer logic"
+        }
+      },
+      {
+        "id": "opportunities",
+        "title": {
+          "zh": "机会方向",
+          "en": "Opportunities"
+        },
+        "description": {
+          "zh": "高潜猫赛道",
+          "en": "High-potential cat tracks"
+        }
+      },
+      {
+        "id": "pricing",
+        "title": {
+          "zh": "价格带",
+          "en": "Pricing"
+        },
+        "description": {
+          "zh": "可切入结构",
+          "en": "Entry structure"
+        }
+      },
+      {
+        "id": "players",
+        "title": {
+          "zh": "参考对象",
+          "en": "Reference Set"
+        },
+        "description": {
+          "zh": "后续验证对象",
+          "en": "Validation targets"
+        }
+      },
+      {
+        "id": "nextmoves",
+        "title": {
+          "zh": "Next 7 Days",
+          "en": "Next 7 Days"
+        },
+        "description": {
+          "zh": "本周建议动作",
+          "en": "This week's moves"
+        }
+      },
+      {
+        "id": "risks",
+        "title": {
+          "zh": "风险与动作",
+          "en": "Risks & Actions"
+        },
+        "description": {
+          "zh": "竞争与执行风险",
+          "en": "Competition and execution risk"
+        }
+      }
+    ]
+  },
+  "hero": {
+    "title": {
+      "zh": "中国猫经济是宠物赛道里更值得优先看的结构性机会，强在室内场景、情绪连接和高频复购",
+      "en": "China's cat economy is one of the strongest structural opportunities in pet, powered by indoor scenarios, emotional attachment, and high-frequency repeat"
+    },
+    "summary": {
+      "zh": "猫经济的核心，不只是猫比狗增长更快，而是猫天然更适配城市小空间、单身与年轻家庭生活方式，也更容易形成围绕主食湿粮、猫砂清洁、室内用品、智能设备和情绪型消费的连续支出。真正的机会不在“做猫用品”这么泛，而在于围绕室内精养和共居场景，做出高频、可复购、内容友好的商品结构。",
+      "en": "The core of the cat economy is not only that cat spending is growing faster than dog spending. Cats fit urban small-space living, singles, and younger households better, and they support recurring spend across wet food, litter-cleaning, indoor supplies, smart devices, and emotionally framed purchases. The real opportunity is not generic cat products, but building high-frequency, repeatable, content-friendly offers around indoor precision care and coexistence scenarios."
+    },
+    "tags": [
+      {
+        "zh": "优先方向：主食湿粮 / 猫砂清洁 / 室内用品",
+        "en": "Priority: Wet food / litter-cleaning / indoor supplies"
+      },
+      {
+        "zh": "核心逻辑：室内精养 + 高频复购",
+        "en": "Core logic: Indoor precision care + repeat purchase"
+      },
+      {
+        "zh": "内容优势：情绪消费和晒猫文化",
+        "en": "Content edge: Emotional consumption and cat-sharing culture"
+      }
+    ],
+    "cards": [
+      {
+        "label": {
+          "zh": "总体机会强度",
+          "en": "Overall opportunity strength"
+        },
+        "value": {
+          "zh": "强",
+          "en": "Strong"
+        },
+        "note": {
+          "zh": "猫经济是宠物赛道中少数既有增长又有结构清晰度的方向。",
+          "en": "Cat economy is one of the few pet directions with both growth and clear structural logic."
+        }
+      },
+      {
+        "label": {
+          "zh": "当前优先级",
+          "en": "Current priority"
+        },
+        "value": {
+          "zh": "先拆高频品，再补平台样本",
+          "en": "Split repeat-heavy items first, then validate with platform samples"
+        },
+        "note": {
+          "zh": "比起继续讲趋势，更值得直接拆产品方向和价格带。",
+          "en": "Instead of staying at trend level, the next better step is to break down concrete product directions and pricing bands."
+        }
+      }
+    ]
+  },
+  "summaryMetrics": [
+    {
+      "label": {
+        "zh": "最佳切入口",
+        "en": "Best entry point"
+      },
+      "value": {
+        "zh": "猫砂与清洁复购品",
+        "en": "Litter and cleaning repeat products"
+      },
+      "note": {
+        "zh": "频率高、痛点清晰，也更容易形成稳定复购。",
+        "en": "These are high-frequency products with clear pain points and stronger repeat-purchase logic."
+      }
+    },
+    {
+      "label": {
+        "zh": "更高势能",
+        "en": "Higher momentum"
+      },
+      "value": {
+        "zh": "主食湿粮与功能零食",
+        "en": "Wet food and functional treats"
+      },
+      "note": {
+        "zh": "更贴近精养和健康升级，也更适合做内容表达。",
+        "en": "These sit closer to precision care and health upgrades, and are easier to frame in content."
+      }
+    },
+    {
+      "label": {
+        "zh": "最该警惕",
+        "en": "Main caution"
+      },
+      "value": {
+        "zh": "泛用品低价同质化",
+        "en": "Low-price commoditization in generic supplies"
+      },
+      "note": {
+        "zh": "如果只是普通猫用品，没有场景表达，很快会卷进比价。",
+        "en": "If the offer is just generic cat supplies without scenario framing, it quickly falls into price comparison."
+      }
+    },
+    {
+      "label": {
+        "zh": "优先验证",
+        "en": "Priority validation"
+      },
+      "value": {
+        "zh": "价格带、评论痛点、内容爆点",
+        "en": "Pricing, review pain points, and content triggers"
+      },
+      "note": {
+        "zh": "猫经济的方向已经明确，下一步重点是平台验证和 SKU 假设。",
+        "en": "The direction is already clear. The next step is platform validation and SKU hypothesis design."
+      }
+    }
+  ],
+  "sections": {
+    "overview": {
+      "title": {
+        "zh": "总览",
+        "en": "Overview"
+      },
+      "subtitle": {
+        "zh": "猫经济最值得看的，不是总量，而是它天然适配城市室内精养场景。",
+        "en": "The most important part of cat economy is not only scale, but its natural fit with urban indoor precision-care scenarios."
+      },
+      "badge": {
+        "zh": "结论摘要",
+        "en": "Executive Summary"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开行业白皮书、猫消费增长口径、趋势观察",
+          "en": "Source: public industry white papers, cat-spending estimates, and trend observation"
+        }
+      ],
+      "barChart": {
+        "title": {
+          "zh": "重点方向强度图",
+          "en": "Priority direction strength"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "猫砂与清洁",
+              "en": "Litter and cleaning"
+            },
+            "score": 8.9
+          },
+          {
+            "label": {
+              "zh": "主食湿粮与功能零食",
+              "en": "Wet food and functional treats"
+            },
+            "score": 8.7
+          },
+          {
+            "label": {
+              "zh": "室内用品与家居融合",
+              "en": "Indoor supplies and home integration"
+            },
+            "score": 8.1
+          },
+          {
+            "label": {
+              "zh": "智能养猫设备",
+              "en": "Smart cat devices"
+            },
+            "score": 7.5
+          }
+        ]
+      },
+      "sideCard": {
+        "title": {
+          "zh": "Why Now / 当前进入理由",
+          "en": "Why Now"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "猫消费增速普遍快于狗",
+              "en": "Cat spending is broadly growing faster than dog spending"
+            },
+            "note": {
+              "zh": "公开行业数据普遍显示猫消费增速更强，结构性机会更明显。",
+              "en": "Public industry estimates broadly point to faster cat-led growth and stronger structural opportunity."
+            }
+          },
+          {
+            "title": {
+              "zh": "城市生活方式更适配养猫",
+              "en": "Urban lifestyles are more compatible with cat ownership"
+            },
+            "note": {
+              "zh": "猫更适合小空间、独居和年轻上班族，天然适合城市高密度生活。",
+              "en": "Cats fit smaller spaces, solo living, and younger working households, making them naturally compatible with high-density urban lifestyles."
+            }
+          },
+          {
+            "title": {
+              "zh": "猫场景天然带来高频复购",
+              "en": "Cat scenarios naturally generate repeat-heavy demand"
+            },
+            "note": {
+              "zh": "主食、猫砂、清洁和室内用品都能形成较强复购和持续支出。",
+              "en": "Food, litter, cleaning, and indoor supplies can all support strong repeat spending over time."
+            }
+          }
+        ]
+      },
+      "takeaway": {
+        "title": {
+          "zh": "市场摘要",
+          "en": "Market takeaway"
+        },
+        "body": {
+          "zh": "中国猫经济是宠物赛道中更优先值得看的方向，因为它同时具备更强的城市适配性、更明显的情绪消费属性和更健康的高频复购结构。最值得先看的不是“所有猫用品”，而是猫砂清洁、主食湿粮与功能零食、室内精养用品这几条高密度场景。",
+          "en": "China's cat economy is a higher-priority direction within pet because it combines urban lifestyle fit, stronger emotional-consumption logic, and healthier repeat-purchase structures. The best places to start are not all cat products, but high-density scenarios such as litter-cleaning, wet food and functional treats, and indoor precision-care supplies."
+        }
+      },
+      "scorecard": {
+        "title": {
+          "zh": "执行评分",
+          "en": "Execution scores"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "趋势强度",
+              "en": "Trend strength"
+            },
+            "score": 8.7
+          },
+          {
+            "label": {
+              "zh": "内容适配度",
+              "en": "Content fit"
+            },
+            "score": 8.9
+          },
+          {
+            "label": {
+              "zh": "复购潜力",
+              "en": "Repeat potential"
+            },
+            "score": 8.8
+          },
+          {
+            "label": {
+              "zh": "利润安全度",
+              "en": "Margin safety"
+            },
+            "score": 6.9
+          },
+          {
+            "label": {
+              "zh": "执行友好度",
+              "en": "Execution friendliness"
+            },
+            "score": 7.6
+          }
+        ]
+      }
+    },
+    "signals": {
+      "title": {
+        "zh": "关键信号",
+        "en": "Signals"
+      },
+      "subtitle": {
+        "zh": "猫经济的核心信号，不只是数量增长，更是围绕室内精养形成的支出密度。",
+        "en": "The core signal is not only cat-population growth, but the spending density created by indoor precision-care behavior."
+      },
+      "badge": {
+        "zh": "需求与结构",
+        "en": "Demand & Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开白皮书、猫消费市场规模口径、趋势观察",
+          "en": "Source: public white papers, cat-consumption estimates, and trend observation"
+        }
+      ],
+      "columns": [
+        {
+          "title": {
+            "zh": "市场与供给信号",
+            "en": "Market and supply signals"
+          },
+          "items": [
+            {
+              "title": {
+                "zh": "猫在宠物结构中的权重持续提升",
+                "en": "Cats continue to gain weight inside the pet mix"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "公开口径普遍显示猫数量和猫消费都保持较强增长，是宠物结构中的重点增量。",
+                "en": "Public estimates broadly show that both cat population and cat spending remain strong, making cats a key incremental driver within pet."
+              }
+            },
+            {
+              "title": {
+                "zh": "猫相关产品天然适合室内高频场景",
+                "en": "Cat-related products naturally fit indoor high-frequency scenarios"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "围绕猫砂、除味、主食湿粮、饮水和室内玩具，可以形成比狗更密集的消费链条。",
+                "en": "Litter, odor control, wet food, water systems, and indoor toys create a denser spending chain than many dog-centered scenarios."
+              }
+            },
+            {
+              "title": {
+                "zh": "晒猫文化和情绪消费放大了内容传播",
+                "en": "Cat-sharing culture and emotional consumption amplify content spread"
+              },
+              "level": {
+                "zh": "注意",
+                "en": "Watch"
+              },
+              "levelClass": "warn",
+              "body": {
+                "zh": "猫类商品更容易通过内容建立种草，但也意味着审美表达和场景表达更重要。",
+                "en": "Cat-related products are easier to seed through content, but that also means aesthetics and scenario framing matter more."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "消费者需求信号",
+            "en": "Consumer demand signals"
+          },
+          "soft": true,
+          "items": [
+            {
+              "title": {
+                "zh": "用户愿意为猫的健康和舒适持续付费",
+                "en": "Users are willing to pay continuously for cat health and comfort"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "猫经济里最稳的支出，不是一次性用品，而是围绕健康、清洁和喂养的持续投入。",
+                "en": "The most stable spending is not in one-off accessories, but in recurring spending around health, cleaning, and feeding."
+              }
+            },
+            {
+              "title": {
+                "zh": "家庭共居问题驱动高频消费",
+                "en": "Pet-home coexistence issues drive high-frequency spending"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "气味、掉砂、掉毛、抓挠和收纳问题，是很多猫相关消费真正的购买触发器。",
+                "en": "Odor, scattered litter, shedding, scratching, and storage are real purchase triggers in the cat economy."
+              }
+            },
+            {
+              "title": {
+                "zh": "情绪价值与颜值表达也能放大客单",
+                "en": "Emotional value and aesthetics can lift basket size"
+              },
+              "level": {
+                "zh": "中信号",
+                "en": "Medium"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "猫玩具、家居融合用品、节日主题用品更容易被内容驱动购买。",
+                "en": "Cat toys, home-integrated products, and seasonal themed items are easier to convert through content-led desire."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": {
+        "zh": "机会方向",
+        "en": "Opportunity Directions"
+      },
+      "subtitle": {
+        "zh": "最值得优先做的，不是泛猫用品，而是围绕高频、室内、共居和健康的具体场景。",
+        "en": "The best opportunities are not generic cat supplies, but specific scenarios built around frequency, indoor use, coexistence, and health."
+      },
+      "badge": {
+        "zh": "机会地图",
+        "en": "Opportunity Map"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：猫消费增长信号与方向性商业判断",
+          "en": "Source: cat-spending growth signals and directional commercial judgment"
+        }
+      ],
+      "labels": {
+        "topPlayers": {
+          "zh": "参考方向：",
+          "en": "Reference direction:"
+        },
+        "entryWhy": {
+          "zh": "当前进入理由：",
+          "en": "Why enter now:"
+        }
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "机会一：猫砂与清洁复购链",
+            "en": "Opportunity 1: Litter and cleaning repeat chain"
+          },
+          "summary": {
+            "zh": "包括猫砂、除味、除毛、清洁湿巾、地面护理和储存收纳，这类产品频率高、痛点清晰，也最容易形成长期复购。",
+            "en": "This includes litter, odor control, fur removal, wipes, floor care, and storage. These products are high-frequency, pain-point-driven, and best positioned for long-term repeat."
+          },
+          "topPlayers": [
+            "猫砂",
+            "除味清洁",
+            "去毛护理"
+          ],
+          "entryWhy": {
+            "zh": "这是猫经济里最稳的现金流型方向，真实痛点强，需求持续存在。",
+            "en": "This is one of the most stable cash-flow directions in cat economy because the pain points are real and continuous."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：稳定",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：高频复购",
+              "en": "Play: High-frequency repeat"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会二：主食湿粮与功能零食",
+            "en": "Opportunity 2: Wet food and functional treats"
+          },
+          "summary": {
+            "zh": "围绕适口性、补水、肠胃、美毛、体重管理和老龄猫需求做分层，比普通主粮更容易形成差异化。",
+            "en": "Build segmentation around palatability, hydration, digestion, coat care, weight management, and senior-cat needs. This is easier to differentiate than generic staple food."
+          },
+          "topPlayers": [
+            "主食湿粮",
+            "冻干零食",
+            "功能营养"
+          ],
+          "entryWhy": {
+            "zh": "精养逻辑最容易在食品上体现，用户也更容易接受“为了猫更健康而升级”。",
+            "en": "Precision care expresses itself most clearly in food, and users are more willing to upgrade when the health logic is clear."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：升级期",
+              "en": "Lifecycle: Upgrade"
+            },
+            {
+              "zh": "打法：健康分层",
+              "en": "Play: Health segmentation"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会三：室内用品与家居融合",
+            "en": "Opportunity 3: Indoor supplies and home integration"
+          },
+          "summary": {
+            "zh": "包括猫抓板、猫爬架、小空间猫窝、隐藏式猫厕和家居融合用品，这类商品更依赖审美和空间表达。",
+            "en": "This includes scratching boards, cat trees, small-space beds, hidden litter furniture, and home-integrated products. These products rely more on aesthetics and spatial framing."
+          },
+          "topPlayers": [
+            "猫抓板",
+            "家居融合用品",
+            "小空间用品"
+          ],
+          "entryWhy": {
+            "zh": "猫天然生活在室内，室内空间改造和家居融合会持续产生新需求。",
+            "en": "Cats live primarily indoors, so home-space adaptation and furniture integration continue to create new demand."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中强",
+              "en": "Trend: Medium-Strong"
+            },
+            {
+              "zh": "生命周期：扩展期",
+              "en": "Lifecycle: Expansion"
+            },
+            {
+              "zh": "打法：审美 + 实用",
+              "en": "Play: Aesthetic + utility"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会四：智能养猫设备",
+            "en": "Opportunity 4: Smart cat devices"
+          },
+          "summary": {
+            "zh": "重点是智能饮水机、喂食器、猫砂盆等省事型设备，机会存在，但更吃产品稳定性和售后。",
+            "en": "Focus on convenience-led devices such as water fountains, feeders, and litter boxes. The opportunity is real, but reliability and after-sales matter much more here."
+          },
+          "topPlayers": [
+            "饮水机",
+            "喂食器",
+            "智能猫砂盆"
+          ],
+          "entryWhy": {
+            "zh": "年轻养猫用户愿意为省事和可视化管理买单，但高客单设备必须接受更严格验证。",
+            "en": "Younger cat owners are willing to pay for convenience and visibility, but higher-ticket devices require stricter validation."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中",
+              "en": "Trend: Medium"
+            },
+            {
+              "zh": "生命周期：导入期",
+              "en": "Lifecycle: Early growth"
+            },
+            {
+              "zh": "打法：便利设备",
+              "en": "Play: Convenience devices"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": {
+        "zh": "价格带",
+        "en": "Pricing"
+      },
+      "subtitle": {
+        "zh": "猫经济的价格判断重点不在绝对低价，而在能否用精养、便利和共居逻辑支撑价格。",
+        "en": "Pricing in cat economy should not focus only on being cheap, but on whether precision care, convenience, and coexistence logic support the price."
+      },
+      "badge": {
+        "zh": "价格结构",
+        "en": "Pricing Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：方向性市场判断与平台经验框架",
+          "en": "Source: directional market judgment and platform-experience framing"
+        }
+      ],
+      "table": {
+        "title": {
+          "zh": "切入价格带判断",
+          "en": "Entry pricing view"
+        },
+        "columns": [
+          {
+            "zh": "方向",
+            "en": "Direction"
+          },
+          {
+            "zh": "低价带",
+            "en": "Low band"
+          },
+          {
+            "zh": "主销带",
+            "en": "Core band"
+          },
+          {
+            "zh": "推荐切入",
+            "en": "Recommended entry"
+          },
+          {
+            "zh": "价格支撑逻辑",
+            "en": "Value support"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "zh": "猫砂与清洁",
+              "en": "Litter and cleaning"
+            },
+            {
+              "zh": "基础复购带",
+              "en": "Basic repeat band"
+            },
+            {
+              "zh": "中价稳定带",
+              "en": "Mid-band stability zone"
+            },
+            {
+              "zh": "先抓复购",
+              "en": "Prioritize repeat first"
+            },
+            {
+              "zh": "核心在解决气味、清洁和共居痛点",
+              "en": "Value is supported by solving odor, cleaning, and coexistence pain points"
+            }
+          ],
+          [
+            {
+              "zh": "主食湿粮与功能零食",
+              "en": "Wet food and functional treats"
+            },
+            {
+              "zh": "基础营养带",
+              "en": "Basic nutrition band"
+            },
+            {
+              "zh": "中高功能带",
+              "en": "Mid-high functional band"
+            },
+            {
+              "zh": "先做中带升级",
+              "en": "Start with mid-band upgrades"
+            },
+            {
+              "zh": "价格应由适口性、补水和功能分层支撑",
+              "en": "Price should be supported by palatability, hydration, and functional segmentation"
+            }
+          ],
+          [
+            {
+              "zh": "室内用品",
+              "en": "Indoor supplies"
+            },
+            {
+              "zh": "基础用品带",
+              "en": "Basic supply band"
+            },
+            {
+              "zh": "设计感中价带",
+              "en": "Mid-band with design value"
+            },
+            {
+              "zh": "先做小空间款",
+              "en": "Start with small-space designs"
+            },
+            {
+              "zh": "价格需要靠审美、空间适配和实用性支撑",
+              "en": "Price needs support from aesthetics, spatial fit, and practicality"
+            }
+          ],
+          [
+            {
+              "zh": "智能设备",
+              "en": "Smart devices"
+            },
+            {
+              "zh": "入门设备带",
+              "en": "Entry-device band"
+            },
+            {
+              "zh": "中高客单带",
+              "en": "Mid-high ticket band"
+            },
+            {
+              "zh": "谨慎试投",
+              "en": "Test cautiously"
+            },
+            {
+              "zh": "价格必须由省事、稳定和售后体验支撑",
+              "en": "Price must be supported by convenience, reliability, and after-sales quality"
+            }
+          ]
+        ]
+      },
+      "side": {
+        "title": {
+          "zh": "价格判断",
+          "en": "Pricing judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "高频品先看复购价值",
+              "en": "For high-frequency products, judge repeat value first"
+            },
+            "note": {
+              "zh": "猫砂、清洁和湿粮这类品不该只看单次毛利。",
+              "en": "Products like litter, cleaning, and wet food should not be judged only by one-time gross margin."
+            }
+          },
+          {
+            "title": {
+              "zh": "设计型室内用品别直接卷最低价",
+              "en": "Do not race to the bottom on design-led indoor products"
+            },
+            "note": {
+              "zh": "如果要打家居融合和空间表达，价格需要保留设计价值。",
+              "en": "If the play is home integration and spatial aesthetics, pricing must preserve design value."
+            }
+          },
+          {
+            "title": {
+              "zh": "智能设备的高价要更谨慎",
+              "en": "Be more cautious with premium pricing in smart devices"
+            },
+            "note": {
+              "zh": "没有稳定性和售后支撑，高客单只会放大风险。",
+              "en": "Without reliability and after-sales support, higher ticket size only magnifies risk."
+            }
+          }
+        ]
+      }
+    },
+    "players": {
+      "title": {
+        "zh": "Top Players & Links / 参考对象与链接",
+        "en": "Top Players & Links"
+      },
+      "subtitle": {
+        "zh": "这里保留的是后续要去平台验证的方向对象，而不是假装完整品牌库。",
+        "en": "This section keeps the direction objects that should be validated on platforms next, rather than pretending to be a full brand database."
+      },
+      "badge": {
+        "zh": "验证对象",
+        "en": "Validation Set"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：猫经济研究框架与平台验证路径",
+          "en": "Source: cat-economy research framework and platform validation path"
+        }
+      ],
+      "filterTitle": {
+        "zh": "对象分类与后续验证方向",
+        "en": "Object groups and next validation directions"
+      },
+      "filters": [
+        {
+          "value": "all",
+          "label": {
+            "zh": "全部",
+            "en": "All"
+          }
+        },
+        {
+          "value": "food",
+          "label": {
+            "zh": "Food",
+            "en": "Food"
+          }
+        },
+        {
+          "value": "care",
+          "label": {
+            "zh": "Care",
+            "en": "Care"
+          }
+        },
+        {
+          "value": "home",
+          "label": {
+            "zh": "Home",
+            "en": "Home"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": {
+            "zh": "猫食品验证组",
+            "en": "Cat food validation set"
+          },
+          "platforms": [
+            "food"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "猫食品",
+                  "en": "Cat food"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "主食湿粮 / 功能零食 / 冻干",
+                "en": "Wet food / functional treats / freeze-dried"
+              },
+              {
+                "zh": "看价格带、卖点、年龄分层和评论痛点",
+                "en": "Check pricing, claims, life-stage segmentation, and review pain points"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.tmall.com/",
+                "label": {
+                  "zh": "后续在天猫验证",
+                  "en": "Validate on Tmall next"
+                }
+              },
+              {
+                "zh": "用于补猫食品赛道的真实平台样本。",
+                "en": "Useful for adding real platform samples in cat food."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "猫砂清洁验证组",
+            "en": "Litter-cleaning validation set"
+          },
+          "platforms": [
+            "care"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "猫砂清洁",
+                  "en": "Litter-cleaning"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "猫砂 / 除味 / 去毛 / 湿巾",
+                "en": "Litter / odor care / fur removal / wipes"
+              },
+              {
+                "zh": "看复购结构、组合装、评价痛点和规格设计",
+                "en": "Check repeat structure, bundles, review pain points, and pack design"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.jd.com/",
+                "label": {
+                  "zh": "后续在京东验证",
+                  "en": "Validate on JD next"
+                }
+              },
+              {
+                "zh": "用于验证最稳的高频复购类需求。",
+                "en": "Useful for validating one of the most stable repeat-heavy need clusters."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "室内用品验证组",
+            "en": "Indoor-supplies validation set"
+          },
+          "platforms": [
+            "home"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "室内用品",
+                  "en": "Indoor supplies"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "猫抓板 / 猫爬架 / 隐藏式猫厕",
+                "en": "Scratcher / cat tree / hidden litter furniture"
+              },
+              {
+                "zh": "看审美表达、小空间适配和内容传播点",
+                "en": "Check aesthetic framing, small-space fit, and content triggers"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.xiaohongshu.com/",
+                "label": {
+                  "zh": "后续在小红书验证",
+                  "en": "Validate on Xiaohongshu next"
+                }
+              },
+              {
+                "zh": "用于判断家居融合和晒猫内容是否能放大转化。",
+                "en": "Useful for judging whether home integration and cat-sharing content can amplify conversion."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": {
+        "zh": "Next 7 Days",
+        "en": "Next 7 Days"
+      },
+      "subtitle": {
+        "zh": "下一步最重要的，是把猫经济从“方向对”继续推进到“具体能做什么”。",
+        "en": "The next important move is to push cat economy from a correct direction into concrete executable options."
+      },
+      "badge": {
+        "zh": "优先动作",
+        "en": "Priority Moves"
+      },
+      "items": [
+        {
+          "title": {
+            "zh": "先补 3 类平台样本",
+            "en": "Add 3 classes of platform samples first"
+          },
+          "body": {
+            "zh": "优先补猫主食湿粮、猫砂清洁、室内用品 3 类样本，去看价格带、热销表达和评论区痛点。",
+            "en": "Start with samples from wet food, litter-cleaning, and indoor supplies to inspect pricing, winning messaging, and review pain points."
+          }
+        },
+        {
+          "title": {
+            "zh": "拆成 SKU 假设",
+            "en": "Turn it into SKU hypotheses"
+          },
+          "body": {
+            "zh": "每个方向都需要继续拆成人群、场景、价格带和产品结构，而不是停在赛道判断。",
+            "en": "Each direction should be broken down further into user segment, scenario, price band, and product structure rather than stopping at track selection."
+          }
+        },
+        {
+          "title": {
+            "zh": "优先做高频品，谨慎做高客单设备",
+            "en": "Prioritize repeat-heavy items, be cautious with high-ticket devices"
+          },
+          "body": {
+            "zh": "先用高频复购品建立稳方向，再决定是否往智能设备走。",
+            "en": "Use repeat-heavy categories to establish a stable direction before deciding whether to push further into smart devices."
+          }
+        }
+      ]
+    },
+    "risks": {
+      "title": {
+        "zh": "风险与动作",
+        "en": "Risks & Actions"
+      },
+      "subtitle": {
+        "zh": "猫经济很值得做，但也很容易在低价用品和内容误判里踩坑。",
+        "en": "Cat economy is attractive, but it is also easy to misstep through low-price commoditization and content misreads."
+      },
+      "badge": {
+        "zh": "风险判断",
+        "en": "Risk Judgment"
+      },
+      "risks": [
+        {
+          "title": {
+            "zh": "泛用品低价同质化风险",
+            "en": "Low-price commoditization risk in generic supplies"
+          },
+          "body": {
+            "zh": "普通猫用品如果没有审美、功能或场景差异，很快会进入纯比价竞争。",
+            "en": "Generic cat supplies quickly fall into price-only competition unless they gain aesthetic, functional, or scenario differentiation."
+          }
+        },
+        {
+          "title": {
+            "zh": "内容看起来热，不代表复购健康",
+            "en": "Content heat does not always mean healthy repeat economics"
+          },
+          "body": {
+            "zh": "很多晒猫类商品容易出内容，但不一定能形成长期稳定消费。",
+            "en": "Many cat-sharing products perform well in content but do not necessarily build stable long-term repeat."
+          }
+        },
+        {
+          "title": {
+            "zh": "智能设备售后风险",
+            "en": "After-sales risk in smart devices"
+          },
+          "body": {
+            "zh": "智能猫砂盆和喂食器类产品，一旦稳定性不够，退货和投诉压力会非常大。",
+            "en": "For smart litter boxes and feeders, weak reliability quickly magnifies returns and complaints."
+          }
+        }
+      ],
+      "actions": {
+        "title": {
+          "zh": "建议动作",
+          "en": "Recommended actions"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "先做高频复购链",
+              "en": "Start with repeat-heavy chains"
+            },
+            "note": {
+              "zh": "优先猫砂、清洁、湿粮等高频方向，再扩到审美型商品。",
+              "en": "Prioritize litter, cleaning, and wet food before expanding into more aesthetic and optional goods."
+            }
+          },
+          {
+            "title": {
+              "zh": "用场景表达替代泛商品表达",
+              "en": "Use scenario framing instead of generic product framing"
+            },
+            "note": {
+              "zh": "围绕小空间、除味、补水、收纳、室内玩耍去讲，会比泛猫用品更强。",
+              "en": "Framing around small-space use, odor control, hydration, storage, and indoor play is stronger than generic cat-product messaging."
+            }
+          },
+          {
+            "title": {
+              "zh": "平台验证先于强结论",
+              "en": "Platform validation should come before strong conclusions"
+            },
+            "note": {
+              "zh": "这版报告已经能定方向，但下一步仍要补真实平台样本。",
+              "en": "This report is strong enough to set direction, but real platform samples are still required next."
+            }
+          }
+        ]
+      },
+      "finalJudgment": {
+        "title": {
+          "zh": "最终判断",
+          "en": "Final judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "猫经济是中国宠物赛道里更优先值得看的结构性方向",
+              "en": "Cat economy is one of the highest-priority structural directions in China's pet category"
+            },
+            "level": {
+              "zh": "建议执行",
+              "en": "Recommended"
+            },
+            "levelClass": "good",
+            "body": {
+              "zh": "它强在室内场景密度、情绪消费和复购链条，而不是单一爆款逻辑。",
+              "en": "Its strength lies in dense indoor scenarios, emotional consumption, and repeat chains rather than a one-off breakout-product logic."
+            }
+          },
+          {
+            "title": {
+              "zh": "下一步应从赛道判断进入平台样本验证",
+              "en": "The next step should move from track selection into platform-sample validation"
+            },
+            "level": {
+              "zh": "推荐路径",
+              "en": "Preferred path"
+            },
+            "levelClass": "info",
+            "body": {
+              "zh": "优先从猫砂清洁、主食湿粮和室内用品 3 类切进去，看谁更适合继续做 SKU 细化。",
+              "en": "Start with litter-cleaning, wet food, and indoor supplies, then decide which should be developed into more detailed SKU directions."
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "title": {
+        "zh": "References / 数据来源",
+        "en": "References"
+      },
+      "subtitle": {
+        "zh": "本页基于公开行业口径与方向性商业判断，不代表完整成交数据库。",
+        "en": "This page is based on public industry estimates and directional commercial judgment rather than a complete transaction database."
+      },
+      "badge": {
+        "zh": "证据链",
+        "en": "Reference Layer"
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "市场规模与增长来源",
+            "en": "Market size and growth sources"
+          },
+          "tags": [
+            {
+              "zh": "公开行业白皮书",
+              "en": "Public industry white papers"
+            },
+            {
+              "zh": "猫消费规模口径",
+              "en": "Cat-spending estimates"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持猫经济增长、猫消费结构和城市适配性判断。",
+            "en": "Used mainly to support judgments on cat-economy growth, spending structure, and urban-lifestyle fit."
+          }
+        },
+        {
+          "title": {
+            "zh": "机会判断来源",
+            "en": "Opportunity judgment sources"
+          },
+          "tags": [
+            {
+              "zh": "趋势观察",
+              "en": "Trend observation"
+            },
+            {
+              "zh": "方向性商业判断",
+              "en": "Directional commercial judgment"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持猫砂清洁、主食湿粮、室内用品和智能设备等方向判断。",
+            "en": "Used mainly to support direction choices around litter-cleaning, wet food, indoor supplies, and smart devices."
+          }
+        },
+        {
+          "title": {
+            "zh": "更新时间信息",
+            "en": "Update info"
+          },
+          "tags": [
+            {
+              "zh": "数据更新时间：2026-04-09",
+              "en": "Last updated: 2026-04-09"
+            },
+            {
+              "zh": "Last checked: 2026-04-09",
+              "en": "Last checked: 2026-04-09"
+            }
+          ],
+          "body": {
+            "zh": "当前版本适合作为猫经济机会扫描底稿，后续应继续补平台样本与竞争结构验证。",
+            "en": "This version works as a baseline opportunity scan for cat economy and should next be extended with platform samples and competition validation."
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "zh": "Raymond Ho @Copyright 2026",
+    "en": "Raymond Ho @Copyright 2026"
+  }
+};
+    const langState = { current: 'zh' };
+    const t = (v, fallback='') => {
+      if (typeof v === 'string') return v || fallback;
+      if (v && typeof v === 'object') return v[langState.current] || v.zh || v.en || fallback;
+      return fallback;
+    };
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title, langState.current==='zh' ? '未命名报告' : 'Untitled report');
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary, langState.current==='zh' ? '该报告摘要暂缺，建议回看核心结论与分段分析。' : 'Summary pending. Review the key conclusion and section analysis below.');
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; (DATA.hero.tags||[]).forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      if(!(DATA.hero.tags||[]).length) tags.appendChild(make('span','pill',langState.current==='zh' ? '核心标签待补充' : 'Tags pending'));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; (DATA.hero.cards||[]).forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label, langState.current==='zh' ? '关键指标' : 'Key metric')}</div><div class="v">${t(c.value, '-')}</div><div class="t">${t(c.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; (DATA.summaryMetrics||[]).forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label, langState.current==='zh' ? '指标' : 'Metric')}</div><div class="value">${t(m.value, '-')}</div><div class="note">${t(m.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`))); }
+    function sectionHead(sec){ const title=t(sec.title, langState.current==='zh' ? '未命名章节' : 'Untitled section'); const subtitle=t(sec.subtitle||'', langState.current==='zh' ? '该章节暂无补充说明。' : 'No additional section description yet.'); const badge=t(sec.badge||'', langState.current==='zh' ? '内容模块' : 'Content module'); return `<div class="section-head"><div><h3>${title}</h3><p>${subtitle}</p></div><div class="section-badge">${badge}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

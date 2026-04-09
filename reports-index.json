@@ -9,7 +9,7 @@
       "en": "Main portal · Report browsing and distribution"
     },
     "version": "1.2.0",
-    "lastUpdated": "2026-04-08"
+    "lastUpdated": "2026-04-09"
   },
   "hero": {
     "eyebrow": {
@@ -161,7 +161,8 @@
             "platform": 9,
             "confidence": 7
           },
-          "version": "v1.0"
+          "version": "v1.1",
+          "previousVersion": "v1.0"
         }
       ]
     },
@@ -300,7 +301,8 @@
             "platform": 9,
             "confidence": 8
           },
-          "version": "v1.0"
+          "version": "v1.1",
+          "previousVersion": "v1.0"
         }
       ]
     },
@@ -436,7 +438,8 @@
             "platform": 11,
             "confidence": 7
           },
-          "version": "v1.0"
+          "version": "v1.1",
+          "previousVersion": "v1.0"
         }
       ]
     },
@@ -596,6 +599,148 @@
             "zh": "礼品和家居逻辑成立，但仍需验证新手完成率与运输稳定性",
             "en": "Gift and home logic are promising, but beginner completion rate and shipping stability still need validation"
           }
+        },
+        {
+          "id": "china-pet-market-2026",
+          "reportType": "opportunity-analysis",
+          "title": {
+            "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道",
+            "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-09",
+          "lastReviewedAt": "2026-04-09",
+          "file": "report-china-pet-market.html",
+          "tags": [
+            {
+              "zh": "宠物市场",
+              "en": "Pet market"
+            },
+            {
+              "zh": "中国消费",
+              "en": "China consumer"
+            },
+            {
+              "zh": "机会扫描",
+              "en": "Opportunity scan"
+            }
+          ],
+          "summary": {
+            "zh": "中国宠物市场仍在增长，但机会不在泛宠物大盘，而在猫经济、功能型食品、智能用品、清洁护理和下沉市场适配产品等更具体的细分赛道。",
+            "en": "China's pet market continues to grow, but the better opportunities are not in the broad category. They sit in specific tracks such as cat-led demand, functional pet food, smart devices, cleaning care, and value-adapted offers for lower-tier markets."
+          },
+          "coverLabel": {
+            "zh": "品类机会分析",
+            "en": "Category Opportunity Analysis"
+          },
+          "highlight": {
+            "zh": "机会在细分，不在泛宠物大盘",
+            "en": "The opportunity is in focused niches, not the broad market"
+          },
+          "confidence": {
+            "zh": "中高",
+            "en": "Medium-High"
+          },
+          "priorityScore": 83,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.69,
+          "platformFit": {
+            "amazon": 0.61,
+            "tiktok": 0.86,
+            "shopify": 0.79
+          },
+          "recommendedActions": [
+            {
+              "zh": "优先拆分猫经济、功能食品、清洁护理 3 条可执行方向",
+              "en": "Break the opportunity into three executable tracks first: cat-led demand, functional food, and cleaning care"
+            },
+            {
+              "zh": "下一步补平台样本，验证价格带、爆款表达和评论痛点",
+              "en": "Validate pricing, winning positioning, and review pain points with platform-level samples next"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "中国宠物消费仍在增长，但竞争已经从泛品类进入精养与细分竞争阶段",
+            "en": "China's pet consumption is still growing, but competition has moved from broad-category expansion into precision-care and niche competition"
+          },
+          "featured": true,
+          "category": {
+            "zh": "宠物用品与食品",
+            "en": "Pet Supplies & Food"
+          },
+          "version": "v1.0"
+        },
+        {
+          "id": "china-cat-economy-2026",
+          "reportType": "opportunity-analysis",
+          "title": {
+            "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购",
+            "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-09",
+          "lastReviewedAt": "2026-04-09",
+          "file": "report-china-cat-economy.html",
+          "tags": [
+            {
+              "zh": "猫经济",
+              "en": "Cat economy"
+            },
+            {
+              "zh": "中国消费",
+              "en": "China consumer"
+            },
+            {
+              "zh": "精养",
+              "en": "Precision care"
+            }
+          ],
+          "summary": {
+            "zh": "中国猫经济是宠物赛道里更强的结构性机会，核心增长来自室内养猫场景、精养需求、情绪消费和高频复购类产品，而不是泛宠物逻辑。",
+            "en": "China's cat economy is one of the stronger structural opportunities inside the pet category. The growth is driven by indoor-cat scenarios, precision care, emotional consumption, and high-frequency repeat products rather than broad pet logic."
+          },
+          "coverLabel": {
+            "zh": "细分机会分析",
+            "en": "Niche Opportunity Analysis"
+          },
+          "highlight": {
+            "zh": "猫经济强在场景密度和复购结构",
+            "en": "The strength of cat economy lies in dense scenarios and repeat structure"
+          },
+          "confidence": {
+            "zh": "中高",
+            "en": "Medium-High"
+          },
+          "priorityScore": 86,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.72,
+          "platformFit": {
+            "amazon": 0.58,
+            "tiktok": 0.88,
+            "shopify": 0.77
+          },
+          "recommendedActions": [
+            {
+              "zh": "优先围绕猫主食湿粮、猫砂清洁、室内用品 3 条方向补平台样本",
+              "en": "Add platform samples around wet food, litter-cleaning, and indoor cat supplies first"
+            },
+            {
+              "zh": "继续拆猫经济中的高频复购品和内容型爆品",
+              "en": "Continue splitting the cat economy into repeat-heavy products and content-friendly breakout items"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "猫相关消费增速和城市适配性普遍强于狗，是宠物赛道中更值得优先看的结构性方向",
+            "en": "Cat-led spending and urban fit are broadly stronger than dog-led demand, making this a priority structural direction in the pet category"
+          },
+          "featured": true,
+          "category": {
+            "zh": "宠物用品与食品",
+            "en": "Pet Supplies & Food"
+          },
+          "version": "v1.0"
         }
       ]
     },
@@ -681,14 +826,123 @@
             "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
             "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
           },
-          "previousVersion": "v1.3",
-          "version": "v1.4"
+          "previousVersion": "v1.4",
+          "version": "v1.5"
         }
       ]
     }
   ],
   "registry": {
     "reports": [
+      {
+        "reportId": "china-cat-economy-2026",
+        "slug": "china-cat-economy-2026",
+        "marketId": "global",
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "region": {
+          "zh": "跨市场",
+          "en": "Cross-market"
+        },
+        "flag": "🌍",
+        "category": {
+          "zh": "宠物用品与食品",
+          "en": "Pet Supplies & Food"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购",
+          "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat"
+        },
+        "summary": {
+          "zh": "中国猫经济是宠物赛道里更强的结构性机会，核心增长来自室内养猫场景、精养需求、情绪消费和高频复购类产品，而不是泛宠物逻辑。",
+          "en": "China's cat economy is one of the stronger structural opportunities inside the pet category. The growth is driven by indoor-cat scenarios, precision care, emotional consumption, and high-frequency repeat products rather than broad pet logic."
+        },
+        "highlight": {
+          "zh": "猫经济强在场景密度和复购结构",
+          "en": "The strength of cat economy lies in dense scenarios and repeat structure"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.72,
+        "priorityScore": 86,
+        "priorityTier": "P1",
+        "scoreBreakdown": {
+          "demand": 15,
+          "competition": 9,
+          "margin": 12,
+          "execution": 10,
+          "trend": 10,
+          "platform": 8,
+          "confidence": 8
+        },
+        "platformFit": {
+          "amazon": 0.58,
+          "tiktok": 0.88,
+          "shopify": 0.77
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先围绕猫主食湿粮、猫砂清洁、室内用品 3 条方向补平台样本",
+            "en": "Add platform samples around wet food, litter-cleaning, and indoor cat supplies first"
+          },
+          {
+            "zh": "继续拆猫经济中的高频复购品和内容型爆品",
+            "en": "Continue splitting the cat economy into repeat-heavy products and content-friendly breakout items"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "猫相关消费增速和城市适配性普遍强于狗，是宠物赛道中更值得优先看的结构性方向",
+          "en": "Cat-led spending and urban fit are broadly stronger than dog-led demand, making this a priority structural direction in the pet category"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-09",
+        "publishedAt": "2026-04",
+        "latestFile": "report-china-cat-economy.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "猫经济",
+            "en": "Cat economy"
+          },
+          {
+            "zh": "中国消费",
+            "en": "China consumer"
+          },
+          {
+            "zh": "精养",
+            "en": "Precision care"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-09",
+            "file": "report-china-cat-economy.html",
+            "summary": {
+              "zh": "中国猫经济是宠物赛道里更强的结构性机会，核心增长来自室内养猫场景、精养需求、情绪消费和高频复购类产品，而不是泛宠物逻辑。",
+              "en": "China's cat economy is one of the stronger structural opportunities inside the pet category. The growth is driven by indoor-cat scenarios, precision care, emotional consumption, and high-frequency repeat products rather than broad pet logic."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 82,
+                "to": 86
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
+        ]
+      },
       {
         "reportId": "us-press-on-nails-2026",
         "slug": "us-press-on-nails-2026",
@@ -756,8 +1010,8 @@
           "zh": "美国是穿戴甲最成熟的验证市场，适合作为基准盘持续跟踪",
           "en": "The US is the most mature validation market for press-on nails and should be tracked as a benchmark"
         },
-        "version": "v1.0",
-        "previousVersion": null,
+        "version": "v1.1",
+        "previousVersion": "v1.0",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-us-press-on-nails.html",
@@ -778,7 +1032,7 @@
         ],
         "history": [
           {
-            "version": "v1.0",
+            "version": "v1.1",
             "publishedAt": "2026-04-08",
             "file": "report-us-press-on-nails.html",
             "summary": {
@@ -908,6 +1162,115 @@
         ]
       },
       {
+        "reportId": "china-pet-market-2026",
+        "slug": "china-pet-market-2026",
+        "marketId": "global",
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "region": {
+          "zh": "跨市场",
+          "en": "Cross-market"
+        },
+        "flag": "🌍",
+        "category": {
+          "zh": "宠物用品与食品",
+          "en": "Pet Supplies & Food"
+        },
+        "reportType": "opportunity-analysis",
+        "title": {
+          "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道",
+          "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks"
+        },
+        "summary": {
+          "zh": "中国宠物市场仍在增长，但机会不在泛宠物大盘，而在猫经济、功能型食品、智能用品、清洁护理和下沉市场适配产品等更具体的细分赛道。",
+          "en": "China's pet market continues to grow, but the better opportunities are not in the broad category. They sit in specific tracks such as cat-led demand, functional pet food, smart devices, cleaning care, and value-adapted offers for lower-tier markets."
+        },
+        "highlight": {
+          "zh": "机会在细分，不在泛宠物大盘",
+          "en": "The opportunity is in focused niches, not the broad market"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.69,
+        "priorityScore": 83,
+        "priorityTier": "P1",
+        "scoreBreakdown": {
+          "demand": 15,
+          "competition": 9,
+          "margin": 12,
+          "execution": 10,
+          "trend": 10,
+          "platform": 8,
+          "confidence": 8
+        },
+        "platformFit": {
+          "amazon": 0.61,
+          "tiktok": 0.86,
+          "shopify": 0.79
+        },
+        "recommendedActions": [
+          {
+            "zh": "优先拆分猫经济、功能食品、清洁护理 3 条可执行方向",
+            "en": "Break the opportunity into three executable tracks first: cat-led demand, functional food, and cleaning care"
+          },
+          {
+            "zh": "下一步补平台样本，验证价格带、爆款表达和评论痛点",
+            "en": "Validate pricing, winning positioning, and review pain points with platform-level samples next"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "中国宠物消费仍在增长，但竞争已经从泛品类进入精养与细分竞争阶段",
+          "en": "China's pet consumption is still growing, but competition has moved from broad-category expansion into precision-care and niche competition"
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-09",
+        "publishedAt": "2026-04",
+        "latestFile": "report-china-pet-market.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "宠物市场",
+            "en": "Pet market"
+          },
+          {
+            "zh": "中国消费",
+            "en": "China consumer"
+          },
+          {
+            "zh": "机会扫描",
+            "en": "Opportunity scan"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-09",
+            "file": "report-china-pet-market.html",
+            "summary": {
+              "zh": "中国宠物市场仍在增长，但机会不在泛宠物大盘，而在猫经济、功能型食品、智能用品、清洁护理和下沉市场适配产品等更具体的细分赛道。",
+              "en": "China's pet market continues to grow, but the better opportunities are not in the broad category. They sit in specific tracks such as cat-led demand, functional pet food, smart devices, cleaning care, and value-adapted offers for lower-tier markets."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 79,
+                "to": 83
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
+        ]
+      },
+      {
         "reportId": "europe-press-on-nails-2026",
         "slug": "europe-press-on-nails-2026",
         "marketId": "europe",
@@ -974,8 +1337,8 @@
           "zh": "区域机会明确，但国家差异和合规变量仍需持续跟踪",
           "en": "Regional potential is clear, but country variation and compliance variables still need continued tracking"
         },
-        "version": "v1.4",
-        "previousVersion": "v1.3",
+        "version": "v1.5",
+        "previousVersion": "v1.4",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-europe-press-on-nails.html",
@@ -996,7 +1359,7 @@
         ],
         "history": [
           {
-            "version": "v1.4",
+            "version": "v1.5",
             "publishedAt": "2026-04-08",
             "file": "report-europe-press-on-nails.html",
             "summary": {
@@ -1083,8 +1446,8 @@
           "zh": "内容势能强，但区域差异大，需持续分国观察",
           "en": "Content momentum is strong, but country-level variation remains large and should be tracked continuously"
         },
-        "version": "v1.0",
-        "previousVersion": null,
+        "version": "v1.1",
+        "previousVersion": "v1.0",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-sea-press-on-nails.html",
@@ -1105,7 +1468,7 @@
         ],
         "history": [
           {
-            "version": "v1.0",
+            "version": "v1.1",
             "publishedAt": "2026-04-08",
             "file": "report-sea-press-on-nails.html",
             "summary": {
@@ -1301,8 +1664,8 @@
           "zh": "市场基础存在，但供给密度和品牌成熟度仍需持续观察",
           "en": "The market base exists, but supply depth and brand maturity still need monitoring"
         },
-        "version": "v1.0",
-        "previousVersion": null,
+        "version": "v1.1",
+        "previousVersion": "v1.0",
         "updatedAt": "2026-04-08",
         "publishedAt": "2026-04",
         "latestFile": "report-au-press-on-nails.html",
@@ -1323,7 +1686,7 @@
         ],
         "history": [
           {
-            "version": "v1.0",
+            "version": "v1.1",
             "publishedAt": "2026-04-08",
             "file": "report-au-press-on-nails.html",
             "summary": {
@@ -1564,6 +1927,41 @@
     ],
     "entities": [
       {
+        "entityId": "pet-supplies-food",
+        "title": {
+          "zh": "宠物用品与食品",
+          "en": "Pet Supplies & Food"
+        },
+        "priorityTier": "P1",
+        "topPriorityScore": 86,
+        "topConfidence": 0.74,
+        "platformFit": {
+          "amazon": 0.58,
+          "tiktok": 0.88,
+          "shopify": 0.77
+        },
+        "reports": [
+          "china-cat-economy-2026",
+          "china-pet-market-2026"
+        ],
+        "markets": [
+          {
+            "zh": "全球",
+            "en": "Global"
+          },
+          {
+            "zh": "全球",
+            "en": "Global"
+          }
+        ],
+        "leadReportId": "china-cat-economy-2026",
+        "leadFile": "report-china-cat-economy.html",
+        "summary": {
+          "zh": "中国猫经济是宠物赛道里更强的结构性机会，核心增长来自室内养猫场景、精养需求、情绪消费和高频复购类产品，而不是泛宠物逻辑。",
+          "en": "China's cat economy is one of the stronger structural opportunities inside the pet category. The growth is driven by indoor-cat scenarios, precision care, emotional consumption, and high-frequency repeat products rather than broad pet logic."
+        }
+      },
+      {
         "entityId": "beauty-personal-care",
         "title": {
           "zh": "美妆个护",
@@ -1611,8 +2009,7 @@
         "summary": {
           "zh": "美国穿戴甲市场成熟度高、内容适配强、供给丰富，当前竞争重点在审美更新速度、可重复佩戴价值表达和品牌化包装。",
           "en": "The US press-on nails market is mature, content-friendly, and supply-rich, with competition centered on aesthetic refresh speed, reusable value positioning, and brand-led packaging."
-        },
-        "profileFile": "entities/beauty-personal-care.html"
+        }
       },
       {
         "entityId": "home-decor",
@@ -1642,8 +2039,7 @@
         "summary": {
           "zh": "DIY 花艺包值得做，但更适合走体验型、礼盒型和场景型商品路线，而不是普通散装材料包。",
           "en": "DIY floral kits are worth pursuing, but the stronger route is experience-led, giftable, and scenario-based positioning rather than plain loose-material bundles."
-        },
-        "profileFile": "entities/home-decor.html"
+        }
       },
       {
         "entityId": "uncategorized",
@@ -1678,8 +2074,7 @@
         "summary": {
           "zh": "4月美国机会更偏向春季刚需，重点在虫害控制、园艺维护、整理和补水类方向。",
           "en": "US April opportunities lean toward spring necessity, led by pest control, garden maintenance, organization, and hydration."
-        },
-        "profileFile": "entities/uncategorized.html"
+        }
       }
     ],
     "watchlists": [
@@ -1752,6 +2147,40 @@
         "updatedAt": "2026-04-08"
       },
       {
+        "watchId": "watch-china-pet-market-2026",
+        "entityType": "report",
+        "entityId": "china-pet-market-2026",
+        "marketId": "global",
+        "title": {
+          "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道",
+          "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "中国宠物消费仍在增长，但竞争已经从泛品类进入精养与细分竞争阶段",
+          "en": "China's pet consumption is still growing, but competition has moved from broad-category expansion into precision-care and niche competition"
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-09"
+      },
+      {
+        "watchId": "watch-china-cat-economy-2026",
+        "entityType": "report",
+        "entityId": "china-cat-economy-2026",
+        "marketId": "global",
+        "title": {
+          "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购",
+          "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "猫相关消费增速和城市适配性普遍强于狗，是宠物赛道中更值得优先看的结构性方向",
+          "en": "Cat-led spending and urban fit are broadly stronger than dog-led demand, making this a priority structural direction in the pet category"
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-09"
+      },
+      {
         "watchId": "watch-us-press-on-nails-2026",
         "entityType": "report",
         "entityId": "us-press-on-nails-2026",
@@ -1822,6 +2251,68 @@
     ],
     "changeLog": [
       {
+        "reportId": "china-cat-economy-2026",
+        "title": {
+          "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购",
+          "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat"
+        },
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "flag": "🌍",
+        "updatedAt": "2026-04-09",
+        "changeSummary": {
+          "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 86,
+        "delta": {
+          "priorityScore": {
+            "from": 82,
+            "to": 86
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
+      },
+      {
+        "reportId": "china-pet-market-2026",
+        "title": {
+          "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道",
+          "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks"
+        },
+        "marketName": {
+          "zh": "全球",
+          "en": "Global"
+        },
+        "flag": "🌍",
+        "updatedAt": "2026-04-09",
+        "changeSummary": {
+          "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 83,
+        "delta": {
+          "priorityScore": {
+            "from": 79,
+            "to": 83
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
+      },
+      {
         "reportId": "us-press-on-nails-2026",
         "title": {
           "zh": "美国穿戴甲市场现状",
@@ -1850,7 +2341,7 @@
           },
           "recommendedActions": "updated"
         },
-        "version": "v1.0"
+        "version": "v1.1"
       },
       {
         "reportId": "global-press-on-nails-2026",
@@ -1912,7 +2403,7 @@
           },
           "recommendedActions": "updated"
         },
-        "version": "v1.4"
+        "version": "v1.5"
       },
       {
         "reportId": "sea-press-on-nails-2026",
@@ -1943,7 +2434,7 @@
           },
           "recommendedActions": "updated"
         },
-        "version": "v1.0"
+        "version": "v1.1"
       },
       {
         "reportId": "global-diy-floral-kit-2026",
@@ -2005,7 +2496,7 @@
           },
           "recommendedActions": "updated"
         },
-        "version": "v1.0"
+        "version": "v1.1"
       },
       {
         "reportId": "us-apr-2026",

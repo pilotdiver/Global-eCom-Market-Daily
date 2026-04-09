@@ -1,0 +1,40 @@
+{
+  "marketId": "global",
+  "marketName": { "zh": "全球", "en": "Global" },
+  "region": { "zh": "跨市场", "en": "Cross-market" },
+  "flag": "🌍",
+  "status": "live",
+  "report": {
+    "id": "china-cat-economy-2026",
+    "reportType": "opportunity-analysis",
+    "title": { "zh": "中国猫经济机会分析：室内精养、情绪消费与高频复购", "en": "China Cat Economy Opportunity Analysis: Indoor Precision Care, Emotional Consumption, and High-Frequency Repeat" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-09",
+    "lastReviewedAt": "2026-04-09",
+    "file": "report-china-cat-economy.html",
+    "tags": [
+      { "zh": "猫经济", "en": "Cat economy" },
+      { "zh": "中国消费", "en": "China consumer" },
+      { "zh": "精养", "en": "Precision care" }
+    ],
+    "summary": {
+      "zh": "中国猫经济是宠物赛道里更强的结构性机会，核心增长来自室内养猫场景、精养需求、情绪消费和高频复购类产品，而不是泛宠物逻辑。",
+      "en": "China's cat economy is one of the stronger structural opportunities inside the pet category. The growth is driven by indoor-cat scenarios, precision care, emotional consumption, and high-frequency repeat products rather than broad pet logic."
+    },
+    "coverLabel": { "zh": "细分机会分析", "en": "Niche Opportunity Analysis" },
+    "highlight": { "zh": "猫经济强在场景密度和复购结构", "en": "The strength of cat economy lies in dense scenarios and repeat structure" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 86,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.72,
+    "platformFit": { "amazon": 0.58, "tiktok": 0.88, "shopify": 0.77 },
+    "recommendedActions": [
+      { "zh": "优先围绕猫主食湿粮、猫砂清洁、室内用品 3 条方向补平台样本", "en": "Add platform samples around wet food, litter-cleaning, and indoor cat supplies first" },
+      { "zh": "继续拆猫经济中的高频复购品和内容型爆品", "en": "Continue splitting the cat economy into repeat-heavy products and content-friendly breakout items" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "猫相关消费增速和城市适配性普遍强于狗，是宠物赛道中更值得优先看的结构性方向", "en": "Cat-led spending and urban fit are broadly stronger than dog-led demand, making this a priority structural direction in the pet category" },
+    "featured": true,
+    "category": { "zh": "宠物用品与食品", "en": "Pet Supplies & Food" }
+  }
+}

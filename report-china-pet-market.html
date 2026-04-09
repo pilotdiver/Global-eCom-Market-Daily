@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="lang-zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全球电商情报系统</title>
+  <style>
+    :root { --bg:#08111f; --panel:rgba(15,23,40,.82); --panel-2:rgba(18,28,48,.92); --panel-3:rgba(9,16,30,.88); --text:#ecf3ff; --muted:#94a7c6; --line:rgba(148,167,198,.16); --brand:#35d0ff; --brand-2:#7c5cff; --shadow:0 18px 50px rgba(0,0,0,.35); --radius-xl:24px; --radius-lg:18px; --radius-sm:999px; --maxw:1440px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at top left, rgba(53,208,255,.16), transparent 30%),radial-gradient(circle at top right, rgba(124,92,255,.14), transparent 28%),linear-gradient(180deg,#09111f 0%,#0a1020 42%,#09101d 100%);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.6} body{padding:24px}.app{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:290px minmax(0,1fr);gap:20px}.sidebar,.card,.hero{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.sidebar{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:20px;position:sticky;top:24px;height:fit-content}.brand{display:grid;gap:10px;margin-bottom:18px}.brand h1{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.03em}.lang-switch{display:inline-flex;gap:8px;margin-top:2px}.lang-btn,.filter-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:var(--text);border-radius:999px;padding:8px 12px;font-size:12px;cursor:pointer}.lang-btn.active,.filter-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border-color:rgba(53,208,255,.28)}.nav-title{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:16px 0 10px}.nav-group{display:grid;gap:10px}.tab-btn{width:100%;text-align:left;border:1px solid transparent;background:rgba(255,255,255,.02);color:var(--text);border-radius:16px;padding:14px;cursor:pointer}.tab-btn.active{background:linear-gradient(135deg, rgba(53,208,255,.16), rgba(124,92,255,.16));border-color:rgba(53,208,255,.34)}.tab-btn .title{display:block;font-weight:700;font-size:14px}.tab-btn .desc{display:block;font-size:12px;color:var(--muted);margin-top:4px}.sidebar-meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:10px}.meta-chip{display:inline-flex;padding:9px 12px;border-radius:var(--radius-sm);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;width:fit-content}.main-panel{display:grid;gap:18px}.hero{background:linear-gradient(135deg, rgba(12,21,38,.96), rgba(15,34,62,.9));border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:end}.hero h2{margin:0 0 12px;font-size:38px;line-height:1.12;letter-spacing:-.04em}.hero p{margin:0;color:#c1d0ea;max-width:860px;font-size:15px}.hero-tags,.tag-row,.source-note,.filter-row{display:flex;flex-wrap:wrap;gap:8px}.hero-tags{margin-top:18px}.pill,.mini-tag,.source-note .src-pill,.price-tag,.check-tag{padding:6px 10px;border-radius:999px;font-size:12px}.pill{background:rgba(255,255,255,.08);color:#e9f2ff;border:1px solid rgba(255,255,255,.08)}.hero-side{display:grid;gap:12px}.flash-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px}.flash-card .k{color:var(--muted);font-size:12px;margin-bottom:6px}.flash-card .v{font-size:28px;font-weight:800;letter-spacing:-.03em}.flash-card .t{color:#bfd0ee;font-size:13px;margin-top:6px}.summary-grid,.grid-2,.grid-3,.viz-grid{display:grid;gap:16px}.summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.viz-grid{grid-template-columns:1.05fr .95fr}.card{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:20px}.card.soft{background:var(--panel-3)}.metric .label{color:var(--muted);font-size:12px;margin-bottom:8px}.metric .value{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.08}.metric .note{color:#b8caea;font-size:13px;margin-top:10px}.section-panel{display:none;gap:18px}.section-panel.active{display:grid}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}.section-head h3{margin:0;font-size:26px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:14px;max-width:760px}.section-badge{padding:8px 12px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;background:rgba(53,208,255,.1);color:#95e9ff;border:1px solid rgba(53,208,255,.2)}.signal-list,.score-rows,.list{display:grid;gap:12px}.signal{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.02)}.signal-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.signal-title{font-size:16px;font-weight:700}.badge{display:inline-flex;border-radius:var(--radius-sm);padding:6px 10px;font-size:12px;font-weight:700;border:1px solid transparent}.badge.good{background:rgba(45,212,191,.12);color:#8af0e1;border-color:rgba(45,212,191,.22)}.badge.warn{background:rgba(251,191,36,.12);color:#ffd978;border-color:rgba(251,191,36,.22)}.badge.info{background:rgba(96,165,250,.12);color:#a8d0ff;border-color:rgba(96,165,250,.22)}.muted{color:var(--muted);font-size:14px}table{width:100%;border-collapse:collapse;margin-top:6px;overflow:hidden;border-radius:16px;table-layout:fixed}th,td{padding:14px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{color:#9eb4da;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:rgba(255,255,255,.03)}tr:last-child td{border-bottom:none}.list{margin:0;padding:0;list-style:none}.list li{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02)}.list .num{width:24px;height:24px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.22), rgba(124,92,255,.22));display:inline-grid;place-items:center;font-size:12px;font-weight:800;color:#dff4ff;flex:0 0 auto;margin-top:2px}.opportunity-card{padding:18px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))}.opportunity-card h4{margin:0 0 8px;font-size:18px}.opportunity-card p{margin:0;color:var(--muted);font-size:14px}.players-line,.entry-why{margin-top:10px;font-size:13px;color:#dbe7fb}.players-line strong,.entry-why strong{color:#fff}.mini-tag{color:#dce9ff;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04)}.source-note{margin-top:10px;color:#b8c8e6}.source-note .src-pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#cfe0ff}.link-btn{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg, rgba(53,208,255,.18), rgba(124,92,255,.18));border:1px solid rgba(83,190,255,.24);color:#e8f5ff;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}.price-tag{background:rgba(45,212,191,.12);color:#9ff5e8;border:1px solid rgba(45,212,191,.22);margin-top:6px;display:inline-flex}.check-tag{background:rgba(96,165,250,.12);color:#a8d0ff;border:1px solid rgba(96,165,250,.22);margin-top:6px;display:inline-flex}.player-block.hidden{display:none}.bar-chart{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));align-items:end;gap:20px;padding-top:16px}.bar-col{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}.bar-wrap{width:100%;max-width:120px;height:220px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid var(--line);display:flex;align-items:end;overflow:hidden}.bar{width:100%;border-radius:16px 16px 0 0;background:linear-gradient(180deg, var(--brand), var(--brand-2));box-shadow:0 10px 28px rgba(53,208,255,.18)}.bar-value{font-size:12px;color:#dbe7fb;font-weight:700}.bar-label{font-size:13px;color:var(--muted);text-align:center;line-height:1.45;max-width:140px;word-break:break-word}.score-item{display:grid;gap:8px}.score-head{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#dbe7fb}.progress{width:100%;height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;border:1px solid rgba(255,255,255,.04)}.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg, var(--brand), var(--brand-2))}.footer{text-align:center;color:var(--muted);font-size:12px;padding:6px 0 14px}[data-zh],[data-en]{display:none}html.lang-zh [data-zh]{display:initial}html.lang-en [data-en]{display:initial}@media (max-width:1220px){.app{grid-template-columns:1fr}.sidebar{position:static}.hero-grid,.summary-grid,.grid-2,.grid-3,.viz-grid{grid-template-columns:1fr}}.back-btn{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--muted);font-size:13px;cursor:pointer;text-decoration:none;margin-bottom:14px;transition:all .2s}.back-btn:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2);color:var(--text)}.history-section{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.history-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}.history-list{display:grid;gap:8px}.history-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid var(--line);text-decoration:none;color:var(--text);font-size:13px;transition:all .2s}.history-item:hover{background:rgba(53,208,255,.07);border-color:rgba(53,208,255,.2)}.history-item.current{background:rgba(53,208,255,.1);border-color:rgba(53,208,255,.3)}.history-item .h-date{color:var(--muted);font-size:11px}.history-badge{padding:3px 8px;border-radius:999px;background:rgba(53,208,255,.12);color:#95e9ff;border:1px solid rgba(53,208,255,.2);font-size:10px;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="back-btn" href="index.html">
+        <span>←</span>
+        <span data-zh>返回主控台</span>
+        <span data-en>Back to Dashboard</span>
+      </a>
+      <div class="brand">
+        <div><h1 id="sidebar-title"></h1></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-set-lang="zh">中文</button>
+          <button class="lang-btn" data-set-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-title" id="nav-title"></div>
+      <div class="nav-group" id="nav-group"></div>
+      <div class="sidebar-meta" id="sidebar-meta"></div>
+      <div class="history-section" id="history-section" style="display:none">
+        <div class="history-title" id="history-title-label"></div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </aside>
+    <main class="main-panel">
+      <section class="hero"><div class="hero-grid"><div><h2 id="hero-title"></h2><p id="hero-summary"></p><div class="hero-tags" id="hero-tags"></div></div><div class="hero-side" id="hero-side"></div></div></section>
+      <section class="summary-grid" id="summary-metrics"></section>
+      <section class="section-panel active" id="overview"></section>
+      <section class="section-panel" id="signals"></section>
+      <section class="section-panel" id="opportunities"></section>
+      <section class="section-panel" id="pricing"></section>
+      <section class="section-panel" id="players"></section>
+      <section class="section-panel" id="nextmoves"></section>
+      <section class="section-panel" id="risks"></section>
+      <section class="card" id="references"></section>
+      <div class="footer" id="footer"></div>
+    </main>
+  </div>
+
+  <script>
+    window.DASHBOARD_TEMPLATE_PROTECTED = true;
+    const DATA = {
+  "meta": {
+    "documentTitle": {
+      "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道",
+      "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks"
+    }
+  },
+  "sidebar": {
+    "title": {
+      "zh": "全球电商情报系统",
+      "en": "Global E-Commerce Intelligence System"
+    },
+    "meta": [
+      {
+        "zh": "市场：中国",
+        "en": "Market: China"
+      },
+      {
+        "zh": "品类：宠物用品与食品",
+        "en": "Category: Pet supplies and food"
+      },
+      {
+        "zh": "数据更新时间：2026-04-09",
+        "en": "Last updated: 2026-04-09"
+      }
+    ]
+  },
+  "navigation": {
+    "title": {
+      "zh": "内容导航",
+      "en": "Navigation"
+    },
+    "items": [
+      {
+        "id": "overview",
+        "title": {
+          "zh": "总览",
+          "en": "Overview"
+        },
+        "description": {
+          "zh": "结论与优先方向",
+          "en": "Conclusion and priorities"
+        }
+      },
+      {
+        "id": "signals",
+        "title": {
+          "zh": "关键信号",
+          "en": "Signals"
+        },
+        "description": {
+          "zh": "增长结构与消费变化",
+          "en": "Growth structure and consumer shifts"
+        }
+      },
+      {
+        "id": "opportunities",
+        "title": {
+          "zh": "机会方向",
+          "en": "Opportunities"
+        },
+        "description": {
+          "zh": "高潜细分赛道",
+          "en": "High-potential niches"
+        }
+      },
+      {
+        "id": "pricing",
+        "title": {
+          "zh": "价格带",
+          "en": "Pricing"
+        },
+        "description": {
+          "zh": "可切入价格结构",
+          "en": "Entry pricing structure"
+        }
+      },
+      {
+        "id": "players",
+        "title": {
+          "zh": "参考对象",
+          "en": "Reference Set"
+        },
+        "description": {
+          "zh": "用于验证的对象与方向",
+          "en": "Objects and directions for validation"
+        }
+      },
+      {
+        "id": "nextmoves",
+        "title": {
+          "zh": "Next 7 Days",
+          "en": "Next 7 Days"
+        },
+        "description": {
+          "zh": "本周建议动作",
+          "en": "This week's moves"
+        }
+      },
+      {
+        "id": "risks",
+        "title": {
+          "zh": "风险与动作",
+          "en": "Risks & Actions"
+        },
+        "description": {
+          "zh": "竞争与执行风险",
+          "en": "Competition and execution risk"
+        }
+      }
+    ]
+  },
+  "hero": {
+    "title": {
+      "zh": "中国宠物市场值得继续看，但机会已经从泛增长转向精养、细分和结构性机会",
+      "en": "China's pet market still deserves attention, but the opportunity has shifted from broad growth to precision-care, segmentation, and structural niches"
+    },
+    "summary": {
+      "zh": "这一轮更值得优先看的，不是把中国宠物市场当作一个统一大盘，而是拆成更具体的细分赛道。当前更有机会的方向包括猫经济、功能型宠物食品、智能用品、清洁护理和下沉市场适配产品。真正的竞争点已经不只是有没有需求，而是谁更懂场景、更懂精养、更懂价格带和内容表达。",
+      "en": "The better way to evaluate China pet is not as one broad market, but as a set of specific tracks. The stronger directions now include cat-led demand, functional pet food, smart devices, cleaning care, and offers adapted to lower-tier markets. The real competition is no longer just about category demand, but about understanding care scenarios, premiumization, pricing bands, and content-native positioning."
+    },
+    "tags": [
+      {
+        "zh": "优先方向：猫经济 / 功能食品 / 清洁护理",
+        "en": "Priority: Cat-led demand / functional food / cleaning care"
+      },
+      {
+        "zh": "核心变化：从养宠到精养",
+        "en": "Core shift: From ownership to precision care"
+      },
+      {
+        "zh": "执行重点：细分切入，而不是泛品类铺货",
+        "en": "Execution focus: Niche entry, not broad catalog sprawl"
+      }
+    ],
+    "cards": [
+      {
+        "label": {
+          "zh": "总体机会强度",
+          "en": "Overall opportunity strength"
+        },
+        "value": {
+          "zh": "中强",
+          "en": "Medium-High"
+        },
+        "note": {
+          "zh": "市场仍增长，但值得做的是细分机会，不是泛品类红海。",
+          "en": "The market still grows, but the better plays are focused niches rather than broad red-ocean categories."
+        }
+      },
+      {
+        "label": {
+          "zh": "当前优先级",
+          "en": "Current priority"
+        },
+        "value": {
+          "zh": "先赛道拆分，后平台验证",
+          "en": "Split tracks first, validate platforms second"
+        },
+        "note": {
+          "zh": "先把方向定清楚，再做平台级爆款验证。",
+          "en": "Define the opportunity tracks first, then move into platform-level validation."
+        }
+      }
+    ]
+  },
+  "summaryMetrics": [
+    {
+      "label": {
+        "zh": "最佳切入口",
+        "en": "Best entry point"
+      },
+      "value": {
+        "zh": "猫经济相关高频品",
+        "en": "High-frequency cat-led products"
+      },
+      "note": {
+        "zh": "猫相关消费增速和城市适配性都更强。",
+        "en": "Cat-led demand shows stronger growth and better fit for urban life."
+      }
+    },
+    {
+      "label": {
+        "zh": "更稳方向",
+        "en": "More stable direction"
+      },
+      "value": {
+        "zh": "清洁护理与家庭共存",
+        "en": "Cleaning care and pet-home coexistence"
+      },
+      "note": {
+        "zh": "场景明确、频次更高，也更容易形成复购。",
+        "en": "The scenario is clear, frequency is higher, and repeat purchase is easier to build."
+      }
+    },
+    {
+      "label": {
+        "zh": "最该警惕",
+        "en": "Main caution"
+      },
+      "value": {
+        "zh": "泛主粮与低价用品红海",
+        "en": "Broad pet food and low-price accessories red ocean"
+      },
+      "note": {
+        "zh": "没有差异化时，很容易被价格战吞掉。",
+        "en": "Without differentiation, price competition takes over quickly."
+      }
+    },
+    {
+      "label": {
+        "zh": "优先验证",
+        "en": "Priority validation"
+      },
+      "value": {
+        "zh": "价格带、评论痛点、内容表达",
+        "en": "Pricing, review pain points, and content framing"
+      },
+      "note": {
+        "zh": "下一步应补平台样本，而不是继续停留在宏观判断。",
+        "en": "The next step is platform sampling rather than staying at macro-level judgment."
+      }
+    }
+  ],
+  "sections": {
+    "overview": {
+      "title": {
+        "zh": "总览",
+        "en": "Overview"
+      },
+      "subtitle": {
+        "zh": "宠物市场还值得看，但更值得看的是结构，不是总盘。",
+        "en": "The pet market is still worth watching, but the structure matters more than the total market."
+      },
+      "badge": {
+        "zh": "结论摘要",
+        "en": "Executive Summary"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开行业白皮书、行业咨询口径、公开市场观察",
+          "en": "Source: public industry white papers, consulting estimates, and visible market observation"
+        }
+      ],
+      "barChart": {
+        "title": {
+          "zh": "重点方向强度图",
+          "en": "Priority direction strength"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "猫经济",
+              "en": "Cat-led demand"
+            },
+            "score": 8.8
+          },
+          {
+            "label": {
+              "zh": "功能型食品",
+              "en": "Functional food"
+            },
+            "score": 8.4
+          },
+          {
+            "label": {
+              "zh": "清洁护理",
+              "en": "Cleaning care"
+            },
+            "score": 8.1
+          },
+          {
+            "label": {
+              "zh": "智能用品",
+              "en": "Smart devices"
+            },
+            "score": 7.6
+          }
+        ]
+      },
+      "sideCard": {
+        "title": {
+          "zh": "Why Now / 当前进入理由",
+          "en": "Why Now"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "养宠需求仍在增长",
+              "en": "Pet ownership demand is still expanding"
+            },
+            "note": {
+              "zh": "公开口径普遍显示中国宠物消费规模仍在增长，只是增量开始分化。",
+              "en": "Public estimates broadly indicate continued growth, but the incremental gains are becoming more segmented."
+            }
+          },
+          {
+            "title": {
+              "zh": "消费从养宠转向精养",
+              "en": "Consumption is shifting from ownership to precision care"
+            },
+            "note": {
+              "zh": "用户更愿意为健康、便利和家庭共存体验付费。",
+              "en": "Users are increasingly willing to pay for health, convenience, and better pet-home coexistence."
+            }
+          },
+          {
+            "title": {
+              "zh": "细分赛道比总盘更有意义",
+              "en": "Specific niches matter more than the broad market"
+            },
+            "note": {
+              "zh": "真正可执行的机会不在宏观规模本身，而在细分需求的差异化满足。",
+              "en": "The actionable opportunity lies less in total market size and more in differentiated solutions for specific needs."
+            }
+          }
+        ]
+      },
+      "takeaway": {
+        "title": {
+          "zh": "市场摘要",
+          "en": "Market takeaway"
+        },
+        "body": {
+          "zh": "中国宠物市场仍然值得持续跟踪，但不适合再用“泛宠物大盘”视角粗看。更值得投入的方向，是猫经济、功能型食品、清洁护理、智能用品和下沉市场适配产品这几条结构性机会。真正值得做的不是再做一款普通宠物产品，而是找到明确场景、明确人群和明确价格带。",
+          "en": "China's pet market remains worth tracking, but broad category thinking is no longer enough. The better investment directions are structural niches such as cat-led demand, functional food, cleaning care, smart devices, and value-adapted products for lower-tier markets. The better products are not generic pet items, but offers anchored in a clear scenario, user segment, and price band."
+        }
+      },
+      "scorecard": {
+        "title": {
+          "zh": "执行评分",
+          "en": "Execution scores"
+        },
+        "items": [
+          {
+            "label": {
+              "zh": "趋势强度",
+              "en": "Trend strength"
+            },
+            "score": 8.2
+          },
+          {
+            "label": {
+              "zh": "内容适配度",
+              "en": "Content fit"
+            },
+            "score": 8.4
+          },
+          {
+            "label": {
+              "zh": "复购潜力",
+              "en": "Repeat potential"
+            },
+            "score": 8.0
+          },
+          {
+            "label": {
+              "zh": "利润安全度",
+              "en": "Margin safety"
+            },
+            "score": 6.8
+          },
+          {
+            "label": {
+              "zh": "执行友好度",
+              "en": "Execution friendliness"
+            },
+            "score": 7.4
+          }
+        ]
+      }
+    },
+    "signals": {
+      "title": {
+        "zh": "关键信号",
+        "en": "Signals"
+      },
+      "subtitle": {
+        "zh": "关键信号不只是规模增长，更是消费结构和需求逻辑的变化。",
+        "en": "The core signals are not only market growth, but shifts in consumption structure and demand logic."
+      },
+      "badge": {
+        "zh": "需求与结构",
+        "en": "Demand & Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：行业白皮书口径、公开咨询数据、消费趋势观察",
+          "en": "Source: industry white papers, public consulting estimates, and consumer trend observation"
+        }
+      ],
+      "columns": [
+        {
+          "title": {
+            "zh": "市场与供给信号",
+            "en": "Market and supply signals"
+          },
+          "items": [
+            {
+              "title": {
+                "zh": "食品仍是最大头，但增长更多转向功能化",
+                "en": "Food remains the largest segment, but growth is moving toward functionality"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "主粮仍是大头，但真正的新机会更多出现在功能诉求、年龄分层和健康管理方向。",
+                "en": "Staple food still leads the category, but the stronger opportunities are in functional claims, life-stage segmentation, and health management."
+              }
+            },
+            {
+              "title": {
+                "zh": "猫相关消费的结构性机会更强",
+                "en": "Cat-led consumption shows stronger structural potential"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "公开资料普遍显示猫消费增速更强，且更适配城市单身、小家庭和室内精养场景。",
+                "en": "Public signals broadly suggest faster cat-led growth and better fit for urban single, small-family, and indoor care scenarios."
+              }
+            },
+            {
+              "title": {
+                "zh": "国产替代正在加强",
+                "en": "Domestic substitution is gaining strength"
+              },
+              "level": {
+                "zh": "注意",
+                "en": "Watch"
+              },
+              "levelClass": "warn",
+              "body": {
+                "zh": "进口品牌并非自动占优，国产品牌在食品和用品上都更有机会用性价比和本土表达切入。",
+                "en": "Imported brands no longer win automatically. Domestic brands can use value positioning and localized messaging more effectively in both food and supplies."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "消费者需求信号",
+            "en": "Consumer demand signals"
+          },
+          "soft": true,
+          "items": [
+            {
+              "title": {
+                "zh": "用户越来越愿意为精养买单",
+                "en": "Users are increasingly willing to pay for precision care"
+              },
+              "level": {
+                "zh": "强信号",
+                "en": "Strong"
+              },
+              "levelClass": "good",
+              "body": {
+                "zh": "从吃饱到吃好、从基础用品到健康管理，是这一轮最明显的消费升级路径。",
+                "en": "The clearest upgrade path runs from basic feeding to better nutrition, and from basic supplies to health management."
+              }
+            },
+            {
+              "title": {
+                "zh": "家庭共存问题正在变成高频痛点",
+                "en": "Pet-home coexistence is becoming a high-frequency pain point"
+              },
+              "level": {
+                "zh": "中强信号",
+                "en": "Medium-Strong"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "异味、掉毛、清洁和收纳问题，往往比“宠物本身”更容易驱动高频消费。",
+                "en": "Odor, shedding, cleaning, and storage issues often drive higher-frequency spending than the pet product itself."
+              }
+            },
+            {
+              "title": {
+                "zh": "下沉市场不是只看低价",
+                "en": "Lower-tier markets are not only about lower prices"
+              },
+              "level": {
+                "zh": "中信号",
+                "en": "Medium"
+              },
+              "levelClass": "info",
+              "body": {
+                "zh": "更准确的理解是“稳定够用的性价比”，而不是简单粗暴的最低价。",
+                "en": "The better framing is reliable and sufficient value, not simply chasing the lowest possible price."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": {
+        "zh": "机会方向",
+        "en": "Opportunity Directions"
+      },
+      "subtitle": {
+        "zh": "真正值得做的，是那些兼具需求基础、内容表达和差异化空间的细分方向。",
+        "en": "The most attractive opportunities are niches that combine real demand, strong content framing, and room for differentiation."
+      },
+      "badge": {
+        "zh": "机会地图",
+        "en": "Opportunity Map"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开行业观察与方向性商业判断",
+          "en": "Source: visible industry observation and directional commercial judgment"
+        }
+      ],
+      "labels": {
+        "topPlayers": {
+          "zh": "参考方向：",
+          "en": "Reference direction:"
+        },
+        "entryWhy": {
+          "zh": "当前进入理由：",
+          "en": "Why enter now:"
+        }
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "机会一：猫经济相关高频品",
+            "en": "Opportunity 1: High-frequency cat-led products"
+          },
+          "summary": {
+            "zh": "重点在主食湿粮、冻干、猫砂及小空间室内用品，不只是做猫品类，而是做室内精养方案。",
+            "en": "Focus on wet food, freeze-dried food, cat litter, and indoor small-space solutions. The real play is not just cat products, but indoor care systems."
+          },
+          "topPlayers": [
+            "猫主食",
+            "猫砂",
+            "室内共居用品"
+          ],
+          "entryWhy": {
+            "zh": "猫相关消费增速更强，也更容易形成城市生活方式下的稳定高频需求。",
+            "en": "Cat-led spending is growing faster and more naturally supports stable high-frequency urban demand."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：扩展期",
+              "en": "Lifecycle: Expansion"
+            },
+            {
+              "zh": "打法：精养场景",
+              "en": "Play: Precision-care scenario"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会二：功能型宠物食品",
+            "en": "Opportunity 2: Functional pet food"
+          },
+          "summary": {
+            "zh": "重点看肠胃、美毛、关节、泌尿和老龄宠物相关方向，比泛主粮更容易切出差异化。",
+            "en": "Focus on digestion, coat care, joint support, urinary health, and senior-pet needs. This is easier to differentiate than broad staple food."
+          },
+          "topPlayers": [
+            "功能粮",
+            "冻干",
+            "营养补充"
+          ],
+          "entryWhy": {
+            "zh": "用户已经愿意为明确问题和明确功能付费，功能化比泛主粮更有新机会。",
+            "en": "Users are increasingly willing to pay for clearly defined problems and benefits, making functionality a stronger growth path than generic staple food."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：强",
+              "en": "Trend: Strong"
+            },
+            {
+              "zh": "生命周期：升级期",
+              "en": "Lifecycle: Upgrade phase"
+            },
+            {
+              "zh": "打法：问题导向",
+              "en": "Play: Problem-led positioning"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会三：清洁护理与家庭共存产品",
+            "en": "Opportunity 3: Cleaning care and pet-home coexistence"
+          },
+          "summary": {
+            "zh": "包括除味、去毛、地面清洁、湿巾、洗护和收纳周边，这是一类更高频也更容易复购的机会。",
+            "en": "This includes odor removal, fur removal, floor cleaning, wipes, grooming, and storage accessories, all of which can support higher frequency and repeat purchase."
+          },
+          "topPlayers": [
+            "除味清洁",
+            "去毛护理",
+            "家庭共居周边"
+          ],
+          "entryWhy": {
+            "zh": "真实痛点往往来自宠物进入家庭后的共居问题，这类需求高频而且明确。",
+            "en": "The real pain often appears after pets enter the home. These coexistence needs are frequent and highly specific."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中强",
+              "en": "Trend: Medium-Strong"
+            },
+            {
+              "zh": "生命周期：稳定期",
+              "en": "Lifecycle: Stable"
+            },
+            {
+              "zh": "打法：高频复购",
+              "en": "Play: High-frequency repeat"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "机会四：下沉市场适配型产品",
+            "en": "Opportunity 4: Products adapted to lower-tier markets"
+          },
+          "summary": {
+            "zh": "重点不是廉价，而是标准化、稳定、够用且适配线上渠道的性价比产品。",
+            "en": "The real focus is not cheapness, but standardized, reliable, sufficient-value products that fit digital channels well."
+          },
+          "topPlayers": [
+            "中价格带主粮",
+            "标准用品",
+            "组合装 SKU"
+          ],
+          "entryWhy": {
+            "zh": "下沉市场仍有增量空间，但更像供应链与运营效率的机会，而非品牌溢价机会。",
+            "en": "Lower-tier markets still offer growth, but the opportunity looks more like a supply-chain and operating-efficiency play than a premium branding play."
+          },
+          "tags": [
+            {
+              "zh": "趋势级别：中",
+              "en": "Trend: Medium"
+            },
+            {
+              "zh": "生命周期：扩张期",
+              "en": "Lifecycle: Expansion"
+            },
+            {
+              "zh": "打法：性价比效率",
+              "en": "Play: Value-efficiency"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "title": {
+        "zh": "价格带",
+        "en": "Pricing"
+      },
+      "subtitle": {
+        "zh": "这里的价格带不是精确市场均价，而是用于判断切入策略的方向性价格结构。",
+        "en": "These bands are directional entry structures rather than precise market averages."
+      },
+      "badge": {
+        "zh": "价格结构",
+        "en": "Pricing Structure"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开市场观察与平台经验判断",
+          "en": "Source: public market observation and platform-based directional judgment"
+        }
+      ],
+      "table": {
+        "title": {
+          "zh": "切入价格带判断",
+          "en": "Entry pricing view"
+        },
+        "columns": [
+          {
+            "zh": "方向",
+            "en": "Direction"
+          },
+          {
+            "zh": "低价带",
+            "en": "Low band"
+          },
+          {
+            "zh": "主销带",
+            "en": "Core band"
+          },
+          {
+            "zh": "推荐切入",
+            "en": "Recommended entry"
+          },
+          {
+            "zh": "价格支撑逻辑",
+            "en": "Value support"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "zh": "功能型宠物食品",
+              "en": "Functional pet food"
+            },
+            {
+              "zh": "大众基础带",
+              "en": "Mass basic band"
+            },
+            {
+              "zh": "中高功能带",
+              "en": "Mid-high functional band"
+            },
+            {
+              "zh": "先做中带",
+              "en": "Start in the mid band"
+            },
+            {
+              "zh": "靠明确功能和阶段分层支撑溢价",
+              "en": "Premium must be supported by clear functionality and life-stage segmentation"
+            }
+          ],
+          [
+            {
+              "zh": "猫砂与清洁护理",
+              "en": "Cat litter and cleaning care"
+            },
+            {
+              "zh": "基础高频带",
+              "en": "Basic high-frequency band"
+            },
+            {
+              "zh": "中价复购带",
+              "en": "Mid-band repeat zone"
+            },
+            {
+              "zh": "先拼稳定复购",
+              "en": "Prioritize repeat stability first"
+            },
+            {
+              "zh": "重点是高频、便利和家庭痛点解决",
+              "en": "The value lies in frequency, convenience, and solving home pain points"
+            }
+          ],
+          [
+            {
+              "zh": "智能用品",
+              "en": "Smart devices"
+            },
+            {
+              "zh": "入门设备带",
+              "en": "Entry-device band"
+            },
+            {
+              "zh": "中高客单带",
+              "en": "Mid-high ticket band"
+            },
+            {
+              "zh": "谨慎测试",
+              "en": "Test cautiously"
+            },
+            {
+              "zh": "高客单要靠便利性、稳定性和售后支撑",
+              "en": "Higher ticket pricing requires convenience, reliability, and after-sales support"
+            }
+          ],
+          [
+            {
+              "zh": "下沉市场适配产品",
+              "en": "Lower-tier adapted products"
+            },
+            {
+              "zh": "性价比基础带",
+              "en": "Value basic band"
+            },
+            {
+              "zh": "稳定走量带",
+              "en": "Stable volume band"
+            },
+            {
+              "zh": "别盲目极低价",
+              "en": "Avoid blind race-to-bottom pricing"
+            },
+            {
+              "zh": "真正支撑是稳定够用，而不是绝对最低价",
+              "en": "The true support is reliable sufficiency, not the absolute lowest price"
+            }
+          ]
+        ]
+      },
+      "side": {
+        "title": {
+          "zh": "价格判断",
+          "en": "Pricing judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "不要直接冲最低价",
+              "en": "Do not jump straight to the lowest price"
+            },
+            "note": {
+              "zh": "中国宠物市场竞争已经很卷，盲目低价更容易陷入没有利润的红海。",
+              "en": "Competition is already intense, and blind low-price moves drag products into unprofitable red oceans."
+            }
+          },
+          {
+            "title": {
+              "zh": "要用功能或场景支撑价格",
+              "en": "Use function or scenario to support price"
+            },
+            "note": {
+              "zh": "比起讲原料和参数，讲清楚解决什么问题更重要。",
+              "en": "It matters more to explain what problem is solved than to over-index on materials or specs."
+            }
+          },
+          {
+            "title": {
+              "zh": "复购型产品优先看长期价值",
+              "en": "For repeat products, focus on long-term value"
+            },
+            "note": {
+              "zh": "高频品更适合用复购率和持续消费去看，而不是一次性高毛利。",
+              "en": "High-frequency products should be judged by repeat rate and lifetime consumption, not just one-off gross margin."
+            }
+          }
+        ]
+      }
+    },
+    "players": {
+      "title": {
+        "zh": "Top Players & Links / 参考对象与链接",
+        "en": "Top Players & Links"
+      },
+      "subtitle": {
+        "zh": "这里不是完整品牌清单，而是后续做平台样本验证时优先拆的对象集合。",
+        "en": "This is not a complete brand list, but a starter set for platform-level validation next."
+      },
+      "badge": {
+        "zh": "验证对象",
+        "en": "Validation Set"
+      },
+      "sources": [
+        {
+          "zh": "数据依据：公开行业观察与方向性研究框架",
+          "en": "Source: public industry observation and directional research framing"
+        }
+      ],
+      "filterTitle": {
+        "zh": "对象分类与后续验证方向",
+        "en": "Object groups and next validation directions"
+      },
+      "filters": [
+        {
+          "value": "all",
+          "label": {
+            "zh": "全部",
+            "en": "All"
+          }
+        },
+        {
+          "value": "food",
+          "label": {
+            "zh": "Food",
+            "en": "Food"
+          }
+        },
+        {
+          "value": "care",
+          "label": {
+            "zh": "Care",
+            "en": "Care"
+          }
+        },
+        {
+          "value": "device",
+          "label": {
+            "zh": "Device",
+            "en": "Device"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": {
+            "zh": "功能型食品验证组",
+            "en": "Functional food validation set"
+          },
+          "platforms": [
+            "food"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "功能食品",
+                  "en": "Functional food"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "功能粮 / 冻干 / 营养补充",
+                "en": "Functional food / freeze-dried / nutrition"
+              },
+              {
+                "zh": "价格带、卖点、年龄分层、评论痛点",
+                "en": "Pricing, claims, life-stage segmentation, review pain points"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.tmall.com/",
+                "label": {
+                  "zh": "后续在天猫验证",
+                  "en": "Validate on Tmall next"
+                }
+              },
+              {
+                "zh": "用于补功能型食品的真实平台样本。",
+                "en": "Useful for adding real platform samples for functional food."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "清洁护理验证组",
+            "en": "Cleaning care validation set"
+          },
+          "platforms": [
+            "care"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "清洁护理",
+                  "en": "Cleaning care"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "除味 / 去毛 / 家庭清洁",
+                "en": "Odor removal / fur removal / home cleaning"
+              },
+              {
+                "zh": "看复购逻辑、规格组合和评论区痛点",
+                "en": "Check repeat logic, pack structure, and review pain points"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.jd.com/",
+                "label": {
+                  "zh": "后续在京东验证",
+                  "en": "Validate on JD next"
+                }
+              },
+              {
+                "zh": "用于拆高频家庭共存类需求。",
+                "en": "Useful for breaking down high-frequency pet-home coexistence demand."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        },
+        {
+          "title": {
+            "zh": "智能用品验证组",
+            "en": "Smart device validation set"
+          },
+          "platforms": [
+            "device"
+          ],
+          "columns": [
+            {
+              "zh": "方向",
+              "en": "Direction"
+            },
+            {
+              "zh": "验证对象",
+              "en": "Validation object"
+            },
+            {
+              "zh": "看什么",
+              "en": "What to inspect"
+            },
+            {
+              "zh": "类型",
+              "en": "Type"
+            },
+            {
+              "zh": "链接",
+              "en": "Link"
+            },
+            {
+              "zh": "可借鉴点",
+              "en": "Commercial value"
+            },
+            {
+              "zh": "检查日期",
+              "en": "Checked on"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "type": "price",
+                "text": {
+                  "zh": "智能用品",
+                  "en": "Smart devices"
+                },
+                "tag": "China"
+              },
+              {
+                "zh": "喂食器 / 饮水机 / 猫砂盆",
+                "en": "Feeder / water fountain / litter box"
+              },
+              {
+                "zh": "看客单、退货风险、售后评价和功能表达",
+                "en": "Check ticket size, return risk, after-sales feedback, and feature framing"
+              },
+              {
+                "zh": "Direction",
+                "en": "Direction"
+              },
+              {
+                "type": "link",
+                "href": "https://www.douyin.com/",
+                "label": {
+                  "zh": "后续在抖音验证",
+                  "en": "Validate on Douyin next"
+                }
+              },
+              {
+                "zh": "用于判断高客单智能用品是否真能靠内容带动。",
+                "en": "Useful for judging whether content can truly drive higher-ticket smart devices."
+              },
+              {
+                "type": "checked",
+                "value": "2026-04-09"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": {
+        "zh": "Next 7 Days",
+        "en": "Next 7 Days"
+      },
+      "subtitle": {
+        "zh": "接下来最重要的不是继续讲宏观，而是把机会落到平台样本和可执行方向。",
+        "en": "The key next step is to move from macro judgment into platform samples and executable tracks."
+      },
+      "badge": {
+        "zh": "优先动作",
+        "en": "Priority Moves"
+      },
+      "items": [
+        {
+          "title": {
+            "zh": "先拆 3 条优先赛道",
+            "en": "Split 3 priority tracks first"
+          },
+          "body": {
+            "zh": "建议优先拆猫经济、功能型食品、清洁护理这 3 条，因为它们兼具需求、复购和内容表达。",
+            "en": "Start with cat-led demand, functional food, and cleaning care because they combine demand, repeat potential, and content-native positioning."
+          }
+        },
+        {
+          "title": {
+            "zh": "补平台样本",
+            "en": "Add platform samples"
+          },
+          "body": {
+            "zh": "下一步要去天猫、京东、抖音补样本，看价格带、标题表达、评论痛点和热销结构。",
+            "en": "Next, sample Tmall, JD, and Douyin to inspect pricing bands, title framing, review pain points, and hot-selling structures."
+          }
+        },
+        {
+          "title": {
+            "zh": "把机会做成可执行 SKU 假设",
+            "en": "Convert the opportunity into executable SKU hypotheses"
+          },
+          "body": {
+            "zh": "不要停在赛道判断，要继续落成具体 SKU、目标人群和入场价格带。",
+            "en": "Do not stop at track selection. Convert each direction into concrete SKU, target user, and entry pricing hypotheses."
+          }
+        }
+      ]
+    },
+    "risks": {
+      "title": {
+        "zh": "风险与动作",
+        "en": "Risks & Actions"
+      },
+      "subtitle": {
+        "zh": "真正要警惕的不是市场不增长，而是选错赛道、打错价格和误判竞争结构。",
+        "en": "The bigger danger is not market slowdown, but choosing the wrong niche, pricing poorly, and misreading the competitive structure."
+      },
+      "badge": {
+        "zh": "风险判断",
+        "en": "Risk Judgment"
+      },
+      "risks": [
+        {
+          "title": {
+            "zh": "泛主粮红海风险",
+            "en": "Broad staple-food red-ocean risk"
+          },
+          "body": {
+            "zh": "如果没有明确功能或明确人群分层，泛主粮很容易陷入强品牌和价格战双重挤压。",
+            "en": "Without clear functionality or segmentation, broad staple food gets squeezed by both strong brands and price competition."
+          }
+        },
+        {
+          "title": {
+            "zh": "低价用品同质化风险",
+            "en": "Low-price accessory commoditization risk"
+          },
+          "body": {
+            "zh": "低价用品如果没有设计、组合或品牌表达，很快就会进入纯比价。",
+            "en": "Low-price accessories quickly fall into pure comparison shopping unless they gain design, bundle, or brand differentiation."
+          }
+        },
+        {
+          "title": {
+            "zh": "智能用品售后风险",
+            "en": "Smart-device after-sales risk"
+          },
+          "body": {
+            "zh": "智能用品看起来机会大，但如果售后、退货和稳定性跟不上，执行压力会很重。",
+            "en": "Smart devices look attractive, but poor reliability, returns, and after-sales support create heavy execution pressure."
+          }
+        }
+      ],
+      "actions": {
+        "title": {
+          "zh": "建议动作",
+          "en": "Recommended actions"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "先做细分，不做泛品类",
+              "en": "Choose niches before broad categories"
+            },
+            "note": {
+              "zh": "先把问题、场景和目标用户讲清楚，再决定是否扩成大类。",
+              "en": "Clarify the problem, scenario, and target user before expanding into broader categories."
+            }
+          },
+          {
+            "title": {
+              "zh": "先做平台验证，不急着下结论",
+              "en": "Validate on platforms before locking strong conclusions"
+            },
+            "note": {
+              "zh": "宏观判断可以定方向，但不能替代平台真实样本。",
+              "en": "Macro judgment can set direction, but it cannot replace real platform samples."
+            }
+          },
+          {
+            "title": {
+              "zh": "优先做高频和复购型方向",
+              "en": "Prioritize high-frequency repeatable directions"
+            },
+            "note": {
+              "zh": "从生意健康度看，高频复购通常比单次高客单更稳。",
+              "en": "From a business-health perspective, high-frequency repeat categories are often more stable than one-off high-ticket plays."
+            }
+          }
+        ]
+      },
+      "finalJudgment": {
+        "title": {
+          "zh": "最终判断",
+          "en": "Final judgment"
+        },
+        "items": [
+          {
+            "title": {
+              "zh": "中国宠物市场值得继续做，但要换研究视角",
+              "en": "China's pet market remains worth pursuing, but the research lens must change"
+            },
+            "level": {
+              "zh": "建议执行",
+              "en": "Recommended"
+            },
+            "levelClass": "good",
+            "body": {
+              "zh": "机会依然存在，但已经从“有没有市场”转向“哪些细分更值得做、怎么切更合理”。",
+              "en": "The opportunity still exists, but the key question has moved from market existence to which niches are most worth entering and how to enter them well."
+            }
+          },
+          {
+            "title": {
+              "zh": "下一步应从宏观扫描进入平台验证",
+              "en": "The next step should move from macro scan to platform validation"
+            },
+            "level": {
+              "zh": "推荐路径",
+              "en": "Preferred path"
+            },
+            "levelClass": "info",
+            "body": {
+              "zh": "优先围绕猫经济、功能食品和清洁护理做平台样本拆解，再决定更具体的 SKU 方向。",
+              "en": "Start with platform-level breakdowns in cat-led demand, functional food, and cleaning care, then decide on more specific SKU directions."
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "title": {
+        "zh": "References / 数据来源",
+        "en": "References"
+      },
+      "subtitle": {
+        "zh": "本页基于公开口径与方向性商业判断，不代表完整成交数据库。",
+        "en": "This page is based on public estimates and directional commercial judgment, not a complete transaction database."
+      },
+      "badge": {
+        "zh": "证据链",
+        "en": "Reference Layer"
+      },
+      "cards": [
+        {
+          "title": {
+            "zh": "市场规模与结构来源",
+            "en": "Market size and structure sources"
+          },
+          "tags": [
+            {
+              "zh": "公开行业白皮书",
+              "en": "Public industry white papers"
+            },
+            {
+              "zh": "行业咨询口径",
+              "en": "Consulting estimates"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持中国宠物消费规模、结构占比和增长方向判断。",
+            "en": "Used mainly to support judgments on market size, structure, and growth direction in China pet consumption."
+          }
+        },
+        {
+          "title": {
+            "zh": "机会判断来源",
+            "en": "Opportunity judgment sources"
+          },
+          "tags": [
+            {
+              "zh": "消费趋势观察",
+              "en": "Consumer trend observation"
+            },
+            {
+              "zh": "方向性商业判断",
+              "en": "Directional commercial judgment"
+            }
+          ],
+          "body": {
+            "zh": "主要用于支持猫经济、功能食品、清洁护理和下沉市场适配等细分机会判断。",
+            "en": "Used mainly to support niche judgments around cat-led demand, functional food, cleaning care, and lower-tier adaptation."
+          }
+        },
+        {
+          "title": {
+            "zh": "更新时间信息",
+            "en": "Update info"
+          },
+          "tags": [
+            {
+              "zh": "数据更新时间：2026-04-09",
+              "en": "Last updated: 2026-04-09"
+            },
+            {
+              "zh": "Last checked: 2026-04-09",
+              "en": "Last checked: 2026-04-09"
+            }
+          ],
+          "body": {
+            "zh": "当前版本适合作为机会扫描底稿，后续应继续补平台样本和竞争验证。",
+            "en": "This version works as an opportunity-scan baseline and should be extended with platform samples and competitive validation next."
+          }
+        }
+      ]
+    }
+  },
+  "footer": {
+    "zh": "Raymond Ho @Copyright 2026",
+    "en": "Raymond Ho @Copyright 2026"
+  }
+};
+    const langState = { current: 'zh' };
+    const t = (v, fallback='') => {
+      if (typeof v === 'string') return v || fallback;
+      if (v && typeof v === 'object') return v[langState.current] || v.zh || v.en || fallback;
+      return fallback;
+    };
+    const make = (tag, cls, html='') => { const el = document.createElement(tag); if (cls) el.className = cls; el.innerHTML = html; return el; };
+
+    function renderNav(){
+      const sidebarTitle = document.getElementById('sidebar-title');
+      if(sidebarTitle) sidebarTitle.textContent = t(DATA.sidebar.title);
+      document.getElementById('nav-title').textContent = t(DATA.navigation.title);
+      const nav = document.getElementById('nav-group'); nav.innerHTML='';
+      DATA.navigation.items.forEach((item, i)=>{
+        const btn = make('button', 'tab-btn' + (i===0?' active':''), `<span class="title">${t(item.title)}</span><span class="desc">${t(item.description)}</span>`);
+        btn.dataset.tab = item.id; nav.appendChild(btn);
+      });
+      renderHistorySection();
+    }
+    function renderHistorySection(){
+      const historyData = DATA.history;
+      const histSection = document.getElementById('history-section');
+      const histList = document.getElementById('history-list');
+      const histLabel = document.getElementById('history-title-label');
+      if(!historyData || !historyData.reports || historyData.reports.length === 0){ if(histSection) histSection.style.display='none'; return; }
+      if(histSection) histSection.style.display='block';
+      if(histLabel) histLabel.textContent = langState.current === 'zh' ? '历史报告' : 'Report History';
+      histList.innerHTML = '';
+      historyData.reports.forEach(r => {
+        const isCurrent = r.current === true;
+        const item = make('a', 'history-item' + (isCurrent ? ' current' : ''), `
+          <div>
+            <div>${t(r.title)}</div>
+            <div class="h-date">${r.date}</div>
+          </div>
+          ${isCurrent ? `<span class="history-badge">${langState.current === 'zh' ? '当前' : 'Current'}</span>` : '<span style="color:var(--brand);font-size:14px">→</span>'}
+        `);
+        if(!isCurrent && r.file) item.href = r.file;
+        histList.appendChild(item);
+      });
+    }
+    function renderMeta(){ const wrap = document.getElementById('sidebar-meta'); wrap.innerHTML=''; DATA.sidebar.meta.forEach(m=>wrap.appendChild(make('span','meta-chip',t(m)))); }    function renderHero(){
+      document.getElementById('hero-title').textContent = t(DATA.hero.title, langState.current==='zh' ? '未命名报告' : 'Untitled report');
+      document.getElementById('hero-summary').textContent = t(DATA.hero.summary, langState.current==='zh' ? '该报告摘要暂缺，建议回看核心结论与分段分析。' : 'Summary pending. Review the key conclusion and section analysis below.');
+      const tags = document.getElementById('hero-tags'); tags.innerHTML=''; (DATA.hero.tags||[]).forEach(x=>tags.appendChild(make('span','pill',t(x))));
+      if(!(DATA.hero.tags||[]).length) tags.appendChild(make('span','pill',langState.current==='zh' ? '核心标签待补充' : 'Tags pending'));
+      const side = document.getElementById('hero-side'); side.innerHTML=''; (DATA.hero.cards||[]).forEach(c=>side.appendChild(make('div','flash-card',`<div class="k">${t(c.label, langState.current==='zh' ? '关键指标' : 'Key metric')}</div><div class="v">${t(c.value, '-')}</div><div class="t">${t(c.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`)));
+    }
+    function renderSummary(){ const wrap = document.getElementById('summary-metrics'); wrap.innerHTML=''; (DATA.summaryMetrics||[]).forEach(m=>wrap.appendChild(make('article','card metric',`<div class="label">${t(m.label, langState.current==='zh' ? '指标' : 'Metric')}</div><div class="value">${t(m.value, '-')}</div><div class="note">${t(m.note, langState.current==='zh' ? '说明待补充' : 'Note pending')}</div>`))); }
+    function sectionHead(sec){ const title=t(sec.title, langState.current==='zh' ? '未命名章节' : 'Untitled section'); const subtitle=t(sec.subtitle||'', langState.current==='zh' ? '该章节暂无补充说明。' : 'No additional section description yet.'); const badge=t(sec.badge||'', langState.current==='zh' ? '内容模块' : 'Content module'); return `<div class="section-head"><div><h3>${title}</h3><p>${subtitle}</p></div><div class="section-badge">${badge}</div></div>${(sec.sources&&sec.sources.length)?`<div class="source-note">${sec.sources.map(s=>`<span class="src-pill">${t(s)}</span>`).join('')}</div>`:''}`; }
+    function renderOverview(){ const s=DATA.sections.overview, c=document.getElementById('overview'); c.innerHTML=sectionHead(s); c.innerHTML += `<div class="viz-grid"><article class="card"><h3>${t(s.barChart.title)}</h3><div class="bar-chart">${s.barChart.items.map(i=>`<div class="bar-col"><div class="bar-wrap"><div class="bar" style="height:${i.score*10}%"></div></div><div class="bar-value">${i.score.toFixed(1)} / 10</div><div class="bar-label">${t(i.label)}</div></div>`).join('')}</div></article><article class="card soft"><h3>${t(s.sideCard.title)}</h3><ul class="list">${s.sideCard.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; c.innerHTML += `<div class="grid-2"><article class="card"><h3>${t(s.takeaway.title)}</h3><p class="muted">${t(s.takeaway.body)}</p></article><article class="card soft"><h3>${t(s.scorecard.title)}</h3><div class="score-rows">${s.scorecard.items.map(i=>`<div class="score-item"><div class="score-head"><span>${t(i.label)}</span><span>${i.score.toFixed(1)} / 10</span></div><div class="progress"><span style="width:${i.score*10}%"></span></div></div>`).join('')}</div></article></div>`; }
+    function renderSignals(){ const s=DATA.sections.signals, c=document.getElementById('signals'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.columns.map(col=>`<article class="${col.soft?'card soft':'card'}"><h3>${t(col.title)}</h3><div class="signal-list">${col.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderOpps(){ const s=DATA.sections.opportunities, c=document.getElementById('opportunities'); c.innerHTML=sectionHead(s)+`<div class="grid-2">${s.cards.map(card=>`<article class="opportunity-card"><h4>${t(card.title)}</h4><p>${t(card.summary)}</p><div class="players-line"><strong>${t(s.labels.topPlayers)}</strong> ${card.topPlayers.join(' / ')}</div><div class="entry-why"><strong>${t(s.labels.entryWhy)}</strong> ${t(card.entryWhy)}</div><div class="tag-row">${(card.tags||[]).map(tag=>`<span class="mini-tag">${t(tag)}</span>`).join('')}</div></article>`).join('')}</div>`; }
+    function renderPricing(){ const s=DATA.sections.pricing, c=document.getElementById('pricing'); c.innerHTML=sectionHead(s)+`<div class="grid-2"><article class="card"><h3>${t(s.table.title)}</h3><table><thead><tr>${s.table.columns.map(x=>`<th>${t(x)}</th>`).join('')}</tr></thead><tbody>${s.table.rows.map(r=>`<tr>${r.map(cell=>`<td>${t(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></article><article class="card soft"><h3>${t(s.side.title)}</h3><ul class="list">${s.side.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article></div>`; }
+    function renderPlayers(){ const s=DATA.sections.players, c=document.getElementById('players'); c.innerHTML=sectionHead(s)+`<article class="card"><h3>${t(s.filterTitle)}</h3><div class="filter-row">${s.filters.map((f,idx)=>`<button class="filter-btn${idx===0?' active':''}" data-platform="${f.value}">${t(f.label)}</button>`).join('')}</div></article>`; s.groups.forEach(g=>{ c.innerHTML += `<article class="card player-block" data-platforms="${g.platforms.join(' ')}"><h3>${t(g.title)}</h3><table><thead><tr>${g.columns.map(col=>`<th>${t(col)}</th>`).join('')}</tr></thead><tbody>${g.rows.map(r=>`<tr>${r.map(cell=>{
+      if(cell.type==='link') return `<td><a class="link-btn" href="${cell.href}" target="_blank" rel="noopener noreferrer">${t(cell.label)}</a></td>`;
+      if(cell.type==='price') return `<td>${t(cell.text)}<div class="price-tag">${cell.tag}</div></td>`;
+      if(cell.type==='checked') return `<td><div class="check-tag">${cell.value}</div></td>`;
+      return `<td>${t(cell)}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></article>`; }); }
+    function renderNext(){ const s=DATA.sections.nextMoves, c=document.getElementById('nextmoves'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.items.map(i=>`<article class="card soft"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div>`; }
+    function renderRisks(){ const s=DATA.sections.risks, c=document.getElementById('risks'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.risks.map(i=>`<article class="card"><h3>${t(i.title)}</h3><p class="muted">${t(i.body)}</p></article>`).join('')}</div><div class="grid-2"><article class="card soft"><h3>${t(s.actions.title)}</h3><ul class="list">${s.actions.items.map((i,idx)=>`<li><span class="num">${idx+1}</span><div><strong>${t(i.title)}</strong><br><span class="muted">${t(i.note)}</span></div></li>`).join('')}</ul></article><article class="card"><h3>${t(s.finalJudgment.title)}</h3><div class="signal-list">${s.finalJudgment.items.map(i=>`<div class="signal"><div class="signal-head"><div class="signal-title">${t(i.title)}</div><span class="badge ${i.levelClass||'info'}">${t(i.level)}</span></div><div class="muted">${t(i.body)}</div></div>`).join('')}</div></article></div>`; }
+    function renderRefs(){ const s=DATA.sections.references, c=document.getElementById('references'); c.innerHTML=sectionHead(s)+`<div class="grid-3">${s.cards.map(card=>`<article class="card soft"><h3>${t(card.title)}</h3><div class="source-note">${(card.tags||[]).map(tag=>`<span class="src-pill">${t(tag)}</span>`).join('')}</div><p class="muted">${t(card.body)}</p></article>`).join('')}</div>`; }
+    function renderFooter(){ document.getElementById('footer').textContent = t(DATA.footer); }
+    function renderAll(){ renderNav(); renderMeta(); renderHero(); renderSummary(); renderOverview(); renderSignals(); renderOpps(); renderPricing(); renderPlayers(); renderNext(); renderRisks(); renderRefs(); renderFooter(); bindTabs(); bindFilters(); }
+    function bindTabs(){ document.querySelectorAll('.tab-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active')); document.querySelectorAll('.section-panel').forEach(p=>p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); }); }
+    function bindFilters(){ document.querySelectorAll('.filter-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); const platform = btn.dataset.platform; document.querySelectorAll('.player-block').forEach(block=>{ const p = block.dataset.platforms || ''; block.classList.toggle('hidden', !(platform==='all' || p.includes(platform))); }); }); }
+    document.querySelectorAll('.lang-btn').forEach(btn=>btn.onclick=()=>{ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); langState.current = btn.dataset.setLang; document.documentElement.classList.remove('lang-zh','lang-en'); document.documentElement.classList.add(`lang-${langState.current}`); renderAll(); });
+    renderAll();
+  </script>
+</body>
+</html>

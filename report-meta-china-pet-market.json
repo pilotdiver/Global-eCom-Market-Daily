@@ -1,0 +1,40 @@
+{
+  "marketId": "global",
+  "marketName": { "zh": "全球", "en": "Global" },
+  "region": { "zh": "跨市场", "en": "Cross-market" },
+  "flag": "🌍",
+  "status": "live",
+  "report": {
+    "id": "china-pet-market-2026",
+    "reportType": "opportunity-analysis",
+    "title": { "zh": "中国宠物市场机会扫描：从增长结构到高潜赛道", "en": "China Pet Market Opportunity Scan: Growth Structure and High-Potential Tracks" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-09",
+    "lastReviewedAt": "2026-04-09",
+    "file": "report-china-pet-market.html",
+    "tags": [
+      { "zh": "宠物市场", "en": "Pet market" },
+      { "zh": "中国消费", "en": "China consumer" },
+      { "zh": "机会扫描", "en": "Opportunity scan" }
+    ],
+    "summary": {
+      "zh": "中国宠物市场仍在增长，但机会不在泛宠物大盘，而在猫经济、功能型食品、智能用品、清洁护理和下沉市场适配产品等更具体的细分赛道。",
+      "en": "China's pet market continues to grow, but the better opportunities are not in the broad category. They sit in specific tracks such as cat-led demand, functional pet food, smart devices, cleaning care, and value-adapted offers for lower-tier markets."
+    },
+    "coverLabel": { "zh": "品类机会分析", "en": "Category Opportunity Analysis" },
+    "highlight": { "zh": "机会在细分，不在泛宠物大盘", "en": "The opportunity is in focused niches, not the broad market" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "priorityScore": 83,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.69,
+    "platformFit": { "amazon": 0.61, "tiktok": 0.86, "shopify": 0.79 },
+    "recommendedActions": [
+      { "zh": "优先拆分猫经济、功能食品、清洁护理 3 条可执行方向", "en": "Break the opportunity into three executable tracks first: cat-led demand, functional food, and cleaning care" },
+      { "zh": "下一步补平台样本，验证价格带、爆款表达和评论痛点", "en": "Validate pricing, winning positioning, and review pain points with platform-level samples next" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "中国宠物消费仍在增长，但竞争已经从泛品类进入精养与细分竞争阶段", "en": "China's pet consumption is still growing, but competition has moved from broad-category expansion into precision-care and niche competition" },
+    "featured": true,
+    "category": { "zh": "宠物用品与食品", "en": "Pet Supplies & Food" }
+  }
+}
