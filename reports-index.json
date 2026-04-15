@@ -9,7 +9,7 @@
       "en": "Main portal · Report browsing and distribution"
     },
     "version": "1.2.0",
-    "lastUpdated": "2026-04-09"
+    "lastUpdated": "2026-04-15"
   },
   "hero": {
     "eyebrow": {
@@ -163,6 +163,166 @@
           },
           "version": "v1.1",
           "previousVersion": "v1.0"
+        },
+        {
+          "id": "us-weekly-amazon-top20-2026",
+          "reportType": "weekly-breakout-tracker",
+          "title": {
+            "zh": "美国过去7天 Amazon 爆品 Top 20",
+            "en": "US Amazon Top 20 Breakout Products, Past 7 Days"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-15",
+          "lastReviewedAt": "2026-04-15",
+          "file": "report-us-weekly-amazon-top20.html",
+          "tags": [
+            {
+              "zh": "Amazon",
+              "en": "Amazon"
+            },
+            {
+              "zh": "爆品榜单",
+              "en": "Breakout ranking"
+            },
+            {
+              "zh": "美国电商",
+              "en": "US ecommerce"
+            }
+          ],
+          "summary": {
+            "zh": "过去7天美国 Amazon 爆品主要集中在夏季风扇、平价功效个护、手机功能配件与补充装型商品。",
+            "en": "Over the past 7 days, US Amazon breakout products concentrated in summer fans, affordable functional beauty, phone accessories, and refill-style goods."
+          },
+          "coverLabel": {
+            "zh": "周度爆品榜",
+            "en": "Weekly Breakout Ranking"
+          },
+          "highlight": {
+            "zh": "季节刚需 + 低决策商品占优",
+            "en": "Seasonal necessity plus low-friction products dominate"
+          },
+          "confidence": {
+            "zh": "中高",
+            "en": "Medium-High"
+          },
+          "featured": true,
+          "category": {
+            "zh": "周度爆品追踪",
+            "en": "Weekly Breakout Tracking"
+          },
+          "priorityScore": 84,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.71,
+          "platformFit": {
+            "amazon": 0.94,
+            "tiktok": 0.78,
+            "shopify": 0.73
+          },
+          "recommendedActions": [
+            {
+              "zh": "连续3天复核风扇与个护上榜持续性",
+              "en": "Recheck fan and beauty ranking persistence for 3 straight days"
+            },
+            {
+              "zh": "把手机配件拆成支架、快充、线材子池继续筛选",
+              "en": "Split phone accessories into mounts, chargers, and cables for deeper filtering"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "周度 Amazon 爆品榜适合持续跟踪短期动销变化。",
+            "en": "A weekly Amazon breakout ranking is useful for tracking short-term sell-through shifts continuously."
+          },
+          "scoreBreakdown": {
+            "demand": 18,
+            "competition": 10,
+            "margin": 11,
+            "execution": 12,
+            "trend": 14,
+            "platform": 11,
+            "confidence": 8
+          },
+          "version": "v1.0"
+        },
+        {
+          "id": "us-weekly-tiktok-top20-2026",
+          "reportType": "weekly-breakout-tracker",
+          "title": {
+            "zh": "美国过去7天 TikTok 带货爆品 Top 20",
+            "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days"
+          },
+          "date": "2026-04",
+          "updatedAt": "2026-04-15",
+          "lastReviewedAt": "2026-04-15",
+          "file": "report-us-weekly-tiktok-top20.html",
+          "tags": [
+            {
+              "zh": "TikTok Shop",
+              "en": "TikTok Shop"
+            },
+            {
+              "zh": "带货爆品",
+              "en": "Viral commerce"
+            },
+            {
+              "zh": "美国电商",
+              "en": "US ecommerce"
+            }
+          ],
+          "summary": {
+            "zh": "过去7天美国 TikTok 带货爆品更集中在平价功效个护、演示型家居小工具、手机便携配件与杯具生态件。",
+            "en": "Over the past 7 days, US TikTok viral commerce concentrated more on affordable functional beauty, demonstrable home gadgets, portable phone accessories, and tumbler ecosystem items."
+          },
+          "coverLabel": {
+            "zh": "周度带货榜",
+            "en": "Weekly Commerce Ranking"
+          },
+          "highlight": {
+            "zh": "演示感强于传统刚需",
+            "en": "Demonstration value matters more than traditional necessity"
+          },
+          "confidence": {
+            "zh": "中高",
+            "en": "Medium-High"
+          },
+          "featured": true,
+          "category": {
+            "zh": "周度爆品追踪",
+            "en": "Weekly Breakout Tracking"
+          },
+          "priorityScore": 86,
+          "priorityTier": "P1",
+          "evidenceStrength": 0.69,
+          "platformFit": {
+            "amazon": 0.74,
+            "tiktok": 0.96,
+            "shopify": 0.77
+          },
+          "recommendedActions": [
+            {
+              "zh": "把 Top 20 按内容模板拆成对比型与问题解决型",
+              "en": "Split the Top 20 into comparison-led and problem-solving content templates"
+            },
+            {
+              "zh": "补一轮 TikTok 热品到 Amazon 承接的交叉验证",
+              "en": "Run another cross-check on which TikTok winners also convert on Amazon"
+            }
+          ],
+          "watchStatus": "active",
+          "watchReason": {
+            "zh": "周度 TikTok 带货榜适合持续监控内容爆点与购买触发词变化。",
+            "en": "A weekly TikTok commerce ranking is useful for monitoring content spikes and purchase-trigger language over time."
+          },
+          "scoreBreakdown": {
+            "demand": 17,
+            "competition": 11,
+            "margin": 10,
+            "execution": 13,
+            "trend": 15,
+            "platform": 12,
+            "confidence": 8
+          },
+          "version": "v1.0"
         }
       ]
     },
@@ -944,6 +1104,115 @@
         ]
       },
       {
+        "reportId": "us-weekly-tiktok-top20-2026",
+        "slug": "us-weekly-tiktok-top20-2026",
+        "marketId": "us",
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "region": {
+          "zh": "北美",
+          "en": "North America"
+        },
+        "flag": "🇺🇸",
+        "category": {
+          "zh": "周度爆品追踪",
+          "en": "Weekly Breakout Tracking"
+        },
+        "reportType": "weekly-breakout-tracker",
+        "title": {
+          "zh": "美国过去7天 TikTok 带货爆品 Top 20",
+          "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days"
+        },
+        "summary": {
+          "zh": "过去7天美国 TikTok 带货爆品更集中在平价功效个护、演示型家居小工具、手机便携配件与杯具生态件。",
+          "en": "Over the past 7 days, US TikTok viral commerce concentrated more on affordable functional beauty, demonstrable home gadgets, portable phone accessories, and tumbler ecosystem items."
+        },
+        "highlight": {
+          "zh": "演示感强于传统刚需",
+          "en": "Demonstration value matters more than traditional necessity"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.69,
+        "priorityScore": 86,
+        "priorityTier": "P1",
+        "scoreBreakdown": {
+          "demand": 17,
+          "competition": 11,
+          "margin": 10,
+          "execution": 13,
+          "trend": 15,
+          "platform": 12,
+          "confidence": 8
+        },
+        "platformFit": {
+          "amazon": 0.74,
+          "tiktok": 0.96,
+          "shopify": 0.77
+        },
+        "recommendedActions": [
+          {
+            "zh": "把 Top 20 按内容模板拆成对比型与问题解决型",
+            "en": "Split the Top 20 into comparison-led and problem-solving content templates"
+          },
+          {
+            "zh": "补一轮 TikTok 热品到 Amazon 承接的交叉验证",
+            "en": "Run another cross-check on which TikTok winners also convert on Amazon"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "周度 TikTok 带货榜适合持续监控内容爆点与购买触发词变化。",
+          "en": "A weekly TikTok commerce ranking is useful for monitoring content spikes and purchase-trigger language over time."
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-15",
+        "publishedAt": "2026-04",
+        "latestFile": "report-us-weekly-tiktok-top20.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "TikTok Shop",
+            "en": "TikTok Shop"
+          },
+          {
+            "zh": "带货爆品",
+            "en": "Viral commerce"
+          },
+          {
+            "zh": "美国电商",
+            "en": "US ecommerce"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-15",
+            "file": "report-us-weekly-tiktok-top20.html",
+            "summary": {
+              "zh": "过去7天美国 TikTok 带货爆品更集中在平价功效个护、演示型家居小工具、手机便携配件与杯具生态件。",
+              "en": "Over the past 7 days, US TikTok viral commerce concentrated more on affordable functional beauty, demonstrable home gadgets, portable phone accessories, and tumbler ecosystem items."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 82,
+                "to": 86
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
+        ]
+      },
+      {
         "reportId": "us-press-on-nails-2026",
         "slug": "us-press-on-nails-2026",
         "marketId": "us",
@@ -1147,6 +1416,115 @@
             "summary": {
               "zh": "全球穿戴甲机会更偏设计驱动与便利性驱动，重点在可重复佩戴、定制设计和工具配套。",
               "en": "Global press-on nail opportunity is driven by design and convenience, with priority in reusable sets, custom styles, and accessory bundles."
+            },
+            "delta": {
+              "priorityScore": {
+                "from": 80,
+                "to": 84
+              },
+              "confidence": {
+                "from": 0.68,
+                "to": 0.74
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reportId": "us-weekly-amazon-top20-2026",
+        "slug": "us-weekly-amazon-top20-2026",
+        "marketId": "us",
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "region": {
+          "zh": "北美",
+          "en": "North America"
+        },
+        "flag": "🇺🇸",
+        "category": {
+          "zh": "周度爆品追踪",
+          "en": "Weekly Breakout Tracking"
+        },
+        "reportType": "weekly-breakout-tracker",
+        "title": {
+          "zh": "美国过去7天 Amazon 爆品 Top 20",
+          "en": "US Amazon Top 20 Breakout Products, Past 7 Days"
+        },
+        "summary": {
+          "zh": "过去7天美国 Amazon 爆品主要集中在夏季风扇、平价功效个护、手机功能配件与补充装型商品。",
+          "en": "Over the past 7 days, US Amazon breakout products concentrated in summer fans, affordable functional beauty, phone accessories, and refill-style goods."
+        },
+        "highlight": {
+          "zh": "季节刚需 + 低决策商品占优",
+          "en": "Seasonal necessity plus low-friction products dominate"
+        },
+        "confidence": 0.74,
+        "confidenceLabel": {
+          "zh": "中高",
+          "en": "Medium-High"
+        },
+        "evidenceStrength": 0.71,
+        "priorityScore": 84,
+        "priorityTier": "P1",
+        "scoreBreakdown": {
+          "demand": 18,
+          "competition": 10,
+          "margin": 11,
+          "execution": 12,
+          "trend": 14,
+          "platform": 11,
+          "confidence": 8
+        },
+        "platformFit": {
+          "amazon": 0.94,
+          "tiktok": 0.78,
+          "shopify": 0.73
+        },
+        "recommendedActions": [
+          {
+            "zh": "连续3天复核风扇与个护上榜持续性",
+            "en": "Recheck fan and beauty ranking persistence for 3 straight days"
+          },
+          {
+            "zh": "把手机配件拆成支架、快充、线材子池继续筛选",
+            "en": "Split phone accessories into mounts, chargers, and cables for deeper filtering"
+          }
+        ],
+        "watchStatus": "active",
+        "watchReason": {
+          "zh": "周度 Amazon 爆品榜适合持续跟踪短期动销变化。",
+          "en": "A weekly Amazon breakout ranking is useful for tracking short-term sell-through shifts continuously."
+        },
+        "version": "v1.0",
+        "previousVersion": null,
+        "updatedAt": "2026-04-15",
+        "publishedAt": "2026-04",
+        "latestFile": "report-us-weekly-amazon-top20.html",
+        "featured": true,
+        "tags": [
+          {
+            "zh": "Amazon",
+            "en": "Amazon"
+          },
+          {
+            "zh": "爆品榜单",
+            "en": "Breakout ranking"
+          },
+          {
+            "zh": "美国电商",
+            "en": "US ecommerce"
+          }
+        ],
+        "history": [
+          {
+            "version": "v1.0",
+            "publishedAt": "2026-04-15",
+            "file": "report-us-weekly-amazon-top20.html",
+            "summary": {
+              "zh": "过去7天美国 Amazon 爆品主要集中在夏季风扇、平价功效个护、手机功能配件与补充装型商品。",
+              "en": "Over the past 7 days, US Amazon breakout products concentrated in summer fans, affordable functional beauty, phone accessories, and refill-style goods."
             },
             "delta": {
               "priorityScore": {
@@ -1962,6 +2340,41 @@
         }
       },
       {
+        "entityId": "weekly-breakout-tracking",
+        "title": {
+          "zh": "周度爆品追踪",
+          "en": "Weekly Breakout Tracking"
+        },
+        "priorityTier": "P1",
+        "topPriorityScore": 86,
+        "topConfidence": 0.74,
+        "platformFit": {
+          "amazon": 0.74,
+          "tiktok": 0.96,
+          "shopify": 0.77
+        },
+        "reports": [
+          "us-weekly-tiktok-top20-2026",
+          "us-weekly-amazon-top20-2026"
+        ],
+        "markets": [
+          {
+            "zh": "美国",
+            "en": "United States"
+          },
+          {
+            "zh": "美国",
+            "en": "United States"
+          }
+        ],
+        "leadReportId": "us-weekly-tiktok-top20-2026",
+        "leadFile": "report-us-weekly-tiktok-top20.html",
+        "summary": {
+          "zh": "过去7天美国 TikTok 带货爆品更集中在平价功效个护、演示型家居小工具、手机便携配件与杯具生态件。",
+          "en": "Over the past 7 days, US TikTok viral commerce concentrated more on affordable functional beauty, demonstrable home gadgets, portable phone accessories, and tumbler ecosystem items."
+        }
+      },
+      {
         "entityId": "beauty-personal-care",
         "title": {
           "zh": "美妆个护",
@@ -2147,6 +2560,40 @@
         "updatedAt": "2026-04-08"
       },
       {
+        "watchId": "watch-us-weekly-amazon-top20-2026",
+        "entityType": "report",
+        "entityId": "us-weekly-amazon-top20-2026",
+        "marketId": "us",
+        "title": {
+          "zh": "美国过去7天 Amazon 爆品 Top 20",
+          "en": "US Amazon Top 20 Breakout Products, Past 7 Days"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "周度 Amazon 爆品榜适合持续跟踪短期动销变化。",
+          "en": "A weekly Amazon breakout ranking is useful for tracking short-term sell-through shifts continuously."
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-15"
+      },
+      {
+        "watchId": "watch-us-weekly-tiktok-top20-2026",
+        "entityType": "report",
+        "entityId": "us-weekly-tiktok-top20-2026",
+        "marketId": "us",
+        "title": {
+          "zh": "美国过去7天 TikTok 带货爆品 Top 20",
+          "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days"
+        },
+        "status": "active",
+        "reason": {
+          "zh": "周度 TikTok 带货榜适合持续监控内容爆点与购买触发词变化。",
+          "en": "A weekly TikTok commerce ranking is useful for monitoring content spikes and purchase-trigger language over time."
+        },
+        "priorityTier": "P1",
+        "updatedAt": "2026-04-15"
+      },
+      {
         "watchId": "watch-china-pet-market-2026",
         "entityType": "report",
         "entityId": "china-pet-market-2026",
@@ -2250,6 +2697,68 @@
       }
     ],
     "changeLog": [
+      {
+        "reportId": "us-weekly-tiktok-top20-2026",
+        "title": {
+          "zh": "美国过去7天 TikTok 带货爆品 Top 20",
+          "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days"
+        },
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "flag": "🇺🇸",
+        "updatedAt": "2026-04-15",
+        "changeSummary": {
+          "zh": "美国过去7天 TikTok 带货爆品 Top 20 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 86,
+        "delta": {
+          "priorityScore": {
+            "from": 82,
+            "to": 86
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
+      },
+      {
+        "reportId": "us-weekly-amazon-top20-2026",
+        "title": {
+          "zh": "美国过去7天 Amazon 爆品 Top 20",
+          "en": "US Amazon Top 20 Breakout Products, Past 7 Days"
+        },
+        "marketName": {
+          "zh": "美国",
+          "en": "United States"
+        },
+        "flag": "🇺🇸",
+        "updatedAt": "2026-04-15",
+        "changeSummary": {
+          "zh": "美国过去7天 Amazon 爆品 Top 20 已进入 P1 优先级，建议复核下一步动作。",
+          "en": "US Amazon Top 20 Breakout Products, Past 7 Days is now in P1 priority tier and should be reviewed for next actions."
+        },
+        "changeType": "report_update",
+        "priorityScore": 84,
+        "delta": {
+          "priorityScore": {
+            "from": 80,
+            "to": 84
+          },
+          "confidence": {
+            "from": 0.68,
+            "to": 0.74
+          },
+          "recommendedActions": "updated"
+        },
+        "version": "v1.0"
+      },
       {
         "reportId": "china-cat-economy-2026",
         "title": {

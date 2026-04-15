@@ -1,0 +1,270 @@
+{
+  "meta": { "documentTitle": { "zh": "美国过去7天 TikTok 带货爆品 Top 20", "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days" } },
+  "sidebar": {
+    "title": { "zh": "全球电商情报系统", "en": "Global eCom Intelligence System" },
+    "meta": [
+      { "zh": "市场：美国", "en": "Market: US" },
+      { "zh": "主题：过去7天 TikTok 带货爆品 Top 20", "en": "Theme: TikTok Top 20 viral commerce products, past 7 days" },
+      { "zh": "数据更新时间：2026-04-15", "en": "Last updated: 2026-04-15" }
+    ]
+  },
+  "navigation": {
+    "title": { "zh": "内容导航", "en": "Navigation" },
+    "items": [
+      { "id": "overview", "title": { "zh": "总览", "en": "Overview" }, "description": { "zh": "结论与优先方向", "en": "Conclusions and priorities" } },
+      { "id": "signals", "title": { "zh": "平台信号", "en": "Platform Signals" }, "description": { "zh": "TikTok 带货特征", "en": "TikTok commerce traits" } },
+      { "id": "opportunities", "title": { "zh": "Top 20 清单", "en": "Top 20 List" }, "description": { "zh": "重点商品与方向", "en": "Priority products and directions" } },
+      { "id": "pricing", "title": { "zh": "价格带", "en": "Pricing" }, "description": { "zh": "价格结构与入场价", "en": "Price structure and entry points" } },
+      { "id": "players", "title": { "zh": "代表商品", "en": "Representative Products" }, "description": { "zh": "验证对象与链接", "en": "Validation objects and links" } },
+      { "id": "nextmoves", "title": { "zh": "Next 7 Days", "en": "Next 7 Days" }, "description": { "zh": "本周优先动作", "en": "Priority moves" } },
+      { "id": "risks", "title": { "zh": "风险与动作", "en": "Risks & Actions" }, "description": { "zh": "风险提醒与判断", "en": "Risk alerts and judgment" } }
+    ]
+  },
+  "hero": {
+    "title": { "zh": "美国 TikTok 过去7天带货爆品，更偏平价美妆、家居实用小物、手机周边和夏季场景品", "en": "US TikTok viral commerce over the past 7 days leans toward affordable beauty, practical home gadgets, phone accessories, and summer-scenario products" },
+    "summary": { "zh": "TikTok 带货与 Amazon 的最大区别，是它更依赖“看得到效果”和“看完就想买”的演示感。因此，过去7天最值得重点看的不是传统刚需，而是能被短视频瞬间解释清楚的产品，如底妆、剃毛油、收纳小工具、杯具配件、手机挂绳和车载支架。", "en": "The biggest difference between TikTok commerce and Amazon is its reliance on visual proof and impulse-friendly demonstrations. Over the past 7 days, the strongest products were not just traditional necessities but items that can be instantly explained in short video, such as base makeup, shave oil, small organizing tools, tumbler accessories, phone lanyards, and car mounts." },
+    "tags": [
+      { "zh": "重点方向：美妆 / 家居小物 / 配件", "en": "Priority: Beauty / Home gadgets / Accessories" },
+      { "zh": "平台特征：演示感强", "en": "Platform trait: Strong demo appeal" },
+      { "zh": "核心打法：内容即货架", "en": "Core play: Content as shelf" }
+    ],
+    "cards": [
+      { "label": { "zh": "总体机会强度", "en": "Overall opportunity strength" }, "value": { "zh": "高", "en": "High" }, "note": { "zh": "TikTok 更容易放大平价、直观、可对比的商品。", "en": "TikTok amplifies affordable, intuitive, and compare-friendly products more easily." } },
+      { "label": { "zh": "当前优先级", "en": "Current priority" }, "value": { "zh": "先做演示型，再做品牌型", "en": "Demo-first, branding second" }, "note": { "zh": "内容角度通常比品牌积累更先决定成交。", "en": "Content angle usually matters more than brand equity at the first conversion step." } }
+    ]
+  },
+  "summaryMetrics": [
+    { "label": { "zh": "最佳切入口", "en": "Best entry point" }, "value": { "zh": "平价功效个护", "en": "Affordable functional beauty" }, "note": { "zh": "最容易通过前后对比、上脸测试、即时反馈成交。", "en": "The easiest category to convert through before-and-after, application tests, and instant feedback." } },
+    { "label": { "zh": "最强家居线", "en": "Strongest home line" }, "value": { "zh": "收纳与清洁小工具", "en": "Organization and cleaning gadgets" }, "note": { "zh": "演示清晰，几秒内能讲清价值。", "en": "The value can be explained in seconds through a simple demo." } },
+    { "label": { "zh": "更稳的带", "en": "More stable band" }, "value": { "zh": "手机挂绳与车载支架", "en": "Phone lanyards and car mounts" }, "note": { "zh": "兼具内容适配和日常使用理由。", "en": "Combines content fit with everyday use-case logic." } },
+    { "label": { "zh": "最该警惕", "en": "Main caution" }, "value": { "zh": "内容火但留存弱", "en": "Hot in content, weak in staying power" }, "note": { "zh": "TikTok 爆品很容易一波流。", "en": "TikTok winners can fade quickly after a single viral wave." } }
+  ],
+  "sections": {
+    "overview": {
+      "title": { "zh": "总览", "en": "Overview" },
+      "subtitle": { "zh": "先看它是不是“能拍”，再看是不是“能卖”。", "en": "Judge whether it can be filmed first, then whether it can sell." },
+      "badge": { "zh": "结论摘要", "en": "Executive Summary" },
+      "sources": [
+        { "zh": "数据依据：TikTok 带货逻辑、跨平台热品收敛、公开品牌/商品信号", "en": "Source: TikTok commerce logic, cross-platform product convergence, and public brand/product signals" }
+      ],
+      "barChart": {
+        "title": { "zh": "重点方向强度图", "en": "Priority Direction Strength" },
+        "items": [
+          { "label": { "zh": "平价功效个护", "en": "Affordable functional beauty" }, "score": 9.1 },
+          { "label": { "zh": "收纳清洁小工具", "en": "Organization and cleaning gadgets" }, "score": 8.4 },
+          { "label": { "zh": "手机便携配件", "en": "Portable phone accessories" }, "score": 8.0 },
+          { "label": { "zh": "夏季补水与杯具配件", "en": "Summer hydration and tumbler accessories" }, "score": 7.8 }
+        ]
+      },
+      "sideCard": {
+        "title": { "zh": "Why Now / 当前进入理由", "en": "Why Now" },
+        "items": [
+          { "title": { "zh": "TikTok 更偏向“看得见效果”的商品", "en": "TikTok favors products with visible effect" }, "note": { "zh": "个护、美妆和清洁工具天然适合。", "en": "Beauty, personal care, and cleaning tools naturally fit this model." } },
+          { "title": { "zh": "内容节奏更快，低价更容易爆", "en": "The platform moves fast, and lower-priced goods break out more easily" }, "note": { "zh": "大多数热卖线都在低决策成本区间。", "en": "Most viral-selling lines sit in low-decision-cost zones." } },
+          { "title": { "zh": "Amazon 热卖和 TikTok 爆点已有交叉", "en": "Amazon hot sellers and TikTok winners are overlapping" }, "note": { "zh": "尤其在个护和手机配件类。", "en": "Especially in beauty and phone accessories." } }
+        ]
+      },
+      "takeaway": {
+        "title": { "zh": "市场摘要", "en": "Market takeaway" }, "body": { "zh": "过去7天美国 TikTok 带货爆品的核心不是“新品发明”，而是“旧需求的新表达”。最容易跑出来的是平价功效个护，其次是演示感很强的家居实用小物，再然后是可展示便利性的手机与杯具配件。", "en": "The core of US TikTok viral commerce over the past 7 days is not product invention but new storytelling for familiar needs. Affordable functional beauty is the easiest breakout line, followed by highly demonstrable home-use gadgets and then convenience-driven phone and tumbler accessories." }
+      },
+      "scorecard": {
+        "title": { "zh": "执行评分", "en": "Execution scores" },
+        "items": [
+          { "label": { "zh": "趋势强度", "en": "Trend strength" }, "score": 8.8 },
+          { "label": { "zh": "内容适配度", "en": "Content fit" }, "score": 9.2 },
+          { "label": { "zh": "转化潜力", "en": "Conversion potential" }, "score": 8.4 },
+          { "label": { "zh": "利润安全度", "en": "Margin safety" }, "score": 6.5 },
+          { "label": { "zh": "执行友好度", "en": "Execution friendliness" }, "score": 8.5 }
+        ]
+      }
+    },
+    "signals": {
+      "title": { "zh": "平台信号", "en": "Platform Signals" },
+      "subtitle": { "zh": "重点不是“需求强不强”，而是“视频里能不能一眼看懂”。", "en": "The real question is not only whether demand exists, but whether the product can be instantly understood on video." },
+      "badge": { "zh": "内容与成交", "en": "Content & Conversion" },
+      "sources": [
+        { "zh": "数据依据：跨平台热品收敛、TikTok 常见带货逻辑、Amazon 共振方向", "en": "Source: Cross-platform convergence, common TikTok commerce logic, and Amazon resonance directions" }
+      ],
+      "columns": [
+        {
+          "title": { "zh": "内容强信号", "en": "Strong content signals" },
+          "items": [
+            { "title": { "zh": "平价功效个护最容易在 TikTok 爆", "en": "Affordable functional beauty is the easiest breakout line on TikTok" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "因为能直接拍效果、质地、对比和上脸反馈。", "en": "Because texture, efficacy, comparison, and application results can all be filmed directly." } },
+            { "title": { "zh": "收纳清洁工具要“几秒见变化”才好卖", "en": "Organization and cleaning tools sell when the transformation is visible in seconds" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "例如整理前后、去污前后、节省空间前后。", "en": "Examples include before/after organization, stain removal, or space-saving demonstrations." } },
+            { "title": { "zh": "杯具与手机配件的爆点更多来自便利性", "en": "Tumbler and phone accessories break out mainly through convenience" }, "level": { "zh": "中信号", "en": "Medium" }, "levelClass": "info", "body": { "zh": "如防丢、解放双手、收纳更顺手。", "en": "Such as anti-loss use, hands-free convenience, or easier carry and storage." } }
+          ]
+        },
+        {
+          "title": { "zh": "成交行为信号", "en": "Conversion behavior signals" },
+          "soft": true,
+          "items": [
+            { "title": { "zh": "低价冲动购更容易形成短周期爆发", "en": "Lower-priced impulse buys drive short-cycle breakouts" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "多数 TikTok 爆品都在无需复杂比较的价位。", "en": "Most TikTok winners sit in price zones that do not require deep comparison." } },
+            { "title": { "zh": "是否“拍得出故事”比功能本身更关键", "en": "Storytelling on camera matters more than the function itself" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "同类产品里，内容表达更好的通常卖得更快。", "en": "Within similar products, the one with better content framing tends to sell faster." } },
+            { "title": { "zh": "高热不代表耐卖", "en": "Heat does not equal staying power" }, "level": { "zh": "注意", "en": "Watch" }, "levelClass": "warn", "body": { "zh": "需要看评论和复购信号，而不只是热视频。", "en": "You need comments and repeat signals, not just a hot video." } }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": { "zh": "Top 20 清单", "en": "Top 20 List" },
+      "subtitle": { "zh": "这是一份按 TikTok 带货适配度排序的过去7天重点爆品样本。", "en": "This is a past-7-day top-20 sample ranked by TikTok commerce fit." },
+      "badge": { "zh": "带货样本池", "en": "Commerce Sample Pool" },
+      "sources": [
+        { "zh": "数据依据：TikTok 常见内容逻辑 + Amazon 共振热品 + 公开品牌线索", "en": "Source: Common TikTok content logic + Amazon resonance products + public brand cues" }
+      ],
+      "labels": {
+        "topPlayers": { "zh": "代表品牌：", "en": "Representative brands:" },
+        "entryWhy": { "zh": "带货逻辑：", "en": "Why it sells on TikTok:" }
+      },
+      "cards": [
+        { "title": { "zh": "1. e.l.f. Power Grip Primer", "en": "1. e.l.f. Power Grip Primer" }, "summary": { "zh": "妆前乳是 TikTok 上典型“马上看得出”的产品。", "en": "Primer is a classic TikTok product because its effect is instantly demonstrable." }, "topPlayers": ["e.l.f."], "entryWhy": { "zh": "上脸、服帖、持妆都能被快速展示。", "en": "Application, grip, and makeup hold can be shown quickly." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "妆前", "en": "Primer" }, { "zh": "强演示", "en": "High demo" }] },
+        { "title": { "zh": "2. eos Shave Oil", "en": "2. eos Shave Oil" }, "summary": { "zh": "质地、顺滑度和剃毛体验都很适合短视频。", "en": "Texture, glide, and shaving feel are all ideal for short-form video." }, "topPlayers": ["eos"], "entryWhy": { "zh": "能迅速展示“更丝滑、更好刮”。", "en": "It quickly demonstrates a smoother, better shave." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "身体护理", "en": "Body care" }, { "zh": "高转化", "en": "High conversion" }] },
+        { "title": { "zh": "3. TirTir Cushion Foundation", "en": "3. TirTir Cushion Foundation" }, "summary": { "zh": "适合做肤感、遮瑕和持妆对比。", "en": "Great for texture, coverage, and wear-time comparisons." }, "topPlayers": ["TirTir"], "entryWhy": { "zh": "韩妆本身就适合内容传播。", "en": "K-beauty naturally performs well in social content." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "底妆", "en": "Base makeup" }, { "zh": "种草", "en": "Seeding" }] },
+        { "title": { "zh": "4. Gold Bond 颈霜", "en": "4. Gold Bond Neck Cream" }, "summary": { "zh": "属于“你没想到但一看就懂”的个护品。", "en": "A personal care item that feels unexpected yet instantly understandable." }, "topPlayers": ["Gold Bond"], "entryWhy": { "zh": "前后对比和年龄焦虑内容都容易带动购买。", "en": "Before-and-after comparisons and age-related concerns both support conversion." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "颈部护理", "en": "Neck care" }, { "zh": "对比型", "en": "Comparison-led" }] },
+        { "title": { "zh": "5. 手机挂绳", "en": "5. Phone Lanyard" }, "summary": { "zh": "解放双手是非常直观的 TikTok 卖点。", "en": "Hands-free convenience is an extremely intuitive TikTok selling point." }, "topPlayers": ["Case-Mate", "generic creators' picks"], "entryWhy": { "zh": "一条视频就能讲清楚“为什么方便”。", "en": "A single video can clearly explain why it is useful." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "便利性", "en": "Convenience" }, { "zh": "短视频友好", "en": "Short-video friendly" }] },
+        { "title": { "zh": "6. 磁吸车载支架", "en": "6. Magnetic Car Mount" }, "summary": { "zh": "磁吸上车的一瞬间就足够构成卖点。", "en": "The snap-on use moment is itself a selling point." }, "topPlayers": ["Belkin", "LISEN"], "entryWhy": { "zh": "安装和使用过程都能高效拍出来。", "en": "Both setup and usage can be filmed efficiently." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "车载", "en": "Car use" }, { "zh": "磁吸", "en": "Magnetic" }] },
+        { "title": { "zh": "7. 杯具背带/提手配件", "en": "7. Tumbler Carry Strap / Handle" }, "summary": { "zh": "依附大热水杯生态，容易借势成交。", "en": "Rides on the popular tumbler ecosystem and converts through adjacency." }, "topPlayers": ["Stanley ecosystem sellers"], "entryWhy": { "zh": "“原来这个还能更方便带”是典型种草逻辑。", "en": "“I didn’t know this could be easier to carry” is classic seeding logic." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "杯具生态", "en": "Tumbler ecosystem" }, { "zh": "便利升级", "en": "Convenience upgrade" }] },
+        { "title": { "zh": "8. 吸管防尘盖/杯盖小配件", "en": "8. Straw Dust Cover / Lid Accessories" }, "summary": { "zh": "小问题解决型，演示感强。", "en": "A small problem-solver with strong demonstration appeal." }, "topPlayers": ["tumbler accessory sellers"], "entryWhy": { "zh": "防尘、防漏、可爱化都能成为成交理由。", "en": "Dust protection, leak prevention, and cuteness all act as purchase drivers." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "小配件", "en": "Small add-on" }, { "zh": "问题解决", "en": "Problem-solving" }] },
+        { "title": { "zh": "9. 收纳抽屉分隔板", "en": "9. Drawer Dividers" }, "summary": { "zh": "前后对比极强，是收纳类经典带货品。", "en": "Strong before-and-after transformation makes it a classic organization-sell item." }, "topPlayers": ["Simple Houseware", "Vtopmart"], "entryWhy": { "zh": "几秒内就能看懂价值变化。", "en": "Its value shift is visible within seconds." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "收纳", "en": "Organization" }, { "zh": "前后对比", "en": "Before-after" }] },
+        { "title": { "zh": "10. 冰箱收纳盒", "en": "10. Fridge Organizer Bins" }, "summary": { "zh": "整理类最适合 TikTok 的典型单品之一。", "en": "One of the classic TikTok-friendly organization items." }, "topPlayers": ["IRIS", "ClearSpace"], "entryWhy": { "zh": "收纳前后、整洁感提升非常直观。", "en": "The improvement in neatness is immediately visible." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "冰箱收纳", "en": "Fridge organization" }, { "zh": "可视化", "en": "Visual" }] },
+        { "title": { "zh": "11. 毛发去除器/粘毛滚", "en": "11. Lint / Hair Removal Tool" }, "summary": { "zh": "清理宠物毛发的即时满足感很强。", "en": "The instant satisfaction from removing pet hair is strong." }, "topPlayers": ["ChomChom", "Scotch-Brite"], "entryWhy": { "zh": "一刷前后就是完整的内容。", "en": "One pass before-and-after is a full piece of content by itself." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "清洁", "en": "Cleaning" }, { "zh": "即时反馈", "en": "Instant feedback" }] },
+        { "title": { "zh": "12. 便携分装瓶套装", "en": "12. Travel Bottle Kit" }, "summary": { "zh": "临近出行季，场景感和低价都成立。", "en": "Travel season supports both the use case and impulse-friendly price." }, "topPlayers": ["travel accessory sellers"], "entryWhy": { "zh": "展示装箱/分装过程就能带货。", "en": "Packing and refilling demos are enough to drive conversion." }, "tags": [{ "zh": "Travel", "en": "Travel" }, { "zh": "分装", "en": "Refill" }, { "zh": "场景化", "en": "Scenario-led" }] },
+        { "title": { "zh": "13. 便携美妆刷清洁垫", "en": "13. Makeup Brush Cleaning Pad" }, "summary": { "zh": "清洗前后和脏污可视化很强。", "en": "The visual contrast between dirty and clean is strong." }, "topPlayers": ["beauty tool sellers"], "entryWhy": { "zh": "低价但内容表现非常好。", "en": "Low priced, but excellent in content performance." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "清洁工具", "en": "Cleaning tool" }, { "zh": "演示型", "en": "Demo-led" }] },
+        { "title": { "zh": "14. 角质/脚部护理工具", "en": "14. Foot Care / Exfoliation Tool" }, "summary": { "zh": "“清理型”个护总能形成高停留内容。", "en": "Cleaning-style personal care often creates high-retention content." }, "topPlayers": ["generic foot care brands"], "entryWhy": { "zh": "视觉冲击力强，但需控制平台尺度。", "en": "Visually striking, though moderation sensitivity must be considered." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "护理工具", "en": "Care tool" }, { "zh": "高停留", "en": "High retention" }] },
+        { "title": { "zh": "15. 厨房去污海绵/清洁泥", "en": "15. Kitchen Cleaning Sponge / Putty" }, "summary": { "zh": "把脏污清掉本身就是流量内容。", "en": "Removing grime is inherently content-friendly." }, "topPlayers": ["cleaning gadget sellers"], "entryWhy": { "zh": "操作直接、反馈立刻。", "en": "The action is direct and the feedback is immediate." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "清洁", "en": "Cleaning" }, { "zh": "即时效果", "en": "Instant effect" }] },
+        { "title": { "zh": "16. 便携充电宝", "en": "16. Portable Power Bank" }, "summary": { "zh": "出门低电量焦虑是非常容易共鸣的场景。", "en": "Low-battery anxiety while out is an easy scenario for audience resonance." }, "topPlayers": ["Anker", "INIU"], "entryWhy": { "zh": "拍“救急时刻”比拍参数更容易成交。", "en": "Filming emergency use moments converts better than talking specs." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "充电宝", "en": "Power bank" }, { "zh": "场景焦虑", "en": "Scenario anxiety" }] },
+        { "title": { "zh": "17. 手机桌面支架", "en": "17. Desktop Phone Stand" }, "summary": { "zh": "懒人办公/追剧场景很容易形成种草。", "en": "Lazy desk setups and binge-watching scenes make easy seed content." }, "topPlayers": ["Nulaxy", "Lamicall"], "entryWhy": { "zh": "不贵、用途清晰、容易转化。", "en": "Low cost, clear use, easy conversion." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "支架", "en": "Stand" }, { "zh": "懒人场景", "en": "Comfort scenario" }] },
+        { "title": { "zh": "18. 水杯防溅杯盖", "en": "18. Spill-Proof Cup Lid" }, "summary": { "zh": "解决一个小烦恼，正好符合 TikTok 带货逻辑。", "en": "Solving a small annoyance fits TikTok commerce perfectly." }, "topPlayers": ["cup accessory sellers"], "entryWhy": { "zh": "问题越具体，购买理由越强。", "en": "The more specific the annoyance, the stronger the purchase reason." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "问题解决", "en": "Problem-solving" }, { "zh": "低客单", "en": "Low AOV" }] },
+        { "title": { "zh": "19. 免钉墙面挂钩", "en": "19. No-Drill Wall Hooks" }, "summary": { "zh": "居家整理类里非常容易一眼看懂的产品。", "en": "A home-organization product whose use is instantly understandable." }, "topPlayers": ["Command", "generic hook sellers"], "entryWhy": { "zh": "前后对比和安装便捷是核心卖点。", "en": "Before-and-after plus easy installation are the core selling points." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "挂钩", "en": "Hooks" }, { "zh": "安装方便", "en": "Easy install" }] },
+        { "title": { "zh": "20. 旅行首饰收纳盒", "en": "20. Travel Jewelry Organizer" }, "summary": { "zh": "兼具颜值和实用性，适合礼赠与自用。", "en": "Combines aesthetics and function, suitable for both gifting and self-use." }, "topPlayers": ["travel organizer sellers"], "entryWhy": { "zh": "小而精致，非常适合短视频展示。", "en": "Small and visually pleasing, ideal for short-form display." }, "tags": [{ "zh": "Travel", "en": "Travel" }, { "zh": "首饰收纳", "en": "Jewelry organizer" }, { "zh": "颜值型", "en": "Aesthetic" }] }
+      ]
+    },
+    "pricing": {
+      "title": { "zh": "价格带", "en": "Pricing" },
+      "subtitle": { "zh": "TikTok 更适合低至中客单、无需深度比较的价格区间。", "en": "TikTok works best in low-to-mid ticket ranges that do not require deep comparison." },
+      "badge": { "zh": "价格结构", "en": "Pricing Structure" },
+      "sources": [
+        { "zh": "数据依据：公开常见售价与平台带货逻辑判断", "en": "Source: Public common pricing and platform-commerce logic" }
+      ],
+      "table": {
+        "title": { "zh": "价格带观察", "en": "Pricing band view" },
+        "columns": [
+          { "zh": "方向", "en": "Direction" },
+          { "zh": "低价带", "en": "Low band" },
+          { "zh": "主销带", "en": "Core band" },
+          { "zh": "推荐切入价", "en": "Recommended entry price" },
+          { "zh": "成交逻辑", "en": "Conversion logic" }
+        ],
+        "rows": [
+          [{ "zh": "平价功效个护", "en": "Affordable functional beauty" }, { "zh": "$8 - $14", "en": "$8 - $14" }, { "zh": "$14 - $24", "en": "$14 - $24" }, { "zh": "$9.99 - $16.99", "en": "$9.99 - $16.99" }, { "zh": "前后对比、效果直观", "en": "Before-after, visible efficacy" }],
+          [{ "zh": "收纳清洁小工具", "en": "Organization & cleaning gadgets" }, { "zh": "$6 - $12", "en": "$6 - $12" }, { "zh": "$12 - $22", "en": "$12 - $22" }, { "zh": "$8.99 - $14.99", "en": "$8.99 - $14.99" }, { "zh": "几秒见变化、低门槛", "en": "Visible in seconds, low friction" }],
+          [{ "zh": "手机便携配件", "en": "Portable phone accessories" }, { "zh": "$8 - $15", "en": "$8 - $15" }, { "zh": "$15 - $28", "en": "$15 - $28" }, { "zh": "$11.99 - $18.99", "en": "$11.99 - $18.99" }, { "zh": "便利性、通勤/车载场景", "en": "Convenience, commute/car use" }],
+          [{ "zh": "杯具与补水配件", "en": "Tumbler & hydration accessories" }, { "zh": "$5 - $10", "en": "$5 - $10" }, { "zh": "$10 - $18", "en": "$10 - $18" }, { "zh": "$7.99 - $13.99", "en": "$7.99 - $13.99" }, { "zh": "依附主品生态成交", "en": "Converts through hero-product adjacency" }]
+        ]
+      },
+      "side": {
+        "title": { "zh": "价格判断", "en": "Pricing judgment" },
+        "items": [
+          { "title": { "zh": "不要让价格高于解释效率", "en": "Do not price above the content’s explanation efficiency" }, "note": { "zh": "视频越短，越适合低价快速成交。", "en": "The shorter the video explanation, the more it favors lower-priced quick conversion." } },
+          { "title": { "zh": "个护类适合走平价高感知价值", "en": "Beauty works best with affordable high-perceived value" }, "note": { "zh": "便宜但不能廉价感太重。", "en": "It should feel affordable, not cheap in a low-trust way." } },
+          { "title": { "zh": "小配件尽量做套装或附加值", "en": "Small accessories should use bundles or added value" }, "note": { "zh": "否则容易陷入纯价格竞争。", "en": "Otherwise they fall too quickly into pure price competition." } }
+        ]
+      }
+    },
+    "players": {
+      "title": { "zh": "代表商品", "en": "Representative Products" },
+      "subtitle": { "zh": "用于快速定位可借鉴的商品表达和商品页入口。", "en": "Used to quickly identify benchmark product framing and entry pages." },
+      "badge": { "zh": "市场验证对象", "en": "Market Validation" },
+      "sources": [
+        { "zh": "数据依据：公开品牌页、Amazon 搜索页、TikTok 常见热品逻辑", "en": "Source: Public brand pages, Amazon search pages, and common TikTok winner logic" }
+      ],
+      "filterTitle": { "zh": "平台筛选与价格参考", "en": "Platform filter & price reference" },
+      "filters": [
+        { "value": "all", "label": { "zh": "全部", "en": "All" } },
+        { "value": "amazon", "label": { "zh": "Amazon", "en": "Amazon" } },
+        { "value": "official", "label": { "zh": "Official Site", "en": "Official Site" } }
+      ],
+      "groups": [
+        {
+          "title": { "zh": "平价功效个护", "en": "Affordable functional beauty" },
+          "platforms": ["amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "妆前", "en": "Primer" }, "tag": "$10 左右" }, { "zh": "e.l.f.", "en": "e.l.f." }, { "zh": "Power Grip Primer", "en": "Power Grip Primer" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=e.l.f.+Power+Grip+Primer", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "极强的上脸展示感。", "en": "Very strong on-face demonstration appeal." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "剃毛油", "en": "Shave oil" }, "tag": "$8 - $12" }, { "zh": "eos", "en": "eos" }, { "zh": "Cashmere Skin Shave Oil", "en": "Cashmere Skin Shave Oil" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=eos+Cashmere+Skin+Shave+Oil", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "质地和顺滑度很适合短视频。", "en": "Texture and glide translate very well to short video." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        },
+        {
+          "title": { "zh": "收纳清洁小工具", "en": "Organization & cleaning gadgets" },
+          "platforms": ["amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "抽屉分隔", "en": "Drawer dividers" }, "tag": "$10 - $18" }, { "zh": "Vtopmart", "en": "Vtopmart" }, { "zh": "Drawer Organizers", "en": "Drawer Organizers" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=drawer+organizers+Vtopmart", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "前后对比极强。", "en": "Very strong before-and-after effect." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "去毛器", "en": "Hair remover" }, "tag": "$20 左右" }, { "zh": "ChomChom", "en": "ChomChom" }, { "zh": "Pet Hair Remover", "en": "Pet Hair Remover" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=ChomChom+pet+hair+remover", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "即时清理反馈很强，适合高停留视频。", "en": "Instant cleanup payoff is great for high-retention clips." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        },
+        {
+          "title": { "zh": "手机与杯具配件", "en": "Phone and tumbler accessories" },
+          "platforms": ["amazon", "official"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "手机挂绳", "en": "Phone lanyard" }, "tag": "$9 - $16" }, { "zh": "Case-Mate", "en": "Case-Mate" }, { "zh": "Phone Wristlet / Lanyard", "en": "Phone Wristlet / Lanyard" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=phone+lanyard", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "一秒理解用途，带货效率高。", "en": "The purpose is understood instantly, which helps conversion." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "杯具配件", "en": "Tumbler accessory" }, "tag": "$8 - $14" }, { "zh": "Stanley ecosystem", "en": "Stanley ecosystem" }, { "zh": "Carry Handle / Straw Cover", "en": "Carry Handle / Straw Cover" }, { "zh": "Official Site", "en": "Official Site" }, { "type": "link", "href": "https://www.stanley1913.com/", "label": { "zh": "查看品牌站", "en": "View site" } }, { "zh": "大单品周边最适合做附加值配件。", "en": "Hero-product ecosystems are ideal for value-add accessories." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": { "zh": "Next 7 Days", "en": "Next 7 Days" },
+      "subtitle": { "zh": "TikTok 下周最重要的是验证“可复制内容模板”。", "en": "The most important work next week is validating repeatable content templates." },
+      "badge": { "zh": "优先动作", "en": "Priority Moves" },
+      "items": [
+        { "title": { "zh": "每条爆品线都拆成 2 个内容模板", "en": "Build 2 content templates for each breakout line" }, "body": { "zh": "如对比型、问题解决型。", "en": "For example comparison-led and problem-solving formats." } },
+        { "title": { "zh": "优先盯评论里的购买触发词", "en": "Track purchase-trigger phrases in comments" }, "body": { "zh": "重点看“need this”“where to buy”“added to cart”。", "en": "Focus on phrases like “need this,” “where to buy,” and “added to cart.”" } },
+        { "title": { "zh": "补一轮 TikTok 到 Amazon 的交叉验证", "en": "Run another TikTok-to-Amazon cross-validation round" }, "body": { "zh": "看哪些 TikTok 热品能在 Amazon 同时承接。", "en": "Check which TikTok-hot items also convert through Amazon." } }
+      ]
+    },
+    "risks": {
+      "title": { "zh": "风险与动作", "en": "Risks & Actions" },
+      "subtitle": { "zh": "TikTok 爆品最怕的不是不火，而是只火一天。", "en": "The biggest danger in TikTok winners is not failing to go viral, but going viral for only one day." },
+      "badge": { "zh": "风险判断", "en": "Risk Judgment" },
+      "risks": [
+        { "title": { "zh": "短视频爆点寿命短", "en": "Short-video breakout life is short" }, "body": { "zh": "很多品类只在单个模板或单个达人下成立。", "en": "Many products work only under one content template or one creator." } },
+        { "title": { "zh": "低价商品利润容易被吞掉", "en": "Low-priced goods can lose margin fast" }, "body": { "zh": "尤其在包邮和达人佣金条件下。", "en": "Especially under shipping and creator commission pressure." } },
+        { "title": { "zh": "“看起来好卖”不等于评论认可", "en": "“Looks viral” is not the same as comment validation" }, "body": { "zh": "要分清高播放和强购买意图。", "en": "You must separate high views from strong purchase intent." } }
+      ],
+      "actions": {
+        "title": { "zh": "建议动作", "en": "Recommended actions" },
+        "items": [
+          { "title": { "zh": "先选“效果明显”的品", "en": "Choose effect-visible products first" }, "note": { "zh": "TikTok 更适合可视化效果，而不是抽象价值。", "en": "TikTok fits visual results better than abstract value claims." } },
+          { "title": { "zh": "别把所有热视频都当爆品", "en": "Do not treat every hot video as a breakout product" }, "note": { "zh": "必须看评论、收藏和跨平台承接。", "en": "You need comments, saves, and cross-platform conversion evidence." } },
+          { "title": { "zh": "优先做模板化内容，不要只赌达人", "en": "Prioritize templated content over betting only on creators" }, "note": { "zh": "能复制的内容结构比一次偶发热视频更值钱。", "en": "A repeatable content structure is more valuable than a one-off viral clip." } }
+        ]
+      },
+      "finalJudgment": {
+        "title": { "zh": "最终判断", "en": "Final judgment" },
+        "items": [
+          { "title": { "zh": "最值得先做的是平价功效个护和演示型小工具", "en": "The best first bets are affordable functional beauty and demonstrable gadgets" }, "level": { "zh": "建议执行", "en": "Recommended" }, "levelClass": "good", "body": { "zh": "它们最符合 TikTok 的内容逻辑和快速转化机制。", "en": "They align best with TikTok’s content logic and fast-conversion mechanics." } },
+          { "title": { "zh": "手机与杯具配件适合做持续补池，不适合单独神化", "en": "Phone and tumbler accessories are good stable pools, not hero myths" }, "level": { "zh": "推荐路径", "en": "Preferred path" }, "levelClass": "info", "body": { "zh": "应当把它们当持续有内容机会的小池，而不是孤立大爆点。", "en": "They are best treated as ongoing small pools with content potential, not isolated mega-breakouts." } }
+        ]
+      }
+    },
+    "references": {
+      "title": { "zh": "References / 数据来源", "en": "References" },
+      "subtitle": { "zh": "本页判断基于公开可见来源与方向性商业判断。", "en": "This page is based on visible public sources and directional commercial judgment." },
+      "badge": { "zh": "证据链", "en": "Reference Layer" },
+      "cards": [
+        { "title": { "zh": "平台逻辑来源", "en": "Platform logic source" }, "tags": [{ "zh": "TikTok commerce pattern", "en": "TikTok commerce pattern" }, { "zh": "cross-platform convergence", "en": "cross-platform convergence" }], "body": { "zh": "用于支持带货型商品的内容适配与爆发逻辑判断。", "en": "Used to support judgments on content fit and breakout logic for social-commerce products." } },
+        { "title": { "zh": "商品与品牌参考", "en": "Product and brand references" }, "tags": [{ "zh": "Amazon search pages", "en": "Amazon search pages" }, { "zh": "official brand websites", "en": "official brand websites" }], "body": { "zh": "用于补足具体商品名、价格带和代表品牌。", "en": "Used to supplement concrete product names, price bands, and representative brands." } },
+        { "title": { "zh": "限制说明", "en": "Limitation note" }, "tags": [{ "zh": "非 TikTok 官方销量榜", "en": "Not an official TikTok sales chart" }, { "zh": "以带货适配度排序", "en": "Ranked by commerce fit" }], "body": { "zh": "本页更适合做 TikTok 带货方向判断，不应视为平台官方精确销量榜。", "en": "This page is more suitable for TikTok-commerce directional analysis than as an official precise platform sales ranking." } }
+      ]
+    }
+  },
+  "footer": { "zh": "Raymond Ho @Copyright 2026", "en": "Raymond Ho @Copyright 2026" }
+}

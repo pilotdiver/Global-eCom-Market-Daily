@@ -1,0 +1,39 @@
+{
+  "marketId": "us",
+  "marketName": { "zh": "美国", "en": "United States" },
+  "region": { "zh": "北美", "en": "North America" },
+  "flag": "🇺🇸",
+  "status": "live",
+  "report": {
+    "id": "us-weekly-tiktok-top20-2026",
+    "reportType": "weekly-breakout-tracker",
+    "title": { "zh": "美国过去7天 TikTok 带货爆品 Top 20", "en": "US TikTok Top 20 Viral Commerce Products, Past 7 Days" },
+    "date": "2026-04",
+    "updatedAt": "2026-04-15",
+    "lastReviewedAt": "2026-04-15",
+    "file": "report-us-weekly-tiktok-top20.html",
+    "tags": [
+      { "zh": "TikTok Shop", "en": "TikTok Shop" },
+      { "zh": "带货爆品", "en": "Viral commerce" },
+      { "zh": "美国电商", "en": "US ecommerce" }
+    ],
+    "summary": { "zh": "过去7天美国 TikTok 带货爆品更集中在平价功效个护、演示型家居小工具、手机便携配件与杯具生态件。", "en": "Over the past 7 days, US TikTok viral commerce concentrated more on affordable functional beauty, demonstrable home gadgets, portable phone accessories, and tumbler ecosystem items." },
+    "coverLabel": { "zh": "周度带货榜", "en": "Weekly Commerce Ranking" },
+    "highlight": { "zh": "演示感强于传统刚需", "en": "Demonstration value matters more than traditional necessity" },
+    "confidence": { "zh": "中高", "en": "Medium-High" },
+    "featured": true,
+    "category": { "zh": "周度爆品追踪", "en": "Weekly Breakout Tracking" },
+    "priorityScore": 86,
+    "priorityTier": "P1",
+    "evidenceStrength": 0.69,
+    "platformFit": { "amazon": 0.74, "tiktok": 0.96, "shopify": 0.77 },
+    "recommendedActions": [
+      { "zh": "把 Top 20 按内容模板拆成对比型与问题解决型", "en": "Split the Top 20 into comparison-led and problem-solving content templates" },
+      { "zh": "补一轮 TikTok 热品到 Amazon 承接的交叉验证", "en": "Run another cross-check on which TikTok winners also convert on Amazon" }
+    ],
+    "watchStatus": "active",
+    "watchReason": { "zh": "周度 TikTok 带货榜适合持续监控内容爆点与购买触发词变化。", "en": "A weekly TikTok commerce ranking is useful for monitoring content spikes and purchase-trigger language over time." },
+    "scoreBreakdown": { "demand": 17, "competition": 11, "margin": 10, "execution": 13, "trend": 15, "platform": 12, "confidence": 8 },
+    "version": "v1.0"
+  }
+}

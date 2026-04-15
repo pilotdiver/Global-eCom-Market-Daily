@@ -1,0 +1,271 @@
+{
+  "meta": { "documentTitle": { "zh": "美国过去7天 Amazon 爆品 Top 20", "en": "US Amazon Top 20 Breakout Products, Past 7 Days" } },
+  "sidebar": {
+    "title": { "zh": "全球电商情报系统", "en": "Global eCom Intelligence System" },
+    "meta": [
+      { "zh": "市场：美国", "en": "Market: US" },
+      { "zh": "主题：过去7天 Amazon 爆品 Top 20", "en": "Theme: Amazon Top 20 breakout products, past 7 days" },
+      { "zh": "数据更新时间：2026-04-15", "en": "Last updated: 2026-04-15" }
+    ]
+  },
+  "navigation": {
+    "title": { "zh": "内容导航", "en": "Navigation" },
+    "items": [
+      { "id": "overview", "title": { "zh": "总览", "en": "Overview" }, "description": { "zh": "结论与优先方向", "en": "Conclusions and priorities" } },
+      { "id": "signals", "title": { "zh": "平台信号", "en": "Platform Signals" }, "description": { "zh": "Amazon 动销特征", "en": "Amazon momentum traits" } },
+      { "id": "opportunities", "title": { "zh": "Top 20 清单", "en": "Top 20 List" }, "description": { "zh": "重点商品与方向", "en": "Priority products and directions" } },
+      { "id": "pricing", "title": { "zh": "价格带", "en": "Pricing" }, "description": { "zh": "价格结构与入场价", "en": "Price structure and entry points" } },
+      { "id": "players", "title": { "zh": "代表商品", "en": "Representative Products" }, "description": { "zh": "验证对象与链接", "en": "Validation objects and links" } },
+      { "id": "nextmoves", "title": { "zh": "Next 7 Days", "en": "Next 7 Days" }, "description": { "zh": "本周优先动作", "en": "Priority moves" } },
+      { "id": "risks", "title": { "zh": "风险与动作", "en": "Risks & Actions" }, "description": { "zh": "风险提醒与判断", "en": "Risk alerts and judgment" } }
+    ]
+  },
+  "hero": {
+    "title": { "zh": "美国 Amazon 过去7天爆品，以夏季家居降温、平价美妆个护、手机功能配件为主", "en": "US Amazon breakout products in the past 7 days are led by cooling home goods, affordable beauty, and functional phone accessories" },
+    "summary": { "zh": "从可抓取的 Amazon Movers & Shakers 信号看，过去7天真正跑出来的不是高客单耐用品，而是季节触发、问题解决和低决策成本的商品。最值得优先盯的是风扇类、平价功效个护、补充装/耗材型产品，以及手机支架和快充配件。", "en": "From accessible Amazon Movers & Shakers signals, the past week was not led by high-ticket durables but by products driven by seasonality, problem-solving, and low decision friction. The top areas to monitor are fans, affordable functional beauty, refill and consumable products, and phone mounts plus charging accessories." },
+    "tags": [
+      { "zh": "重点方向：风扇 / 个护 / 配件", "en": "Priority: Fans / Beauty / Accessories" },
+      { "zh": "平台特征：低决策 + 强需求", "en": "Platform trait: Low friction + strong demand" },
+      { "zh": "核心打法：问题解决型商品", "en": "Core play: Problem-solving products" }
+    ],
+    "cards": [
+      { "label": { "zh": "总体机会强度", "en": "Overall opportunity strength" }, "value": { "zh": "中高", "en": "Medium-High" }, "note": { "zh": "多条爆品线并行，但更偏短周期爆发，不是全年稳定长红。", "en": "Multiple breakout lines are active, but this is more of a short-cycle surge than a year-round evergreen wave." } },
+      { "label": { "zh": "当前优先级", "en": "Current priority" }, "value": { "zh": "先跟季节刚需，再跟内容爆点", "en": "Seasonal necessity first, content sparks second" }, "note": { "zh": "风扇和个护比纯潮流小物更有转化确定性。", "en": "Fans and beauty essentials look more conversion-secure than pure novelty items." } }
+    ]
+  },
+  "summaryMetrics": [
+    { "label": { "zh": "最佳切入口", "en": "Best entry point" }, "value": { "zh": "静音卧室风扇", "en": "Quiet bedroom fans" }, "note": { "zh": "已在 Movers & Shakers 中抓到具体商品名。", "en": "Concrete products were captured on Movers & Shakers." } },
+    { "label": { "zh": "最强内容类", "en": "Strongest content-led line" }, "value": { "zh": "平价功效型个护", "en": "Affordable functional beauty" }, "note": { "zh": "容易被 TikTok 种草，再回 Amazon 转化。", "en": "Easy to seed on TikTok and convert back on Amazon." } },
+    { "label": { "zh": "更稳的带", "en": "More stable band" }, "value": { "zh": "充电与手机支架配件", "en": "Charging and phone-mount accessories" }, "note": { "zh": "需求稳定，但价格竞争更卷。", "en": "Demand is steady, but pricing is more crowded." } },
+    { "label": { "zh": "最该警惕", "en": "Main caution" }, "value": { "zh": "短期榜单噪音", "en": "Short-term leaderboard noise" }, "note": { "zh": "过去24小时涨幅不等于持续7天热卖。", "en": "A 24-hour rank jump does not always mean 7-day durability." } }
+  ],
+  "sections": {
+    "overview": {
+      "title": { "zh": "总览", "en": "Overview" },
+      "subtitle": { "zh": "先判断是不是可持续爆，再决定是否跟。", "en": "Judge sustainability first, then decide whether to follow." },
+      "badge": { "zh": "结论摘要", "en": "Executive Summary" },
+      "sources": [
+        { "zh": "数据依据：Amazon Movers & Shakers 可见榜单 + 公开商品页线索", "en": "Source: Visible Amazon Movers & Shakers signals + public product page clues" }
+      ],
+      "barChart": {
+        "title": { "zh": "重点方向强度图", "en": "Priority Direction Strength" },
+        "items": [
+          { "label": { "zh": "风扇与降温家居", "en": "Fans and cooling home goods" }, "score": 8.8 },
+          { "label": { "zh": "平价功效个护", "en": "Affordable functional beauty" }, "score": 8.4 },
+          { "label": { "zh": "手机功能配件", "en": "Functional phone accessories" }, "score": 7.9 },
+          { "label": { "zh": "补充装/耗材型商品", "en": "Refill and consumable goods" }, "score": 7.6 }
+        ]
+      },
+      "sideCard": {
+        "title": { "zh": "Why Now / 当前进入理由", "en": "Why Now" },
+        "items": [
+          { "title": { "zh": "天气升温推高风扇需求", "en": "Rising temperatures are pushing fan demand" }, "note": { "zh": "卧室风扇、静音风扇更容易快速冲榜。", "en": "Bedroom and quiet fans are more likely to surge quickly." } },
+          { "title": { "zh": "平价个护更容易跨平台共振", "en": "Affordable beauty resonates cross-platform" }, "note": { "zh": "短视频展示感强，Amazon 承接效率高。", "en": "Strong visual demo potential with efficient Amazon conversion." } },
+          { "title": { "zh": "小配件更适合低门槛跑量", "en": "Small accessories are easier to scale with low friction" }, "note": { "zh": "尤其是快充、支架、MagSafe 生态件。", "en": "Especially fast charging, mounts, and MagSafe ecosystem items." } }
+        ]
+      },
+      "takeaway": {
+        "title": { "zh": "市场摘要", "en": "Market takeaway" },
+        "body": { "zh": "过去7天美国 Amazon 爆品更像“季节性需求 + 内容种草 + 低决策成交”的组合。风扇类是最明确的季节窗口，个护是最容易跨平台引爆的方向，手机配件则是可持续但红海的稳定池。", "en": "The past 7 days on Amazon look like a combination of seasonal demand, content seeding, and low-friction conversion. Fans are the clearest seasonal window, beauty is the easiest cross-platform breakout line, and phone accessories remain a durable but crowded stable pool." }
+      },
+      "scorecard": {
+        "title": { "zh": "执行评分", "en": "Execution scores" },
+        "items": [
+          { "label": { "zh": "趋势强度", "en": "Trend strength" }, "score": 8.5 },
+          { "label": { "zh": "内容适配度", "en": "Content fit" }, "score": 8.3 },
+          { "label": { "zh": "转化潜力", "en": "Conversion potential" }, "score": 8.6 },
+          { "label": { "zh": "利润安全度", "en": "Margin safety" }, "score": 6.8 },
+          { "label": { "zh": "执行友好度", "en": "Execution friendliness" }, "score": 8.0 }
+        ]
+      }
+    },
+    "signals": {
+      "title": { "zh": "平台信号", "en": "Platform Signals" },
+      "subtitle": { "zh": "重点看 Amazon 榜单里哪些方向既涨得快，又有明确购买理由。", "en": "Focus on which directions in Amazon rankings are rising fast and have clear buying reasons." },
+      "badge": { "zh": "榜单与行为", "en": "Leaderboard & Behavior" },
+      "sources": [
+        { "zh": "数据依据：Amazon Movers & Shakers 抓取文本，2026-04-15", "en": "Source: Amazon Movers & Shakers fetched text, 2026-04-15" }
+      ],
+      "columns": [
+        {
+          "title": { "zh": "榜单强信号", "en": "Strong leaderboard signals" },
+          "items": [
+            { "title": { "zh": "Home & Kitchen 抓到两款风扇明确冲榜", "en": "Two fan products were clearly captured rising in Home & Kitchen" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "Amazon Basics 16\" Pedestal Fan 与 DREO Fan for Bedroom 均出现在可抓取文本中。", "en": "Amazon Basics 16\" Pedestal Fan and DREO Fan for Bedroom both appeared in fetched text." } },
+            { "title": { "zh": "Beauty 榜单大量新入榜，说明有短期热点爆发", "en": "Beauty shows many new entrants, suggesting short-term breakout activity" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "尽管页面抽取不完整，但新入榜数量密集，符合短期种草转化模式。", "en": "Although extraction was incomplete, the density of new entrants matches short-cycle social-to-Amazon conversion patterns." } },
+            { "title": { "zh": "Pet Supplies 相对平稳，不像本周核心爆发线", "en": "Pet Supplies looks more stable and not like the core breakout line this week" }, "level": { "zh": "注意", "en": "Watch" }, "levelClass": "warn", "body": { "zh": "榜单波动幅度更小，更像常规流量轮换。", "en": "Ranking shifts are smaller and feel more like routine rotation." } }
+          ]
+        },
+        {
+          "title": { "zh": "消费行为信号", "en": "Consumer behavior signals" },
+          "soft": true,
+          "items": [
+            { "title": { "zh": "用户更愿意买“马上能用”的商品", "en": "Users prefer products that solve an immediate need" }, "level": { "zh": "强信号", "en": "Strong" }, "levelClass": "good", "body": { "zh": "风扇、个护、快充配件都具备即时使用理由。", "en": "Fans, beauty essentials, and charging accessories all have immediate-use logic." } },
+            { "title": { "zh": "补充装和耗材更容易复购", "en": "Refills and consumables are easier to repeat-purchase" }, "level": { "zh": "中强信号", "en": "Medium-Strong" }, "levelClass": "info", "body": { "zh": "如驱虫补充装、护理耗材等，更容易形成价值锚点。", "en": "Products like trap refills and care consumables create stronger repeat-value anchors." } },
+            { "title": { "zh": "低价小配件虽稳，但容易掉进低价红海", "en": "Low-price accessories are stable but prone to price wars" }, "level": { "zh": "中信号", "en": "Medium" }, "levelClass": "info", "body": { "zh": "需要靠兼容性、套装感和细节卖点做差异化。", "en": "Differentiation must come from compatibility, bundle design, and detail-driven messaging." } }
+          ]
+        }
+      ]
+    },
+    "opportunities": {
+      "title": { "zh": "Top 20 清单", "en": "Top 20 List" },
+      "subtitle": { "zh": "这不是精确销量榜，而是过去7天最值得跟的 20 个爆品方向样本。", "en": "This is not a precise sales ranking but a top-20 directional sample worth tracking over the past 7 days." },
+      "badge": { "zh": "爆品样本池", "en": "Breakout Sample Pool" },
+      "sources": [
+        { "zh": "数据依据：Amazon 榜单信号 + 公开商品页与品类交叉判断", "en": "Source: Amazon leaderboard signals + public product pages and category cross-checks" }
+      ],
+      "labels": {
+        "topPlayers": { "zh": "代表品牌：", "en": "Representative brands:" },
+        "entryWhy": { "zh": "上榜逻辑：", "en": "Why it is breaking out:" }
+      },
+      "cards": [
+        { "title": { "zh": "1. Amazon Basics 16\" Pedestal Fan", "en": "1. Amazon Basics 16\" Pedestal Fan" }, "summary": { "zh": "典型夏季降温刚需，适合卧室/客厅场景。", "en": "A classic summer cooling necessity for bedroom and living room use." }, "topPlayers": ["Amazon Basics"], "entryWhy": { "zh": "已在 Movers & Shakers 明确出现，季节窗口强。", "en": "Clearly captured in Movers & Shakers with strong seasonal timing." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "风扇", "en": "Fan" }, { "zh": "高确定性", "en": "High certainty" }] },
+        { "title": { "zh": "2. DREO Fan for Bedroom", "en": "2. DREO Fan for Bedroom" }, "summary": { "zh": "静音、卧室、整屋送风是高转化卖点。", "en": "Quiet operation, bedroom focus, and whole-room airflow are strong conversion hooks." }, "topPlayers": ["DREO"], "entryWhy": { "zh": "同样出现在 Movers & Shakers，可视为风扇线强化验证。", "en": "Also appeared in Movers & Shakers, reinforcing the fan trend." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "静音风扇", "en": "Quiet fan" }, { "zh": "季节爆发", "en": "Seasonal breakout" }] },
+        { "title": { "zh": "3. Gold Bond 颈胸紧致霜", "en": "3. Gold Bond Firming Neck & Chest Cream" }, "summary": { "zh": "平价功效护肤，适合“前后对比”内容表达。", "en": "Affordable functional skincare that works well with before-and-after content." }, "topPlayers": ["Gold Bond"], "entryWhy": { "zh": "多次外部检索收敛到该品，符合内容带货转 Amazon。", "en": "Repeated external search convergence suggests social-to-Amazon conversion potential." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "功效护肤", "en": "Functional skincare" }, { "zh": "内容带货", "en": "Content-led" }] },
+        { "title": { "zh": "4. eos Cashmere Skin Shave Oil", "en": "4. eos Cashmere Skin Shave Oil" }, "summary": { "zh": "剃毛油属于低决策、高复购个护小品。", "en": "Shave oil is a low-friction, repeat-friendly personal care product." }, "topPlayers": ["eos"], "entryWhy": { "zh": "适合短视频展示肤感和顺滑度。", "en": "Well suited to short-form content demonstrating feel and glide." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "身体护理", "en": "Body care" }, { "zh": "复购", "en": "Repeat purchase" }] },
+        { "title": { "zh": "5. e.l.f. Power Grip Primer", "en": "5. e.l.f. Power Grip Primer" }, "summary": { "zh": "高性价比妆前乳，适合平替心智。", "en": "A high-value makeup primer that benefits from the dupe mindset." }, "topPlayers": ["e.l.f."], "entryWhy": { "zh": "平替逻辑 + 社媒热度，是 Amazon 长尾转化常见品。", "en": "Dupe positioning plus social buzz makes it a common Amazon winner." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "妆前", "en": "Primer" }, { "zh": "平替", "en": "Dupe" }] },
+        { "title": { "zh": "6. TirTir Cushion Foundation", "en": "6. TirTir Cushion Foundation" }, "summary": { "zh": "韩妆气垫，展示性强，易形成测评内容。", "en": "A Korean cushion foundation with strong demo appeal for review content." }, "topPlayers": ["TirTir"], "entryWhy": { "zh": "适合内容平台引流后在 Amazon 下单。", "en": "Works well as a content-led product that converts on Amazon." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "底妆", "en": "Base makeup" }, { "zh": "内容种草", "en": "Content-seeded" }] },
+        { "title": { "zh": "7. L'Oréal Root Touch-Up Spray", "en": "7. L'Oréal Root Touch-Up Spray" }, "summary": { "zh": "临时染发补色属于明确场景型刚需。", "en": "Temporary root touch-up is a clear scenario-driven need." }, "topPlayers": ["L'Oréal"], "entryWhy": { "zh": "使用场景清晰，适合快速决策。", "en": "The use case is clear, enabling fast purchase decisions." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "染发", "en": "Hair color" }, { "zh": "场景刚需", "en": "Scenario need" }] },
+        { "title": { "zh": "8. SkinSmart Facial Cleanser Spray", "en": "8. SkinSmart Facial Cleanser Spray" }, "summary": { "zh": "喷雾型清洁，兼具便携与功效沟通。", "en": "A spray cleanser combining portability and functional messaging." }, "topPlayers": ["SkinSmart"], "entryWhy": { "zh": "功效表达直接，容易切入痘肌/运动后场景。", "en": "Direct efficacy messaging works well for acne and post-workout scenarios." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "喷雾", "en": "Spray" }, { "zh": "便携", "en": "Portable" }] },
+        { "title": { "zh": "9. MagSafe 磁吸车载支架", "en": "9. MagSafe Magnetic Car Mount" }, "summary": { "zh": "iPhone 生态件持续稳定热销。", "en": "A stable best-seller category within the iPhone accessory ecosystem." }, "topPlayers": ["LISEN", "Syncwire", "Belkin"], "entryWhy": { "zh": "换机潮和车载场景持续带动需求。", "en": "Phone upgrades and car use scenarios sustain demand." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "MagSafe", "en": "MagSafe" }, { "zh": "稳定池", "en": "Stable pool" }] },
+        { "title": { "zh": "10. 30W/45W USB-C 快充头", "en": "10. 30W/45W USB-C Fast Charger" }, "summary": { "zh": "刚需、低价、高替换频率。", "en": "A necessity with low price and high replacement frequency." }, "topPlayers": ["Anker", "INIU", "Amazon Basics"], "entryWhy": { "zh": "兼容性和便携性是主要购买理由。", "en": "Compatibility and portability are core purchase drivers." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "快充", "en": "Fast charge" }, { "zh": "高频", "en": "High frequency" }] },
+        { "title": { "zh": "11. USB-C to USB-C 编织快充线", "en": "11. USB-C to USB-C Braided Cable" }, "summary": { "zh": "数据线是典型稳定高需求耗材。", "en": "Charging cables are classic stable-demand consumables." }, "topPlayers": ["Anker", "UGREEN", "AINOPE"], "entryWhy": { "zh": "损耗快、补货频繁。", "en": "They wear out quickly and are frequently repurchased." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "数据线", "en": "Cable" }, { "zh": "耗材", "en": "Consumable" }] },
+        { "title": { "zh": "12. 手机桌面支架", "en": "12. Desktop Phone Stand" }, "summary": { "zh": "办公/居家双场景常青小配件。", "en": "An evergreen accessory for both office and home use." }, "topPlayers": ["Nulaxy", "Lamicall"], "entryWhy": { "zh": "低价、礼赠、自用都成立。", "en": "Low price supports gifting and self-use alike." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "桌面支架", "en": "Desk stand" }, { "zh": "常青", "en": "Evergreen" }] },
+        { "title": { "zh": "13. 手机挂绳/腕绳", "en": "13. Phone Lanyard / Wrist Strap" }, "summary": { "zh": "兼具实用性和轻时尚属性。", "en": "Combines functionality with light fashion appeal." }, "topPlayers": ["Case-Mate", "MAGEASY"], "entryWhy": { "zh": "内容平台容易展示使用便利性。", "en": "Convenience is easy to demonstrate in content." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "挂绳", "en": "Lanyard" }, { "zh": "轻时尚", "en": "Light fashion" }] },
+        { "title": { "zh": "14. 驱虫补充装", "en": "14. Insect Trap Refills" }, "summary": { "zh": "耗材型商品，购买理由明确。", "en": "A consumable category with an obvious buying trigger." }, "topPlayers": ["Zevo"], "entryWhy": { "zh": "补充装更容易形成复购和订阅思维。", "en": "Refills support stronger repeat-purchase and subscription logic." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "补充装", "en": "Refill" }, { "zh": "复购", "en": "Repeat" }] },
+        { "title": { "zh": "15. 颈部护理/按摩油", "en": "15. Neck Care / Massage Oil" }, "summary": { "zh": "偏功效恢复和身体放松方向。", "en": "Leans toward recovery and body-relief messaging." }, "topPlayers": ["Arnica", "Majestic Pure"], "entryWhy": { "zh": "运动恢复和居家放松都是高频内容场景。", "en": "Workout recovery and at-home relaxation are both strong content angles." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "恢复", "en": "Recovery" }, { "zh": "场景内容", "en": "Scenario content" }] },
+        { "title": { "zh": "16. 指甲修护霜", "en": "16. Nail Strengthening Cream" }, "summary": { "zh": "小而美的功能型个护。", "en": "A small but functional beauty-care niche." }, "topPlayers": ["Onyx", "Nail-Aid"], "entryWhy": { "zh": "功效直观，适合 before/after 表达。", "en": "Visible efficacy makes it suitable for before-and-after positioning." }, "tags": [{ "zh": "Beauty", "en": "Beauty" }, { "zh": "指甲护理", "en": "Nail care" }, { "zh": "小众功能", "en": "Niche function" }] },
+        { "title": { "zh": "17. 便携补水杯配件", "en": "17. Tumbler Accessories" }, "summary": { "zh": "杯盖、吸管、背带等配件利润结构更灵活。", "en": "Lids, straws, and carry straps often offer more flexible margins." }, "topPlayers": ["Stanley ecosystem sellers"], "entryWhy": { "zh": "依附大单品生态，能借主品热度成交。", "en": "Rides on the momentum of hero products within an existing ecosystem." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "杯具配件", "en": "Tumbler accessory" }, { "zh": "生态件", "en": "Ecosystem item" }] },
+        { "title": { "zh": "18. 卧室空气循环扇", "en": "18. Bedroom Air Circulator" }, "summary": { "zh": "比普通风扇更强调静音和整屋循环。", "en": "More focused than standard fans on quiet airflow and full-room circulation." }, "topPlayers": ["DREO", "Vornado"], "entryWhy": { "zh": "家居升级感强，适合中高客单切入。", "en": "Feels like a home-upgrade product and supports mid-ticket pricing." }, "tags": [{ "zh": "Home", "en": "Home" }, { "zh": "空气循环", "en": "Air circulation" }, { "zh": "升级款", "en": "Upgraded" }] },
+        { "title": { "zh": "19. 旅行收纳瓶/分装套装", "en": "19. Travel Toiletry Bottles / Kits" }, "summary": { "zh": "配合出行季，低价高转化。", "en": "Travel-season aligned, low-priced, and easy to convert." }, "topPlayers": ["Tocelffe", "Mrsdry"], "entryWhy": { "zh": "功能明确、拍摄表达简单。", "en": "Function is clear and easy to communicate visually." }, "tags": [{ "zh": "Travel", "en": "Travel" }, { "zh": "分装", "en": "Refill bottles" }, { "zh": "低门槛", "en": "Low friction" }] },
+        { "title": { "zh": "20. 车载快充线与转接头", "en": "20. Car Fast-Charging Cables and Adapters" }, "summary": { "zh": "车内场景长期存在，且兼容件持续有需求。", "en": "In-car use is persistent, and compatibility accessories remain in demand." }, "topPlayers": ["Anker", "Baseus", "UGREEN"], "entryWhy": { "zh": "通勤与出行都能支撑稳定需求。", "en": "Commuting and travel both support steady demand." }, "tags": [{ "zh": "Accessory", "en": "Accessory" }, { "zh": "车载", "en": "Car use" }, { "zh": "稳定需求", "en": "Stable demand" }] }
+      ]
+    },
+    "pricing": {
+      "title": { "zh": "价格带", "en": "Pricing" },
+      "subtitle": { "zh": "更重要的是看哪条线适合以什么价位切入。", "en": "What matters more is which lines support the best entry-price positions." },
+      "badge": { "zh": "价格结构", "en": "Pricing Structure" },
+      "sources": [
+        { "zh": "数据依据：Amazon 可见价格带与代表商品常见售价", "en": "Source: Visible Amazon price bands and typical representative product pricing" }
+      ],
+      "table": {
+        "title": { "zh": "价格带观察", "en": "Pricing band view" },
+        "columns": [
+          { "zh": "方向", "en": "Direction" },
+          { "zh": "低价带", "en": "Low band" },
+          { "zh": "主销带", "en": "Core band" },
+          { "zh": "推荐切入价", "en": "Recommended entry price" },
+          { "zh": "溢价逻辑", "en": "Premium logic" }
+        ],
+        "rows": [
+          [{ "zh": "风扇与降温家居", "en": "Fans & cooling home" }, { "zh": "$25 - $45", "en": "$25 - $45" }, { "zh": "$45 - $90", "en": "$45 - $90" }, { "zh": "$39.99 - $59.99", "en": "$39.99 - $59.99" }, { "zh": "静音、送风距离、卧室场景", "en": "Quietness, airflow distance, bedroom use" }],
+          [{ "zh": "平价功效个护", "en": "Affordable functional beauty" }, { "zh": "$8 - $15", "en": "$8 - $15" }, { "zh": "$15 - $28", "en": "$15 - $28" }, { "zh": "$11.99 - $18.99", "en": "$11.99 - $18.99" }, { "zh": "功效直观、平替、内容演示", "en": "Visible efficacy, dupe framing, content demos" }],
+          [{ "zh": "手机功能配件", "en": "Functional phone accessories" }, { "zh": "$8 - $16", "en": "$8 - $16" }, { "zh": "$16 - $32", "en": "$16 - $32" }, { "zh": "$12.99 - $19.99", "en": "$12.99 - $19.99" }, { "zh": "兼容性、磁吸、快充", "en": "Compatibility, magnetic fit, fast charging" }],
+          [{ "zh": "补充装/耗材型商品", "en": "Refill & consumable goods" }, { "zh": "$9 - $14", "en": "$9 - $14" }, { "zh": "$14 - $26", "en": "$14 - $26" }, { "zh": "$12.99 - $17.99", "en": "$12.99 - $17.99" }, { "zh": "复购、套装、订阅逻辑", "en": "Repeat purchase, bundles, subscription logic" }]
+        ]
+      },
+      "side": {
+        "title": { "zh": "价格判断", "en": "Pricing judgment" },
+        "items": [
+          { "title": { "zh": "风扇类不必极限低价", "en": "Fans do not need extreme discounting" }, "note": { "zh": "用户更在意静音和送风体验。", "en": "Users care more about quiet performance and airflow quality." } },
+          { "title": { "zh": "个护类适合平价高感知价值", "en": "Beauty works best with affordable but high perceived value" }, "note": { "zh": "太便宜容易削弱功效信任感。", "en": "Too-cheap pricing can weaken efficacy trust." } },
+          { "title": { "zh": "配件类要留出套装空间", "en": "Accessories should preserve room for bundles" }, "note": { "zh": "充电头 + 线材或支架 + 磁环更好卖。", "en": "Chargers plus cables or mounts plus magnetic rings sell better together." } }
+        ]
+      }
+    },
+    "players": {
+      "title": { "zh": "代表商品", "en": "Representative Products" },
+      "subtitle": { "zh": "用于快速验证商品表达、价格带和链接结构。", "en": "Used for quick validation of product framing, price points, and link structure." },
+      "badge": { "zh": "市场验证对象", "en": "Market Validation" },
+      "sources": [
+        { "zh": "数据依据：Amazon 搜索链接与可见品牌页", "en": "Source: Amazon search links and visible brand pages" }
+      ],
+      "filterTitle": { "zh": "平台筛选与价格参考", "en": "Platform filter & price reference" },
+      "filters": [
+        { "value": "all", "label": { "zh": "全部", "en": "All" } },
+        { "value": "amazon", "label": { "zh": "Amazon", "en": "Amazon" } },
+        { "value": "official", "label": { "zh": "Official Site", "en": "Official Site" } }
+      ],
+      "groups": [
+        {
+          "title": { "zh": "风扇与降温家居", "en": "Fans & cooling home" },
+          "platforms": ["amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "风扇", "en": "Fan" }, "tag": "$40 - $60" }, { "zh": "Amazon Basics", "en": "Amazon Basics" }, { "zh": "16\" Pedestal Fan", "en": "16\" Pedestal Fan" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=Amazon+Basics+16+Pedestal+Fan", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "季节刚需明确，标题直接讲场景与功能。", "en": "Clear seasonal need, with title focused on use case and function." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "静音风扇", "en": "Quiet fan" }, "tag": "$60 - $90" }, { "zh": "DREO", "en": "DREO" }, { "zh": "Fan for Bedroom", "en": "Fan for Bedroom" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=DREO+Fan+for+Bedroom", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "卧室、静音、长距离送风是强卖点。", "en": "Bedroom use, quietness, and long-range airflow are strong hooks." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        },
+        {
+          "title": { "zh": "平价功效个护", "en": "Affordable functional beauty" },
+          "platforms": ["amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "颈部护理", "en": "Neck care" }, "tag": "$12 左右" }, { "zh": "Gold Bond", "en": "Gold Bond" }, { "zh": "Firming Neck & Chest Cream", "en": "Firming Neck & Chest Cream" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=Gold+Bond+Firming+Neck+and+Chest+Cream", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "平价功效型，适合对比型内容。", "en": "Affordable efficacy product with strong comparison-content potential." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "妆前", "en": "Primer" }, "tag": "$10 左右" }, { "zh": "e.l.f.", "en": "e.l.f." }, { "zh": "Power Grip Primer", "en": "Power Grip Primer" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=e.l.f.+Power+Grip+Primer", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "平替心智强，价格门槛低。", "en": "Strong dupe mindset and low price barrier." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        },
+        {
+          "title": { "zh": "手机功能配件", "en": "Functional phone accessories" },
+          "platforms": ["amazon"],
+          "columns": [
+            { "zh": "方向", "en": "Direction" }, { "zh": "品牌", "en": "Brand" }, { "zh": "代表商品", "en": "Product" }, { "zh": "平台", "en": "Platform" }, { "zh": "链接", "en": "Link" }, { "zh": "可借鉴点", "en": "Commercial value" }, { "zh": "检查日期", "en": "Checked on" }
+          ],
+          "rows": [
+            [{ "type": "price", "text": { "zh": "磁吸车载支架", "en": "MagSafe car mount" }, "tag": "$16 - $28" }, { "zh": "Belkin / LISEN", "en": "Belkin / LISEN" }, { "zh": "MagSafe Car Mount", "en": "MagSafe Car Mount" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=MagSafe+car+mount", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "兼容性和场景感很强。", "en": "Strong compatibility and use-case clarity." }, { "type": "checked", "value": "2026-04-15" }],
+            [{ "type": "price", "text": { "zh": "快充头", "en": "Fast charger" }, "tag": "$13 - $22" }, { "zh": "Anker", "en": "Anker" }, { "zh": "USB-C Fast Charger", "en": "USB-C Fast Charger" }, { "zh": "Amazon", "en": "Amazon" }, { "type": "link", "href": "https://www.amazon.com/s?k=USB-C+fast+charger+Anker", "label": { "zh": "查看商品页", "en": "View product" } }, { "zh": "快充、便携和安全感是核心。", "en": "Fast charging, portability, and trust are the core hooks." }, { "type": "checked", "value": "2026-04-15" }]
+          ]
+        }
+      ]
+    },
+    "nextMoves": {
+      "title": { "zh": "Next 7 Days", "en": "Next 7 Days" },
+      "subtitle": { "zh": "这周最值得执行的是补“持续性”验证。", "en": "The most valuable work this week is validating durability of demand." },
+      "badge": { "zh": "优先动作", "en": "Priority Moves" },
+      "items": [
+        { "title": { "zh": "连续3天复核风扇线是否仍在榜", "en": "Recheck fan products for 3 straight days" }, "body": { "zh": "确认它是季节爆发，不是单日波动。", "en": "Confirm the line is a seasonal surge rather than a one-day spike." } },
+        { "title": { "zh": "补齐 Beauty 类 10 个具体商品样本", "en": "Add 10 concrete beauty samples" }, "body": { "zh": "重点抓价格、评论量、是否 TikTok 常见。", "en": "Focus on price, review volume, and whether they are common on TikTok." } },
+        { "title": { "zh": "把手机配件拆成支架/快充/线材 3 子池", "en": "Split phone accessories into mounts, chargers, and cables" }, "body": { "zh": "便于后续筛选可跟卖与不建议碰的红海品。", "en": "This helps separate follow-worthy items from pure red-ocean products later." } }
+      ]
+    },
+    "risks": {
+      "title": { "zh": "风险与动作", "en": "Risks & Actions" },
+      "subtitle": { "zh": "重点不是看它热不热，而是看能不能连续热。", "en": "The key is not whether it is hot now, but whether it can stay hot." },
+      "badge": { "zh": "风险判断", "en": "Risk Judgment" },
+      "risks": [
+        { "title": { "zh": "单日榜单误判", "en": "Single-day leaderboard misread" }, "body": { "zh": "Amazon Movers & Shakers 本质是24小时涨幅榜。", "en": "Amazon Movers & Shakers is fundamentally a 24-hour momentum board." } },
+        { "title": { "zh": "个护内容热但复购未必强", "en": "Beauty can be hot in content but weak in repeat" }, "body": { "zh": "要看评论是否认可功效，而不是只看播放感。", "en": "Check whether reviews validate efficacy, not just content buzz." } },
+        { "title": { "zh": "手机配件红海化", "en": "Phone accessories can become red-ocean fast" }, "body": { "zh": "低价和兼容件会快速压缩利润。", "en": "Low-price competition and compatibility items can compress margin fast." } }
+      ],
+      "actions": {
+        "title": { "zh": "建议动作", "en": "Recommended actions" },
+        "items": [
+          { "title": { "zh": "先追连续上榜品，再追新热点", "en": "Prioritize repeat appearances before chasing new sparks" }, "note": { "zh": "连续两三天仍在榜，才更像真爆品。", "en": "Products that hold for 2 to 3 days are more likely to be real breakouts." } },
+          { "title": { "zh": "Beauty 类优先做功能细分", "en": "Segment beauty first by function" }, "note": { "zh": "护肤、身体护理、底妆应分开判断。", "en": "Skincare, body care, and makeup should be judged separately." } },
+          { "title": { "zh": "配件类优先看套装和场景化", "en": "For accessories, prioritize bundles and use-case framing" }, "note": { "zh": "不要只卷单件低价。", "en": "Avoid competing only on ultra-low single-item price." } }
+        ]
+      },
+      "finalJudgment": {
+        "title": { "zh": "最终判断", "en": "Final judgment" },
+        "items": [
+          { "title": { "zh": "值得持续跟，尤其是风扇与个护两条线", "en": "Worth continued tracking, especially fans and beauty" }, "level": { "zh": "建议执行", "en": "Recommended" }, "levelClass": "good", "body": { "zh": "这两条线目前兼具需求与转化逻辑。", "en": "These two lines currently combine clear demand with strong conversion logic." } },
+          { "title": { "zh": "手机配件适合作为稳定池，不适合盲目追爆", "en": "Phone accessories fit better as a stable pool than a blind breakout chase" }, "level": { "zh": "推荐路径", "en": "Preferred path" }, "levelClass": "info", "body": { "zh": "更适合做结构化筛选，而不是把它当单一爆点。", "en": "They are better handled through structured filtering than as a single breakout bet." } }
+        ]
+      }
+    },
+    "references": {
+      "title": { "zh": "References / 数据来源", "en": "References" },
+      "subtitle": { "zh": "本页判断基于公开可见来源与方向性商业判断。", "en": "This page is based on visible public sources and directional commercial judgment." },
+      "badge": { "zh": "证据链", "en": "Reference Layer" },
+      "cards": [
+        { "title": { "zh": "平台榜单来源", "en": "Platform leaderboard source" }, "tags": [{ "zh": "Amazon Movers & Shakers", "en": "Amazon Movers & Shakers" }, { "zh": "2026-04-15 抓取", "en": "Fetched on 2026-04-15" }], "body": { "zh": "用于支持短期动销变化和商品名捕捉。", "en": "Used to support short-term momentum changes and product-name capture." } },
+        { "title": { "zh": "公开商品页与品牌检索", "en": "Public product pages and brand searches" }, "tags": [{ "zh": "Amazon search pages", "en": "Amazon search pages" }, { "zh": "public brand references", "en": "public brand references" }], "body": { "zh": "用于补足价格带、商品属性与代表品牌。", "en": "Used to fill in price bands, product attributes, and representative brands." } },
+        { "title": { "zh": "限制说明", "en": "Limitation note" }, "tags": [{ "zh": "非完整销量库", "en": "Not a full sales database" }, { "zh": "以方向判断为主", "en": "Directionally focused" }], "body": { "zh": "本页更适合做爆品方向判断，不应视为完整精确销量排行榜。", "en": "This page is more suitable for breakout-direction analysis than as a precise sales leaderboard." } }
+      ]
+    }
+  },
+  "footer": { "zh": "Raymond Ho @Copyright 2026", "en": "Raymond Ho @Copyright 2026" }
+}
